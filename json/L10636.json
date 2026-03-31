@@ -1,0 +1,370 @@
+{
+  "nome": "Lei 10.636/2002 - Recursos originários CIDE",
+  "url": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10636.htm",
+  "disponivel": true,
+  "data_processamento": "2025-12-18 18:55:14",
+  "resumo": ["Objetivo: Destinar recursos da CIDE sobre combustíveis ao financiamento da infraestrutura de transportes e criar o FNIT (Art. 1º).", "Aplicação dos Recursos: Investimentos voltados à eficiência, segurança, conforto, qualidade de vida e redução de custos logísticos (Art. 6º).", "Fundo de Financiamento: O FNIT, vinculado ao Ministério dos Transportes, apoia programas de investimento multimodal (Art. 10 e 11).", "Gestão: A administração da infraestrutura deve ser descentralizada, podendo envolver entes públicos e privados (Art. 12).", "Relação com UAM: A lei se relaciona com a UAM ao instituir um fundo (FNIT) de aplicação multimodal para infraestrutura de transportes. Essa característica abre a possibilidade teórica de financiamento para infraestruturas de suporte à UAM, como vertiportos e sistemas de controle de tráfego aéreo urbano. A previsão de descentralização da gestão (Art. 12) também cria um ambiente favorável para que entes públicos ou privados desenvolvam projetos inovadores no setor de transportes, incluindo a mobilidade aérea."],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [4, 5, 3, 2, 3],
+    "justificativas": ["Cria instrumento de política pública federal (FNIT) com gestão descentralizada e possibilidade de parcerias público-privadas, estabelecendo estrutura de governança relevante para financiamento de infraestruturas de transporte.", "Impacto direto e abrangente ao instituir fundo específico (FNIT) para financiamento multimodal de infraestrutura de transportes, criando mecanismo concreto de financiamento público para possíveis projetos UAM.", "Estabelece objetivos de melhoria da qualidade de vida e segurança dos usuários, com impacto moderado nos benefícios sociais, mas sem tratar especificamente de inclusão ou equidade no acesso à UAM.", "Foca em eficiência energética e redução de consumo de combustíveis, mas não aborda especificamente tecnologias avançadas ou requisitos técnicos para infraestrutura UAM.", "Prioriza redução de consumo de combustíveis e impactos negativos nos centros urbanos, com impacto moderado na sustentabilidade ambiental, mas sem tratar especificamente de pegada de carbono ou licenciamento ambiental."]
+  },
+  "estatisticas": {
+    "total_palavras": 692,
+    "palavras_unicas": 357,
+    "num_sentencas": 76,
+    "top_50_palavras": {
+      "recursos": 14,
+      "cide": 11,
+      "derivados": 11,
+      "gás": 11,
+      "petróleo": 11,
+      "seus": 11,
+      "transportes": 9,
+      "caso": 8,
+      "infraestrutura": 8,
+      "projetos": 8,
+      "vetado": 8,
+      "aplicação": 7,
+      "fnit": 7,
+      "combustíveis": 6,
+      "comercialização": 6,
+      "nacional": 6,
+      "natural": 6,
+      "álcool": 5,
+      "combustível": 5,
+      "dezembro": 5,
+      "etílico": 5,
+      "importação": 5,
+      "interno": 5,
+      "outros": 5,
+      "redução": 5,
+      "concessão": 4,
+      "consumo": 4,
+      "contratos": 4,
+      "desenvolvimento": 4,
+      "destinados": 4,
+      "econômico": 4,
+      "enxofre": 4,
+      "fundo": 4,
+      "indústria": 4,
+      "óleos": 4,
+      "programas": 4,
+      "república": 4,
+      "teor": 4,
+      "transporte": 4,
+      "usuários": 4,
+      "ambiental": 3,
+      "áreas": 3,
+      "atividades": 3,
+      "composição": 3,
+      "concessionários": 3,
+      "constituição": 3,
+      "contribuição": 3,
+      "diretrizes": 3,
+      "federal": 3,
+      "fomento": 3
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 0,
+      "urbana": 0,
+      "evtol": 0,
+      "aeronave": 0,
+      "vertiporto": 0,
+      "heliponto": 0,
+      " uam ": 0,
+      "tráfego aéreo": 0,
+      "decolagem": 0,
+      "pouso": 0,
+      " voo ": 0,
+      "aviação": 2
+    },
+    "top_20_bigramas": {
+      "seus derivados": 11,
+      "gás natural": 6,
+      "infraestrutura transportes": 6,
+      "álcool etílico": 5,
+      "aplicação recursos": 5,
+      "derivados gás": 5,
+      "importação comercialização": 5,
+      "petróleo seus": 5,
+      "recursos cide": 5,
+      "etílico combustível": 4,
+      "indústria petróleo": 4,
+      "natural seus": 4,
+      "óleos combustíveis": 4,
+      "teor enxofre": 4,
+      "transportes fnit": 4,
+      "cide incidente": 3,
+      "comercialização mercado": 3,
+      "comercialização petróleo": 3,
+      "contratos concessão": 3,
+      "derivados álcool": 3
+    },
+    "palavras_chave": [
+      {
+        "palavra": "recursos",
+        "frequencia": 14,
+        "relevancia": 2.708
+      },
+      {
+        "palavra": "derivados",
+        "frequencia": 11,
+        "relevancia": 1.952
+      },
+      {
+        "palavra": "petróleo",
+        "frequencia": 11,
+        "relevancia": 1.952
+      },
+      {
+        "palavra": "transportes",
+        "frequencia": 9,
+        "relevancia": 1.48
+      },
+      {
+        "palavra": "infraestrutura",
+        "frequencia": 8,
+        "relevancia": 1.256
+      },
+      {
+        "palavra": "projetos",
+        "frequencia": 8,
+        "relevancia": 1.256
+      },
+      {
+        "palavra": "cide",
+        "frequencia": 11,
+        "relevancia": 1.171
+      },
+      {
+        "palavra": "gás",
+        "frequencia": 11,
+        "relevancia": 1.171
+      },
+      {
+        "palavra": "seus",
+        "frequencia": 11,
+        "relevancia": 1.171
+      },
+      {
+        "palavra": "aplicação",
+        "frequencia": 7,
+        "relevancia": 1.04
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "seus derivados",
+        "freq": 11,
+        "tscore": 3.26,
+        "palavra1_freq": 11,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "gás natural",
+        "freq": 6,
+        "tscore": 2.41,
+        "palavra1_freq": 11,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "infraestrutura transportes",
+        "freq": 6,
+        "tscore": 2.41,
+        "palavra1_freq": 8,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "álcool etílico",
+        "freq": 5,
+        "tscore": 2.22,
+        "palavra1_freq": 5,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "importação comercialização",
+        "freq": 5,
+        "tscore": 2.22,
+        "palavra1_freq": 5,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "aplicação recursos",
+        "freq": 5,
+        "tscore": 2.17,
+        "palavra1_freq": 7,
+        "palavra2_freq": 14
+      },
+      {
+        "bigrama": "derivados gás",
+        "freq": 5,
+        "tscore": 2.16,
+        "palavra1_freq": 11,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "petróleo seus",
+        "freq": 5,
+        "tscore": 2.16,
+        "palavra1_freq": 11,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "recursos cide",
+        "freq": 5,
+        "tscore": 2.14,
+        "palavra1_freq": 14,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "teor enxofre",
+        "freq": 4,
+        "tscore": 1.99,
+        "palavra1_freq": 4,
+        "palavra2_freq": 4
+      },
+      {
+        "bigrama": "óleos combustíveis",
+        "freq": 4,
+        "tscore": 1.98,
+        "palavra1_freq": 4,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "etílico combustível",
+        "freq": 4,
+        "tscore": 1.98,
+        "palavra1_freq": 5,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "indústria petróleo",
+        "freq": 4,
+        "tscore": 1.97,
+        "palavra1_freq": 4,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "transportes fnit",
+        "freq": 4,
+        "tscore": 1.95,
+        "palavra1_freq": 9,
+        "palavra2_freq": 7
+      },
+      {
+        "bigrama": "natural seus",
+        "freq": 4,
+        "tscore": 1.95,
+        "palavra1_freq": 6,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "respectivos contratos",
+        "freq": 3,
+        "tscore": 1.72,
+        "palavra1_freq": 3,
+        "palavra2_freq": 4
+      },
+      {
+        "bigrama": "incidente importação",
+        "freq": 3,
+        "tscore": 1.72,
+        "palavra1_freq": 3,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "mercado interno",
+        "freq": 3,
+        "tscore": 1.72,
+        "palavra1_freq": 3,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "contratos concessão",
+        "freq": 3,
+        "tscore": 1.72,
+        "palavra1_freq": 4,
+        "palavra2_freq": 4
+      },
+      {
+        "bigrama": "comercialização mercado",
+        "freq": 3,
+        "tscore": 1.72,
+        "palavra1_freq": 6,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "fomento projetos",
+        "freq": 3,
+        "tscore": 1.71,
+        "palavra1_freq": 3,
+        "palavra2_freq": 8
+      },
+      {
+        "bigrama": "fundo nacional",
+        "freq": 3,
+        "tscore": 1.71,
+        "palavra1_freq": 4,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "projetos voltados",
+        "freq": 3,
+        "tscore": 1.71,
+        "palavra1_freq": 8,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "cide incidente",
+        "freq": 3,
+        "tscore": 1.7,
+        "palavra1_freq": 11,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "nacional infraestrutura",
+        "freq": 3,
+        "tscore": 1.69,
+        "palavra1_freq": 6,
+        "palavra2_freq": 8
+      },
+      {
+        "bigrama": "derivados álcool",
+        "freq": 3,
+        "tscore": 1.69,
+        "palavra1_freq": 11,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "comercialização petróleo",
+        "freq": 3,
+        "tscore": 1.68,
+        "palavra1_freq": 6,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "automotivos atendimento",
+        "freq": 2,
+        "tscore": 1.41,
+        "palavra1_freq": 2,
+        "palavra2_freq": 2
+      },
+      {
+        "bigrama": "centros urbanos",
+        "freq": 2,
+        "tscore": 1.41,
+        "palavra1_freq": 2,
+        "palavra2_freq": 2
+      },
+      {
+        "bigrama": "coletivo melhoria",
+        "freq": 2,
+        "tscore": 1.41,
+        "palavra1_freq": 2,
+        "palavra2_freq": 2
+      }
+    ]
+  }
+}

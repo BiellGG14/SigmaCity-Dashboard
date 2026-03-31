@@ -1,0 +1,370 @@
+{
+  "nome": "ICA 100-31 - Requisitos dos Serviços de Tráfego Aéreo",
+  "url": "https://publicacoes.decea.mil.br/publicacao/ICA-100-31",
+  "disponivel": true,
+  "data_processamento": "2025-12-18 18:55:08",
+  "resumo": ["Estabelece requisitos para os Serviços de Tráfego Aéreo", "Define espaços aéreos, requisitos de comunicação, vigilância, coordenação e informações"],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [4, 3, 3, 5, 2],
+    "justificativas": ["Estabelece a estrutura estatal completa do SISCEAB com competências do DECEA para gestão do espaço aéreo, criando sistema de governança aeronáutica relevante para a integração da UAM no sistema nacional.", "Define requisitos operacionais que impactam custos de implementação de serviços de tráfego aéreo para UAM, com influência moderada na viabilidade econômica através de exigências de infraestrutura e coordenação.", "Estabelece objetivos de segurança operacional que beneficiam a sociedade, com impacto moderado na aceitação social através da prevenção de colisões, mas sem tratar especificamente de inclusão ou equidade.", "Impacto direto e abrangente ao definir requisitos técnicos para comunicação, vigilância, navegação e sistemas ATS, estabelecendo a infraestrutura CNS/ATM essencial para operações seguras da UAM.", "Foca principalmente em aspectos operacionais de segurança do tráfego aéreo, com impacto ambiental indireto através do planejamento de rotas, mas sem tratar especificamente de emissões, ruído ou licenciamento ambiental."]
+  },
+  "estatisticas": {
+    "total_palavras": 7144,
+    "palavras_unicas": 1695,
+    "num_sentencas": 811,
+    "top_50_palavras": {
+      "controle": 146,
+      "aéreo": 127,
+      "tráfego": 108,
+      "informações": 95,
+      "seção": 88,
+      "serviços": 82,
+      "deverão": 80,
+      "serviço": 74,
+      "órgãos": 73,
+      "devem": 70,
+      "dados": 69,
+      "aeronaves": 61,
+      "informação": 61,
+      "adsc": 60,
+      "ats": 60,
+      "área": 59,
+      "comunicações": 59,
+      "voo": 56,
+      "operacional": 52,
+      "vigilância": 44,
+      "órgão": 43,
+      "decea": 40,
+      "aeródromo": 37,
+      "deverá": 37,
+      "áreas": 36,
+      "navegação": 35,
+      "requisitos": 35,
+      "comunicação": 34,
+      "aproximação": 32,
+      "espaço": 29,
+      "segurança": 29,
+      "sistemas": 29,
+      "aeronave": 28,
+      "capítulo": 28,
+      "sistema": 28,
+      "auxílios": 27,
+      "coordenação": 27,
+      "aeronáutica": 26,
+      "controlador": 25,
+      "dentro": 25,
+      "subseção": 25,
+      "aérea": 23,
+      "atividades": 23,
+      "nível": 23,
+      "posição": 23,
+      "conforme": 22,
+      "facilidades": 22,
+      "meteorológicas": 22,
+      "limite": 21,
+      "procedimentos": 21
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 25,
+      "urbana": 0,
+      "evtol": 0,
+      "aeronave": 90,
+      "vertiporto": 0,
+      "heliponto": 0,
+      " uam ": 0,
+      "tráfego aéreo": 90,
+      "decolagem": 9,
+      "pouso": 10,
+      " voo ": 34,
+      "aviação": 5
+    },
+    "top_20_bigramas": {
+      "tráfego aéreo": 98,
+      "serviços tráfego": 59,
+      "informação voo": 36,
+      "espaço aéreo": 29,
+      "auxílios navegação": 24,
+      "navegação aérea": 23,
+      "controle área": 22,
+      "serviço controle": 22,
+      "áreas controle": 21,
+      "segurança operacional": 21,
+      "órgãos ats": 19,
+      "facilidades comunicação": 18,
+      "controle aproximação": 17,
+      "serviço informação": 17,
+      "área controle": 16,
+      "controle aeródromo": 16,
+      "espaços aéreos": 15,
+      "informações meteorológicas": 15,
+      "controle tráfego": 14,
+      "estado operacional": 14
+    },
+    "palavras_chave": [
+      {
+        "palavra": "controle",
+        "frequencia": 146,
+        "relevancia": 4.99
+      },
+      {
+        "palavra": "informações",
+        "frequencia": 95,
+        "relevancia": 2.97
+      },
+      {
+        "palavra": "aéreo",
+        "frequencia": 127,
+        "relevancia": 2.532
+      },
+      {
+        "palavra": "serviços",
+        "frequencia": 82,
+        "relevancia": 2.482
+      },
+      {
+        "palavra": "tráfego",
+        "frequencia": 108,
+        "relevancia": 2.082
+      },
+      {
+        "palavra": "aeronaves",
+        "frequencia": 61,
+        "relevancia": 1.724
+      },
+      {
+        "palavra": "informação",
+        "frequencia": 61,
+        "relevancia": 1.724
+      },
+      {
+        "palavra": "comunicações",
+        "frequencia": 59,
+        "relevancia": 1.655
+      },
+      {
+        "palavra": "seção",
+        "frequencia": 88,
+        "relevancia": 1.623
+      },
+      {
+        "palavra": "deverão",
+        "frequencia": 80,
+        "relevancia": 1.445
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "tráfego aéreo",
+        "freq": 98,
+        "tscore": 9.71,
+        "palavra1_freq": 108,
+        "palavra2_freq": 127
+      },
+      {
+        "bigrama": "serviços tráfego",
+        "freq": 59,
+        "tscore": 7.52,
+        "palavra1_freq": 82,
+        "palavra2_freq": 108
+      },
+      {
+        "bigrama": "informação voo",
+        "freq": 36,
+        "tscore": 5.92,
+        "palavra1_freq": 61,
+        "palavra2_freq": 56
+      },
+      {
+        "bigrama": "espaço aéreo",
+        "freq": 29,
+        "tscore": 5.29,
+        "palavra1_freq": 29,
+        "palavra2_freq": 127
+      },
+      {
+        "bigrama": "auxílios navegação",
+        "freq": 24,
+        "tscore": 4.87,
+        "palavra1_freq": 27,
+        "palavra2_freq": 35
+      },
+      {
+        "bigrama": "navegação aérea",
+        "freq": 23,
+        "tscore": 4.77,
+        "palavra1_freq": 35,
+        "palavra2_freq": 23
+      },
+      {
+        "bigrama": "controle área",
+        "freq": 22,
+        "tscore": 4.43,
+        "palavra1_freq": 146,
+        "palavra2_freq": 59
+      },
+      {
+        "bigrama": "serviço controle",
+        "freq": 22,
+        "tscore": 4.37,
+        "palavra1_freq": 74,
+        "palavra2_freq": 146
+      },
+      {
+        "bigrama": "segurança operacional",
+        "freq": 21,
+        "tscore": 4.54,
+        "palavra1_freq": 29,
+        "palavra2_freq": 52
+      },
+      {
+        "bigrama": "áreas controle",
+        "freq": 21,
+        "tscore": 4.42,
+        "palavra1_freq": 36,
+        "palavra2_freq": 146
+      },
+      {
+        "bigrama": "órgãos ats",
+        "freq": 19,
+        "tscore": 4.22,
+        "palavra1_freq": 73,
+        "palavra2_freq": 60
+      },
+      {
+        "bigrama": "facilidades comunicação",
+        "freq": 18,
+        "tscore": 4.22,
+        "palavra1_freq": 22,
+        "palavra2_freq": 34
+      },
+      {
+        "bigrama": "serviço informação",
+        "freq": 17,
+        "tscore": 3.97,
+        "palavra1_freq": 74,
+        "palavra2_freq": 61
+      },
+      {
+        "bigrama": "controle aproximação",
+        "freq": 17,
+        "tscore": 3.96,
+        "palavra1_freq": 146,
+        "palavra2_freq": 32
+      },
+      {
+        "bigrama": "controle aeródromo",
+        "freq": 16,
+        "tscore": 3.81,
+        "palavra1_freq": 146,
+        "palavra2_freq": 37
+      },
+      {
+        "bigrama": "área controle",
+        "freq": 16,
+        "tscore": 3.7,
+        "palavra1_freq": 59,
+        "palavra2_freq": 146
+      },
+      {
+        "bigrama": "espaços aéreos",
+        "freq": 15,
+        "tscore": 3.86,
+        "palavra1_freq": 16,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "informações meteorológicas",
+        "freq": 15,
+        "tscore": 3.8,
+        "palavra1_freq": 95,
+        "palavra2_freq": 22
+      },
+      {
+        "bigrama": "estado operacional",
+        "freq": 14,
+        "tscore": 3.71,
+        "palavra1_freq": 15,
+        "palavra2_freq": 52
+      },
+      {
+        "bigrama": "órgãos serviços",
+        "freq": 14,
+        "tscore": 3.52,
+        "palavra1_freq": 73,
+        "palavra2_freq": 82
+      },
+      {
+        "bigrama": "seção informações",
+        "freq": 14,
+        "tscore": 3.43,
+        "palavra1_freq": 88,
+        "palavra2_freq": 95
+      },
+      {
+        "bigrama": "controle tráfego",
+        "freq": 14,
+        "tscore": 3.15,
+        "palavra1_freq": 146,
+        "palavra2_freq": 108
+      },
+      {
+        "bigrama": "vigilância ats",
+        "freq": 13,
+        "tscore": 3.5,
+        "palavra1_freq": 44,
+        "palavra2_freq": 60
+      },
+      {
+        "bigrama": "aeronaves civis",
+        "freq": 12,
+        "tscore": 3.43,
+        "palavra1_freq": 61,
+        "palavra2_freq": 13
+      },
+      {
+        "bigrama": "região informação",
+        "freq": 12,
+        "tscore": 3.43,
+        "palavra1_freq": 13,
+        "palavra2_freq": 61
+      },
+      {
+        "bigrama": "reportes adsc",
+        "freq": 12,
+        "tscore": 3.43,
+        "palavra1_freq": 15,
+        "palavra2_freq": 60
+      },
+      {
+        "bigrama": "capítulo requisitos",
+        "freq": 12,
+        "tscore": 3.42,
+        "palavra1_freq": 28,
+        "palavra2_freq": 35
+      },
+      {
+        "bigrama": "deverão providos",
+        "freq": 12,
+        "tscore": 3.42,
+        "palavra1_freq": 80,
+        "palavra2_freq": 13
+      },
+      {
+        "bigrama": "prestação serviços",
+        "freq": 12,
+        "tscore": 3.42,
+        "palavra1_freq": 14,
+        "palavra2_freq": 82
+      },
+      {
+        "bigrama": "informação aeronáutica",
+        "freq": 12,
+        "tscore": 3.4,
+        "palavra1_freq": 61,
+        "palavra2_freq": 26
+      }
+    ]
+  }
+}

@@ -1,0 +1,370 @@
+{
+  "nome": "Lei 13.116/2015 - Compartilhamento da infraestrutura de telecomunicações",
+  "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13116.htm",
+  "disponivel": true,
+  "data_processamento": "2025-12-18 18:55:17",
+  "resumo": ["Fornece as restrições para instalação de infraestrutura de telecomunicações em zonas de proteção de aeródromos e helipontos;", "Estabelece que a avaliação das estações transmissoras de radiocomunicação deve ser efetuada por entidade competente"],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [2, 2, 1, 4, 1],
+    "justificativas": ["Impacto pontual ao estabelecer diretrizes regulatórias para infraestrutura de telecomunicações com referência ao Comando da Aeronáutica, indicando coordenação interinstitucional limitada, mas sem políticas de fomento específicas para UAM.", "Impacto marginal ao criar procedimento simplificado de licenciamento que pode reduzir custos e prazos para infraestrutura de apoio, mas sem menção a incentivos fiscais ou modelos de negócio específicos para UAM.", "Ausência de referência a impactos sociais, aceitação pública, equidade ou inclusão, focando exclusivamente em aspectos técnicos de infraestrutura sem considerações sobre benefícios ou impactos sociais diretos.", "Impacto relevante ao estabelecer normas para infraestrutura de telecomunicações essenciais para sistemas CNS/ATM da UAM, incluindo avaliação de estações transmissoras e restrições em zonas de proteção de aeródromos/helipontos que afetam diretamente o planejamento técnico.", "Ausência completa de referência a impactos ecológicos, gestão de recursos naturais, pegada de carbono ou qualquer requisito ambiental relacionado à infraestrutura de telecomunicações."]
+  },
+  "estatisticas": {
+    "total_palavras": 1550,
+    "palavras_unicas": 778,
+    "num_sentencas": 198,
+    "top_50_palavras": {
+      "telecomunicações": 41,
+      "infraestrutura": 39,
+      "instalação": 17,
+      "suporte": 17,
+      "redes": 16,
+      "serviços": 16,
+      "regulamentação": 15,
+      "será": 14,
+      "compartilhamento": 12,
+      "órgão": 11,
+      "condições": 10,
+      "federal": 10,
+      "prestadoras": 10,
+      "radiocomunicação": 10,
+      "capacidade": 9,
+      "forma": 9,
+      "normas": 9,
+      "entidade": 8,
+      "específica": 8,
+      "estações": 8,
+      "licenciamento": 7,
+      "outros": 7,
+      "prazo": 7,
+      "termos": 7,
+      "trata": 7,
+      "uso": 7,
+      "área": 6,
+      "capítulo": 6,
+      "deste": 6,
+      "deverão": 6,
+      "disposto": 6,
+      "estação": 6,
+      "httpswwwplanaltogovbrccivilatoleilhtm": 6,
+      "informações": 6,
+      "poderá": 6,
+      "vetado": 6,
+      "caso": 5,
+      "competente": 5,
+      "competentes": 5,
+      "conformidade": 5,
+      "data": 5,
+      "deve": 5,
+      "equipamentos": 5,
+      "incluindo": 5,
+      "interesse": 5,
+      "julho": 5,
+      "licenças": 5,
+      "órgãos": 5,
+      "passagem": 5,
+      "prestação": 5
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 3,
+      "urbana": 5,
+      "evtol": 0,
+      "aeronave": 0,
+      "vertiporto": 0,
+      "heliponto": 1,
+      " uam ": 0,
+      "tráfego aéreo": 1,
+      "decolagem": 0,
+      "pouso": 0,
+      " voo ": 0,
+      "aviação": 0
+    },
+    "top_20_bigramas": {
+      "infraestrutura suporte": 15,
+      "redes telecomunicações": 12,
+      "serviços telecomunicações": 9,
+      "instalação infraestrutura": 8,
+      "regulamentação específica": 8,
+      "compartilhamento infraestrutura": 7,
+      "infraestrutura redes": 7,
+      "órgão entidade": 6,
+      "estações transmissoras": 5,
+      "órgão regulador": 5,
+      "prestação serviços": 5,
+      "transmissoras radiocomunicação": 5,
+      "área urbana": 4,
+      "entidade competente": 4,
+      "estação transmissora": 4,
+      "exposição humana": 4,
+      "federal telecomunicações": 4,
+      "infraestrutura telecomunicações": 4,
+      "prazo previsto": 4,
+      "prestadoras serviços": 4
+    },
+    "palavras_chave": [
+      {
+        "palavra": "telecomunicações",
+        "frequencia": 41,
+        "relevancia": 3.738
+      },
+      {
+        "palavra": "infraestrutura",
+        "frequencia": 39,
+        "relevancia": 3.509
+      },
+      {
+        "palavra": "instalação",
+        "frequencia": 17,
+        "relevancia": 1.198
+      },
+      {
+        "palavra": "serviços",
+        "frequencia": 16,
+        "relevancia": 1.106
+      },
+      {
+        "palavra": "regulamentação",
+        "frequencia": 15,
+        "relevancia": 1.014
+      },
+      {
+        "palavra": "compartilhamento",
+        "frequencia": 12,
+        "relevancia": 0.751
+      },
+      {
+        "palavra": "suporte",
+        "frequencia": 17,
+        "relevancia": 0.719
+      },
+      {
+        "palavra": "redes",
+        "frequencia": 16,
+        "relevancia": 0.663
+      },
+      {
+        "palavra": "condições",
+        "frequencia": 10,
+        "relevancia": 0.585
+      },
+      {
+        "palavra": "prestadoras",
+        "frequencia": 10,
+        "relevancia": 0.585
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "infraestrutura suporte",
+        "freq": 15,
+        "tscore": 3.76,
+        "palavra1_freq": 39,
+        "palavra2_freq": 17
+      },
+      {
+        "bigrama": "redes telecomunicações",
+        "freq": 12,
+        "tscore": 3.34,
+        "palavra1_freq": 16,
+        "palavra2_freq": 41
+      },
+      {
+        "bigrama": "serviços telecomunicações",
+        "freq": 9,
+        "tscore": 2.86,
+        "palavra1_freq": 16,
+        "palavra2_freq": 41
+      },
+      {
+        "bigrama": "regulamentação específica",
+        "freq": 8,
+        "tscore": 2.8,
+        "palavra1_freq": 15,
+        "palavra2_freq": 8
+      },
+      {
+        "bigrama": "instalação infraestrutura",
+        "freq": 8,
+        "tscore": 2.68,
+        "palavra1_freq": 17,
+        "palavra2_freq": 39
+      },
+      {
+        "bigrama": "compartilhamento infraestrutura",
+        "freq": 7,
+        "tscore": 2.53,
+        "palavra1_freq": 12,
+        "palavra2_freq": 39
+      },
+      {
+        "bigrama": "infraestrutura redes",
+        "freq": 7,
+        "tscore": 2.49,
+        "palavra1_freq": 39,
+        "palavra2_freq": 16
+      },
+      {
+        "bigrama": "órgão entidade",
+        "freq": 6,
+        "tscore": 2.43,
+        "palavra1_freq": 11,
+        "palavra2_freq": 8
+      },
+      {
+        "bigrama": "estações transmissoras",
+        "freq": 5,
+        "tscore": 2.22,
+        "palavra1_freq": 8,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "transmissoras radiocomunicação",
+        "freq": 5,
+        "tscore": 2.22,
+        "palavra1_freq": 5,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "órgão regulador",
+        "freq": 5,
+        "tscore": 2.22,
+        "palavra1_freq": 11,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "prestação serviços",
+        "freq": 5,
+        "tscore": 2.21,
+        "palavra1_freq": 5,
+        "palavra2_freq": 16
+      },
+      {
+        "bigrama": "exposição humana",
+        "freq": 4,
+        "tscore": 1.99,
+        "palavra1_freq": 4,
+        "palavra2_freq": 4
+      },
+      {
+        "bigrama": "zona proteção",
+        "freq": 4,
+        "tscore": 1.99,
+        "palavra1_freq": 4,
+        "palavra2_freq": 4
+      },
+      {
+        "bigrama": "estação transmissora",
+        "freq": 4,
+        "tscore": 1.99,
+        "palavra1_freq": 6,
+        "palavra2_freq": 4
+      },
+      {
+        "bigrama": "prazo previsto",
+        "freq": 4,
+        "tscore": 1.99,
+        "palavra1_freq": 7,
+        "palavra2_freq": 4
+      },
+      {
+        "bigrama": "área urbana",
+        "freq": 4,
+        "tscore": 1.99,
+        "palavra1_freq": 6,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "entidade competente",
+        "freq": 4,
+        "tscore": 1.99,
+        "palavra1_freq": 8,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "transmissora radiocomunicação",
+        "freq": 4,
+        "tscore": 1.99,
+        "palavra1_freq": 4,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "regulador federal",
+        "freq": 4,
+        "tscore": 1.98,
+        "palavra1_freq": 5,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "termos regulamentação",
+        "freq": 4,
+        "tscore": 1.97,
+        "palavra1_freq": 7,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "prestadoras serviços",
+        "freq": 4,
+        "tscore": 1.95,
+        "palavra1_freq": 10,
+        "palavra2_freq": 16
+      },
+      {
+        "bigrama": "federal telecomunicações",
+        "freq": 4,
+        "tscore": 1.87,
+        "palavra1_freq": 10,
+        "palavra2_freq": 41
+      },
+      {
+        "bigrama": "infraestrutura telecomunicações",
+        "freq": 4,
+        "tscore": 1.48,
+        "palavra1_freq": 39,
+        "palavra2_freq": 41
+      },
+      {
+        "bigrama": "campos elétricos",
+        "freq": 3,
+        "tscore": 1.73,
+        "palavra1_freq": 3,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "elétricos magnéticos",
+        "freq": 3,
+        "tscore": 1.73,
+        "palavra1_freq": 3,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "magnéticos eletromagnéticos",
+        "freq": 3,
+        "tscore": 1.73,
+        "palavra1_freq": 3,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "humana campos",
+        "freq": 3,
+        "tscore": 1.73,
+        "palavra1_freq": 4,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "seguinte redação",
+        "freq": 3,
+        "tscore": 1.73,
+        "palavra1_freq": 4,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "vigorar seguinte",
+        "freq": 3,
+        "tscore": 1.73,
+        "palavra1_freq": 3,
+        "palavra2_freq": 4
+      }
+    ]
+  }
+}

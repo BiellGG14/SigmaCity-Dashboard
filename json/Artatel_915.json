@@ -1,0 +1,370 @@
+{
+  "nome": "Ato ANATEL 915/2024 - Faixas de frequências associadas ao Serviço Limitado Privado",
+  "url": "https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2024/1920-ato-915",
+  "disponivel": true,
+  "data_processamento": "2025-12-18 18:55:07",
+  "resumo": ["Finalidade: Define regras técnicas para o uso de faixas de radiofrequência pelo Serviço Limitado Privado (SLP), substituindo normas antigas e garantindo uso eficiente do espectro.", "Coordenação: Exige que os operadores façam coordenação prévia com outros sistemas da mesma área para evitar interferências.", "Flexibilidade: Permite exceções técnicas, desde que aprovadas pela ANATEL e sem causar interferência prejudicial.", "Faixa de 4.950–4.990 MHz: Autoriza o aumento temporário de potência em câmeras instaladas em aeronaves durante emergências, para transmitir vídeo em tempo real ao solo.", "Relação com UAM: A disposição para operações aéreas e a estruturação técnica de faixas como 4.950-4.990 MHz e 27,5-27,9 GHz criam um marco regulatório fundamental para viabilizar futuras operações de comunicação seguras e confiáveis no contexto da Mobilidade Aérea Urbana."],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [3, 2, 2, 5, 1],
+    "justificativas": ["Estabelece diretrizes regulatórias para uso do espectro através da ANATEL, indicando envolvimento estatal no setor, mas com foco técnico-operacional limitado.", "Impacto indireto ao criar marco regulatório para comunicações, sem menção a incentivos fiscais, modelos de negócio ou impactos macroeconômicos para UAM.", "Benefícios tangenciais em emergências através de transmissão de vídeo de aeronaves, sem foco em inclusão, equidade ou aceitação social da UAM.", "Define parâmetros técnicos específicos para comunicações aeronave-solo e autoriza aumento de potência para câmeras em aeronaves, elementos essenciais para infraestrutura de comunicação da UAM.", "Ausência de referência a requisitos ou impactos ambientais no texto analisado."]
+  },
+  "estatisticas": {
+    "total_palavras": 11269,
+    "palavras_unicas": 1466,
+    "num_sentencas": 2428,
+    "top_50_palavras": {
+      "mhz": 838,
+      "ghz": 266,
+      "sistemas": 210,
+      "estação": 188,
+      "radiofrequências": 176,
+      "faixa": 175,
+      "ponto": 165,
+      "khz": 154,
+      "estações": 148,
+      "operando": 147,
+      "deve": 122,
+      "dbm": 110,
+      "potência": 108,
+      "uso": 107,
+      "antena": 106,
+      "canais": 104,
+      "canalização": 102,
+      "subfaixas": 99,
+      "base": 95,
+      "devem": 95,
+      "frequências": 95,
+      "pontoa": 89,
+      "correspondentes": 83,
+      "máxima": 82,
+      "tabela": 82,
+      "multiponto": 81,
+      "limites": 76,
+      "transmissão": 68,
+      "pontoárea": 64,
+      "canal": 63,
+      "emissões": 60,
+      "nodal": 59,
+      "operacionais": 57,
+      "parâmetros": 57,
+      "condições": 56,
+      "frequência": 51,
+      "rádio": 51,
+      "serviço": 50,
+      "ato": 48,
+      "canalizações": 45,
+      "transmissor": 44,
+      "acordo": 40,
+      "móvel": 40,
+      "terrestre": 40,
+      "podem": 39,
+      "requisitos": 39,
+      "interferência": 38,
+      "pontoaponto": 38,
+      "fevereiro": 37,
+      "largura": 37
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 0,
+      "urbana": 0,
+      "evtol": 0,
+      "aeronave": 1,
+      "vertiporto": 0,
+      "heliponto": 0,
+      " uam ": 0,
+      "tráfego aéreo": 0,
+      "decolagem": 0,
+      "pouso": 0,
+      " voo ": 0,
+      "aviação": 1
+    },
+    "top_20_bigramas": {
+      "mhz mhz": 377,
+      "sistemas operando": 103,
+      "ghz ghz": 101,
+      "subfaixas radiofrequências": 85,
+      "mhz khz": 82,
+      "radiofrequências correspondentes": 80,
+      "operando subfaixas": 71,
+      "ponto mhz": 71,
+      "khz khz": 56,
+      "pontoa ponto": 52,
+      "ghz mhz": 50,
+      "khz mhz": 47,
+      "rádio base": 46,
+      "operando faixa": 43,
+      "correspondentes canalizações": 42,
+      "base nodal": 41,
+      "correspondentes canalização": 39,
+      "deve dbm": 39,
+      "ponto ghz": 39,
+      "potência máxima": 36
+    },
+    "palavras_chave": [
+      {
+        "palavra": "mhz",
+        "frequencia": 838,
+        "relevancia": 4.039
+      },
+      {
+        "palavra": "sistemas",
+        "frequencia": 210,
+        "relevancia": 1.341
+      },
+      {
+        "palavra": "radiofrequências",
+        "frequencia": 176,
+        "relevancia": 1.087
+      },
+      {
+        "palavra": "ghz",
+        "frequencia": 266,
+        "relevancia": 1.064
+      },
+      {
+        "palavra": "estações",
+        "frequencia": 148,
+        "relevancia": 0.884
+      },
+      {
+        "palavra": "operando",
+        "frequencia": 147,
+        "relevancia": 0.877
+      },
+      {
+        "palavra": "estação",
+        "frequencia": 188,
+        "relevancia": 0.706
+      },
+      {
+        "palavra": "faixa",
+        "frequencia": 175,
+        "relevancia": 0.648
+      },
+      {
+        "palavra": "potência",
+        "frequencia": 108,
+        "relevancia": 0.605
+      },
+      {
+        "palavra": "ponto",
+        "frequencia": 165,
+        "relevancia": 0.604
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "mhz mhz",
+        "freq": 377,
+        "tscore": 16.21,
+        "palavra1_freq": 838,
+        "palavra2_freq": 838
+      },
+      {
+        "bigrama": "sistemas operando",
+        "freq": 103,
+        "tscore": 9.88,
+        "palavra1_freq": 210,
+        "palavra2_freq": 147
+      },
+      {
+        "bigrama": "ghz ghz",
+        "freq": 101,
+        "tscore": 9.43,
+        "palavra1_freq": 266,
+        "palavra2_freq": 266
+      },
+      {
+        "bigrama": "subfaixas radiofrequências",
+        "freq": 85,
+        "tscore": 9.05,
+        "palavra1_freq": 99,
+        "palavra2_freq": 176
+      },
+      {
+        "bigrama": "mhz khz",
+        "freq": 82,
+        "tscore": 7.79,
+        "palavra1_freq": 838,
+        "palavra2_freq": 154
+      },
+      {
+        "bigrama": "radiofrequências correspondentes",
+        "freq": 80,
+        "tscore": 8.8,
+        "palavra1_freq": 176,
+        "palavra2_freq": 83
+      },
+      {
+        "bigrama": "operando subfaixas",
+        "freq": 71,
+        "tscore": 8.27,
+        "palavra1_freq": 147,
+        "palavra2_freq": 99
+      },
+      {
+        "bigrama": "ponto mhz",
+        "freq": 71,
+        "tscore": 6.97,
+        "palavra1_freq": 165,
+        "palavra2_freq": 838
+      },
+      {
+        "bigrama": "khz khz",
+        "freq": 56,
+        "tscore": 7.2,
+        "palavra1_freq": 154,
+        "palavra2_freq": 154
+      },
+      {
+        "bigrama": "pontoa ponto",
+        "freq": 52,
+        "tscore": 7.03,
+        "palavra1_freq": 89,
+        "palavra2_freq": 165
+      },
+      {
+        "bigrama": "ghz mhz",
+        "freq": 50,
+        "tscore": 4.27,
+        "palavra1_freq": 266,
+        "palavra2_freq": 838
+      },
+      {
+        "bigrama": "khz mhz",
+        "freq": 47,
+        "tscore": 5.19,
+        "palavra1_freq": 154,
+        "palavra2_freq": 838
+      },
+      {
+        "bigrama": "rádio base",
+        "freq": 46,
+        "tscore": 6.72,
+        "palavra1_freq": 51,
+        "palavra2_freq": 95
+      },
+      {
+        "bigrama": "operando faixa",
+        "freq": 43,
+        "tscore": 6.21,
+        "palavra1_freq": 147,
+        "palavra2_freq": 175
+      },
+      {
+        "bigrama": "correspondentes canalizações",
+        "freq": 42,
+        "tscore": 6.43,
+        "palavra1_freq": 83,
+        "palavra2_freq": 45
+      },
+      {
+        "bigrama": "base nodal",
+        "freq": 41,
+        "tscore": 6.33,
+        "palavra1_freq": 95,
+        "palavra2_freq": 59
+      },
+      {
+        "bigrama": "correspondentes canalização",
+        "freq": 39,
+        "tscore": 6.12,
+        "palavra1_freq": 83,
+        "palavra2_freq": 102
+      },
+      {
+        "bigrama": "deve dbm",
+        "freq": 39,
+        "tscore": 6.05,
+        "palavra1_freq": 122,
+        "palavra2_freq": 110
+      },
+      {
+        "bigrama": "ponto ghz",
+        "freq": 39,
+        "tscore": 5.62,
+        "palavra1_freq": 165,
+        "palavra2_freq": 266
+      },
+      {
+        "bigrama": "potência máxima",
+        "freq": 36,
+        "tscore": 5.87,
+        "palavra1_freq": 108,
+        "palavra2_freq": 82
+      },
+      {
+        "bigrama": "recomendação uitr",
+        "freq": 35,
+        "tscore": 5.9,
+        "palavra1_freq": 35,
+        "palavra2_freq": 36
+      },
+      {
+        "bigrama": "faixa mhz",
+        "freq": 35,
+        "tscore": 3.72,
+        "palavra1_freq": 175,
+        "palavra2_freq": 838
+      },
+      {
+        "bigrama": "parâmetros canalização",
+        "freq": 34,
+        "tscore": 5.74,
+        "palavra1_freq": 57,
+        "palavra2_freq": 102
+      },
+      {
+        "bigrama": "transmissor antena",
+        "freq": 33,
+        "tscore": 5.67,
+        "palavra1_freq": 44,
+        "palavra2_freq": 106
+      },
+      {
+        "bigrama": "faixa frequências",
+        "freq": 32,
+        "tscore": 5.4,
+        "palavra1_freq": 175,
+        "palavra2_freq": 95
+      },
+      {
+        "bigrama": "condições uso",
+        "freq": 31,
+        "tscore": 5.47,
+        "palavra1_freq": 56,
+        "palavra2_freq": 107
+      },
+      {
+        "bigrama": "mhz pontoárea",
+        "freq": 31,
+        "tscore": 4.71,
+        "palavra1_freq": 838,
+        "palavra2_freq": 64
+      },
+      {
+        "bigrama": "interferência prejudicial",
+        "freq": 30,
+        "tscore": 5.46,
+        "palavra1_freq": 38,
+        "palavra2_freq": 30
+      },
+      {
+        "bigrama": "entregue transmissor",
+        "freq": 30,
+        "tscore": 5.46,
+        "palavra1_freq": 30,
+        "palavra2_freq": 44
+      },
+      {
+        "bigrama": "máxima entregue",
+        "freq": 30,
+        "tscore": 5.44,
+        "palavra1_freq": 82,
+        "palavra2_freq": 30
+      }
+    ]
+  }
+}

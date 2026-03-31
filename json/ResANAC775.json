@@ -1,0 +1,370 @@
+{
+  "nome": "Resolução ANAC 775/2025 - Sandbox Regulatório",
+  "url": "https://www.anac.gov.br/assuntos/legislacao/legislacao-1/resolucoes/2025/resolucao-775",
+  "disponivel": true,
+  "data_processamento": "2025-12-18 18:55:29",
+  "resumo": ["Institui o Ambiente Regulatório Experimental (Sandbox Regulatório)", "Estabelece condições diferenciadas ao marco regulatório vigente", "Permite autorização temporária para projetos inovadores na aviação civil", "Define critérios mediante Termo Específico de Admissão", "Objetiva incentivar inovação e modernização do setor", "Relaciona-se com a UAM ao autorizar projetos com novas tecnologias", "Cria ambiente para testes experimentais de mobilidade aérea urbana"],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [5, 4, 3, 5, 2],
+    "justificativas": ["Impacto direto e abrangente ao instituir mecanismo inovador de governança regulatória (Sandbox), demonstrando proatividade da ANAC na formulação de políticas públicas para fomentar inovação na aviação civil.", "Impacto relevante ao criar ambiente para desenvolvimento de novos produtos e serviços, modernização do ambiente de negócios e viabilização de modelos de negócio inovadores, embora sem menção específica a incentivos fiscais ou financiamento.", "Impacto moderado ao prever testes de tecnologias que podem melhorar a mobilidade urbana, porém sem referência explícita a aceitação pública, equidade ou inclusão social.", "Impacto direto e abrangente ao autorizar temporariamente projetos com novas tecnologias, processos ou aplicações diferenciadas de tecnologias existentes, criando base legal para testes de sistemas avançados de UAM.", "Impacto pontual, pois a resolução foca em inovação tecnológica sem mencionar critérios ambientais específicos, avaliação de pegada de carbono ou mitigação de impactos ecológicos."]
+  },
+  "estatisticas": {
+    "total_palavras": 1326,
+    "palavras_unicas": 679,
+    "num_sentencas": 103,
+    "top_50_palavras": {
+      "regulatório": 32,
+      "sandbox": 32,
+      "anac": 30,
+      "projeto": 26,
+      "admissão": 20,
+      "aviação": 16,
+      "civil": 15,
+      "específico": 13,
+      "resolução": 13,
+      "termo": 13,
+      "agência": 12,
+      "inovador": 12,
+      "nacional": 11,
+      "edital": 10,
+      "projetos": 10,
+      "será": 10,
+      "chamamento": 9,
+      "monitoramento": 9,
+      "uorg": 9,
+      "autorização": 8,
+      "caso": 8,
+      "colegiada": 8,
+      "diretoria": 8,
+      "httpswwwanacgovbrassuntoslegislacaolegislacaoresolucoesresolucao": 8,
+      "capítulo": 7,
+      "comissão": 7,
+      "deverá": 7,
+      "participante": 7,
+      "segurança": 7,
+      "condições": 6,
+      "critérios": 6,
+      "desenvolvimento": 6,
+      "informações": 6,
+      "participação": 6,
+      "portal": 6,
+      "propostas": 6,
+      "temporária": 6,
+      "atuação": 5,
+      "direta": 5,
+      "interessados": 5,
+      "legislação": 5,
+      "qualificação": 5,
+      "responsável": 5,
+      "riscos": 5,
+      "ambiente": 4,
+      "análise": 4,
+      "aprovado": 4,
+      "arcabouço": 4,
+      "buscar": 4,
+      "cassação": 4
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 0,
+      "urbana": 0,
+      "evtol": 0,
+      "aeronave": 0,
+      "vertiporto": 0,
+      "heliponto": 0,
+      " uam ": 0,
+      "tráfego aéreo": 0,
+      "decolagem": 0,
+      "pouso": 0,
+      " voo ": 1,
+      "aviação": 16
+    },
+    "top_20_bigramas": {
+      "sandbox regulatório": 26,
+      "aviação civil": 15,
+      "específico admissão": 13,
+      "termo específico": 13,
+      "agência nacional": 11,
+      "nacional aviação": 11,
+      "civil anac": 10,
+      "projeto inovador": 10,
+      "edital chamamento": 9,
+      "diretoria colegiada": 8,
+      "resolução agência": 8,
+      "httpswwwanacgovbrassuntoslegislacaolegislacaoresolucoesresolucao resolução": 7,
+      "autorização temporária": 6,
+      "chamamento projetos": 5,
+      "comissão sandbox": 5,
+      "qualificação direta": 5,
+      "arcabouço regulatório": 4,
+      "buscar portal": 4,
+      "revogação cassação": 4,
+      "uorg responsável": 4
+    },
+    "palavras_chave": [
+      {
+        "palavra": "regulatório",
+        "frequencia": 32,
+        "relevancia": 3.497
+      },
+      {
+        "palavra": "sandbox",
+        "frequencia": 32,
+        "relevancia": 2.098
+      },
+      {
+        "palavra": "anac",
+        "frequencia": 30,
+        "relevancia": 1.932
+      },
+      {
+        "palavra": "admissão",
+        "frequencia": 20,
+        "relevancia": 1.903
+      },
+      {
+        "palavra": "projeto",
+        "frequencia": 26,
+        "relevancia": 1.607
+      },
+      {
+        "palavra": "específico",
+        "frequencia": 13,
+        "relevancia": 1.072
+      },
+      {
+        "palavra": "resolução",
+        "frequencia": 13,
+        "relevancia": 1.072
+      },
+      {
+        "palavra": "inovador",
+        "frequencia": 12,
+        "relevancia": 0.962
+      },
+      {
+        "palavra": "nacional",
+        "frequencia": 11,
+        "relevancia": 0.854
+      },
+      {
+        "palavra": "aviação",
+        "frequencia": 16,
+        "relevancia": 0.85
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "sandbox regulatório",
+        "freq": 26,
+        "tscore": 4.95,
+        "palavra1_freq": 32,
+        "palavra2_freq": 32
+      },
+      {
+        "bigrama": "aviação civil",
+        "freq": 15,
+        "tscore": 3.83,
+        "palavra1_freq": 16,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "termo específico",
+        "freq": 13,
+        "tscore": 3.57,
+        "palavra1_freq": 13,
+        "palavra2_freq": 13
+      },
+      {
+        "bigrama": "específico admissão",
+        "freq": 13,
+        "tscore": 3.55,
+        "palavra1_freq": 13,
+        "palavra2_freq": 20
+      },
+      {
+        "bigrama": "agência nacional",
+        "freq": 11,
+        "tscore": 3.29,
+        "palavra1_freq": 12,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "nacional aviação",
+        "freq": 11,
+        "tscore": 3.28,
+        "palavra1_freq": 11,
+        "palavra2_freq": 16
+      },
+      {
+        "bigrama": "projeto inovador",
+        "freq": 10,
+        "tscore": 3.09,
+        "palavra1_freq": 26,
+        "palavra2_freq": 12
+      },
+      {
+        "bigrama": "civil anac",
+        "freq": 10,
+        "tscore": 3.05,
+        "palavra1_freq": 15,
+        "palavra2_freq": 30
+      },
+      {
+        "bigrama": "edital chamamento",
+        "freq": 9,
+        "tscore": 2.98,
+        "palavra1_freq": 10,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "diretoria colegiada",
+        "freq": 8,
+        "tscore": 2.81,
+        "palavra1_freq": 8,
+        "palavra2_freq": 8
+      },
+      {
+        "bigrama": "resolução agência",
+        "freq": 8,
+        "tscore": 2.79,
+        "palavra1_freq": 13,
+        "palavra2_freq": 12
+      },
+      {
+        "bigrama": "httpswwwanacgovbrassuntoslegislacaolegislacaoresolucoesresolucao resolução",
+        "freq": 7,
+        "tscore": 2.62,
+        "palavra1_freq": 8,
+        "palavra2_freq": 13
+      },
+      {
+        "bigrama": "autorização temporária",
+        "freq": 6,
+        "tscore": 2.43,
+        "palavra1_freq": 8,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "qualificação direta",
+        "freq": 5,
+        "tscore": 2.23,
+        "palavra1_freq": 5,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "chamamento projetos",
+        "freq": 5,
+        "tscore": 2.21,
+        "palavra1_freq": 9,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "comissão sandbox",
+        "freq": 5,
+        "tscore": 2.16,
+        "palavra1_freq": 7,
+        "palavra2_freq": 32
+      },
+      {
+        "bigrama": "revogação cassação",
+        "freq": 4,
+        "tscore": 1.99,
+        "palavra1_freq": 4,
+        "palavra2_freq": 4
+      },
+      {
+        "bigrama": "buscar portal",
+        "freq": 4,
+        "tscore": 1.99,
+        "palavra1_freq": 4,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "uorg responsável",
+        "freq": 4,
+        "tscore": 1.98,
+        "palavra1_freq": 9,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "arcabouço regulatório",
+        "freq": 4,
+        "tscore": 1.95,
+        "palavra1_freq": 4,
+        "palavra2_freq": 32
+      },
+      {
+        "bigrama": "autorizações temporárias",
+        "freq": 3,
+        "tscore": 1.73,
+        "palavra1_freq": 3,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "cassação autorizações",
+        "freq": 3,
+        "tscore": 1.73,
+        "palavra1_freq": 4,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "suspensão revogação",
+        "freq": 3,
+        "tscore": 1.73,
+        "palavra1_freq": 3,
+        "palavra2_freq": 4
+      },
+      {
+        "bigrama": "propostas recebidas",
+        "freq": 3,
+        "tscore": 1.72,
+        "palavra1_freq": 6,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "portal buscar",
+        "freq": 3,
+        "tscore": 1.72,
+        "palavra1_freq": 6,
+        "palavra2_freq": 4
+      },
+      {
+        "bigrama": "projetos inovadores",
+        "freq": 3,
+        "tscore": 1.72,
+        "palavra1_freq": 10,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "aprovado diretoria",
+        "freq": 3,
+        "tscore": 1.72,
+        "palavra1_freq": 4,
+        "palavra2_freq": 8
+      },
+      {
+        "bigrama": "responsável monitoramento",
+        "freq": 3,
+        "tscore": 1.71,
+        "palavra1_freq": 5,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "regulatório vigente",
+        "freq": 3,
+        "tscore": 1.69,
+        "palavra1_freq": 32,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "participação sandbox",
+        "freq": 3,
+        "tscore": 1.65,
+        "palavra1_freq": 6,
+        "palavra2_freq": 32
+      }
+    ]
+  }
+}

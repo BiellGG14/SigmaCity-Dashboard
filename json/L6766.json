@@ -1,0 +1,370 @@
+{
+  "nome": "Lei 6.766/1979 - Parcelamento do Solo Urbano",
+  "url": "https://www.planalto.gov.br/ccivil_03/leis/l6766.htm",
+  "disponivel": true,
+  "data_processamento": "2025-12-18 18:55:19",
+  "resumo": ["Regulamenta o parcelamento do solo urbano.", "Exige faixas não edificáveis em áreas ambientais e viárias."],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [4, 3, 2, 2, 4],
+    "justificativas": ["Estabelece o marco regulatório federal para parcelamento do solo urbano, delegando competências a estados e municípios, criando estrutura de governança territorial relevante para a localização de infraestruturas UAM em zonas costeiras.", "Define requisitos para alocação de áreas públicas e equipamentos urbanos que impactam custos de implantação de vertiportos, mas não aborda especificamente incentivos ou modelos de negócio para UAM.", "Estabelece normas gerais de parcelamento que beneficiam a coletividade, mas não trata especificamente de acessibilidade, inclusão ou impactos sociais diretos da UAM.", "Exige infraestrutura básica urbana (sistemas de circulação, energia), mas não aborda tecnologias avançadas ou infraestruturas específicas para UAM.", "Proíbe parcelamento em áreas com limitações ambientais e exige faixas não edificáveis em áreas de preservação, com impacto relevante na conformidade ambiental da implantação de infraestruturas UAM."]
+  },
+  "estatisticas": {
+    "total_palavras": 5716,
+    "palavras_unicas": 1756,
+    "num_sentencas": 631,
+    "top_50_palavras": {
+      "incluído": 101,
+      "loteamento": 93,
+      "registro": 88,
+      "loteador": 52,
+      "caso": 48,
+      "municipal": 42,
+      "federal": 40,
+      "distrito": 38,
+      "lotes": 38,
+      "será": 38,
+      "desmembramento": 34,
+      "poderá": 34,
+      "dada": 33,
+      "prefeitura": 33,
+      "redação": 33,
+      "imóveis": 32,
+      "imóvel": 32,
+      "áreas": 29,
+      "contrato": 29,
+      "cessão": 28,
+      "prazo": 28,
+      "aprovação": 27,
+      "desta": 27,
+      "parcelamento": 27,
+      "público": 27,
+      "projeto": 25,
+      "deste": 24,
+      "lote": 24,
+      "município": 24,
+      "qualquer": 23,
+      "dias": 22,
+      "vias": 22,
+      "anos": 21,
+      "área": 21,
+      "obras": 21,
+      "competente": 20,
+      "oficial": 20,
+      "forma": 19,
+      "patrimônio": 19,
+      "adquirente": 18,
+      "fins": 18,
+      "httpswwwplanaltogovbrccivilleislhtm": 18,
+      "urbanos": 18,
+      "cada": 17,
+      "domínio": 17,
+      "execução": 17,
+      "pagamento": 17,
+      "solo": 17,
+      "venda": 17,
+      "afetação": 16
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 0,
+      "urbana": 10,
+      "evtol": 0,
+      "aeronave": 0,
+      "vertiporto": 0,
+      "heliponto": 0,
+      " uam ": 0,
+      "tráfego aéreo": 0,
+      "decolagem": 0,
+      "pouso": 0,
+      " voo ": 0,
+      "aviação": 0
+    },
+    "top_20_bigramas": {
+      "distrito federal": 38,
+      "redação dada": 33,
+      "registro imóveis": 28,
+      "loteamento desmembramento": 27,
+      "federal caso": 26,
+      "municipal distrito": 23,
+      "prefeitura municipal": 23,
+      "oficial registro": 17,
+      "registro loteamento": 15,
+      "patrimônio afetação": 13,
+      "parcelamento solo": 11,
+      "águas pluviais": 9,
+      "compra venda": 9,
+      "equipamentos urbanos": 9,
+      "escoamento águas": 9,
+      "execução obras": 9,
+      "loteador período": 9,
+      "áreas destinadas": 8,
+      "dez anos": 8,
+      "período dez": 8
+    },
+    "palavras_chave": [
+      {
+        "palavra": "incluído",
+        "frequencia": 101,
+        "relevancia": 4.625
+      },
+      {
+        "palavra": "loteamento",
+        "frequencia": 93,
+        "relevancia": 4.183
+      },
+      {
+        "palavra": "registro",
+        "frequencia": 88,
+        "relevancia": 3.911
+      },
+      {
+        "palavra": "loteador",
+        "frequencia": 52,
+        "relevancia": 2.044
+      },
+      {
+        "palavra": "municipal",
+        "frequencia": 42,
+        "relevancia": 1.564
+      },
+      {
+        "palavra": "distrito",
+        "frequencia": 38,
+        "relevancia": 1.378
+      },
+      {
+        "palavra": "desmembramento",
+        "frequencia": 34,
+        "relevancia": 1.197
+      },
+      {
+        "palavra": "prefeitura",
+        "frequencia": 33,
+        "relevancia": 1.152
+      },
+      {
+        "palavra": "caso",
+        "frequencia": 48,
+        "relevancia": 1.11
+      },
+      {
+        "palavra": "contrato",
+        "frequencia": 29,
+        "relevancia": 0.977
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "distrito federal",
+        "freq": 38,
+        "tscore": 6.12,
+        "palavra1_freq": 38,
+        "palavra2_freq": 40
+      },
+      {
+        "bigrama": "redação dada",
+        "freq": 33,
+        "tscore": 5.71,
+        "palavra1_freq": 33,
+        "palavra2_freq": 33
+      },
+      {
+        "bigrama": "registro imóveis",
+        "freq": 28,
+        "tscore": 5.2,
+        "palavra1_freq": 88,
+        "palavra2_freq": 32
+      },
+      {
+        "bigrama": "loteamento desmembramento",
+        "freq": 27,
+        "tscore": 5.09,
+        "palavra1_freq": 93,
+        "palavra2_freq": 34
+      },
+      {
+        "bigrama": "federal caso",
+        "freq": 26,
+        "tscore": 5.03,
+        "palavra1_freq": 40,
+        "palavra2_freq": 48
+      },
+      {
+        "bigrama": "prefeitura municipal",
+        "freq": 23,
+        "tscore": 4.75,
+        "palavra1_freq": 33,
+        "palavra2_freq": 42
+      },
+      {
+        "bigrama": "municipal distrito",
+        "freq": 23,
+        "tscore": 4.74,
+        "palavra1_freq": 42,
+        "palavra2_freq": 38
+      },
+      {
+        "bigrama": "oficial registro",
+        "freq": 17,
+        "tscore": 4.05,
+        "palavra1_freq": 20,
+        "palavra2_freq": 88
+      },
+      {
+        "bigrama": "registro loteamento",
+        "freq": 15,
+        "tscore": 3.5,
+        "palavra1_freq": 88,
+        "palavra2_freq": 93
+      },
+      {
+        "bigrama": "patrimônio afetação",
+        "freq": 13,
+        "tscore": 3.59,
+        "palavra1_freq": 19,
+        "palavra2_freq": 16
+      },
+      {
+        "bigrama": "parcelamento solo",
+        "freq": 11,
+        "tscore": 3.29,
+        "palavra1_freq": 27,
+        "palavra2_freq": 17
+      },
+      {
+        "bigrama": "águas pluviais",
+        "freq": 9,
+        "tscore": 2.99,
+        "palavra1_freq": 14,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "escoamento águas",
+        "freq": 9,
+        "tscore": 2.99,
+        "palavra1_freq": 9,
+        "palavra2_freq": 14
+      },
+      {
+        "bigrama": "equipamentos urbanos",
+        "freq": 9,
+        "tscore": 2.99,
+        "palavra1_freq": 11,
+        "palavra2_freq": 18
+      },
+      {
+        "bigrama": "compra venda",
+        "freq": 9,
+        "tscore": 2.99,
+        "palavra1_freq": 12,
+        "palavra2_freq": 17
+      },
+      {
+        "bigrama": "execução obras",
+        "freq": 9,
+        "tscore": 2.98,
+        "palavra1_freq": 17,
+        "palavra2_freq": 21
+      },
+      {
+        "bigrama": "loteador período",
+        "freq": 9,
+        "tscore": 2.96,
+        "palavra1_freq": 52,
+        "palavra2_freq": 13
+      },
+      {
+        "bigrama": "reserva faixa",
+        "freq": 8,
+        "tscore": 2.82,
+        "palavra1_freq": 10,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "período dez",
+        "freq": 8,
+        "tscore": 2.82,
+        "palavra1_freq": 13,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "vias circulação",
+        "freq": 8,
+        "tscore": 2.81,
+        "palavra1_freq": 22,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "áreas destinadas",
+        "freq": 8,
+        "tscore": 2.81,
+        "palavra1_freq": 29,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "dez anos",
+        "freq": 8,
+        "tscore": 2.81,
+        "palavra1_freq": 15,
+        "palavra2_freq": 21
+      },
+      {
+        "bigrama": "área loteada",
+        "freq": 7,
+        "tscore": 2.63,
+        "palavra1_freq": 21,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "fins urbanos",
+        "freq": 7,
+        "tscore": 2.62,
+        "palavra1_freq": 18,
+        "palavra2_freq": 18
+      },
+      {
+        "bigrama": "aprovação projeto",
+        "freq": 7,
+        "tscore": 2.6,
+        "palavra1_freq": 27,
+        "palavra2_freq": 25
+      },
+      {
+        "bigrama": "anos redação",
+        "freq": 7,
+        "tscore": 2.6,
+        "palavra1_freq": 21,
+        "palavra2_freq": 33
+      },
+      {
+        "bigrama": "projeto loteamento",
+        "freq": 7,
+        "tscore": 2.49,
+        "palavra1_freq": 25,
+        "palavra2_freq": 93
+      },
+      {
+        "bigrama": "correção monetária",
+        "freq": 6,
+        "tscore": 2.45,
+        "palavra1_freq": 7,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "entidades delegadas",
+        "freq": 6,
+        "tscore": 2.45,
+        "palavra1_freq": 8,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "espaços livres",
+        "freq": 6,
+        "tscore": 2.45,
+        "palavra1_freq": 6,
+        "palavra2_freq": 8
+      }
+    ]
+  }
+}

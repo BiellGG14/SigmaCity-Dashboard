@@ -1,0 +1,370 @@
+{
+  "nome": "Lei 13.146/2015 - Estatuto da Pessoa com Deficiência",
+  "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm",
+  "disponivel": true,
+  "data_processamento": "2025-12-18 18:55:18",
+  "resumo": ["Estabelece o Estatuto da Pessoa com Deficiência", "Estabelece normas para transporte, mobilidade e acessibilidade"],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [4, 3, 5, 4, 2],
+    "justificativas": ["Estabelece política nacional de inclusão com força de lei, criando obrigações para todos os entes federativos e setores, incluindo transporte, com impacto relevante na governança da UAM.", "Implica custos adicionais para adequação de infraestruturas de transporte, impactando a viabilidade econômica, mas sem tratar especificamente de incentivos ou financiamento para UAM.", "Impacto direto e abrangente na inclusão social, estabelecendo requisitos obrigatórios de acessibilidade para transporte aéreo e infraestruturas, garantindo equidade no acesso à UAM.", "Exige concepção de produtos, ambientes e serviços com desenho universal, influenciando diretamente o desenvolvimento tecnológico de aeronaves e vertiportos para atender requisitos de acessibilidade.", "Foca principalmente em acessibilidade humana, com impacto ambiental indireto através da integração ao planejamento territorial, mas sem tratar especificamente de aspectos ecológicos."]
+  },
+  "estatisticas": {
+    "total_palavras": 8114,
+    "palavras_unicas": 2484,
+    "num_sentencas": 928,
+    "top_50_palavras": {
+      "deficiência": 253,
+      "pessoa": 226,
+      "público": 75,
+      "acessibilidade": 72,
+      "serviços": 59,
+      "devem": 54,
+      "pessoas": 47,
+      "acesso": 41,
+      "social": 41,
+      "deste": 40,
+      "recursos": 40,
+      "direito": 39,
+      "demais": 37,
+      "inclusive": 37,
+      "uso": 34,
+      "direitos": 33,
+      "participação": 33,
+      "saúde": 33,
+      "profissional": 32,
+      "comunicação": 31,
+      "qualquer": 31,
+      "tecnologia": 31,
+      "assistiva": 29,
+      "trabalho": 29,
+      "condições": 28,
+      "atendimento": 27,
+      "deve": 27,
+      "igualdade": 27,
+      "públicos": 26,
+      "acessíveis": 25,
+      "desta": 25,
+      "mobilidade": 24,
+      "barreiras": 23,
+      "informação": 23,
+      "normas": 23,
+      "seguintes": 23,
+      "vigorar": 23,
+      "coletivo": 22,
+      "forma": 22,
+      "habilitação": 22,
+      "passa": 22,
+      "anos": 21,
+      "transporte": 21,
+      "apoio": 20,
+      "capítulo": 20,
+      "educação": 20,
+      "públicas": 20,
+      "civil": 19,
+      "curatela": 19,
+      "disposto": 19
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 24,
+      "aérea": 0,
+      "urbana": 5,
+      "evtol": 0,
+      "aeronave": 0,
+      "vertiporto": 0,
+      "heliponto": 0,
+      " uam ": 0,
+      "tráfego aéreo": 0,
+      "decolagem": 0,
+      "pouso": 0,
+      " voo ": 0,
+      "aviação": 0
+    },
+    "top_20_bigramas": {
+      "pessoa deficiência": 194,
+      "tecnologia assistiva": 26,
+      "demais pessoas": 23,
+      "passa vigorar": 22,
+      "mobilidade reduzida": 15,
+      "recursos tecnologia": 14,
+      "ministério público": 13,
+      "oportunidades demais": 13,
+      "deficiência mobilidade": 12,
+      "deficiência tem": 12,
+      "igualdade condições": 12,
+      "igualdade oportunidades": 12,
+      "público deve": 11,
+      "seguintes alterações": 11,
+      "tomada decisão": 11,
+      "vigorar seguintes": 11,
+      "decisão apoiada": 10,
+      "previdência social": 10,
+      "regras acessibilidade": 10,
+      "transporte coletivo": 10
+    },
+    "palavras_chave": [
+      {
+        "palavra": "deficiência",
+        "frequencia": 253,
+        "relevancia": 5.537
+      },
+      {
+        "palavra": "pessoa",
+        "frequencia": 226,
+        "relevancia": 2.908
+      },
+      {
+        "palavra": "acessibilidade",
+        "frequencia": 72,
+        "relevancia": 1.221
+      },
+      {
+        "palavra": "serviços",
+        "frequencia": 59,
+        "relevancia": 0.955
+      },
+      {
+        "palavra": "público",
+        "frequencia": 75,
+        "relevancia": 0.77
+      },
+      {
+        "palavra": "recursos",
+        "frequencia": 40,
+        "relevancia": 0.587
+      },
+      {
+        "palavra": "inclusive",
+        "frequencia": 37,
+        "relevancia": 0.532
+      },
+      {
+        "palavra": "devem",
+        "frequencia": 54,
+        "relevancia": 0.513
+      },
+      {
+        "palavra": "direitos",
+        "frequencia": 33,
+        "relevancia": 0.46
+      },
+      {
+        "palavra": "participação",
+        "frequencia": 33,
+        "relevancia": 0.46
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "pessoa deficiência",
+        "freq": 194,
+        "tscore": 13.42,
+        "palavra1_freq": 226,
+        "palavra2_freq": 253
+      },
+      {
+        "bigrama": "tecnologia assistiva",
+        "freq": 26,
+        "tscore": 5.08,
+        "palavra1_freq": 31,
+        "palavra2_freq": 29
+      },
+      {
+        "bigrama": "demais pessoas",
+        "freq": 23,
+        "tscore": 4.75,
+        "palavra1_freq": 37,
+        "palavra2_freq": 47
+      },
+      {
+        "bigrama": "passa vigorar",
+        "freq": 22,
+        "tscore": 4.68,
+        "palavra1_freq": 22,
+        "palavra2_freq": 23
+      },
+      {
+        "bigrama": "mobilidade reduzida",
+        "freq": 15,
+        "tscore": 3.86,
+        "palavra1_freq": 24,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "recursos tecnologia",
+        "freq": 14,
+        "tscore": 3.7,
+        "palavra1_freq": 40,
+        "palavra2_freq": 31
+      },
+      {
+        "bigrama": "oportunidades demais",
+        "freq": 13,
+        "tscore": 3.59,
+        "palavra1_freq": 15,
+        "palavra2_freq": 37
+      },
+      {
+        "bigrama": "ministério público",
+        "freq": 13,
+        "tscore": 3.57,
+        "palavra1_freq": 15,
+        "palavra2_freq": 75
+      },
+      {
+        "bigrama": "igualdade oportunidades",
+        "freq": 12,
+        "tscore": 3.45,
+        "palavra1_freq": 27,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "igualdade condições",
+        "freq": 12,
+        "tscore": 3.44,
+        "palavra1_freq": 27,
+        "palavra2_freq": 28
+      },
+      {
+        "bigrama": "deficiência tem",
+        "freq": 12,
+        "tscore": 3.32,
+        "palavra1_freq": 253,
+        "palavra2_freq": 16
+      },
+      {
+        "bigrama": "deficiência mobilidade",
+        "freq": 12,
+        "tscore": 3.25,
+        "palavra1_freq": 253,
+        "palavra2_freq": 24
+      },
+      {
+        "bigrama": "tomada decisão",
+        "freq": 11,
+        "tscore": 3.31,
+        "palavra1_freq": 12,
+        "palavra2_freq": 13
+      },
+      {
+        "bigrama": "seguintes alterações",
+        "freq": 11,
+        "tscore": 3.31,
+        "palavra1_freq": 23,
+        "palavra2_freq": 13
+      },
+      {
+        "bigrama": "vigorar seguintes",
+        "freq": 11,
+        "tscore": 3.3,
+        "palavra1_freq": 23,
+        "palavra2_freq": 23
+      },
+      {
+        "bigrama": "público deve",
+        "freq": 11,
+        "tscore": 3.24,
+        "palavra1_freq": 75,
+        "palavra2_freq": 27
+      },
+      {
+        "bigrama": "decisão apoiada",
+        "freq": 10,
+        "tscore": 3.15,
+        "palavra1_freq": 13,
+        "palavra2_freq": 18
+      },
+      {
+        "bigrama": "previdência social",
+        "freq": 10,
+        "tscore": 3.15,
+        "palavra1_freq": 10,
+        "palavra2_freq": 41
+      },
+      {
+        "bigrama": "transporte coletivo",
+        "freq": 10,
+        "tscore": 3.14,
+        "palavra1_freq": 21,
+        "palavra2_freq": 22
+      },
+      {
+        "bigrama": "regras acessibilidade",
+        "freq": 10,
+        "tscore": 3.13,
+        "palavra1_freq": 10,
+        "palavra2_freq": 72
+      },
+      {
+        "bigrama": "uso coletivo",
+        "freq": 10,
+        "tscore": 3.13,
+        "palavra1_freq": 34,
+        "palavra2_freq": 22
+      },
+      {
+        "bigrama": "trata deste",
+        "freq": 10,
+        "tscore": 3.13,
+        "palavra1_freq": 19,
+        "palavra2_freq": 40
+      },
+      {
+        "bigrama": "desenho universal",
+        "freq": 9,
+        "tscore": 3,
+        "palavra1_freq": 10,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "anos multa",
+        "freq": 9,
+        "tscore": 2.99,
+        "palavra1_freq": 21,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "janeiro código",
+        "freq": 9,
+        "tscore": 2.99,
+        "palavra1_freq": 12,
+        "palavra2_freq": 16
+      },
+      {
+        "bigrama": "código civil",
+        "freq": 9,
+        "tscore": 2.99,
+        "palavra1_freq": 16,
+        "palavra2_freq": 19
+      },
+      {
+        "bigrama": "habilitação reabilitação",
+        "freq": 9,
+        "tscore": 2.98,
+        "palavra1_freq": 22,
+        "palavra2_freq": 19
+      },
+      {
+        "bigrama": "públicos privados",
+        "freq": 9,
+        "tscore": 2.98,
+        "palavra1_freq": 26,
+        "palavra2_freq": 17
+      },
+      {
+        "bigrama": "informação comunicação",
+        "freq": 9,
+        "tscore": 2.97,
+        "palavra1_freq": 23,
+        "palavra2_freq": 31
+      },
+      {
+        "bigrama": "capítulo direito",
+        "freq": 9,
+        "tscore": 2.97,
+        "palavra1_freq": 20,
+        "palavra2_freq": 39
+      }
+    ]
+  }
+}

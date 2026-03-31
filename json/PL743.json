@@ -1,0 +1,370 @@
+{
+  "nome": "Projeto de Lei 743/2025",
+  "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/167437",
+  "disponivel": true,
+  "data_processamento": "2025-12-18 18:55:24",
+  "resumo": ["Altera quatro marcos legais: Código Brasileiro de Aeronáutica, Diretrizes da Política Urbana, Política Nacional de Mobilidade Urbana e lei da CIDE", "Objetivo: estabelecer base legal para regulamentação de aeronaves eVTOL na mobilidade urbana", "Propõe ajustes no planejamento territorial para infraestrutura de vertiportos", "Busca integrar eVTOLs como componente do sistema de transporte urbano", "Abre possibilidade de uso de recursos da CIDE para financiamento"],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [5, 4, 3, 4, 4],
+    "justificativas": ["Impacto direto e abrangente ao propor marco legal específico para UAM, alterando quatro leis federais e criando base para políticas públicas setoriais, demonstrando forte envolvimento estatal e coordenação federativa para fomento do ecossistema.", "Impacto relevante ao prever incentivos fiscais através da alteração da lei da CIDE, criando condições para financiamento e investimentos no setor, além de fomentar inovação tecnológica e econômica com potencial para geração de empregos qualificados.", "Impacto moderado ao focar na integração multimodal e redução de congestionamentos, mas sem menção específica a equidade, acessibilidade ou mecanismos de inclusão social que evitem que a UAM se torne serviço de elite.", "Impacto relevante ao estabelecer base legal para regulamentação de eVTOLs e infraestrutura de vertiportos, criando enquadramento para desenvolvimento de sistemas CNS/ATM e integração com planejamento territorial urbano tridimensional.", "Impacto relevante ao mencionar explicitamente redução de emissões de poluentes e posicionar eVTOLs como componente de mobilidade urbana sustentável, embora sem detalhamento sobre gestão de poluição sonora ou conformidade com marco ambiental."]
+  },
+  "estatisticas": {
+    "total_palavras": 2973,
+    "palavras_unicas": 1120,
+    "num_sentencas": 347,
+    "top_50_palavras": {
+      "mobilidade": 56,
+      "aérea": 41,
+      "avançada": 33,
+      "amin": 31,
+      "esperidião": 31,
+      "federal": 31,
+      "senador": 31,
+      "brasília": 30,
+      "florianópolis": 30,
+      "gabinete": 30,
+      "senado": 30,
+      "telefone": 30,
+      "transporte": 25,
+      "urbana": 25,
+      "implementação": 22,
+      "operação": 22,
+      "aeronaves": 20,
+      "autoridade": 18,
+      "sistema": 16,
+      "soluções": 16,
+      "acesse": 15,
+      "aeronáutica": 15,
+      "ala": 15,
+      "álvaro": 15,
+      "andar": 15,
+      "assinado": 15,
+      "assinaturas": 15,
+      "carvalho": 15,
+      "centr": 15,
+      "coelho": 15,
+      "eletronicamente": 15,
+      "email": 15,
+      "forma": 15,
+      "httpslegissenadogovbrautenticadoclegis": 15,
+      "mapil": 15,
+      "nilo": 15,
+      "rua": 15,
+      "sen": 15,
+      "senesperidiaoaminsenadolegbr": 15,
+      "serviços": 15,
+      "verificar": 15,
+      "aviação": 14,
+      "civil": 14,
+      "conceito": 14,
+      "desenvolvimento": 14,
+      "urbano": 13,
+      "desse": 12,
+      "diretrizes": 12,
+      "impacto": 12,
+      "regulamentação": 12
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 56,
+      "aérea": 41,
+      "urbana": 25,
+      "evtol": 11,
+      "aeronave": 30,
+      "vertiporto": 8,
+      "heliponto": 0,
+      " uam ": 0,
+      "tráfego aéreo": 2,
+      "decolagem": 5,
+      "pouso": 5,
+      " voo ": 3,
+      "aviação": 14
+    },
+    "top_20_bigramas": {
+      "aérea avançada": 33,
+      "mobilidade aérea": 33,
+      "esperidião amin": 31,
+      "brasília florianópolis": 30,
+      "senado federal": 30,
+      "mobilidade urbana": 20,
+      "senador esperidião": 16,
+      "acesse httpslegissenadogovbrautenticadoclegis": 15,
+      "ala senador": 15,
+      "álvaro carvalho": 15,
+      "amin verificar": 15,
+      "andar mapil": 15,
+      "assinado eletronicamente": 15,
+      "assinaturas acesse": 15,
+      "carvalho andar": 15,
+      "centr brasília": 15,
+      "coelho gabinete": 15,
+      "eletronicamente sen": 15,
+      "email senesperidiaoaminsenadolegbr": 15,
+      "federal ala": 15
+    },
+    "palavras_chave": [
+      {
+        "palavra": "mobilidade",
+        "frequencia": 56,
+        "relevancia": 4.043
+      },
+      {
+        "palavra": "avançada",
+        "frequencia": 33,
+        "relevancia": 2.078
+      },
+      {
+        "palavra": "esperidião",
+        "frequencia": 31,
+        "relevancia": 1.919
+      },
+      {
+        "palavra": "brasília",
+        "frequencia": 30,
+        "relevancia": 1.84
+      },
+      {
+        "palavra": "florianópolis",
+        "frequencia": 30,
+        "relevancia": 1.84
+      },
+      {
+        "palavra": "gabinete",
+        "frequencia": 30,
+        "relevancia": 1.84
+      },
+      {
+        "palavra": "telefone",
+        "frequencia": 30,
+        "relevancia": 1.84
+      },
+      {
+        "palavra": "aérea",
+        "frequencia": 41,
+        "relevancia": 1.642
+      },
+      {
+        "palavra": "transporte",
+        "frequencia": 25,
+        "relevancia": 1.455
+      },
+      {
+        "palavra": "implementação",
+        "frequencia": 22,
+        "relevancia": 1.232
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "aérea avançada",
+        "freq": 33,
+        "tscore": 5.67,
+        "palavra1_freq": 41,
+        "palavra2_freq": 33
+      },
+      {
+        "bigrama": "mobilidade aérea",
+        "freq": 33,
+        "tscore": 5.61,
+        "palavra1_freq": 56,
+        "palavra2_freq": 41
+      },
+      {
+        "bigrama": "esperidião amin",
+        "freq": 31,
+        "tscore": 5.51,
+        "palavra1_freq": 31,
+        "palavra2_freq": 31
+      },
+      {
+        "bigrama": "brasília florianópolis",
+        "freq": 30,
+        "tscore": 5.42,
+        "palavra1_freq": 30,
+        "palavra2_freq": 30
+      },
+      {
+        "bigrama": "senado federal",
+        "freq": 30,
+        "tscore": 5.42,
+        "palavra1_freq": 30,
+        "palavra2_freq": 31
+      },
+      {
+        "bigrama": "mobilidade urbana",
+        "freq": 20,
+        "tscore": 4.37,
+        "palavra1_freq": 56,
+        "palavra2_freq": 25
+      },
+      {
+        "bigrama": "senador esperidião",
+        "freq": 16,
+        "tscore": 3.92,
+        "palavra1_freq": 31,
+        "palavra2_freq": 31
+      },
+      {
+        "bigrama": "acesse httpslegissenadogovbrautenticadoclegis",
+        "freq": 15,
+        "tscore": 3.85,
+        "palavra1_freq": 15,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "álvaro carvalho",
+        "freq": 15,
+        "tscore": 3.85,
+        "palavra1_freq": 15,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "andar mapil",
+        "freq": 15,
+        "tscore": 3.85,
+        "palavra1_freq": 15,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "assinado eletronicamente",
+        "freq": 15,
+        "tscore": 3.85,
+        "palavra1_freq": 15,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "assinaturas acesse",
+        "freq": 15,
+        "tscore": 3.85,
+        "palavra1_freq": 15,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "carvalho andar",
+        "freq": 15,
+        "tscore": 3.85,
+        "palavra1_freq": 15,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "eletronicamente sen",
+        "freq": 15,
+        "tscore": 3.85,
+        "palavra1_freq": 15,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "email senesperidiaoaminsenadolegbr",
+        "freq": 15,
+        "tscore": 3.85,
+        "palavra1_freq": 15,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "mapil centr",
+        "freq": 15,
+        "tscore": 3.85,
+        "palavra1_freq": 15,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "nilo coelho",
+        "freq": 15,
+        "tscore": 3.85,
+        "palavra1_freq": 15,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "rua álvaro",
+        "freq": 15,
+        "tscore": 3.85,
+        "palavra1_freq": 15,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "senesperidiaoaminsenadolegbr assinado",
+        "freq": 15,
+        "tscore": 3.85,
+        "palavra1_freq": 15,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "verificar assinaturas",
+        "freq": 15,
+        "tscore": 3.85,
+        "palavra1_freq": 15,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "centr brasília",
+        "freq": 15,
+        "tscore": 3.83,
+        "palavra1_freq": 15,
+        "palavra2_freq": 30
+      },
+      {
+        "bigrama": "coelho gabinete",
+        "freq": 15,
+        "tscore": 3.83,
+        "palavra1_freq": 15,
+        "palavra2_freq": 30
+      },
+      {
+        "bigrama": "gabinete rua",
+        "freq": 15,
+        "tscore": 3.83,
+        "palavra1_freq": 30,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "telefone email",
+        "freq": 15,
+        "tscore": 3.83,
+        "palavra1_freq": 30,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "ala senador",
+        "freq": 15,
+        "tscore": 3.83,
+        "palavra1_freq": 15,
+        "palavra2_freq": 31
+      },
+      {
+        "bigrama": "amin verificar",
+        "freq": 15,
+        "tscore": 3.83,
+        "palavra1_freq": 31,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "federal ala",
+        "freq": 15,
+        "tscore": 3.83,
+        "palavra1_freq": 31,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "sen esperidião",
+        "freq": 15,
+        "tscore": 3.83,
+        "palavra1_freq": 15,
+        "palavra2_freq": 31
+      },
+      {
+        "bigrama": "senador nilo",
+        "freq": 15,
+        "tscore": 3.83,
+        "palavra1_freq": 31,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "florianópolis senado",
+        "freq": 15,
+        "tscore": 3.79,
+        "palavra1_freq": 30,
+        "palavra2_freq": 30
+      }
+    ]
+  }
+}

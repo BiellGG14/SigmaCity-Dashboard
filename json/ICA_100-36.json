@@ -1,0 +1,370 @@
+{
+  "nome": "ICA 100-36 - Processo de Solicitação para o Uso Especial do Espaço Aéreo",
+  "url": "https://publicacoes.decea.mil.br/publicacao/ICA-100-36",
+  "disponivel": true,
+  "data_processamento": "2025-12-18 18:55:09",
+  "resumo": ["Estabelece definições de EAC e FRZ.", "Determina publicização através de produtos AIS (AIP para permanentes, NOTAM para temporários)"],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [5, 4, 3, 4, 2],
+    "justificativas": ["Estabelece o sistema nacional de controle do espaço aéreo através do DECEA, criando estrutura de governança estatal completa com poder para delimitar áreas restritas (EAC/FRZ) que impactam diretamente e abrangentemente a UAM.", "Impacto relevante ao definir restrições espaciais que condicionam o desenvolvimento de corredores aéreos e localização de vertiportos, estabelecendo limitações econômicas significativas para a viabilidade operacional da UAM.", "Estabelece mecanismos de proteção de áreas sensíveis através de FRZ, com impacto moderado na segurança e aceitação social, mas sem tratar especificamente de inclusão, equidade ou impactos comunitários da UAM.", "Define parâmetros técnicos precisos para delimitação tridimensional do espaço aéreo (coordenadas WGS-84, limites verticais) e sistemas de informação aeronáutica (AIS), com impacto relevante na infraestrutura tecnológica da UAM.", "Foca principalmente em segurança operacional e controle do espaço aéreo, com impacto ambiental indireto através do ordenamento territorial, mas sem tratar especificamente de aspectos ecológicos ou licenciamento ambiental."]
+  },
+  "estatisticas": {
+    "total_palavras": 2746,
+    "palavras_unicas": 924,
+    "num_sentencas": 301,
+    "top_50_palavras": {
+      "aéreo": 98,
+      "espaço": 89,
+      "área": 65,
+      "eac": 57,
+      "frz": 41,
+      "processo": 32,
+      "compete": 27,
+      "decea": 27,
+      "uso": 25,
+      "administrador": 22,
+      "aeronaves": 22,
+      "quanto": 21,
+      "voo": 21,
+      "atividade": 20,
+      "caso": 20,
+      "especial": 20,
+      "seção": 20,
+      "atividades": 19,
+      "ica": 17,
+      "capítulo": 16,
+      "deverá": 16,
+      "solicitação": 16,
+      "solicitante": 16,
+      "volume": 16,
+      "organização": 14,
+      "permanente": 14,
+      "publicação": 13,
+      "regional": 13,
+      "restrição": 13,
+      "aérea": 12,
+      "ativação": 12,
+      "competências": 12,
+      "gerenciamento": 12,
+      "natureza": 12,
+      "reserva": 12,
+      "instrução": 11,
+      "nível": 11,
+      "ais": 10,
+      "atribuídas": 10,
+      "dias": 10,
+      "disposições": 10,
+      "operacional": 10,
+      "utilização": 10,
+      "acomodação": 9,
+      "doatm": 9,
+      "identificação": 9,
+      "meio": 9,
+      "operacionais": 9,
+      "participantes": 9,
+      "segurança": 9
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 17,
+      "urbana": 0,
+      "evtol": 0,
+      "aeronave": 26,
+      "vertiporto": 0,
+      "heliponto": 2,
+      " uam ": 0,
+      "tráfego aéreo": 8,
+      "decolagem": 0,
+      "pouso": 0,
+      " voo ": 14,
+      "aviação": 0
+    },
+    "top_20_bigramas": {
+      "espaço aéreo": 89,
+      "eac frz": 26,
+      "especial espaço": 20,
+      "uso especial": 20,
+      "administrador área": 19,
+      "seção competências": 12,
+      "organização regional": 11,
+      "solicitação uso": 11,
+      "competências atribuídas": 10,
+      "aeronaves participantes": 9,
+      "processo solicitação": 9,
+      "reserva espaço": 8,
+      "tráfego aéreo": 8,
+      "volume espaço": 8,
+      "área solicitada": 7,
+      "dias corridos": 7,
+      "restrição voo": 7,
+      "zona restrição": 7,
+      "área perigosa": 6,
+      "compete administrador": 6
+    },
+    "palavras_chave": [
+      {
+        "palavra": "aéreo",
+        "frequencia": 98,
+        "relevancia": 2.757
+      },
+      {
+        "palavra": "espaço",
+        "frequencia": 89,
+        "relevancia": 2.452
+      },
+      {
+        "palavra": "área",
+        "frequencia": 65,
+        "relevancia": 1.667
+      },
+      {
+        "palavra": "eac",
+        "frequencia": 57,
+        "relevancia": 1.417
+      },
+      {
+        "palavra": "processo",
+        "frequencia": 32,
+        "relevancia": 1.142
+      },
+      {
+        "palavra": "frz",
+        "frequencia": 41,
+        "relevancia": 0.938
+      },
+      {
+        "palavra": "administrador",
+        "frequencia": 22,
+        "relevancia": 0.704
+      },
+      {
+        "palavra": "aeronaves",
+        "frequencia": 22,
+        "relevancia": 0.704
+      },
+      {
+        "palavra": "atividade",
+        "frequencia": 20,
+        "relevancia": 0.621
+      },
+      {
+        "palavra": "especial",
+        "frequencia": 20,
+        "relevancia": 0.621
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "espaço aéreo",
+        "freq": 89,
+        "tscore": 9.1,
+        "palavra1_freq": 89,
+        "palavra2_freq": 98
+      },
+      {
+        "bigrama": "eac frz",
+        "freq": 26,
+        "tscore": 4.93,
+        "palavra1_freq": 57,
+        "palavra2_freq": 41
+      },
+      {
+        "bigrama": "uso especial",
+        "freq": 20,
+        "tscore": 4.43,
+        "palavra1_freq": 25,
+        "palavra2_freq": 20
+      },
+      {
+        "bigrama": "especial espaço",
+        "freq": 20,
+        "tscore": 4.33,
+        "palavra1_freq": 20,
+        "palavra2_freq": 89
+      },
+      {
+        "bigrama": "administrador área",
+        "freq": 19,
+        "tscore": 4.24,
+        "palavra1_freq": 22,
+        "palavra2_freq": 65
+      },
+      {
+        "bigrama": "seção competências",
+        "freq": 12,
+        "tscore": 3.44,
+        "palavra1_freq": 20,
+        "palavra2_freq": 12
+      },
+      {
+        "bigrama": "organização regional",
+        "freq": 11,
+        "tscore": 3.3,
+        "palavra1_freq": 14,
+        "palavra2_freq": 13
+      },
+      {
+        "bigrama": "solicitação uso",
+        "freq": 11,
+        "tscore": 3.27,
+        "palavra1_freq": 16,
+        "palavra2_freq": 25
+      },
+      {
+        "bigrama": "competências atribuídas",
+        "freq": 10,
+        "tscore": 3.15,
+        "palavra1_freq": 12,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "aeronaves participantes",
+        "freq": 9,
+        "tscore": 2.98,
+        "palavra1_freq": 22,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "processo solicitação",
+        "freq": 9,
+        "tscore": 2.94,
+        "palavra1_freq": 32,
+        "palavra2_freq": 16
+      },
+      {
+        "bigrama": "tráfego aéreo",
+        "freq": 8,
+        "tscore": 2.71,
+        "palavra1_freq": 9,
+        "palavra2_freq": 98
+      },
+      {
+        "bigrama": "reserva espaço",
+        "freq": 8,
+        "tscore": 2.69,
+        "palavra1_freq": 12,
+        "palavra2_freq": 89
+      },
+      {
+        "bigrama": "volume espaço",
+        "freq": 8,
+        "tscore": 2.65,
+        "palavra1_freq": 16,
+        "palavra2_freq": 89
+      },
+      {
+        "bigrama": "dias corridos",
+        "freq": 7,
+        "tscore": 2.64,
+        "palavra1_freq": 10,
+        "palavra2_freq": 7
+      },
+      {
+        "bigrama": "zona restrição",
+        "freq": 7,
+        "tscore": 2.63,
+        "palavra1_freq": 7,
+        "palavra2_freq": 13
+      },
+      {
+        "bigrama": "restrição voo",
+        "freq": 7,
+        "tscore": 2.61,
+        "palavra1_freq": 13,
+        "palavra2_freq": 21
+      },
+      {
+        "bigrama": "área solicitada",
+        "freq": 7,
+        "tscore": 2.57,
+        "palavra1_freq": 65,
+        "palavra2_freq": 8
+      },
+      {
+        "bigrama": "navegação aérea",
+        "freq": 6,
+        "tscore": 2.44,
+        "palavra1_freq": 6,
+        "palavra2_freq": 12
+      },
+      {
+        "bigrama": "subseção quanto",
+        "freq": 6,
+        "tscore": 2.42,
+        "palavra1_freq": 8,
+        "palavra2_freq": 21
+      },
+      {
+        "bigrama": "compete doatm",
+        "freq": 6,
+        "tscore": 2.41,
+        "palavra1_freq": 27,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "quanto natureza",
+        "freq": 6,
+        "tscore": 2.41,
+        "palavra1_freq": 21,
+        "palavra2_freq": 12
+      },
+      {
+        "bigrama": "compete solicitante",
+        "freq": 6,
+        "tscore": 2.39,
+        "palavra1_freq": 27,
+        "palavra2_freq": 16
+      },
+      {
+        "bigrama": "área perigosa",
+        "freq": 6,
+        "tscore": 2.37,
+        "palavra1_freq": 65,
+        "palavra2_freq": 8
+      },
+      {
+        "bigrama": "frz permanente",
+        "freq": 6,
+        "tscore": 2.36,
+        "palavra1_freq": 41,
+        "palavra2_freq": 14
+      },
+      {
+        "bigrama": "compete administrador",
+        "freq": 6,
+        "tscore": 2.36,
+        "palavra1_freq": 27,
+        "palavra2_freq": 22
+      },
+      {
+        "bigrama": "organizações regionais",
+        "freq": 5,
+        "tscore": 2.23,
+        "palavra1_freq": 6,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "dimensões definidas",
+        "freq": 5,
+        "tscore": 2.23,
+        "palavra1_freq": 6,
+        "palavra2_freq": 7
+      },
+      {
+        "bigrama": "produtos ais",
+        "freq": 5,
+        "tscore": 2.23,
+        "palavra1_freq": 6,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "quanto duração",
+        "freq": 5,
+        "tscore": 2.22,
+        "palavra1_freq": 21,
+        "palavra2_freq": 6
+      }
+    ]
+  }
+}

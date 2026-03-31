@@ -1,0 +1,370 @@
+{
+  "nome": "Lei 12.587/2012 - Política Nacional de Mobilidade Urbana",
+  "url": "http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12587.htm",
+  "disponivel": true,
+  "data_processamento": "2025-12-18 18:55:15",
+  "resumo": ["Objeto da Lei: Instituir as diretrizes da Política Nacional de Mobilidade Urbana, integrando-a à política de desenvolvimento urbano para garantir o deslocamento de pessoas e cargas nos municípios.", "Sistema Nacional de Mobilidade Urbana: Conjunto organizado e coordenado dos modos de transporte (motorizados e não motorizados), serviços e infraestruturas que garantem os deslocamentos no território municipal.", "Princípios Orientadores: Acessibilidade universal, desenvolvimento sustentável, equidade no acesso ao transporte público, eficiência, segurança nos deslocamentos e justa distribuição de benefícios e ônus.", "Prioridade Modal: Estabelece a prioridade dos modos de transporte não motorizados sobre os motorizados e dos serviços de transporte público coletivo sobre o transporte individual motorizado.", "Plano de Mobilidade Urbana: Instrumento obrigatório para municípios com mais de 20 mil habitantes, que deve integrar os diferentes modos de transporte, infraestruturas, acessibilidade e mecanismos de financiamento.", "Integração com Novas Tecnologias: A lei cria o arcabouço para incorporação de modos inovadores, como a UAM, desde que alinhados aos princípios de acessibilidade, sustentabilidade e eficiência do sistema."],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [5, 4, 5, 3, 4],
+    "justificativas": ["Estabelece a política nacional de mobilidade urbana com diretrizes abrangentes para todos os municípios, criando estrutura de governança obrigatória e integração com políticas setoriais, impactando diretamente a implementação da UAM.", "Define mecanismos de financiamento para sistemas de mobilidade e prioriza eficiência econômica, impactando a viabilidade financeira da UAM através da integração multimodal e planejamento de investimentos.", "Estabelece princípios de acessibilidade universal, equidade no acesso, inclusão social e segurança nos deslocamentos, com impacto direto e abrangente na integração social da UAM.", "Incentiva o desenvolvimento tecnológico e uso de energias renováveis, mas não especifica tecnologias avançadas para UAM, tendo impacto moderado no fator tecnológico.", "Prioriza desenvolvimento sustentável, mitigação de custos ambientais e energias renováveis, com impacto relevante na conformidade ambiental da UAM e integração ao planejamento urbano."]
+  },
+  "estatisticas": {
+    "total_palavras": 3009,
+    "palavras_unicas": 987,
+    "num_sentencas": 261,
+    "top_50_palavras": {
+      "transporte": 88,
+      "mobilidade": 78,
+      "público": 77,
+      "urbana": 73,
+      "serviços": 54,
+      "coletivo": 41,
+      "municípios": 35,
+      "incluído": 33,
+      "plano": 33,
+      "serviço": 29,
+      "nacional": 28,
+      "política": 27,
+      "urbano": 25,
+      "desta": 24,
+      "dada": 23,
+      "redação": 23,
+      "passageiros": 22,
+      "deverá": 19,
+      "prazo": 18,
+      "modos": 17,
+      "prestação": 17,
+      "desenvolvimento": 16,
+      "diretrizes": 16,
+      "federal": 15,
+      "privado": 13,
+      "tarifa": 13,
+      "cidades": 12,
+      "gestão": 12,
+      "individual": 12,
+      "municipal": 12,
+      "pessoas": 12,
+      "seguintes": 12,
+      "sistema": 12,
+      "vigência": 12,
+      "anos": 11,
+      "caráter": 11,
+      "vii": 11,
+      "data": 10,
+      "elaborado": 10,
+      "máximo": 10,
+      "planejamento": 10,
+      "qualidade": 10,
+      "termos": 10,
+      "usuário": 10,
+      "vigor": 10,
+      "acesso": 9,
+      "cargas": 9,
+      "controle": 9,
+      "distrito": 9,
+      "estados": 9
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 78,
+      "aérea": 0,
+      "urbana": 78,
+      "evtol": 0,
+      "aeronave": 0,
+      "vertiporto": 0,
+      "heliponto": 0,
+      " uam ": 0,
+      "tráfego aéreo": 0,
+      "decolagem": 0,
+      "pouso": 0,
+      " voo ": 0,
+      "aviação": 0
+    },
+    "top_20_bigramas": {
+      "mobilidade urbana": 69,
+      "transporte público": 44,
+      "público coletivo": 36,
+      "serviços transporte": 25,
+      "nacional mobilidade": 24,
+      "plano mobilidade": 24,
+      "redação dada": 23,
+      "política nacional": 16,
+      "serviço transporte": 14,
+      "prazo máximo": 10,
+      "distrito federal": 9,
+      "urbana deverá": 9,
+      "caráter urbano": 8,
+      "entrada vigor": 8,
+      "modos transporte": 8,
+      "municípios tenham": 8,
+      "prestação serviço": 8,
+      "transporte urbano": 8,
+      "elaborado plano": 7,
+      "individual passageiros": 7
+    },
+    "palavras_chave": [
+      {
+        "palavra": "transporte",
+        "frequencia": 88,
+        "relevancia": 4.489
+      },
+      {
+        "palavra": "mobilidade",
+        "frequencia": 78,
+        "relevancia": 3.873
+      },
+      {
+        "palavra": "serviços",
+        "frequencia": 54,
+        "relevancia": 2.459
+      },
+      {
+        "palavra": "público",
+        "frequencia": 77,
+        "relevancia": 2.287
+      },
+      {
+        "palavra": "urbana",
+        "frequencia": 73,
+        "relevancia": 2.142
+      },
+      {
+        "palavra": "coletivo",
+        "frequencia": 41,
+        "relevancia": 1.741
+      },
+      {
+        "palavra": "municípios",
+        "frequencia": 35,
+        "relevancia": 1.425
+      },
+      {
+        "palavra": "incluído",
+        "frequencia": 33,
+        "relevancia": 1.322
+      },
+      {
+        "palavra": "nacional",
+        "frequencia": 28,
+        "relevancia": 1.071
+      },
+      {
+        "palavra": "política",
+        "frequencia": 27,
+        "relevancia": 1.022
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "mobilidade urbana",
+        "freq": 69,
+        "tscore": 8.08,
+        "palavra1_freq": 78,
+        "palavra2_freq": 73
+      },
+      {
+        "bigrama": "transporte público",
+        "freq": 44,
+        "tscore": 6.29,
+        "palavra1_freq": 88,
+        "palavra2_freq": 77
+      },
+      {
+        "bigrama": "público coletivo",
+        "freq": 36,
+        "tscore": 5.83,
+        "palavra1_freq": 77,
+        "palavra2_freq": 41
+      },
+      {
+        "bigrama": "serviços transporte",
+        "freq": 25,
+        "tscore": 4.68,
+        "palavra1_freq": 54,
+        "palavra2_freq": 88
+      },
+      {
+        "bigrama": "nacional mobilidade",
+        "freq": 24,
+        "tscore": 4.75,
+        "palavra1_freq": 28,
+        "palavra2_freq": 78
+      },
+      {
+        "bigrama": "plano mobilidade",
+        "freq": 24,
+        "tscore": 4.72,
+        "palavra1_freq": 33,
+        "palavra2_freq": 78
+      },
+      {
+        "bigrama": "redação dada",
+        "freq": 23,
+        "tscore": 4.76,
+        "palavra1_freq": 23,
+        "palavra2_freq": 23
+      },
+      {
+        "bigrama": "política nacional",
+        "freq": 16,
+        "tscore": 3.94,
+        "palavra1_freq": 27,
+        "palavra2_freq": 28
+      },
+      {
+        "bigrama": "serviço transporte",
+        "freq": 14,
+        "tscore": 3.51,
+        "palavra1_freq": 29,
+        "palavra2_freq": 88
+      },
+      {
+        "bigrama": "prazo máximo",
+        "freq": 10,
+        "tscore": 3.14,
+        "palavra1_freq": 18,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "distrito federal",
+        "freq": 9,
+        "tscore": 2.99,
+        "palavra1_freq": 9,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "urbana deverá",
+        "freq": 9,
+        "tscore": 2.85,
+        "palavra1_freq": 73,
+        "palavra2_freq": 19
+      },
+      {
+        "bigrama": "entrada vigor",
+        "freq": 8,
+        "tscore": 2.82,
+        "palavra1_freq": 8,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "caráter urbano",
+        "freq": 8,
+        "tscore": 2.8,
+        "palavra1_freq": 11,
+        "palavra2_freq": 25
+      },
+      {
+        "bigrama": "municípios tenham",
+        "freq": 8,
+        "tscore": 2.8,
+        "palavra1_freq": 35,
+        "palavra2_freq": 8
+      },
+      {
+        "bigrama": "prestação serviço",
+        "freq": 8,
+        "tscore": 2.77,
+        "palavra1_freq": 17,
+        "palavra2_freq": 29
+      },
+      {
+        "bigrama": "modos transporte",
+        "freq": 8,
+        "tscore": 2.65,
+        "palavra1_freq": 17,
+        "palavra2_freq": 88
+      },
+      {
+        "bigrama": "transporte urbano",
+        "freq": 8,
+        "tscore": 2.57,
+        "palavra1_freq": 88,
+        "palavra2_freq": 25
+      },
+      {
+        "bigrama": "mil habitantes",
+        "freq": 7,
+        "tscore": 2.64,
+        "palavra1_freq": 7,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "receber recursos",
+        "freq": 7,
+        "tscore": 2.64,
+        "palavra1_freq": 8,
+        "palavra2_freq": 8
+      },
+      {
+        "bigrama": "plano diretor",
+        "freq": 7,
+        "tscore": 2.62,
+        "palavra1_freq": 33,
+        "palavra2_freq": 7
+      },
+      {
+        "bigrama": "individual passageiros",
+        "freq": 7,
+        "tscore": 2.61,
+        "palavra1_freq": 12,
+        "palavra2_freq": 22
+      },
+      {
+        "bigrama": "elaborado plano",
+        "freq": 7,
+        "tscore": 2.6,
+        "palavra1_freq": 10,
+        "palavra2_freq": 33
+      },
+      {
+        "bigrama": "prestação serviços",
+        "freq": 7,
+        "tscore": 2.53,
+        "palavra1_freq": 17,
+        "palavra2_freq": 54
+      },
+      {
+        "bigrama": "entes federativos",
+        "freq": 6,
+        "tscore": 2.44,
+        "palavra1_freq": 6,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "federais destinados",
+        "freq": 6,
+        "tscore": 2.44,
+        "palavra1_freq": 6,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "impedidos receber",
+        "freq": 6,
+        "tscore": 2.44,
+        "palavra1_freq": 6,
+        "palavra2_freq": 8
+      },
+      {
+        "bigrama": "diretor municipal",
+        "freq": 6,
+        "tscore": 2.44,
+        "palavra1_freq": 7,
+        "palavra2_freq": 12
+      },
+      {
+        "bigrama": "constituição federal",
+        "freq": 6,
+        "tscore": 2.44,
+        "palavra1_freq": 6,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "pessoas cargas",
+        "freq": 6,
+        "tscore": 2.43,
+        "palavra1_freq": 12,
+        "palavra2_freq": 9
+      }
+    ]
+  }
+}

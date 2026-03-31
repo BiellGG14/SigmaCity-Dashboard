@@ -1,0 +1,370 @@
+{
+  "nome": "Lei 12.651/2012 - Código Florestal",
+  "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12651.htm",
+  "disponivel": true,
+  "data_processamento": "2025-12-18 18:55:17",
+  "resumo": ["Objetivo da Lei: Estabelece normas sobre proteção e uso da vegetação nativa.", "Definições: Define conceitos como Área de Preservação Permanente (APP) e área urbana consolidada.", "Tipos de APP: Lista as áreas consideradas APPs, como faixas marginais de rios, entorno de lagos, nascentes e encostas.", "Áreas Verdes Urbanas: Apresenta instrumentos municipais para a criação de áreas verdes.", "Implicações para UAM: As restrições em APPs e as regras de intervenção podem condicionar a localização de infraestruturas, como vertiportos."],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [3, 2, 2, 1, 5],
+    "justificativas": ["Impacto moderado ao estabelecer política nacional de proteção vegetal com competências municipais para criação de áreas verdes urbanas, criando estrutura de governança ambiental que condiciona políticas de uso do solo para UAM.", "Impacto pontual ao criar restrições de uso do solo que podem aumentar custos de implantação de infraestruturas de UAM em áreas protegidas, sem mencionar incentivos econômicos ou mecanismos de compensação específicos.", "Impacto marginal ao visar preservação de paisagem e biodiversidade que pode contribuir para qualidade de vida urbana, mas sem foco específico em inclusão social, equidade ou aceitação pública de infraestruturas de transporte.", "Ausência de referência a requisitos tecnológicos, sistemas de comunicação, navegação ou qualquer aspecto técnico relacionado à infraestrutura ou operações de transporte aéreo urbano.", "Impacto direto e abrangente ao estabelecer proteção legal para vegetação nativa, APPs em zonas urbanas e rurais, com restrições específicas para intervenção em áreas protegidas que condicionam diretamente a localização de vertiportos e rotas de UAM."]
+  },
+  "estatisticas": {
+    "total_palavras": 12384,
+    "palavras_unicas": 2455,
+    "num_sentencas": 1221,
+    "top_50_palavras": {
+      "área": 191,
+      "áreas": 191,
+      "incluído": 181,
+      "ambiental": 152,
+      "reserva": 119,
+      "legal": 113,
+      "imóvel": 104,
+      "vegetação": 103,
+      "órgão": 93,
+      "preservação": 93,
+      "rural": 91,
+      "vide": 87,
+      "uso": 83,
+      "imóveis": 80,
+      "rurais": 80,
+      "permanente": 78,
+      "nativa": 69,
+      "atividades": 67,
+      "competente": 65,
+      "metros": 64,
+      "redação": 63,
+      "será": 61,
+      "dada": 59,
+      "conservação": 55,
+      "meio": 55,
+      "dágua": 54,
+      "regularização": 54,
+      "adin": 53,
+      "sisnama": 52,
+      "desta": 51,
+      "florestal": 50,
+      "car": 49,
+      "proprietário": 49,
+      "solo": 48,
+      "poderá": 45,
+      "federal": 44,
+      "espécies": 43,
+      "recomposição": 42,
+      "público": 41,
+      "trata": 40,
+      "manejo": 38,
+      "servidão": 38,
+      "sustentável": 38,
+      "qualquer": 37,
+      "deverá": 36,
+      "fiscais": 36,
+      "julho": 36,
+      "ambientais": 35,
+      "ambiente": 35,
+      "módulos": 35
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 0,
+      "urbana": 38,
+      "evtol": 0,
+      "aeronave": 1,
+      "vertiporto": 0,
+      "heliponto": 0,
+      " uam ": 0,
+      "tráfego aéreo": 0,
+      "decolagem": 0,
+      "pouso": 0,
+      " voo ": 0,
+      "aviação": 2
+    },
+    "top_20_bigramas": {
+      "reserva legal": 106,
+      "preservação permanente": 78,
+      "áreas preservação": 62,
+      "vegetação nativa": 62,
+      "redação dada": 59,
+      "vide adin": 53,
+      "imóveis rurais": 50,
+      "imóvel rural": 39,
+      "meio ambiente": 35,
+      "módulos fiscais": 35,
+      "servidão ambiental": 33,
+      "vide adc": 33,
+      "adc vide": 32,
+      "órgão ambiental": 31,
+      "rurais área": 30,
+      "competente sisnama": 29,
+      "órgão competente": 28,
+      "proprietário possuidor": 27,
+      "área reserva": 23,
+      "área superior": 22
+    },
+    "palavras_chave": [
+      {
+        "palavra": "incluído",
+        "frequencia": 181,
+        "relevancia": 4.932
+      },
+      {
+        "palavra": "ambiental",
+        "frequencia": 152,
+        "relevancia": 4.003
+      },
+      {
+        "palavra": "área",
+        "frequencia": 191,
+        "relevancia": 3.154
+      },
+      {
+        "palavra": "áreas",
+        "frequencia": 191,
+        "relevancia": 3.154
+      },
+      {
+        "palavra": "vegetação",
+        "frequencia": 103,
+        "relevancia": 2.505
+      },
+      {
+        "palavra": "preservação",
+        "frequencia": 93,
+        "relevancia": 2.212
+      },
+      {
+        "palavra": "reserva",
+        "frequencia": 119,
+        "relevancia": 1.79
+      },
+      {
+        "palavra": "permanente",
+        "frequencia": 78,
+        "relevancia": 1.784
+      },
+      {
+        "palavra": "legal",
+        "frequencia": 113,
+        "relevancia": 1.681
+      },
+      {
+        "palavra": "imóvel",
+        "frequencia": 104,
+        "relevancia": 1.52
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "reserva legal",
+        "freq": 106,
+        "tscore": 10.19,
+        "palavra1_freq": 119,
+        "palavra2_freq": 113
+      },
+      {
+        "bigrama": "preservação permanente",
+        "freq": 78,
+        "tscore": 8.77,
+        "palavra1_freq": 93,
+        "palavra2_freq": 78
+      },
+      {
+        "bigrama": "vegetação nativa",
+        "freq": 62,
+        "tscore": 7.8,
+        "palavra1_freq": 103,
+        "palavra2_freq": 69
+      },
+      {
+        "bigrama": "áreas preservação",
+        "freq": 62,
+        "tscore": 7.69,
+        "palavra1_freq": 191,
+        "palavra2_freq": 93
+      },
+      {
+        "bigrama": "redação dada",
+        "freq": 59,
+        "tscore": 7.64,
+        "palavra1_freq": 63,
+        "palavra2_freq": 59
+      },
+      {
+        "bigrama": "vide adin",
+        "freq": 53,
+        "tscore": 7.23,
+        "palavra1_freq": 87,
+        "palavra2_freq": 53
+      },
+      {
+        "bigrama": "imóveis rurais",
+        "freq": 50,
+        "tscore": 7,
+        "palavra1_freq": 80,
+        "palavra2_freq": 80
+      },
+      {
+        "bigrama": "imóvel rural",
+        "freq": 39,
+        "tscore": 6.12,
+        "palavra1_freq": 104,
+        "palavra2_freq": 91
+      },
+      {
+        "bigrama": "módulos fiscais",
+        "freq": 35,
+        "tscore": 5.9,
+        "palavra1_freq": 35,
+        "palavra2_freq": 36
+      },
+      {
+        "bigrama": "meio ambiente",
+        "freq": 35,
+        "tscore": 5.89,
+        "palavra1_freq": 55,
+        "palavra2_freq": 35
+      },
+      {
+        "bigrama": "vide adc",
+        "freq": 33,
+        "tscore": 5.7,
+        "palavra1_freq": 87,
+        "palavra2_freq": 33
+      },
+      {
+        "bigrama": "servidão ambiental",
+        "freq": 33,
+        "tscore": 5.66,
+        "palavra1_freq": 38,
+        "palavra2_freq": 152
+      },
+      {
+        "bigrama": "adc vide",
+        "freq": 32,
+        "tscore": 5.62,
+        "palavra1_freq": 33,
+        "palavra2_freq": 87
+      },
+      {
+        "bigrama": "órgão ambiental",
+        "freq": 31,
+        "tscore": 5.36,
+        "palavra1_freq": 93,
+        "palavra2_freq": 152
+      },
+      {
+        "bigrama": "rurais área",
+        "freq": 30,
+        "tscore": 5.25,
+        "palavra1_freq": 80,
+        "palavra2_freq": 191
+      },
+      {
+        "bigrama": "competente sisnama",
+        "freq": 29,
+        "tscore": 5.33,
+        "palavra1_freq": 65,
+        "palavra2_freq": 52
+      },
+      {
+        "bigrama": "órgão competente",
+        "freq": 28,
+        "tscore": 5.2,
+        "palavra1_freq": 93,
+        "palavra2_freq": 65
+      },
+      {
+        "bigrama": "proprietário possuidor",
+        "freq": 27,
+        "tscore": 5.17,
+        "palavra1_freq": 49,
+        "palavra2_freq": 34
+      },
+      {
+        "bigrama": "área reserva",
+        "freq": 23,
+        "tscore": 4.41,
+        "palavra1_freq": 191,
+        "palavra2_freq": 119
+      },
+      {
+        "bigrama": "regularização fundiária",
+        "freq": 22,
+        "tscore": 4.67,
+        "palavra1_freq": 54,
+        "palavra2_freq": 22
+      },
+      {
+        "bigrama": "área superior",
+        "freq": 22,
+        "tscore": 4.59,
+        "palavra1_freq": 191,
+        "palavra2_freq": 31
+      },
+      {
+        "bigrama": "quatro módulos",
+        "freq": 20,
+        "tscore": 4.46,
+        "palavra1_freq": 21,
+        "palavra2_freq": 35
+      },
+      {
+        "bigrama": "cursos dágua",
+        "freq": 20,
+        "tscore": 4.45,
+        "palavra1_freq": 21,
+        "palavra2_freq": 54
+      },
+      {
+        "bigrama": "espécies nativas",
+        "freq": 20,
+        "tscore": 4.45,
+        "palavra1_freq": 43,
+        "palavra2_freq": 27
+      },
+      {
+        "bigrama": "uso alternativo",
+        "freq": 19,
+        "tscore": 4.33,
+        "palavra1_freq": 83,
+        "palavra2_freq": 19
+      },
+      {
+        "bigrama": "alternativo solo",
+        "freq": 18,
+        "tscore": 4.23,
+        "palavra1_freq": 19,
+        "palavra2_freq": 48
+      },
+      {
+        "bigrama": "publicação desta",
+        "freq": 18,
+        "tscore": 4.22,
+        "palavra1_freq": 19,
+        "palavra2_freq": 51
+      },
+      {
+        "bigrama": "consolidadas áreas",
+        "freq": 18,
+        "tscore": 4.12,
+        "palavra1_freq": 34,
+        "palavra2_freq": 191
+      },
+      {
+        "bigrama": "ambiental competente",
+        "freq": 18,
+        "tscore": 4.05,
+        "palavra1_freq": 152,
+        "palavra2_freq": 65
+      },
+      {
+        "bigrama": "chefe executivo",
+        "freq": 17,
+        "tscore": 4.12,
+        "palavra1_freq": 17,
+        "palavra2_freq": 22
+      }
+    ]
+  }
+}

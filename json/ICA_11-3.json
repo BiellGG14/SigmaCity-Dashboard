@@ -1,0 +1,370 @@
+{
+  "nome": "ICA 11-3 - Processos da Área de Aeródromos",
+  "url": "https://publicacoes.decea.mil.br/publicacao/ICA-11-3",
+  "disponivel": true,
+  "data_processamento": "2025-12-18 18:55:10",
+  "resumo": ["Define os processos do COMAER para análise de PDIR, cadastro e alteração de aeródromos junto à ANAC, exploração de aeródromos civis públicos e avaliação de OPEA.", "Apresenta conceitos fundamentais como aeródromo, heliponto, heliporto e PZP, que disciplinam o uso do solo no entorno de infraestruturas aeronáuticas para garantir a segurança operacional.", "Prevê a interação obrigatória com administrações municipais, que devem emitir declaração de ciência e incorporar as restrições dos PZP em seus PDDU.", "No caso dos OPEA, permite recurso por interesse público, mediante declaração formal do Poder Municipal ou Estadual, analisada pelo COMAER com base em medidas mitigadoras.", "Conforme a Resolução nº 153/2010 da ANAC, o PDIR é obrigatório apenas para aeródromos que operem aeronaves com mais de 19 passageiros ou carga paga superior a 3.400 kg — ficando helipontos e vertiportos urbanos dispensados, embora sujeitos às demais exigências da ICA 11-3.", "Relaciona-se diretamente à UAM ao estabelecer critérios técnicos e urbanísticos para aeródromos e helipontos, fornecendo uma base regulatória para a implantação segura de vertiportos e outras infraestruturas aéreas nas cidades brasileiras."],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [4, 3, 3, 4, 2],
+    "justificativas": ["Impacto relevante ao estabelecer coordenação federativa obrigatória entre COMAER, ANAC e municípios através de PZP e declarações de interesse público, criando estrutura de governança multinível essencial para integração de UAM no planejamento urbano.", "Impacto moderado ao isentar helipontos/vertiportos do PDIR obrigatório (Resolução 153/2010), reduzindo custos de implantação para infraestruturas de UAM, mas sem mencionar incentivos fiscais ou mecanismos de financiamento específicos.", "Impacto moderado ao prever mecanismos de participação municipal e interesse público que podem contribuir para aceitação social, mas sem foco específico em equidade, acessibilidade ou inclusão social de serviços de UAM.", "Impacto relevante ao estabelecer procedimentos técnicos para análise de OPEA e PZP que convertem requisitos de segurança operacional em critérios vinculantes para uso do solo urbano, essenciais para integração segura de vertiportos no ambiente construído.", "Impacto pontual ao mencionar restrições de uso do solo que podem ter implicações ambientais indiretas, mas sem referência específica a impactos ecológicos, poluição sonora ou requisitos ambientais para operações aéreas urbanas."]
+  },
+  "estatisticas": {
+    "total_palavras": 17855,
+    "palavras_unicas": 1818,
+    "num_sentencas": 2463,
+    "top_50_palavras": {
+      "aeródromo": 353,
+      "regional": 320,
+      "análise": 304,
+      "meio": 289,
+      "sysaga": 273,
+      "eletronicamente": 256,
+      "decea": 250,
+      "órgão": 248,
+      "processo": 233,
+      "ica": 209,
+      "caso": 207,
+      "parecer": 168,
+      "técnica": 168,
+      "ofício": 160,
+      "comaer": 159,
+      "deliberação": 155,
+      "operador": 152,
+      "legal": 149,
+      "receber": 147,
+      "conformidades": 146,
+      "notificação": 146,
+      "representante": 146,
+      "prazo": 131,
+      "eletrônica": 117,
+      "enviar": 110,
+      "técnico": 109,
+      "solicitação": 103,
+      "área": 100,
+      "conclusivo": 96,
+      "conforme": 96,
+      "proteção": 93,
+      "zona": 91,
+      "público": 90,
+      "sim": 90,
+      "desfavorável": 88,
+      "interesse": 87,
+      "anexo": 86,
+      "dias": 86,
+      "doaga": 86,
+      "interessado": 84,
+      "conformidade": 74,
+      "documentação": 74,
+      "após": 71,
+      "aéreo": 70,
+      "documental": 70,
+      "aga": 69,
+      "publicação": 69,
+      "objeto": 66,
+      "ações": 65,
+      "emitir": 65
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 87,
+      "urbana": 0,
+      "evtol": 0,
+      "aeronave": 45,
+      "vertiporto": 0,
+      "heliponto": 29,
+      " uam ": 0,
+      "tráfego aéreo": 13,
+      "decolagem": 21,
+      "pouso": 22,
+      " voo ": 6,
+      "aviação": 12
+    },
+    "top_20_bigramas": {
+      "órgão regional": 220,
+      "meio sysaga": 218,
+      "regional decea": 190,
+      "representante legal": 143,
+      "operador aeródromo": 139,
+      "aeródromo representante": 118,
+      "análise técnica": 116,
+      "notificação eletrônica": 110,
+      "parecer técnico": 95,
+      "eletronicamente meio": 84,
+      "zona proteção": 81,
+      "decea meio": 78,
+      "receber eletronicamente": 71,
+      "análise documental": 69,
+      "enviar eletronicamente": 67,
+      "conformidade análise": 57,
+      "planos zona": 57,
+      "espaço aéreo": 55,
+      "interesse público": 55,
+      "técnico conclusivo": 55
+    },
+    "palavras_chave": [
+      {
+        "palavra": "aeródromo",
+        "frequencia": 353,
+        "relevancia": 5.869
+      },
+      {
+        "palavra": "regional",
+        "frequencia": 320,
+        "relevancia": 5.232
+      },
+      {
+        "palavra": "eletronicamente",
+        "frequencia": 256,
+        "relevancia": 4.024
+      },
+      {
+        "palavra": "processo",
+        "frequencia": 233,
+        "relevancia": 3.601
+      },
+      {
+        "palavra": "análise",
+        "frequencia": 304,
+        "relevancia": 2.956
+      },
+      {
+        "palavra": "meio",
+        "frequencia": 289,
+        "relevancia": 2.785
+      },
+      {
+        "palavra": "sysaga",
+        "frequencia": 273,
+        "relevancia": 2.605
+      },
+      {
+        "palavra": "decea",
+        "frequencia": 250,
+        "relevancia": 2.348
+      },
+      {
+        "palavra": "órgão",
+        "frequencia": 248,
+        "relevancia": 2.326
+      },
+      {
+        "palavra": "deliberação",
+        "frequencia": 155,
+        "relevancia": 2.217
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "órgão regional",
+        "freq": 220,
+        "tscore": 14.53,
+        "palavra1_freq": 248,
+        "palavra2_freq": 320
+      },
+      {
+        "bigrama": "meio sysaga",
+        "freq": 218,
+        "tscore": 14.47,
+        "palavra1_freq": 289,
+        "palavra2_freq": 273
+      },
+      {
+        "bigrama": "regional decea",
+        "freq": 190,
+        "tscore": 13.46,
+        "palavra1_freq": 320,
+        "palavra2_freq": 250
+      },
+      {
+        "bigrama": "representante legal",
+        "freq": 143,
+        "tscore": 11.86,
+        "palavra1_freq": 146,
+        "palavra2_freq": 149
+      },
+      {
+        "bigrama": "operador aeródromo",
+        "freq": 139,
+        "tscore": 11.53,
+        "palavra1_freq": 152,
+        "palavra2_freq": 353
+      },
+      {
+        "bigrama": "aeródromo representante",
+        "freq": 118,
+        "tscore": 10.6,
+        "palavra1_freq": 353,
+        "palavra2_freq": 146
+      },
+      {
+        "bigrama": "análise técnica",
+        "freq": 116,
+        "tscore": 10.5,
+        "palavra1_freq": 304,
+        "palavra2_freq": 168
+      },
+      {
+        "bigrama": "notificação eletrônica",
+        "freq": 110,
+        "tscore": 10.4,
+        "palavra1_freq": 146,
+        "palavra2_freq": 117
+      },
+      {
+        "bigrama": "parecer técnico",
+        "freq": 95,
+        "tscore": 9.64,
+        "palavra1_freq": 168,
+        "palavra2_freq": 109
+      },
+      {
+        "bigrama": "eletronicamente meio",
+        "freq": 84,
+        "tscore": 8.71,
+        "palavra1_freq": 256,
+        "palavra2_freq": 289
+      },
+      {
+        "bigrama": "zona proteção",
+        "freq": 81,
+        "tscore": 8.95,
+        "palavra1_freq": 91,
+        "palavra2_freq": 93
+      },
+      {
+        "bigrama": "decea meio",
+        "freq": 78,
+        "tscore": 8.37,
+        "palavra1_freq": 250,
+        "palavra2_freq": 289
+      },
+      {
+        "bigrama": "receber eletronicamente",
+        "freq": 71,
+        "tscore": 8.18,
+        "palavra1_freq": 147,
+        "palavra2_freq": 256
+      },
+      {
+        "bigrama": "análise documental",
+        "freq": 69,
+        "tscore": 8.16,
+        "palavra1_freq": 304,
+        "palavra2_freq": 70
+      },
+      {
+        "bigrama": "enviar eletronicamente",
+        "freq": 67,
+        "tscore": 7.99,
+        "palavra1_freq": 110,
+        "palavra2_freq": 256
+      },
+      {
+        "bigrama": "planos zona",
+        "freq": 57,
+        "tscore": 7.51,
+        "palavra1_freq": 62,
+        "palavra2_freq": 91
+      },
+      {
+        "bigrama": "conformidade análise",
+        "freq": 57,
+        "tscore": 7.38,
+        "palavra1_freq": 74,
+        "palavra2_freq": 304
+      },
+      {
+        "bigrama": "espaço aéreo",
+        "freq": 55,
+        "tscore": 7.39,
+        "palavra1_freq": 57,
+        "palavra2_freq": 70
+      },
+      {
+        "bigrama": "interesse público",
+        "freq": 55,
+        "tscore": 7.36,
+        "palavra1_freq": 87,
+        "palavra2_freq": 90
+      },
+      {
+        "bigrama": "técnico conclusivo",
+        "freq": 55,
+        "tscore": 7.34,
+        "palavra1_freq": 109,
+        "palavra2_freq": 96
+      },
+      {
+        "bigrama": "deliberação desfavorável",
+        "freq": 52,
+        "tscore": 7.11,
+        "palavra1_freq": 155,
+        "palavra2_freq": 88
+      },
+      {
+        "bigrama": "sysaga notificação",
+        "freq": 52,
+        "tscore": 6.9,
+        "palavra1_freq": 273,
+        "palavra2_freq": 146
+      },
+      {
+        "bigrama": "ofício regional",
+        "freq": 51,
+        "tscore": 6.74,
+        "palavra1_freq": 160,
+        "palavra2_freq": 320
+      },
+      {
+        "bigrama": "meio ofício",
+        "freq": 49,
+        "tscore": 6.63,
+        "palavra1_freq": 289,
+        "palavra2_freq": 160
+      },
+      {
+        "bigrama": "conforme caso",
+        "freq": 46,
+        "tscore": 6.62,
+        "palavra1_freq": 96,
+        "palavra2_freq": 207
+      },
+      {
+        "bigrama": "dias corridos",
+        "freq": 45,
+        "tscore": 6.68,
+        "palavra1_freq": 86,
+        "palavra2_freq": 45
+      },
+      {
+        "bigrama": "portal aga",
+        "freq": 43,
+        "tscore": 6.53,
+        "palavra1_freq": 51,
+        "palavra2_freq": 69
+      },
+      {
+        "bigrama": "deliberação favorável",
+        "freq": 43,
+        "tscore": 6.48,
+        "palavra1_freq": 155,
+        "palavra2_freq": 61
+      },
+      {
+        "bigrama": "conformidades apontadas",
+        "freq": 42,
+        "tscore": 6.42,
+        "palavra1_freq": 146,
+        "palavra2_freq": 49
+      },
+      {
+        "bigrama": "solicitação parecer",
+        "freq": 41,
+        "tscore": 6.25,
+        "palavra1_freq": 103,
+        "palavra2_freq": 168
+      }
+    ]
+  }
+}
