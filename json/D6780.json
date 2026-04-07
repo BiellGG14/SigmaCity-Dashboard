@@ -1,0 +1,397 @@
+{
+  "nome": "Decreto nº 6.780/2009 - Política Nacional de Aviação Civil (PNAC)",
+  "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/decreto/d6780.htm",
+  "disponivel": true,
+  "data_processamento": "2026-04-07 15:38:55",
+  "resumo": [
+    "Estabelece diretrizes para o desenvolvimento da aviação civil no Brasil.",
+    "Define objetivos voltados à segurança, eficiência e integração modal.",
+    "Prevê coordenação entre entes federativos para controle de riscos operacionais.",
+    "Aborda o uso do solo urbano no entorno de aeródromos.",
+    "Inclui diretrizes para mitigação de ruídos e impactos ambientais.",
+    "Estimula controle e compatibilização do planejamento urbano com zonas aeroportuárias.",
+    "Orienta a ocupação econômica nas áreas próximas aos aeroportos.",
+    "Apresenta diretrizes aplicáveis à implementação da mobilidade aérea urbana (UAM)."
+  ],
+  "pestel": {
+    "fatores": [
+      "Político",
+      "Econômico",
+      "Social",
+      "Tecnológico",
+      "Ambiental"
+    ],
+    "pontuacoes": [
+      5,
+      2,
+      1,
+      3,
+      5
+    ],
+    "justificativas": [
+      "O decreto institui a PNAC como instrumento orientador do setor, prevê articulação entre entes federativos e estabelece diretrizes de planejamento urbano e proteção de aeródromos, influenciando diretamente a formulação de políticas públicas para a aviação civil, inclusive para a UAM.",
+      "Embora não aborde financiamento ou modelos de negócio, incentiva a instalação de atividades econômicas compatíveis no entorno aeroportuário e preconiza a integração multimodal, criando condições favoráveis ao desenvolvimento econômico indireto do setor.",
+      "Trata da redução do adensamento populacional em áreas sujeitas a ruído e emissões, bem como da compatibilização do uso do solo, impactando a qualidade de vida urbana. Não aborda aceitação pública ou equidade de acesso de forma explícita.",
+      "O documento menciona a preservação de auxílios à navegação aérea e o controle de zonas de proteção, mas não detalha tecnologias específicas de suporte à UAM (como U-space, 5G, vertiportos), limitando sua influência direta.",
+      "Dedica seção específica à proteção ambiental, estabelecendo diretrizes para o tratamento equilibrado do ruído aeronáutico, redução de emissões e compatibilização entre operação aérea e planejamento urbano, impactando diretamente a sustentabilidade da UAM."
+    ]
+  },
+  "estatisticas": {
+    "total_palavras": 3538,
+    "palavras_unicas": 1145,
+    "num_sentencas": 316,
+    "top_50_palavras": {
+      "civil": 102,
+      "aviação": 87,
+      "serviços": 48,
+      "aéreo": 46,
+      "desenvolvimento": 38,
+      "infraestrutura": 38,
+      "promover": 37,
+      "segurança": 37,
+      "transporte": 34,
+      "meio": 31,
+      "garantir": 26,
+      "proteção": 26,
+      "ações": 25,
+      "aeronáutica": 25,
+      "setor": 25,
+      "aeroportuária": 23,
+      "atividades": 23,
+      "estimular": 22,
+      "órgãos": 22,
+      "sistema": 21,
+      "atos": 20,
+      "assegurar": 19,
+      "forma": 18,
+      "serviço": 18,
+      "entidades": 17,
+      "internacionais": 17,
+      "contra": 16,
+      "ilícitos": 16,
+      "aprimorar": 15,
+      "formação": 15,
+      "pnac": 15,
+      "adequada": 14,
+      "aéreos": 14,
+      "fiscalização": 14,
+      "integração": 14,
+      "medidas": 14,
+      "prestação": 14,
+      "visando": 14,
+      "aeronáuticos": 13,
+      "capacitação": 13,
+      "eficiência": 13,
+      "incentivar": 13,
+      "nacional": 13,
+      "objetivos": 13,
+      "recursos": 13,
+      "uso": 13,
+      "httpswwwplanaltogovbrccivilatodecretodhtm": 12,
+      "maior": 12,
+      "nacionais": 12,
+      "planejamento": 12
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 10,
+      "urbana": 1,
+      "evtol": 0,
+      "aeronave": 7,
+      "vertiporto": 0,
+      "heliponto": 0,
+      " uam ": 0,
+      "tráfego aéreo": 7,
+      "decolagem": 0,
+      "pouso": 0,
+      " voo ": 0,
+      "aviação": 87
+    },
+    "top_20_bigramas": {
+      "aviação civil": 80,
+      "transporte aéreo": 31,
+      "atos ilícitos": 16,
+      "contra atos": 15,
+      "infraestrutura aeronáutica": 15,
+      "órgãos entidades": 15,
+      "serviços aéreos": 14,
+      "desenvolvimento aviação": 12,
+      "proteção contra": 12,
+      "sistema aviação": 12,
+      "infraestrutura aeroportuária": 11,
+      "segurança operacional": 11,
+      "serviços transporte": 11,
+      "aeroportuária civil": 10,
+      "meio ambiente": 10,
+      "aeronáutica civil": 9,
+      "civil infraestrutura": 9,
+      "acidentes incidentes": 8,
+      "aeronáutica aeroportuária": 8,
+      "aeroportuária civis": 8
+    },
+    "palavras_chave": [
+      {
+        "palavra": "civil",
+        "frequencia": 102,
+        "relevancia": 2.781
+      },
+      {
+        "palavra": "aviação",
+        "frequencia": 87,
+        "relevancia": 2.291
+      },
+      {
+        "palavra": "serviços",
+        "frequencia": 48,
+        "relevancia": 1.831
+      },
+      {
+        "palavra": "desenvolvimento",
+        "frequencia": 38,
+        "relevancia": 1.365
+      },
+      {
+        "palavra": "infraestrutura",
+        "frequencia": 38,
+        "relevancia": 1.365
+      },
+      {
+        "palavra": "promover",
+        "frequencia": 37,
+        "relevancia": 1.32
+      },
+      {
+        "palavra": "segurança",
+        "frequencia": 37,
+        "relevancia": 1.32
+      },
+      {
+        "palavra": "transporte",
+        "frequencia": 34,
+        "relevancia": 1.185
+      },
+      {
+        "palavra": "aéreo",
+        "frequencia": 46,
+        "relevancia": 1.042
+      },
+      {
+        "palavra": "garantir",
+        "frequencia": 26,
+        "relevancia": 0.84
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "aviação civil",
+        "freq": 80,
+        "tscore": 8.66,
+        "palavra1_freq": 87,
+        "palavra2_freq": 102
+      },
+      {
+        "bigrama": "transporte aéreo",
+        "freq": 31,
+        "tscore": 5.49,
+        "palavra1_freq": 34,
+        "palavra2_freq": 46
+      },
+      {
+        "bigrama": "atos ilícitos",
+        "freq": 16,
+        "tscore": 3.98,
+        "palavra1_freq": 20,
+        "palavra2_freq": 16
+      },
+      {
+        "bigrama": "contra atos",
+        "freq": 15,
+        "tscore": 3.85,
+        "palavra1_freq": 16,
+        "palavra2_freq": 20
+      },
+      {
+        "bigrama": "órgãos entidades",
+        "freq": 15,
+        "tscore": 3.85,
+        "palavra1_freq": 22,
+        "palavra2_freq": 17
+      },
+      {
+        "bigrama": "infraestrutura aeronáutica",
+        "freq": 15,
+        "tscore": 3.8,
+        "palavra1_freq": 38,
+        "palavra2_freq": 25
+      },
+      {
+        "bigrama": "serviços aéreos",
+        "freq": 14,
+        "tscore": 3.69,
+        "palavra1_freq": 48,
+        "palavra2_freq": 14
+      },
+      {
+        "bigrama": "proteção contra",
+        "freq": 12,
+        "tscore": 3.43,
+        "palavra1_freq": 26,
+        "palavra2_freq": 16
+      },
+      {
+        "bigrama": "sistema aviação",
+        "freq": 12,
+        "tscore": 3.32,
+        "palavra1_freq": 21,
+        "palavra2_freq": 87
+      },
+      {
+        "bigrama": "desenvolvimento aviação",
+        "freq": 12,
+        "tscore": 3.19,
+        "palavra1_freq": 38,
+        "palavra2_freq": 87
+      },
+      {
+        "bigrama": "segurança operacional",
+        "freq": 11,
+        "tscore": 3.28,
+        "palavra1_freq": 37,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "infraestrutura aeroportuária",
+        "freq": 11,
+        "tscore": 3.24,
+        "palavra1_freq": 38,
+        "palavra2_freq": 23
+      },
+      {
+        "bigrama": "serviços transporte",
+        "freq": 11,
+        "tscore": 3.18,
+        "palavra1_freq": 48,
+        "palavra2_freq": 34
+      },
+      {
+        "bigrama": "meio ambiente",
+        "freq": 10,
+        "tscore": 3.13,
+        "palavra1_freq": 31,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "aeroportuária civil",
+        "freq": 10,
+        "tscore": 2.95,
+        "palavra1_freq": 23,
+        "palavra2_freq": 102
+      },
+      {
+        "bigrama": "aeronáutica civil",
+        "freq": 9,
+        "tscore": 2.76,
+        "palavra1_freq": 25,
+        "palavra2_freq": 102
+      },
+      {
+        "bigrama": "civil infraestrutura",
+        "freq": 9,
+        "tscore": 2.63,
+        "palavra1_freq": 102,
+        "palavra2_freq": 38
+      },
+      {
+        "bigrama": "acidentes incidentes",
+        "freq": 8,
+        "tscore": 2.82,
+        "palavra1_freq": 10,
+        "palavra2_freq": 8
+      },
+      {
+        "bigrama": "prevenção acidentes",
+        "freq": 8,
+        "tscore": 2.82,
+        "palavra1_freq": 9,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "formação capacitação",
+        "freq": 8,
+        "tscore": 2.81,
+        "palavra1_freq": 15,
+        "palavra2_freq": 13
+      },
+      {
+        "bigrama": "aeroportuária civis",
+        "freq": 8,
+        "tscore": 2.8,
+        "palavra1_freq": 23,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "tráfego aéreo",
+        "freq": 8,
+        "tscore": 2.77,
+        "palavra1_freq": 12,
+        "palavra2_freq": 46
+      },
+      {
+        "bigrama": "aeronáutica aeroportuária",
+        "freq": 8,
+        "tscore": 2.77,
+        "palavra1_freq": 25,
+        "palavra2_freq": 23
+      },
+      {
+        "bigrama": "serviço transporte",
+        "freq": 8,
+        "tscore": 2.77,
+        "palavra1_freq": 18,
+        "palavra2_freq": 34
+      },
+      {
+        "bigrama": "incidentes aeronáuticos",
+        "freq": 7,
+        "tscore": 2.63,
+        "palavra1_freq": 8,
+        "palavra2_freq": 13
+      },
+      {
+        "bigrama": "recursos humanos",
+        "freq": 7,
+        "tscore": 2.63,
+        "palavra1_freq": 13,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "prestação serviço",
+        "freq": 7,
+        "tscore": 2.62,
+        "palavra1_freq": 14,
+        "palavra2_freq": 18
+      },
+      {
+        "bigrama": "motores aeronaves",
+        "freq": 6,
+        "tscore": 2.45,
+        "palavra1_freq": 6,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "regularidade pontualidade",
+        "freq": 6,
+        "tscore": 2.44,
+        "palavra1_freq": 7,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "ações gerais",
+        "freq": 6,
+        "tscore": 2.43,
+        "palavra1_freq": 25,
+        "palavra2_freq": 7
+      }
+    ]
+  }
+}

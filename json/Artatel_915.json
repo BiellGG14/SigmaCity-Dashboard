@@ -2,7 +2,7 @@
   "nome": "Ato ANATEL 915/2024 - Faixas de frequências associadas ao Serviço Limitado Privado",
   "url": "https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2024/1920-ato-915",
   "disponivel": true,
-  "data_processamento": "2025-12-18 18:55:07",
+  "data_processamento": "2026-04-07 15:38:55",
   "resumo": ["Finalidade: Define regras técnicas para o uso de faixas de radiofrequência pelo Serviço Limitado Privado (SLP), substituindo normas antigas e garantindo uso eficiente do espectro.", "Coordenação: Exige que os operadores façam coordenação prévia com outros sistemas da mesma área para evitar interferências.", "Flexibilidade: Permite exceções técnicas, desde que aprovadas pela ANATEL e sem causar interferência prejudicial.", "Faixa de 4.950–4.990 MHz: Autoriza o aumento temporário de potência em câmeras instaladas em aeronaves durante emergências, para transmitir vídeo em tempo real ao solo.", "Relação com UAM: A disposição para operações aéreas e a estruturação técnica de faixas como 4.950-4.990 MHz e 27,5-27,9 GHz criam um marco regulatório fundamental para viabilizar futuras operações de comunicação seguras e confiáveis no contexto da Mobilidade Aérea Urbana."],
   "pestel": {
     "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],

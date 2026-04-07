@@ -2,7 +2,7 @@
   "nome": "PCA 351-7 - Concepção Operacional UAM Nacional",
   "url": "https://publicacoes.decea.mil.br/publicacao/PCA-351-7",
   "disponivel": true,
-  "data_processamento": "2025-12-18 18:55:24",
+  "data_processamento": "2026-04-07 15:39:08",
   "resumo": ["Propósito: Estabelecer a Concepção Operacional (CONOPS) nacional para a Mobilidade Aérea Urbana (UAM), sendo um documento evolutivo para orientar a implementação futura.", "Abordagem do Espaço Aéreo: Prioriza o compartilhamento do espaço aéreo (com requisitos) em detrimento de corredores exclusivos, considerado mais eficiente.", "Integração de Aeronaves: Foco na integração segura de novas aeronaves, como eVTOLs, ao espaço aéreo existente.", "Serviços Críticos: Criação do Plano Zona de Proteção do Voo (PZPV) para controle de obstáculos em vertiportos.", "Evolução por Níveis (UML): Implementação em fases: UML-2 (Operações iniciais e restritas); UML-3 (Expansão urbana condicionada a desempenho e ruído); UML-4 (Transporte regular em diversas metrópoles)"],
   "pestel": {
     "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],

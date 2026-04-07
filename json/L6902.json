@@ -1,8 +1,8 @@
 {
-  "nome": "Lei 6.902/1981 - Criação de Estações Ecológicas e Áreas de Proteção Ambiental",
+  "nome": "Lei nº 6.902/1981 - Criação de Estações Ecológicas e Áreas de Proteção Ambiental",
   "url": "https://www.planalto.gov.br/ccivil_03/leis/l6902.htm",
   "disponivel": true,
-  "data_processamento": "2025-12-18 18:55:19",
+  "data_processamento": "2026-04-07 15:39:04",
   "resumo": ["Define Estações Ecológicas como áreas representativas de ecossistemas brasileiros destinadas à pesquisa e preservação ambiental.", "Autoriza União, Estados e Municípios a criarem Estações Ecológicas, com limites e órgãos administrativos definidos.", "Determina que as Estações Ecológicas possibilitem estudos comparativos entre áreas naturais e modificadas.", "Permite ao Poder Executivo declarar áreas como de interesse para proteção ambiental, visando à conservação ecológica e ao bem-estar humano.", "Estabelece restrições em Áreas de Proteção Ambiental, proibindo atividades que causem poluição, erosão, assoreamento ou ameaça à fauna e flora.", "Implica na necessidade de compatibilizar projetos de UAM com zonas de preservação, assegurando conformidade com normas ambientais e de ordenamento territorial."],
   "pestel": {
     "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],

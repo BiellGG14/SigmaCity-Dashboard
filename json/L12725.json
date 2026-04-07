@@ -1,9 +1,9 @@
 {
-  "nome": "Lei 12.725/2012 - Controle da fauna nas imediações de aeródromos",
+  "nome": "Lei nº 12.725/2012 - Controle da fauna nas imediações de aeródromos",
   "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12725.htm",
   "disponivel": true,
-  "data_processamento": "2025-12-18 18:55:17",
-  "resumo": "Esta lei estabelece a Área de Segurança Aeroportuária (ASA) com um raio de 20 km ao redor de aeródromos, onde se aplicam restrições de uso e ocupação do solo. As autoridades municipais devem incorporar essas restrições no planejamento territorial e no licenciamento ambiental. O documento define atividades atrativas de fauna e estabelece sanções para infrações. Suas disposições se aplicam a aeródromos, incluindo infraestruturas de UAM, como vertiportos.",
+  "data_processamento": "2026-04-07 15:39:02",
+  "resumo": ["Esta lei estabelece a Área de Segurança Aeroportuária (ASA) com um raio de 20 km ao redor de aeródromos, onde se aplicam restrições de uso e ocupação do solo.", "As autoridades municipais devem incorporar essas restrições no planejamento territorial e no licenciamento ambiental.", "O documento define atividades atrativas de fauna e estabelece sanções para infrações.", "Suas disposições se aplicam a aeródromos, incluindo infraestruturas de UAM, como vertiportos."],
   "pestel": {
     "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
     "pontuacoes": [4, 3, 3, 2, 4],

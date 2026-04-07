@@ -2,7 +2,7 @@
   "nome": "RBAC 155 - Helipontos",
   "url": "https://www.anac.gov.br/assuntos/legislacao/legislacao-1/rbha-e-rbac/rbac/rbce-155",
   "disponivel": true,
-  "data_processamento": "2025-12-18 18:55:28",
+  "data_processamento": "2026-04-07 15:39:12",
   "resumo": ["Estabelece requisitos de segurança para projeto, construção e operação de helipontos", "Aplica-se a helipontos civis públicos e parcialmente a privados elevados", "Define heliponto como área para pouso, decolagem e movimentação de helicópteros", "Especifica características físicas incluindo FATO, TLOF e áreas de segurança", "Estabelece dimensões baseadas na maior dimensão do helicóptero (D)", "Prescreve auxílios visuais obrigatórios como biruta e sinalização horizontal", "Define requisitos para iluminação em operações noturnas", "Fornece base técnica para infraestrutura de Mobilidade Aérea Urbana (UAM)", "Especifica requisitos para helipontos elevados em ambiente urbano", "Estabelece sistemas de referência WGS-84 e MSL para coordenadas"],
   "pestel": {
     "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],

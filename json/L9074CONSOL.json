@@ -1,0 +1,370 @@
+{
+  "nome": "Lei 9.074/1995 - Concessões e permissões de serviços públicos",
+  "url": "https://www.planalto.gov.br/ccivil_03/leis/l9074cons.htm",
+  "disponivel": true,
+  "data_processamento": "2026-04-07 15:39:05",
+  "resumo": ["Norma que institui o regime de concessões e permissões para serviços públicos de competência da União.", "Especifica a aplicação das regras a infraestruturas como vias rodoviárias federais, instalações de barragens, terminais alfandegados e operações postais.", "Apresenta regulação estruturada para a prestação de serviços no setor de energia elétrica.", "Omite disposições relacionadas ao planejamento do espaço aéreo ou ao desenvolvimento da mobilidade aérea urbana."],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [2, 1, 1, 1, 1],
+    "justificativas": ["A lei estabelece o regime de concessões para serviços públicos de competência da União (art. 1º), o que representa um envolvimento estatal na gestão de infraestrutura. No entanto, o texto não menciona a aviação civil, a UAM ou qualquer diretriz para agências reguladoras do setor aéreo, limitando-se a setores como energia elétrica e rodovias.", "O documento não aborda viabilidade financeira, modelos de negócio, investimentos, custos operacionais ou geração de empregos relacionados à UAM. Suas disposições econômicas concentram-se na outorga de concessões para setores convencionais, sem qualquer relação com a mobilidade aérea urbana.", "Ausência de referências a impactos sociais, aceitação pública, equidade, acessibilidade ou percepção de risco. A lei trata exclusivamente de procedimentos administrativos para delegação de serviços públicos, sem considerar aspectos sociais ou comunitários.", "O texto não menciona tecnologias de suporte, infraestrutura de comunicações, sistemas de navegação aérea, vertiportos ou qualquer inovação tecnológica relacionada à UAM. Sua abordagem é restrita a setores tradicionais de infraestrutura.", "Inexistência de dispositivos sobre impactos ecológicos, licenciamento ambiental, poluição sonora, emissões ou conformidade com legislação verde. A lei não estabelece requisitos ambientais aplicáveis à implantação ou operação de sistemas de mobilidade aérea urbana."]
+  },
+  "estatisticas": {
+    "total_palavras": 5588,
+    "palavras_unicas": 1368,
+    "num_sentencas": 785,
+    "top_50_palavras": {
+      "incluído": 151,
+      "energia": 118,
+      "elétrica": 92,
+      "público": 53,
+      "concessão": 52,
+      "concedente": 48,
+      "consumidores": 45,
+      "serviço": 44,
+      "dada": 42,
+      "redação": 42,
+      "prazo": 40,
+      "disposto": 39,
+      "distribuição": 35,
+      "concessões": 33,
+      "contratos": 33,
+      "serviços": 33,
+      "aneel": 31,
+      "data": 29,
+      "desta": 29,
+      "concessionário": 28,
+      "mediante": 28,
+      "superior": 27,
+      "aproveitamento": 26,
+      "deverá": 26,
+      "poderão": 26,
+      "poderá": 25,
+      "geração": 24,
+      "controle": 23,
+      "dezembro": 23,
+      "forma": 23,
+      "igual": 23,
+      "uso": 23,
+      "contrato": 22,
+      "instalações": 22,
+      "mil": 22,
+      "publicação": 22,
+      "quilowatts": 22,
+      "transmissão": 22,
+      "deste": 21,
+      "neste": 21,
+      "participação": 21,
+      "serão": 21,
+      "independente": 20,
+      "outorga": 20,
+      "potência": 20,
+      "trata": 20,
+      "concessionárias": 19,
+      "direito": 19,
+      "inferior": 19,
+      "permissão": 19
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 0,
+      "urbana": 1,
+      "evtol": 0,
+      "aeronave": 0,
+      "vertiporto": 0,
+      "heliponto": 0,
+      " uam ": 0,
+      "tráfego aéreo": 0,
+      "decolagem": 0,
+      "pouso": 0,
+      " voo ": 0,
+      "aviação": 0
+    },
+    "top_20_bigramas": {
+      "energia elétrica": 92,
+      "redação dada": 42,
+      "serviço público": 39,
+      "mil quilowatts": 22,
+      "distribuição energia": 21,
+      "httpswwwplanaltogovbrccivilleislconshtm lconsol": 17,
+      "potenciais hidráulicos": 16,
+      "data publicação": 15,
+      "potência superior": 15,
+      "público distribuição": 15,
+      "aproveitamento potenciais": 14,
+      "concessão permissão": 14,
+      "controle societário": 13,
+      "instalações transmissão": 13,
+      "serviços públicos": 13,
+      "concessionário permissionário": 11,
+      "independente energia": 11,
+      "observado disposto": 11,
+      "produção independente": 11,
+      "contrato concessão": 10
+    },
+    "palavras_chave": [
+      {
+        "palavra": "incluído",
+        "frequencia": 151,
+        "relevancia": 5.024
+      },
+      {
+        "palavra": "elétrica",
+        "frequencia": 92,
+        "relevancia": 2.762
+      },
+      {
+        "palavra": "energia",
+        "frequencia": 118,
+        "relevancia": 2.241
+      },
+      {
+        "palavra": "concessão",
+        "frequencia": 52,
+        "relevancia": 1.367
+      },
+      {
+        "palavra": "concedente",
+        "frequencia": 48,
+        "relevancia": 1.237
+      },
+      {
+        "palavra": "consumidores",
+        "frequencia": 45,
+        "relevancia": 1.141
+      },
+      {
+        "palavra": "disposto",
+        "frequencia": 39,
+        "relevancia": 0.953
+      },
+      {
+        "palavra": "público",
+        "frequencia": 53,
+        "relevancia": 0.84
+      },
+      {
+        "palavra": "distribuição",
+        "frequencia": 35,
+        "relevancia": 0.831
+      },
+      {
+        "palavra": "concessões",
+        "frequencia": 33,
+        "relevancia": 0.771
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "energia elétrica",
+        "freq": 92,
+        "tscore": 9.39,
+        "palavra1_freq": 118,
+        "palavra2_freq": 92
+      },
+      {
+        "bigrama": "redação dada",
+        "freq": 42,
+        "tscore": 6.43,
+        "palavra1_freq": 42,
+        "palavra2_freq": 42
+      },
+      {
+        "bigrama": "serviço público",
+        "freq": 39,
+        "tscore": 6.18,
+        "palavra1_freq": 44,
+        "palavra2_freq": 53
+      },
+      {
+        "bigrama": "mil quilowatts",
+        "freq": 22,
+        "tscore": 4.67,
+        "palavra1_freq": 22,
+        "palavra2_freq": 22
+      },
+      {
+        "bigrama": "distribuição energia",
+        "freq": 21,
+        "tscore": 4.42,
+        "palavra1_freq": 35,
+        "palavra2_freq": 118
+      },
+      {
+        "bigrama": "httpswwwplanaltogovbrccivilleislconshtm lconsol",
+        "freq": 17,
+        "tscore": 4.11,
+        "palavra1_freq": 18,
+        "palavra2_freq": 18
+      },
+      {
+        "bigrama": "potenciais hidráulicos",
+        "freq": 16,
+        "tscore": 3.99,
+        "palavra1_freq": 16,
+        "palavra2_freq": 17
+      },
+      {
+        "bigrama": "potência superior",
+        "freq": 15,
+        "tscore": 3.85,
+        "palavra1_freq": 20,
+        "palavra2_freq": 27
+      },
+      {
+        "bigrama": "data publicação",
+        "freq": 15,
+        "tscore": 3.84,
+        "palavra1_freq": 29,
+        "palavra2_freq": 22
+      },
+      {
+        "bigrama": "público distribuição",
+        "freq": 15,
+        "tscore": 3.79,
+        "palavra1_freq": 53,
+        "palavra2_freq": 35
+      },
+      {
+        "bigrama": "aproveitamento potenciais",
+        "freq": 14,
+        "tscore": 3.72,
+        "palavra1_freq": 26,
+        "palavra2_freq": 16
+      },
+      {
+        "bigrama": "concessão permissão",
+        "freq": 14,
+        "tscore": 3.69,
+        "palavra1_freq": 52,
+        "palavra2_freq": 19
+      },
+      {
+        "bigrama": "controle societário",
+        "freq": 13,
+        "tscore": 3.59,
+        "palavra1_freq": 23,
+        "palavra2_freq": 13
+      },
+      {
+        "bigrama": "serviços públicos",
+        "freq": 13,
+        "tscore": 3.58,
+        "palavra1_freq": 33,
+        "palavra2_freq": 14
+      },
+      {
+        "bigrama": "instalações transmissão",
+        "freq": 13,
+        "tscore": 3.58,
+        "palavra1_freq": 22,
+        "palavra2_freq": 22
+      },
+      {
+        "bigrama": "produção independente",
+        "freq": 11,
+        "tscore": 3.3,
+        "palavra1_freq": 14,
+        "palavra2_freq": 20
+      },
+      {
+        "bigrama": "concessionário permissionário",
+        "freq": 11,
+        "tscore": 3.3,
+        "palavra1_freq": 28,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "observado disposto",
+        "freq": 11,
+        "tscore": 3.29,
+        "palavra1_freq": 13,
+        "palavra2_freq": 39
+      },
+      {
+        "bigrama": "independente energia",
+        "freq": 11,
+        "tscore": 3.19,
+        "palavra1_freq": 20,
+        "palavra2_freq": 118
+      },
+      {
+        "bigrama": "hidráulicos potência",
+        "freq": 10,
+        "tscore": 3.14,
+        "palavra1_freq": 17,
+        "palavra2_freq": 20
+      },
+      {
+        "bigrama": "publicação desta",
+        "freq": 10,
+        "tscore": 3.13,
+        "palavra1_freq": 22,
+        "palavra2_freq": 29
+      },
+      {
+        "bigrama": "contrato concessão",
+        "freq": 10,
+        "tscore": 3.1,
+        "palavra1_freq": 22,
+        "palavra2_freq": 52
+      },
+      {
+        "bigrama": "geração energia",
+        "freq": 10,
+        "tscore": 3,
+        "palavra1_freq": 24,
+        "palavra2_freq": 118
+      },
+      {
+        "bigrama": "rede básica",
+        "freq": 9,
+        "tscore": 2.99,
+        "palavra1_freq": 10,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "grupo econômico",
+        "freq": 9,
+        "tscore": 2.99,
+        "palavra1_freq": 9,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "implantação usinas",
+        "freq": 9,
+        "tscore": 2.99,
+        "palavra1_freq": 11,
+        "palavra2_freq": 14
+      },
+      {
+        "bigrama": "direito voto",
+        "freq": 9,
+        "tscore": 2.99,
+        "palavra1_freq": 19,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "produtor independente",
+        "freq": 9,
+        "tscore": 2.99,
+        "palavra1_freq": 9,
+        "palavra2_freq": 20
+      },
+      {
+        "bigrama": "concessionárias permissionárias",
+        "freq": 9,
+        "tscore": 2.99,
+        "palavra1_freq": 19,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "titular outorga",
+        "freq": 9,
+        "tscore": 2.98,
+        "palavra1_freq": 13,
+        "palavra2_freq": 20
+      }
+    ]
+  }
+}

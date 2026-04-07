@@ -1,13 +1,13 @@
 {
-  "nome": "Resolução CONAMA 237/1997",
-  "url": "https://conama.mma.gov.br/?option=com_sisconama&task=arquivo.download&id=237",
+  "nome": "Resolução CONAMA nº 2/1990 - Programa SILÊNCIO",
+  "url": "https://conama.mma.gov.br/?option=com_sisconama&task=arquivo.download&id=145",
   "disponivel": true,
-  "data_processamento": "2025-12-18 18:55:29",
-  "resumo": ["Estabelece procedimentos para licenciamento ambiental de atividades potencialmente poluidoras", "Define competências dos órgãos ambientais federais, estaduais e municipais", "Especifica três tipos de licenças: Prévia, Instalação e Operação", "Inclui infraestrutura de transporte no Anexo 1 de atividades sujeitas a licenciamento", "Exige compatibilidade com legislação municipal de uso do solo"],
+  "data_processamento": "2026-04-07 15:39:12",
+  "resumo": ["O Programa SILÊNCIO visa à educação e ao controle da poluição sonora em nível nacional.", "O texto preconiza a manutenção do conforto ambiental e a mitigação dos impactos sonoros nos centros urbanos.", "A resolução orienta o desenvolvimento de veículos que operem com menor emissão de ruído.", "A gestão e a implementação das ações de controle são delegadas aos órgãos estaduais e municipais.", "A legislação permite aos municípios e estados a fixação de limites de emissão sonora mais restritivos do que os definidos nacionalmente."],
   "pestel": {
     "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
-    "pontuacoes": [4, 3, 2, 2, 5],
-    "justificativas": ["Estabelece estrutura de governança ambiental com competências distribuídas entre órgãos federais, estaduais e municipais, criando mecanismo de coordenação federativa relevante para licenciamento de infraestruturas UAM.", "Impacto moderado ao estabelecer requisitos obrigatórios de licenciamento que afetam custos e prazos de implantação de vertiportos, mas sem tratar especificamente de incentivos ou modelos econômicos.", "Benefícios indiretos através da prevenção de impactos ambientais que afetam comunidades, mas sem abordar especificamente aceitação social, equidade ou inclusão no acesso à UAM.", "Estabelece requisitos gerais para estudos ambientais que podem incluir aspectos tecnológicos, mas não aborda especificamente tecnologias avançadas de comunicação ou infraestrutura para UAM.", "Impacto direto e abrangente ao instituir regime obrigatório de licenciamento ambiental para aeroportos e infraestruturas de transporte, aplicável a vertiportos UAM, com exigência de estudos ambientais específicos."]
+    "pontuacoes": [4, 2, 5, 3, 5],
+    "justificativas": ["Estabelece a coordenação nacional pelo IBAMA e a cooperação entre esferas federais, estaduais e municipais para o controle de ruídos. Define competências claras para a implementação de programas descentralizados.", "Incentiva a fabricação e o uso de máquinas e equipamentos com menor intensidade de ruído na indústria e veículos. Prevê apoio técnico e logístico, mas sem detalhar mecanismos de financiamento específicos para UAM.", "Foca diretamente na saúde, bem-estar público e qualidade de vida da população. Propõe a introdução do tema em currículos escolares e campanhas educativas para conscientização sobre ruídos.", "Promove o desenvolvimento de dispositivos e motores mais silenciosos. Prevê a capacitação técnica de pessoal para o controle da poluição sonora, embora não mencione tecnologias CNS/ATM ou redes 5G/6G.", "O documento trata especificamente do controle da poluição sonora como um direito ao conforto ambiental. Estabelece diretrizes para a manutenção da qualidade ambiental e mitigação de danos à saúde."]
   },
   "estatisticas": {
     "total_palavras": 2036,

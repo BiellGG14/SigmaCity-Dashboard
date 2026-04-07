@@ -1,0 +1,370 @@
+{
+  "nome": "RBAC nº 91 - Requisitos gerais de operação para aeronaves civis",
+  "url": "https://www.anac.gov.br/assuntos/legislacao/legislacao-1/rbha-e-rbac/rbac/rbac-91",
+  "disponivel": true,
+  "data_processamento": "2026-04-07 15:39:09",
+  "resumo": ["Definição de normativas aplicáveis às operações de aeronaves civis no Brasil.", "Exigência de cadastramento para aeródromos e seguimento das altitudes de segurança do DECEA.", "Condicionamento de voos sobre áreas densamente povoadas para categorias específicas de aeronaves.", "Fixação de parâmetros de distância física para operações de helicópteros em locais não homologados.", "Estabelecimento de limites para a emissão de ruídos aeronáuticos em zonas habitadas.", "Influência direta no ordenamento territorial urbano para alocação de infraestrutura da UAM."],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [4, 2, 3, 4, 4],
+    "justificativas": ["O documento, emitido pela ANAC, estabelece diretrizes regulatórias obrigatórias para operações aéreas civis, incluindo cadastramento de aeródromos, cumprimento de altitudes definidas pelo DECEA e necessidade de autorizações específicas. Esses elementos demonstram forte influência estatal e regulatória sobre o ecossistema UAM, embora não aborde políticas de fomento ou coordenação federativa.", "O texto não menciona aspectos econômicos como custos operacionais, modelos de negócio, financiamento ou geração de empregos. Apenas indiretamente, ao criar um marco regulatório, pode influenciar a viabilidade financeira, mas sem qualquer evidência direta de impacto econômico.", "Há preocupação explícita com áreas densamente povoadas (seção 91.313), distâncias mínimas de vias públicas e pessoas (91.329) e limites de ruído em zonas habitadas (91.817). Essas disposições visam proteger a população e mitigar incômodos, refletindo influência social moderada, embora não tratem de equidade ou acesso ao serviço.", "O regulamento define parâmetros técnicos essenciais: níveis mínimos de voo (91.119), requisitos de manutenção e segurança, distâncias operacionais (91.329) e limites de ruído (91.817). Essas especificações condicionam o desenvolvimento de aeronaves, sistemas de navegação e infraestrutura de solo (vertiportos), influenciando diretamente a viabilidade tecnológica da UAM.", "A Subparte I é dedicada a requisitos operacionais de ruído, estabelecendo que operações não podem gerar ruídos além do funcionamento padrão em áreas habitadas sem autorização prévia (91.817). Isso evidencia gestão do impacto ambiental sonoro, alinhada à necessidade de conformidade com legislação local, ainda que não aborde outros aspectos como pegada de carbono."]
+  },
+  "estatisticas": {
+    "total_palavras": 29928,
+    "palavras_unicas": 4031,
+    "num_sentencas": 1599,
+    "top_50_palavras": {
+      "aeronave": 592,
+      "voo": 484,
+      "programa": 465,
+      "seção": 388,
+      "deve": 350,
+      "anac": 292,
+      "treinamento": 280,
+      "desta": 267,
+      "administrador": 255,
+      "cada": 247,
+      "piloto": 238,
+      "rbac": 219,
+      "operação": 207,
+      "segundo": 200,
+      "avião": 190,
+      "operações": 187,
+      "requisitos": 182,
+      "pessoa": 180,
+      "segurança": 175,
+      "somente": 172,
+      "subparte": 164,
+      "aprovado": 160,
+      "aeronaves": 152,
+      "pode": 152,
+      "procedimentos": 147,
+      "regulamento": 142,
+      "tipo": 141,
+      "qualquer": 130,
+      "deste": 127,
+      "certificado": 118,
+      "manutenção": 116,
+      "operacional": 110,
+      "permitido": 108,
+      "operar": 104,
+      "requerido": 104,
+      "civil": 103,
+      "comando": 101,
+      "passageiros": 99,
+      "operador": 97,
+      "outro": 96,
+      "equipamentos": 95,
+      "emergência": 92,
+      "reservado": 90,
+      "devem": 88,
+      "sistema": 88,
+      "conforme": 87,
+      "categoria": 84,
+      "dispositivo": 84,
+      "condições": 83,
+      "transporte": 81
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 30,
+      "urbana": 0,
+      "evtol": 0,
+      "aeronave": 820,
+      "vertiporto": 0,
+      "heliponto": 2,
+      " uam ": 0,
+      "tráfego aéreo": 9,
+      "decolagem": 61,
+      "pouso": 83,
+      " voo ": 350,
+      "aviação": 20
+    },
+    "top_20_bigramas": {
+      "administrador programa": 251,
+      "desta seção": 239,
+      "deste regulamento": 114,
+      "somente permitido": 102,
+      "segurança operacional": 83,
+      "piloto comando": 79,
+      "programa deve": 77,
+      "permitido operar": 66,
+      "aeronave civil": 61,
+      "aprovado anac": 61,
+      "treinamento aprovado": 60,
+      "operar aeronave": 59,
+      "outro dispositivo": 57,
+      "dispositivo treinamento": 55,
+      "programa treinamento": 54,
+      "eou outro": 53,
+      "fstd eou": 53,
+      "segundo rbac": 53,
+      "seção deste": 52,
+      "somente pode": 51
+    },
+    "palavras_chave": [
+      {
+        "palavra": "aeronave",
+        "frequencia": 592,
+        "relevancia": 6.385
+      },
+      {
+        "palavra": "programa",
+        "frequencia": 465,
+        "relevancia": 4.826
+      },
+      {
+        "palavra": "voo",
+        "frequencia": 484,
+        "relevancia": 3.034
+      },
+      {
+        "palavra": "treinamento",
+        "frequencia": 280,
+        "relevancia": 2.667
+      },
+      {
+        "palavra": "administrador",
+        "frequencia": 255,
+        "relevancia": 2.389
+      },
+      {
+        "palavra": "seção",
+        "frequencia": 388,
+        "relevancia": 2.345
+      },
+      {
+        "palavra": "deve",
+        "frequencia": 350,
+        "relevancia": 2.079
+      },
+      {
+        "palavra": "operação",
+        "frequencia": 207,
+        "relevancia": 1.866
+      },
+      {
+        "palavra": "anac",
+        "frequencia": 292,
+        "relevancia": 1.681
+      },
+      {
+        "palavra": "operações",
+        "frequencia": 187,
+        "relevancia": 1.654
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "administrador programa",
+        "freq": 251,
+        "tscore": 15.59,
+        "palavra1_freq": 255,
+        "palavra2_freq": 465
+      },
+      {
+        "bigrama": "desta seção",
+        "freq": 239,
+        "tscore": 15.24,
+        "palavra1_freq": 267,
+        "palavra2_freq": 388
+      },
+      {
+        "bigrama": "deste regulamento",
+        "freq": 114,
+        "tscore": 10.62,
+        "palavra1_freq": 127,
+        "palavra2_freq": 142
+      },
+      {
+        "bigrama": "somente permitido",
+        "freq": 102,
+        "tscore": 10.04,
+        "palavra1_freq": 172,
+        "palavra2_freq": 108
+      },
+      {
+        "bigrama": "segurança operacional",
+        "freq": 83,
+        "tscore": 9.04,
+        "palavra1_freq": 175,
+        "palavra2_freq": 110
+      },
+      {
+        "bigrama": "piloto comando",
+        "freq": 79,
+        "tscore": 8.8,
+        "palavra1_freq": 238,
+        "palavra2_freq": 101
+      },
+      {
+        "bigrama": "programa deve",
+        "freq": 77,
+        "tscore": 8.16,
+        "palavra1_freq": 465,
+        "palavra2_freq": 350
+      },
+      {
+        "bigrama": "permitido operar",
+        "freq": 66,
+        "tscore": 8.08,
+        "palavra1_freq": 108,
+        "palavra2_freq": 104
+      },
+      {
+        "bigrama": "aprovado anac",
+        "freq": 61,
+        "tscore": 7.61,
+        "palavra1_freq": 160,
+        "palavra2_freq": 292
+      },
+      {
+        "bigrama": "aeronave civil",
+        "freq": 61,
+        "tscore": 7.55,
+        "palavra1_freq": 592,
+        "palavra2_freq": 103
+      },
+      {
+        "bigrama": "treinamento aprovado",
+        "freq": 60,
+        "tscore": 7.55,
+        "palavra1_freq": 280,
+        "palavra2_freq": 160
+      },
+      {
+        "bigrama": "operar aeronave",
+        "freq": 59,
+        "tscore": 7.41,
+        "palavra1_freq": 104,
+        "palavra2_freq": 592
+      },
+      {
+        "bigrama": "outro dispositivo",
+        "freq": 57,
+        "tscore": 7.51,
+        "palavra1_freq": 96,
+        "palavra2_freq": 84
+      },
+      {
+        "bigrama": "dispositivo treinamento",
+        "freq": 55,
+        "tscore": 7.31,
+        "palavra1_freq": 84,
+        "palavra2_freq": 280
+      },
+      {
+        "bigrama": "programa treinamento",
+        "freq": 54,
+        "tscore": 6.76,
+        "palavra1_freq": 465,
+        "palavra2_freq": 280
+      },
+      {
+        "bigrama": "fstd eou",
+        "freq": 53,
+        "tscore": 7.26,
+        "palavra1_freq": 62,
+        "palavra2_freq": 80
+      },
+      {
+        "bigrama": "eou outro",
+        "freq": 53,
+        "tscore": 7.24,
+        "palavra1_freq": 80,
+        "palavra2_freq": 96
+      },
+      {
+        "bigrama": "segundo rbac",
+        "freq": 53,
+        "tscore": 7.08,
+        "palavra1_freq": 200,
+        "palavra2_freq": 219
+      },
+      {
+        "bigrama": "seção deste",
+        "freq": 52,
+        "tscore": 6.98,
+        "palavra1_freq": 388,
+        "palavra2_freq": 127
+      },
+      {
+        "bigrama": "somente pode",
+        "freq": 51,
+        "tscore": 7.02,
+        "palavra1_freq": 172,
+        "palavra2_freq": 152
+      },
+      {
+        "bigrama": "segundo subparte",
+        "freq": 49,
+        "tscore": 6.84,
+        "palavra1_freq": 200,
+        "palavra2_freq": 164
+      },
+      {
+        "bigrama": "especificações administrativas",
+        "freq": 47,
+        "tscore": 6.84,
+        "palavra1_freq": 63,
+        "palavra2_freq": 51
+      },
+      {
+        "bigrama": "parágrafos desta",
+        "freq": 43,
+        "tscore": 6.47,
+        "palavra1_freq": 63,
+        "palavra2_freq": 267
+      },
+      {
+        "bigrama": "seção rbac",
+        "freq": 35,
+        "tscore": 5.44,
+        "palavra1_freq": 388,
+        "palavra2_freq": 219
+      },
+      {
+        "bigrama": "manual voo",
+        "freq": 34,
+        "tscore": 5.61,
+        "palavra1_freq": 78,
+        "palavra2_freq": 484
+      },
+      {
+        "bigrama": "categoria transporte",
+        "freq": 31,
+        "tscore": 5.53,
+        "palavra1_freq": 84,
+        "palavra2_freq": 81
+      },
+      {
+        "bigrama": "cada pessoa",
+        "freq": 31,
+        "tscore": 5.3,
+        "palavra1_freq": 247,
+        "palavra2_freq": 180
+      },
+      {
+        "bigrama": "voo aprovado",
+        "freq": 31,
+        "tscore": 5.1,
+        "palavra1_freq": 484,
+        "palavra2_freq": 160
+      },
+      {
+        "bigrama": "certificado aeronavegabilidade",
+        "freq": 29,
+        "tscore": 5.33,
+        "palavra1_freq": 118,
+        "palavra2_freq": 70
+      },
+      {
+        "bigrama": "instrutor voo",
+        "freq": 27,
+        "tscore": 5.1,
+        "palavra1_freq": 31,
+        "palavra2_freq": 484
+      }
+    ]
+  }
+}

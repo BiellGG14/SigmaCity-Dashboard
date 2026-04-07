@@ -2,12 +2,36 @@
   "nome": "Lei 10.098/2000 - Acessibilidade",
   "url": "https://www.planalto.gov.br/ccivil_03/leis/l10098.htm",
   "disponivel": true,
-  "data_processamento": "2025-12-18 18:55:14",
-  "resumo": ["Estabelece normas para promoção da acessibilidade em espaços públicos e privados", "Define critérios para eliminação de barreiras arquitetônicas e urbanísticas", "Regulamenta adaptações em vias públicas, edificações e transportes", "Estabelece requisitos técnicos baseados nas normas da ABNT", "Inclui disposições sobre comunicação e sinalização acessíveis"],
+  "data_processamento": "2026-04-07 15:39:00",
+  "resumo": [
+    "Estabelece normas para promoção da acessibilidade em espaços públicos e privados",
+    "Define critérios para eliminação de barreiras arquitetônicas e urbanísticas",
+    "Regulamenta adaptações em vias públicas, edificações e transportes",
+    "Estabelece requisitos técnicos baseados nas normas da ABNT",
+    "Inclui disposições sobre comunicação e sinalização acessíveis"
+  ],
   "pestel": {
-    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
-    "pontuacoes": [3, 2, 5, 3, 1],
-    "justificativas": ["Estabelece política pública nacional de acessibilidade com caráter vinculante, exigindo que governos municipais e estaduais implementem as normas em espaços públicos e equipamentos urbanos, criando obrigações diretas para o poder público.", "Impacto econômico indireto ao estabelecer requisitos obrigatórios de adaptação que geram custos de implementação para infraestruturas públicas e privadas, sem mencionar incentivos fiscais ou financiamento específico para estas adaptações.", "Impacto direto e abrangente na inclusão social ao garantir acessibilidade para pessoas com deficiência e mobilidade reduzida em todos os espaços públicos, transportes e comunicações, sendo fundamental para evitar que a UAM se torne serviço de elite e promovendo equidade no acesso.", "Estabelece vinculação obrigatória às normas técnicas da ABNT para projetos urbanísticos e exige soluções técnicas específicas como sinalização tátil, criando parâmetros técnicos para infraestruturas terrestres de UAM, mas sem abordar tecnologias aeronáuticas específicas.", "Ausência de referência a impactos ecológicos, pegada de carbono ou requisitos ambientais, focando exclusivamente em aspectos de acessibilidade humana sem conexão com questões ambientais."]
+    "fatores": [
+      "Político",
+      "Econômico",
+      "Social",
+      "Tecnológico",
+      "Ambiental"
+    ],
+    "pontuacoes": [
+      5,
+      4,
+      3,
+      3,
+      5
+    ],
+    "justificativas": [
+      "Estabelece política pública nacional de acessibilidade com caráter vinculante, exigindo que governos municipais e estaduais implementem as normas em espaços públicos e equipamentos urbanos, criando obrigações diretas para o poder público.",
+      "Impacto econômico indireto ao estabelecer requisitos obrigatórios de adaptação que geram custos de implementação para infraestruturas públicas e privadas, sem mencionar incentivos fiscais ou financiamento específico para estas adaptações.",
+      "Impacto direto e abrangente na inclusão social ao garantir acessibilidade para pessoas com deficiência e mobilidade reduzida em todos os espaços públicos, transportes e comunicações, sendo fundamental para evitar que a UAM se torne serviço de elite e promovendo equidade no acesso.",
+      "Estabelece vinculação obrigatória às normas técnicas da ABNT para projetos urbanísticos e exige soluções técnicas específicas como sinalização tátil, criando parâmetros técnicos para infraestruturas terrestres de UAM, mas sem abordar tecnologias aeronáuticas específicas.",
+      "Ausência de referência a impactos ecológicos, pegada de carbono ou requisitos ambientais, focando exclusivamente em aspectos de acessibilidade humana sem conexão com questões ambientais."
+    ]
   },
   "estatisticas": {
     "total_palavras": 1667,

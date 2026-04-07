@@ -2,7 +2,7 @@
   "nome": "Alerta aos Operadores de Aeródromos nº 001/2023",
   "url": "https://www.gov.br/anac/pt-br/assuntos/regulados/aeroportos-e-aerodromos/arquivos/ALERTAn001_2023InfraestruturaparapousoedecolagemdeaeronaveseVTOL.pdf",
   "disponivel": true,
-  "data_processamento": "2025-12-18 18:55:07",
+  "data_processamento": "2026-04-07 15:38:52",
   "resumo": ["Base Regulatória Inicial: Recomenda que a infraestrutura para eVTOL siga, com adaptações, os requisitos do RBAC nº 155 (Helipontos).", "Dimensionamento de Áreas: Orienta o uso do parâmetro \"D\" (diâmetro do eVTOL) para definir as dimensões de componentes como FATO, TLOF e Área de Segurança.", "Foco em Propulsão Elétrica: O planejamento de emergência deve prever uma área designada para o manuseio de baterias, distanciada da FATO, TLOF e Área de Segurança.", "Contexto: Fornece diretrizes iniciais para o planejamento de vertiportos no âmbito da UAM, utilizando o Sandbox Regulatório para desenvolver futuras normas."],
   "pestel": {
     "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],

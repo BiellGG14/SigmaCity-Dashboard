@@ -2,7 +2,7 @@
   "nome": "Lei 6.938/1981 - Política Nacional do Meio Ambiente",
   "url": "https://www.planalto.gov.br/ccivil_03/leis/l6938.htm",
   "disponivel": true,
-  "data_processamento": "2025-12-18 18:55:20",
+  "data_processamento": "2026-04-07 15:39:04",
   "resumo": ["Instrumentos da PNMA: Lista ferramentas como o zoneamento ambiental, a avaliação de impactos ambientais (AIA) e o licenciamento de atividades.", "Licenciamento Ambiental: Exige licenciamento prévio para construção e operação de atividades potencialmente poluidoras ou que causem degradação ambiental.", "Implicações para UAM: A infraestrutura (ex: vertiportos) e operações de UAM estão sujeitas ao licenciamento e devem ser planejadas conforme os instrumentos de zoneamento e avaliação de impacto."],
   "pestel": {
     "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],

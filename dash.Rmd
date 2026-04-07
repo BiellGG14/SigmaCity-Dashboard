@@ -44,6 +44,25 @@ resource_files:
 - json/ResANAC775.json
 - json/ResCONAMA001.json
 - json/ResCONAMA237.json
+- json/ANEEL1000.json
+- json/CONAMA_RES_CONS_1990_002.json
+- json/D6780.json
+- json/D99274.json
+- "json/ICA 100-40_06.06.23.json"
+- json/L12187.json
+- json/L13465.json
+- json/L8078compilado.json
+- json/L9074CONSOL.json
+- json/L9427consol.json
+- json/L9503Compilado.json
+- json/L9605.json
+- json/RBAC139.json
+- "json/RESOLUCAO No 653, 20_12_2021 - Agencia Nacional de Aviacao Civil ANAC.json"
+- "json/RESOLUCAO No 736, 09_02_2024 - Agencia Nacional de Aviacao Civil ANAC.json"
+- json/IS161.json
+- "json/MCA 100-20.json"
+- "json/RBAC 91 EMD 05.json"
+- "json/RESOLUCAO NORMATIVA ANEEL N 1.059.json"
 - imagens/sigma.png
 - imagens/ita.png
 - "imagens/nuvem de palavras/"

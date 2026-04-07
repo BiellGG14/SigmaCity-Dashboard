@@ -2,12 +2,35 @@
   "nome": "RBAC 161 - Planos de Zoneamento de Ruído de Aeródromos",
   "url": "https://pergamum.anac.gov.br/pergamum/vinculos/RBAC161EMD00.pdf",
   "disponivel": true,
-  "data_processamento": "2025-12-18 18:55:28",
-  "resumo": ["O RBAC Nº 161 institui o Plano de Zoneamento de Ruído (PZR) para aeródromos civis públicos.", "O regulamento visa mapear o impacto do ruído aeronáutico e estabelecer critérios de compatibilidade para o uso do solo no entorno.", "Detalha os usos compatíveis e incompatíveis com base em níveis de ruído.", "Estipula as obrigações do operador do aeródromo, incluindo a interação com municípios e a criação de uma Comissão de Gerenciamento de Ruído (CGRA)."],
+  "data_processamento": "2026-04-07 15:39:12",
+  "resumo": [
+    "O RBAC Nº 161 institui o Plano de Zoneamento de Ruído (PZR) para aeródromos civis públicos.",
+    "O regulamento visa mapear o impacto do ruído aeronáutico e estabelecer critérios de compatibilidade para o uso do solo no entorno.",
+    "Detalha os usos compatíveis e incompatíveis com base em níveis de ruído.",
+    "Estipula as obrigações do operador do aeródromo, incluindo a interação com municípios e a criação de uma Comissão de Gerenciamento de Ruído (CGRA)."
+  ],
   "pestel": {
-    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
-    "pontuacoes": [4, 3, 5, 5, 4],
-    "justificativas": ["Estabelece estrutura de governança com articulação obrigatória entre operadores de aeródromos, municípios e ANAC, criando comissões de gestão de ruído (CGRA) com impacto relevante na coordenação federativa para UAM.", "Implica custos adicionais para elaboração de PZR e medidas de mitigação que impactam a viabilidade econômica de vertiportos, mas sem tratar especificamente de incentivos ou financiamento.", "Impacto direto e abrangente na aceitação social da UAM ao estabelecer critérios obrigatórios de compatibilidade de uso do solo, gestão de ruído e proteção de comunidades do entorno, elementos críticos para a licença social para operar.", "Define metodologias técnicas para modelagem acústica e monitoramento de ruído, com impacto direto na infraestrutura tecnológica, mas não aborda especificamente comunicações ou navegação avançada para UAM.", "Impacto relevante ao instituir regime obrigatório de zoneamento de ruído aeronáutico com critérios ambientais específicos para aeródromos, aplicável a vertiportos UAM e integrado ao planejamento territorial urbano."]
+    "fatores": [
+      "Político",
+      "Econômico",
+      "Social",
+      "Tecnológico",
+      "Ambiental"
+    ],
+    "pontuacoes": [
+      3,
+      1,
+      2,
+      2,
+      1
+    ],
+    "justificativas": [
+      "Estabelece estrutura de governança com articulação obrigatória entre operadores de aeródromos, municípios e ANAC, criando comissões de gestão de ruído (CGRA) com impacto relevante na coordenação federativa para UAM.",
+      "Implica custos adicionais para elaboração de PZR e medidas de mitigação que impactam a viabilidade econômica de vertiportos, mas sem tratar especificamente de incentivos ou financiamento.",
+      "Impacto direto e abrangente na aceitação social da UAM ao estabelecer critérios obrigatórios de compatibilidade de uso do solo, gestão de ruído e proteção de comunidades do entorno, elementos críticos para a licença social para operar.",
+      "Define metodologias técnicas para modelagem acústica e monitoramento de ruído, com impacto direto na infraestrutura tecnológica, mas não aborda especificamente comunicações ou navegação avançada para UAM.",
+      "Impacto relevante ao instituir regime obrigatório de zoneamento de ruído aeronáutico com critérios ambientais específicos para aeródromos, aplicável a vertiportos UAM e integrado ao planejamento territorial urbano."
+    ]
   },
   "estatisticas": {
     "total_palavras": 3811,

@@ -1,8 +1,8 @@
 {
-  "nome": "Lei 12.651/2012 - Código Florestal",
+  "nome": "Lei N° 12.651/2012 - Código Florestal",
   "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12651.htm",
   "disponivel": true,
-  "data_processamento": "2025-12-18 18:55:17",
+  "data_processamento": "2026-04-07 15:39:02",
   "resumo": ["Objetivo da Lei: Estabelece normas sobre proteção e uso da vegetação nativa.", "Definições: Define conceitos como Área de Preservação Permanente (APP) e área urbana consolidada.", "Tipos de APP: Lista as áreas consideradas APPs, como faixas marginais de rios, entorno de lagos, nascentes e encostas.", "Áreas Verdes Urbanas: Apresenta instrumentos municipais para a criação de áreas verdes.", "Implicações para UAM: As restrições em APPs e as regras de intervenção podem condicionar a localização de infraestruturas, como vertiportos."],
   "pestel": {
     "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],

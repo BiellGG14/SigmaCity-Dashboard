@@ -1,13 +1,13 @@
 {
-  "nome": "Lei 7.661/1988 - Plano Nacional de Gerenciamento Costeiro",
+  "nome": "Lei nº 7.661/1988 - Plano Nacional de Gerenciamento Costeiro (PNGC)",
   "url": "https://www.planalto.gov.br/ccivil_03/leis/l7661.htm",
   "disponivel": true,
-  "data_processamento": "2025-12-18 18:55:22",
+  "data_processamento": "2026-04-07 15:39:05",
   "resumo": ["Institui o Plano Nacional de Gerenciamento Costeiro (PNGC)", "Define a Zona Costeira como área de interação ar-mar-terra", "Estabelece diretrizes para zoneamento e uso do território", "Regulamenta o licenciamento ambiental na zona costeira", "Articula políticas federais, estaduais e municipais"],
   "pestel": {
     "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
     "pontuacoes": [4, 2, 2, 2, 5],
-    "justificativas": ["Estabelece política nacional de gestão costeira com articulação federativa entre União, estados e municípios, criando estrutura de governança territorial relevante para implantação de infraestruturas UAM em zonas costeiras.", "Impacto indireto ao estabelecer restrições de uso do solo que podem afetar custos de implantação, mas sem tratar especificamente de incentivos ou modelos econômicos para UAM.", "Foca na preservação de bens culturais e naturais com benefícios sociais indiretos, mas não aborda especificamente inclusão, equidade ou impactos sociais diretos da UAM.", "Estabelece diretrizes gerais para sistema viário e urbanização, mas não aborda tecnologias avançadas específicas para UAM ou requisitos técnicos para vertiportos.", "Impacto direto e abrangente ao instituir regime especial de proteção ambiental para zona costeira, com licenciamento obrigatório e zoneamento ecológico que condiciona totalmente a implantação de infraestruturas UAM."]
+    "justificativas": ["Estabelece política nacional de gestão costeira com articulação federativa entre União, estados e municípios, criando estrutura de governança territorial relevante para implantação de infraestruturas UAM em zonas costeiras.", "Impacto indireto ao estabelecer restrições de uso do solo que podem afetar custos de implantação, mas sem tratar especificamente de incentivos ou modelos econômicos para UAM.", "Foca na preservação de bens culturais e naturais com benefícios sociais indiretos, mas não aborda especificamente inclusão, equidade ou aceitação social da UAM.", "Estabelece diretrizes gerais para sistema viário e urbanização, mas não aborda tecnologias avançadas ou infraestruturas específicas para UAM.", "Impacto direto e abrangente ao instituir regime especial de proteção ambiental para zona costeira, com licenciamento obrigatório e zoneamento ecológico que condiciona totalmente a implantação de infraestruturas UAM."]
   },
   "estatisticas": {
     "total_palavras": 671,

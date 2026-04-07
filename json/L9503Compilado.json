@@ -1,0 +1,370 @@
+{
+  "nome": "Lei 9.503/1997 - Código de Trânsito Brasileiro",
+  "url": "https://www.planalto.gov.br/ccivil_03/leis/l9503.htm",
+  "disponivel": true,
+  "data_processamento": "2026-04-07 15:39:07",
+  "resumo": ["Regula direitos e deveres de quem participa do trânsito nas vias terrestres", "Estabelece conceitos como via pública, trânsito seguro e infraestrutura de transporte", "Define responsabilidades do poder público em garantir segurança no trânsito", "Prevê integração de modos de transporte urbano no planejamento municipal", "Cria obrigações para operadores de transporte público e privado"],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [2, 2, 3, 1, 1],
+    "justificativas": ["Estabelece responsabilidades do poder público no planejamento urbano e gestão da mobilidade, com impacto limitado à regulação terrestre sem menção específica a modais aéreos como UAM.", "Não aborda aspectos econômicos do setor de transporte, financiamento ou viabilidade de negócios, com impacto do CTB restrito ao transporte terrestre.", "Estabelece diretrizes para segurança e responsabilidade que beneficiam comunidades, com impacto moderado em percepção de risco e segurança, aplicável potencialmente à UAM em dimensão territorial.", "Não especifica requisitos tecnológicos avançados para transporte, limitando-se a conceitos gerais de infraestrutura viária, sem referência a comunicações, navegação ou sistemas autônomos.", "Ausência de referência a poluição atmosférica, emissões de carbono, ruído ou impactos ambientais de modais de transporte, com foco exclusivo em ordenamento viário terrestre."]
+  },
+  "estatisticas": {
+    "total_palavras": 24205,
+    "palavras_unicas": 4150,
+    "num_sentencas": 3272,
+    "top_50_palavras": {
+      "veículo": 498,
+      "trânsito": 467,
+      "incluído": 445,
+      "vigência": 385,
+      "dada": 324,
+      "redação": 317,
+      "infração": 243,
+      "veículos": 242,
+      "multa": 217,
+      "penalidade": 206,
+      "contran": 198,
+      "via": 157,
+      "condutor": 143,
+      "nacional": 143,
+      "deste": 139,
+      "código": 137,
+      "órgão": 134,
+      "será": 126,
+      "segurança": 125,
+      "vetado": 109,
+      "habilitação": 107,
+      "órgãos": 101,
+      "httpswwwplanaltogovbrccivilleislcompiladohtm": 93,
+      "lcompilado": 93,
+      "vias": 91,
+      "administrativa": 87,
+      "circulação": 87,
+      "neste": 87,
+      "caso": 86,
+      "dirigir": 83,
+      "federal": 83,
+      "forma": 77,
+      "sistema": 76,
+      "sinalização": 75,
+      "deverá": 74,
+      "autoridade": 73,
+      "poderá": 72,
+      "registro": 70,
+      "transporte": 68,
+      "prazo": 66,
+      "qualquer": 66,
+      "disposto": 65,
+      "entidade": 65,
+      "entidades": 65,
+      "distrito": 63,
+      "gravíssima": 62,
+      "remoção": 62,
+      "carga": 61,
+      "previstas": 61,
+      "direito": 60
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 1,
+      "aérea": 1,
+      "urbana": 17,
+      "evtol": 0,
+      "aeronave": 1,
+      "vertiporto": 0,
+      "heliponto": 0,
+      " uam ": 0,
+      "tráfego aéreo": 0,
+      "decolagem": 0,
+      "pouso": 0,
+      " voo ": 0,
+      "aviação": 0
+    },
+    "top_20_bigramas": {
+      "redação dada": 316,
+      "incluído vigência": 208,
+      "penalidade multa": 163,
+      "dada vigência": 160,
+      "httpswwwplanaltogovbrccivilleislcompiladohtm lcompilado": 92,
+      "nacional trânsito": 73,
+      "deste código": 68,
+      "distrito federal": 62,
+      "órgãos entidades": 61,
+      "órgão entidade": 60,
+      "infração gravíssima": 57,
+      "infração média": 51,
+      "sistema nacional": 50,
+      "neste código": 49,
+      "veículo automotor": 48,
+      "executivo trânsito": 47,
+      "estados distrito": 44,
+      "infração grave": 44,
+      "remoção veículo": 44,
+      "média penalidade": 42
+    },
+    "palavras_chave": [
+      {
+        "palavra": "trânsito",
+        "frequencia": 467,
+        "relevancia": 5.766
+      },
+      {
+        "palavra": "incluído",
+        "frequencia": 445,
+        "relevancia": 5.451
+      },
+      {
+        "palavra": "vigência",
+        "frequencia": 385,
+        "relevancia": 4.604
+      },
+      {
+        "palavra": "veículo",
+        "frequencia": 498,
+        "relevancia": 3.728
+      },
+      {
+        "palavra": "infração",
+        "frequencia": 243,
+        "relevancia": 2.682
+      },
+      {
+        "palavra": "veículos",
+        "frequencia": 242,
+        "relevancia": 2.669
+      },
+      {
+        "palavra": "dada",
+        "frequencia": 324,
+        "relevancia": 2.258
+      },
+      {
+        "palavra": "penalidade",
+        "frequencia": 206,
+        "relevancia": 2.206
+      },
+      {
+        "palavra": "redação",
+        "frequencia": 317,
+        "relevancia": 2.201
+      },
+      {
+        "palavra": "condutor",
+        "frequencia": 143,
+        "relevancia": 1.427
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "redação dada",
+        "freq": 316,
+        "tscore": 17.54,
+        "palavra1_freq": 317,
+        "palavra2_freq": 324
+      },
+      {
+        "bigrama": "incluído vigência",
+        "freq": 208,
+        "tscore": 13.93,
+        "palavra1_freq": 445,
+        "palavra2_freq": 385
+      },
+      {
+        "bigrama": "penalidade multa",
+        "freq": 163,
+        "tscore": 12.62,
+        "palavra1_freq": 206,
+        "palavra2_freq": 217
+      },
+      {
+        "bigrama": "dada vigência",
+        "freq": 160,
+        "tscore": 12.24,
+        "palavra1_freq": 324,
+        "palavra2_freq": 385
+      },
+      {
+        "bigrama": "httpswwwplanaltogovbrccivilleislcompiladohtm lcompilado",
+        "freq": 92,
+        "tscore": 9.55,
+        "palavra1_freq": 93,
+        "palavra2_freq": 93
+      },
+      {
+        "bigrama": "nacional trânsito",
+        "freq": 73,
+        "tscore": 8.22,
+        "palavra1_freq": 143,
+        "palavra2_freq": 467
+      },
+      {
+        "bigrama": "deste código",
+        "freq": 68,
+        "tscore": 8.15,
+        "palavra1_freq": 139,
+        "palavra2_freq": 137
+      },
+      {
+        "bigrama": "distrito federal",
+        "freq": 62,
+        "tscore": 7.85,
+        "palavra1_freq": 63,
+        "palavra2_freq": 83
+      },
+      {
+        "bigrama": "órgãos entidades",
+        "freq": 61,
+        "tscore": 7.78,
+        "palavra1_freq": 101,
+        "palavra2_freq": 65
+      },
+      {
+        "bigrama": "órgão entidade",
+        "freq": 60,
+        "tscore": 7.7,
+        "palavra1_freq": 134,
+        "palavra2_freq": 65
+      },
+      {
+        "bigrama": "infração gravíssima",
+        "freq": 57,
+        "tscore": 7.47,
+        "palavra1_freq": 243,
+        "palavra2_freq": 62
+      },
+      {
+        "bigrama": "infração média",
+        "freq": 51,
+        "tscore": 7.06,
+        "palavra1_freq": 243,
+        "palavra2_freq": 56
+      },
+      {
+        "bigrama": "sistema nacional",
+        "freq": 50,
+        "tscore": 7.01,
+        "palavra1_freq": 76,
+        "palavra2_freq": 143
+      },
+      {
+        "bigrama": "neste código",
+        "freq": 49,
+        "tscore": 6.93,
+        "palavra1_freq": 87,
+        "palavra2_freq": 137
+      },
+      {
+        "bigrama": "veículo automotor",
+        "freq": 48,
+        "tscore": 6.77,
+        "palavra1_freq": 498,
+        "palavra2_freq": 52
+      },
+      {
+        "bigrama": "executivo trânsito",
+        "freq": 47,
+        "tscore": 6.7,
+        "palavra1_freq": 55,
+        "palavra2_freq": 467
+      },
+      {
+        "bigrama": "estados distrito",
+        "freq": 44,
+        "tscore": 6.62,
+        "palavra1_freq": 46,
+        "palavra2_freq": 63
+      },
+      {
+        "bigrama": "infração grave",
+        "freq": 44,
+        "tscore": 6.55,
+        "palavra1_freq": 243,
+        "palavra2_freq": 53
+      },
+      {
+        "bigrama": "remoção veículo",
+        "freq": 44,
+        "tscore": 6.44,
+        "palavra1_freq": 62,
+        "palavra2_freq": 498
+      },
+      {
+        "bigrama": "média penalidade",
+        "freq": 42,
+        "tscore": 6.41,
+        "palavra1_freq": 56,
+        "palavra2_freq": 206
+      },
+      {
+        "bigrama": "executivos trânsito",
+        "freq": 40,
+        "tscore": 6.15,
+        "palavra1_freq": 57,
+        "palavra2_freq": 467
+      },
+      {
+        "bigrama": "multa administrativa",
+        "freq": 38,
+        "tscore": 6.04,
+        "palavra1_freq": 217,
+        "palavra2_freq": 87
+      },
+      {
+        "bigrama": "direito dirigir",
+        "freq": 37,
+        "tscore": 6.05,
+        "palavra1_freq": 60,
+        "palavra2_freq": 83
+      },
+      {
+        "bigrama": "grave penalidade",
+        "freq": 37,
+        "tscore": 6.01,
+        "palavra1_freq": 53,
+        "palavra2_freq": 206
+      },
+      {
+        "bigrama": "administrativa remoção",
+        "freq": 36,
+        "tscore": 5.96,
+        "palavra1_freq": 87,
+        "palavra2_freq": 62
+      },
+      {
+        "bigrama": "vetado incluído",
+        "freq": 35,
+        "tscore": 5.58,
+        "palavra1_freq": 109,
+        "palavra2_freq": 445
+      },
+      {
+        "bigrama": "circunscrição via",
+        "freq": 34,
+        "tscore": 5.78,
+        "palavra1_freq": 49,
+        "palavra2_freq": 157
+      },
+      {
+        "bigrama": "carteira nacional",
+        "freq": 32,
+        "tscore": 5.62,
+        "palavra1_freq": 38,
+        "palavra2_freq": 143
+      },
+      {
+        "bigrama": "nacional habilitação",
+        "freq": 32,
+        "tscore": 5.55,
+        "palavra1_freq": 143,
+        "palavra2_freq": 107
+      },
+      {
+        "bigrama": "suspensão direito",
+        "freq": 31,
+        "tscore": 5.54,
+        "palavra1_freq": 53,
+        "palavra2_freq": 60
+      }
+    ]
+  }
+}

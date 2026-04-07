@@ -2,7 +2,7 @@
   "nome": "Resolução CONAMA 1/1986",
   "url": "https://conama.mma.gov.br/?option=com_sisconama&task=arquivo.download&id=745",
   "disponivel": true,
-  "data_processamento": "2025-12-18 18:55:29",
+  "data_processamento": "2026-04-07 15:39:12",
   "resumo": ["Estabelece critérios para avaliação de impacto ambiental", "Define atividades sujeitas a EIA/RIMA, incluindo aeroportos", "Estabelece diretrizes para análise de alternativas de localização", "Requer diagnóstico ambiental da área de influência", "Define conteúdo mínimo do RIMA"],
   "pestel": {
     "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],

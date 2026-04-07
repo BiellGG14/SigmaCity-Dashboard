@@ -1,0 +1,370 @@
+{
+  "nome": "RBAC 139 - Certificação Operacional de Aeroportos",
+  "url": "https://www.anac.gov.br/assuntos/legislacao/legislacao-1/rbha-e-rbac/rbac/rbac-139",
+  "disponivel": true,
+  "data_processamento": "2026-04-07 15:39:11",
+  "resumo": ["Estabelece os critérios de Certificação Operacional de Aeroportos civis com operações internacionais.", "Isenta a aplicação de suas diretrizes a infraestruturas classificadas como heliportos e helipontos.", "Requer a compatibilização do Plano Básico de Zona de Proteção de Aeródromo (PBZPA) com as especificações operativas da instalação.", "Determina que o operador aprove o PBZPA junto ao Comando da Aeronáutica, regulando o uso do solo nas adjacências.", "Apresenta interface restrita com a Mobilidade Aérea Urbana (UAM), fundamentada na demarcação das zonas de proteção aeroportuária."],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [2, 1, 1, 2, 2],
+    "justificativas": ["O regulamento envolve a ANAC e o Comando da Aeronáutica na aprovação do PBZPA, indicando ação governamental, mas seu escopo não abrange diretamente a UAM, limitando-se a aeroportos convencionais.", "Não há menção a aspectos econômicos como viabilidade financeira, custos operacionais, investimentos ou incentivos fiscais relacionados à UAM. O foco é administrativo e operacional para aeroportos certificados.", "O texto não aborda questões sociais como aceitação pública, equidade, inclusão ou percepção de risco da UAM. As disposições são técnicas e restritas ao ambiente aeroportuário convencional.", "Embora exija a compatibilização do PBZPA, o regulamento não menciona tecnologias de suporte à UAM (ex.: U-space, 5G, vertiportos). O impacto é indireto e limitado.", "A exigência de compatibilização do PBZPA com o uso do solo no entorno tem implicações ambientais indiretas, mas não há referência a gestão de ruído, pegada de carbono ou licenciamento ambiental específico para UAM."]
+  },
+  "estatisticas": {
+    "total_palavras": 3246,
+    "palavras_unicas": 951,
+    "num_sentencas": 514,
+    "top_50_palavras": {
+      "operacional": 124,
+      "aeródromo": 98,
+      "classe": 74,
+      "aeroporto": 72,
+      "certificado": 65,
+      "segurança": 64,
+      "anac": 56,
+      "mops": 52,
+      "operador": 35,
+      "operações": 33,
+      "certificação": 31,
+      "reservado": 25,
+      "detentor": 24,
+      "subparte": 24,
+      "deve": 21,
+      "regulamento": 21,
+      "constatação": 19,
+      "operacionais": 19,
+      "procedimentos": 19,
+      "pista": 18,
+      "processo": 18,
+      "rbac": 17,
+      "operação": 16,
+      "aeronave": 15,
+      "aprovação": 15,
+      "nível": 15,
+      "risco": 15,
+      "administrativas": 14,
+      "análise": 14,
+      "conforme": 14,
+      "especificações": 14,
+      "operativas": 14,
+      "requerente": 14,
+      "seguintes": 14,
+      "características": 13,
+      "físicas": 13,
+      "informações": 13,
+      "infraestrutura": 13,
+      "poderá": 13,
+      "requerimento": 13,
+      "aeronaves": 12,
+      "área": 12,
+      "decolagem": 12,
+      "gerenciamento": 12,
+      "medidas": 12,
+      "providências": 12,
+      "requisitos": 12,
+      "significa": 12,
+      "equivalentes": 11,
+      "isenções": 11
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 2,
+      "urbana": 0,
+      "evtol": 0,
+      "aeronave": 27,
+      "vertiporto": 0,
+      "heliponto": 1,
+      " uam ": 0,
+      "tráfego aéreo": 0,
+      "decolagem": 12,
+      "pouso": 10,
+      " voo ": 2,
+      "aviação": 2
+    },
+    "top_20_bigramas": {
+      "operacional aeroporto": 60,
+      "certificado operacional": 58,
+      "classe classe": 40,
+      "segurança operacional": 39,
+      "operador aeródromo": 33,
+      "detentor certificado": 19,
+      "constatação classe": 15,
+      "classe constatação": 14,
+      "especificações operativas": 14,
+      "características físicas": 13,
+      "certificação operacional": 13,
+      "processo certificação": 13,
+      "reservado subparte": 12,
+      "aeroporto deve": 11,
+      "equivalentes segurança": 11,
+      "níveis equivalentes": 11,
+      "anac poderá": 10,
+      "deste regulamento": 10,
+      "pista pouso": 10,
+      "pouso decolagem": 10
+    },
+    "palavras_chave": [
+      {
+        "palavra": "operacional",
+        "frequencia": 124,
+        "relevancia": 4.828
+      },
+      {
+        "palavra": "aeródromo",
+        "frequencia": 98,
+        "relevancia": 3.632
+      },
+      {
+        "palavra": "aeroporto",
+        "frequencia": 72,
+        "relevancia": 2.491
+      },
+      {
+        "palavra": "certificado",
+        "frequencia": 65,
+        "relevancia": 2.196
+      },
+      {
+        "palavra": "segurança",
+        "frequencia": 64,
+        "relevancia": 2.155
+      },
+      {
+        "palavra": "classe",
+        "frequencia": 74,
+        "relevancia": 1.546
+      },
+      {
+        "palavra": "anac",
+        "frequencia": 56,
+        "relevancia": 1.096
+      },
+      {
+        "palavra": "operador",
+        "frequencia": 35,
+        "relevancia": 1.011
+      },
+      {
+        "palavra": "mops",
+        "frequencia": 52,
+        "relevancia": 0.999
+      },
+      {
+        "palavra": "operações",
+        "frequencia": 33,
+        "relevancia": 0.938
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "operacional aeroporto",
+        "freq": 60,
+        "tscore": 7.39,
+        "palavra1_freq": 124,
+        "palavra2_freq": 72
+      },
+      {
+        "bigrama": "certificado operacional",
+        "freq": 58,
+        "tscore": 7.29,
+        "palavra1_freq": 65,
+        "palavra2_freq": 124
+      },
+      {
+        "bigrama": "classe classe",
+        "freq": 40,
+        "tscore": 6.06,
+        "palavra1_freq": 74,
+        "palavra2_freq": 74
+      },
+      {
+        "bigrama": "segurança operacional",
+        "freq": 39,
+        "tscore": 5.85,
+        "palavra1_freq": 64,
+        "palavra2_freq": 124
+      },
+      {
+        "bigrama": "operador aeródromo",
+        "freq": 33,
+        "tscore": 5.56,
+        "palavra1_freq": 35,
+        "palavra2_freq": 98
+      },
+      {
+        "bigrama": "detentor certificado",
+        "freq": 19,
+        "tscore": 4.25,
+        "palavra1_freq": 24,
+        "palavra2_freq": 65
+      },
+      {
+        "bigrama": "constatação classe",
+        "freq": 15,
+        "tscore": 3.76,
+        "palavra1_freq": 19,
+        "palavra2_freq": 74
+      },
+      {
+        "bigrama": "especificações operativas",
+        "freq": 14,
+        "tscore": 3.73,
+        "palavra1_freq": 14,
+        "palavra2_freq": 14
+      },
+      {
+        "bigrama": "classe constatação",
+        "freq": 14,
+        "tscore": 3.63,
+        "palavra1_freq": 74,
+        "palavra2_freq": 19
+      },
+      {
+        "bigrama": "características físicas",
+        "freq": 13,
+        "tscore": 3.59,
+        "palavra1_freq": 13,
+        "palavra2_freq": 13
+      },
+      {
+        "bigrama": "processo certificação",
+        "freq": 13,
+        "tscore": 3.56,
+        "palavra1_freq": 18,
+        "palavra2_freq": 31
+      },
+      {
+        "bigrama": "certificação operacional",
+        "freq": 13,
+        "tscore": 3.28,
+        "palavra1_freq": 31,
+        "palavra2_freq": 124
+      },
+      {
+        "bigrama": "reservado subparte",
+        "freq": 12,
+        "tscore": 3.41,
+        "palavra1_freq": 25,
+        "palavra2_freq": 24
+      },
+      {
+        "bigrama": "níveis equivalentes",
+        "freq": 11,
+        "tscore": 3.31,
+        "palavra1_freq": 11,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "equivalentes segurança",
+        "freq": 11,
+        "tscore": 3.25,
+        "palavra1_freq": 11,
+        "palavra2_freq": 64
+      },
+      {
+        "bigrama": "aeroporto deve",
+        "freq": 11,
+        "tscore": 3.18,
+        "palavra1_freq": 72,
+        "palavra2_freq": 21
+      },
+      {
+        "bigrama": "pouso decolagem",
+        "freq": 10,
+        "tscore": 3.15,
+        "palavra1_freq": 10,
+        "palavra2_freq": 12
+      },
+      {
+        "bigrama": "pista pouso",
+        "freq": 10,
+        "tscore": 3.14,
+        "palavra1_freq": 18,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "deste regulamento",
+        "freq": 10,
+        "tscore": 3.14,
+        "palavra1_freq": 10,
+        "palavra2_freq": 21
+      },
+      {
+        "bigrama": "anac poderá",
+        "freq": 10,
+        "tscore": 3.09,
+        "palavra1_freq": 56,
+        "palavra2_freq": 13
+      },
+      {
+        "bigrama": "físicas operacionais",
+        "freq": 9,
+        "tscore": 2.97,
+        "palavra1_freq": 13,
+        "palavra2_freq": 19
+      },
+      {
+        "bigrama": "nível equivalente",
+        "freq": 8,
+        "tscore": 2.81,
+        "palavra1_freq": 15,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "inspeção certificação",
+        "freq": 8,
+        "tscore": 2.79,
+        "palavra1_freq": 10,
+        "palavra2_freq": 31
+      },
+      {
+        "bigrama": "equivalente segurança",
+        "freq": 8,
+        "tscore": 2.77,
+        "palavra1_freq": 9,
+        "palavra2_freq": 64
+      },
+      {
+        "bigrama": "provisório aeroporto",
+        "freq": 8,
+        "tscore": 2.77,
+        "palavra1_freq": 8,
+        "palavra2_freq": 72
+      },
+      {
+        "bigrama": "obtenção certificado",
+        "freq": 8,
+        "tscore": 2.76,
+        "palavra1_freq": 10,
+        "palavra2_freq": 65
+      },
+      {
+        "bigrama": "operações aeródromo",
+        "freq": 8,
+        "tscore": 2.48,
+        "palavra1_freq": 33,
+        "palavra2_freq": 98
+      },
+      {
+        "bigrama": "elementos mínimos",
+        "freq": 7,
+        "tscore": 2.64,
+        "palavra1_freq": 10,
+        "palavra2_freq": 7
+      },
+      {
+        "bigrama": "emenda httpspergamumanacgovbrarquivosrbacemdpdf",
+        "freq": 7,
+        "tscore": 2.64,
+        "palavra1_freq": 10,
+        "palavra2_freq": 7
+      },
+      {
+        "bigrama": "mínimos infraestrutura",
+        "freq": 7,
+        "tscore": 2.64,
+        "palavra1_freq": 7,
+        "palavra2_freq": 13
+      }
+    ]
+  }
+}
