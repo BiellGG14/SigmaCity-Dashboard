@@ -575,6 +575,27 @@ lista_documentos <- sistema_dados$nomes
 mapeamento_json_para_imagem <- sistema_dados$mapeamento
 
 # ============================================================================
+# LER CSVs DO FLUXO DE SELEÇÃO DE LEGISLAÇÕES
+# ============================================================================
+df_identificacao <- readr::read_csv(
+  "documentos/Comparativo_Legislacao_AAM.xlsx - IDENTIFICAÇÃO.csv",
+  show_col_types = FALSE
+) |> as.data.frame()
+
+df_elegibilidade <- readr::read_csv(
+  "documentos/Comparativo_Legislacao_AAM.xlsx - ELEGIBILIDADE.csv",
+  show_col_types = FALSE
+) |> as.data.frame()
+
+df_inclusao <- readr::read_csv(
+  "documentos/Comparativo_Legislacao_AAM.xlsx - INCLUSÃO.csv",
+  show_col_types = FALSE
+) |> as.data.frame()
+
+# Manter alias para compatibilidade com o botão da home
+df_legislacao <- df_identificacao
+
+# ============================================================================
 # CONFIGURAR ACESSO ÀS IMAGENS NO SHINY
 # ============================================================================
 
@@ -770,6 +791,16 @@ observeEvent(input$doc_home_clicado, {
   doc_selecionado(input$doc_home_clicado)
   current_page("documento")
 })
+
+observeEvent(input$btn_legislacao, {
+  req(inicializado())
+  current_page("legislacao")
+})
+
+observeEvent(input$btn_voltar_legislacao, {
+  req(inicializado())
+  current_page("home")
+})
 ```
 ```{r, echo=FALSE}
 # ============================================================================
@@ -859,6 +890,23 @@ renderUI({
             tags$li("Os avanços tecnológicos viabilizam o desempenho, a segurança e a escalabilidade;"),
             tags$li("As variáveis ambientais trazem tanto oportunidades (sustentabilidade) quanto restrições (ruído e emissões);"),
             tags$li("O fator legal confere segurança jurídica e previsibilidade aos atores do setor.")
+          ),
+
+          hr(style = "border-top: 2px solid #dee2e6; margin: 30px 0;"),
+
+          tags$div(
+            style = "text-align: center; padding: 10px 0 5px;",
+            actionButton(
+              "btn_legislacao",
+              label = paste0("Visualizar todas as ", nrow(df_legislacao), " legislações analisadas"),
+              style = paste0(
+                "background-color: #004aad; color: white; border: none; ",
+                "padding: 12px 28px; font-size: 15px; font-weight: 600; ",
+                "border-radius: 6px; cursor: pointer; ",
+                "box-shadow: 0 2px 6px rgba(0,74,173,0.35); ",
+                "transition: background-color 0.2s ease;"
+              )
+            )
           )
         ),
         
@@ -1337,6 +1385,232 @@ renderUI({
             })
           )
         }
+      )
+    )
+
+  } else if (current_page() == "legislacao") {
+    # ========================================================================
+    # PÁGINA: FLUXO COMPLETO DE SELEÇÃO DE LEGISLAÇÕES
+    # ========================================================================
+
+    # Helper para construir cada tabela DT
+    make_leg_table <- function(df, tipo = c("aceitacao", "status")) {
+      tipo <- match.arg(tipo)
+
+      # Normalizar nome da primeira coluna para "Documento"
+      if (names(df)[1] == "Documentos") names(df)[1] <- "Documento"
+
+      col_opts <- list(
+        pageLength = 100,
+        lengthMenu = c(50, 100, 200, 500),
+        dom = "lfrtip",
+        language = list(
+          search = "Buscar:",
+          lengthMenu = "Mostrar _MENU_ por página",
+          info = "Exibindo _START_ a _END_ de _TOTAL_ registros",
+          paginate = list(previous = "Anterior", `next` = "Próximo"),
+          zeroRecords = "Nenhum registro encontrado"
+        ),
+        columnDefs = list(
+          list(width = "200px", targets = 0),
+          list(width = "110px", targets = 1, className = "dt-center")
+        ),
+        scrollX = TRUE,
+        scrollY = "65vh",
+        scrollCollapse = TRUE,
+        paging = FALSE,
+        autoWidth = FALSE
+      )
+
+      dt <- datatable(
+        df,
+        options = col_opts,
+        rownames = FALSE,
+        class = "cell-border stripe hover",
+        filter = "top"
+      )
+
+      if (tipo == "aceitacao") {
+        dt <- dt %>%
+          formatStyle(
+            "Aceitação",
+            backgroundColor = styleEqual(
+              c("Aceito", "Rejeitado"),
+              c("#d4edda", "#f8d7da")
+            ),
+            color = styleEqual(
+              c("Aceito", "Rejeitado"),
+              c("#155724", "#721c24")
+            ),
+            fontWeight = "bold"
+          )
+      } else {
+        dt <- dt %>%
+          formatStyle(
+            "Status",
+            backgroundColor = "#d4edda",
+            color = "#155724",
+            fontWeight = "bold"
+          )
+      }
+      dt
+    }
+
+    # Contagens para o funil
+    n_id   <- nrow(df_identificacao)
+    n_eleg <- nrow(df_elegibilidade)
+    n_inc  <- nrow(df_inclusao)
+
+    # Estilo compartilhado para os cards do funil
+    funil_card <- function(numero, label, cor_borda, cor_texto, cor_bg) {
+      tags$div(
+        style = paste0(
+          "flex: 1; text-align: center; padding: 18px 10px; ",
+          "background-color: ", cor_bg, "; ",
+          "border-radius: 8px; border-top: 5px solid ", cor_borda, "; ",
+          "box-shadow: 0 2px 6px rgba(0,0,0,0.08);"
+        ),
+        tags$span(
+          as.character(numero),
+          style = paste0(
+            "display: block; font-size: 36px; font-weight: 800; ",
+            "color: ", cor_texto, "; line-height: 1.1;"
+          )
+        ),
+        tags$span(
+          label,
+          style = paste0(
+            "display: block; font-size: 11px; font-weight: 700; ",
+            "color: ", cor_texto, "; text-transform: uppercase; ",
+            "letter-spacing: 0.05em; margin-top: 4px;"
+          )
+        )
+      )
+    }
+
+    funil_seta <- tags$div(
+      style = paste0(
+        "display: flex; align-items: center; justify-content: center; ",
+        "font-size: 22px; color: #adb5bd; padding: 0 6px; flex-shrink: 0;"
+      ),
+      "\u2192"
+    )
+
+    tagList(
+      tags$div(
+        class = "main-container",
+        style = "padding: 20px 30px; width: 100%;",
+
+        # ── Cabeçalho ──────────────────────────────────────────────────────
+        tags$div(
+          style = paste0(
+            "display: flex; align-items: center; ",
+            "margin-bottom: 28px; gap: 16px;"
+          ),
+          actionButton(
+            "btn_voltar_legislacao",
+            label = "\u2190 Voltar",
+            style = paste0(
+              "background-color: transparent; color: #004aad; ",
+              "border: 2px solid #004aad; padding: 8px 18px; ",
+              "font-size: 14px; font-weight: 600; border-radius: 6px; ",
+              "cursor: pointer; white-space: nowrap;"
+            )
+          ),
+          tags$div(
+            h2("Legisla\u00e7\u00f5es Analisadas \u2014 Fluxo de Sele\u00e7\u00e3o",
+               style = "color: #004aad; margin: 0; font-weight: bold;"),
+            p(paste0(
+              "Web scraping \u2192 triagem LLM (DeepSeek) ",
+              "\u2192 revis\u00e3o pela equipe ITA"
+            ),
+              style = paste0(
+                "margin: 4px 0 0; font-size: 13px; color: #6c757d;"
+              ))
+          )
+        ),
+
+        # ── Funil ──────────────────────────────────────────────────────────
+        tags$div(
+          style = paste0(
+            "display: flex; align-items: stretch; gap: 0; ",
+            "margin-bottom: 30px;"
+          ),
+          funil_card(n_id,   "Identificados",  "#004aad", "#004aad", "#eef2fb"),
+          funil_seta,
+          funil_card(n_eleg, "Eleg\u00edveis",      "#e67e22", "#b75b10", "#fef3e2"),
+          funil_seta,
+          funil_card(n_inc,  "Inclu\u00eddos",      "#198754", "#155724", "#d4edda")
+        ),
+
+        # ── Abas ───────────────────────────────────────────────────────────
+        tags$div(
+          style = paste0(
+            "background-color: white; border-radius: 8px; ",
+            "border: 2px solid #dee2e6; padding: 12px 16px;"
+          ),
+          tabsetPanel(
+            type = "tabs",
+
+            # ── Aba 1: IDENTIFICAÇÃO ──────────────────────────────────────
+            tabPanel(
+              title = paste0("Identifica\u00e7\u00e3o (", n_id, ")"),
+              tags$div(
+                style = "margin-top: 20px;",
+                p(paste0(
+                  "Conjunto total de documentos obtidos via web scraping. ",
+                  "Cada documento foi avaliado quanto \u00e0 ader\u00eancia ",
+                  "ao tema UAM."
+                ),
+                  style = paste0(
+                    "font-size: 13px; color: #495057; ",
+                    "margin-bottom: 16px; font-style: italic;"
+                  )),
+                DT::renderDataTable({
+                  make_leg_table(df_identificacao, tipo = "aceitacao")
+                })
+              )
+            ),
+
+            # ── Aba 2: ELEGIBILIDADE ──────────────────────────────────────
+            tabPanel(
+              title = paste0("Elegibilidade (", n_eleg, ")"),
+              tags$div(
+                style = "margin-top: 20px;",
+                p(paste0(
+                  "Documentos processados pela API DeepSeek e classificados ",
+                  "como potencialmente relevantes para o planejamento urbano UAM."
+                ),
+                  style = paste0(
+                    "font-size: 13px; color: #495057; ",
+                    "margin-bottom: 16px; font-style: italic;"
+                  )),
+                DT::renderDataTable({
+                  make_leg_table(df_elegibilidade, tipo = "aceitacao")
+                })
+              )
+            ),
+
+            # ── Aba 3: INCLUSÃO ───────────────────────────────────────────
+            tabPanel(
+              title = paste0("Inclus\u00e3o (", n_inc, ")"),
+              tags$div(
+                style = "margin-top: 20px;",
+                p(paste0(
+                  "Lista final de documentos inclu\u00eddos na an\u00e1lise, ",
+                  "ap\u00f3s revis\u00e3o manual pela equipe do ITA."
+                ),
+                  style = paste0(
+                    "font-size: 13px; color: #495057; ",
+                    "margin-bottom: 16px; font-style: italic;"
+                  )),
+                DT::renderDataTable({
+                  make_leg_table(df_inclusao, tipo = "status")
+                })
+              )
+            )
+          )
+        )
       )
     )
 
