@@ -6,6 +6,7 @@ Thumbs.db
 .Rhistory
 .RData
 .Ruserdata
+backend/.plumber*.log
 
 # RStudio project settings
 .Rproj.user/

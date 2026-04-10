@@ -115,7 +115,7 @@
 .badge {
   display: inline-block;
   padding: 6px 12px;
-  border-radius: 12px;
+  border-radius: 8px;
   font-weight: 700;
   font-size: 12px;
 }

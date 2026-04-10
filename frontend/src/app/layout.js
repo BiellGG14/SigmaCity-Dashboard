@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="pt-BR">
       <body className={`${inter.variable} ${outfit.variable}`}>
         <Navbar />
-        <main style={{ paddingTop: '100px', minHeight: '100vh', paddingBottom: '40px' }}>
+        <main style={{ paddingTop: "32px", minHeight: "100vh", paddingBottom: "40px" }}>
           {children}
         </main>
       </body>

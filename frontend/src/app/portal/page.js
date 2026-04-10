@@ -1,22 +1,68 @@
-import Link from 'next/link';
-import styles from './page.module.css';
+import Link from "next/link";
+import styles from "./page.module.css";
+
+const produtos = [
+  {
+    numero: "I",
+    status: "Disponível",
+    statusClass: styles.badgeDisponivel,
+    cardClass: styles.cardDisponivel,
+    titulo: "Inventário das legislações que exercem impacto nas operações de UAM envolvendo eVTOL no contexto do planejamento urbano",
+    entrega: "Entrega: Novembro 2025",
+    acoes: [
+      { href: "/produto-i", label: "Dashboard Interativo", className: styles.btnPrimary },
+      { href: "/produtos/produto01", label: "Documento Completo", className: styles.btnSecondary },
+    ],
+  },
+  {
+    numero: "II",
+    status: "Em Andamento",
+    statusClass: styles.badgeAndamento,
+    cardClass: styles.cardAndamento,
+    titulo: "Relatório de diretrizes e parâmetros normativos no âmbito da UAM com os requisitos legais estabelecidos",
+    entrega: "Previsão: Março 2026",
+    acoes: [
+      { href: "/dashboard-pii", label: "Dashboard Interativo (PII)", className: styles.btnWarning },
+      { href: "/produtos/produto02", label: "Documento Completo", className: styles.btnWarning },
+      { href: "/produtos/guam", label: "Guia Ilustrativo GUAM", className: styles.btnWarning },
+    ],
+  },
+  {
+    numero: "III",
+    status: "Em Desenvolvimento",
+    statusClass: styles.badgeDesenvolvimento,
+    cardClass: styles.cardDesenvolvimento,
+    titulo: "Relatório abordando uma revisão da literatura sobre metodologias de integração de vertiportos",
+    entrega: "Previsão: 2026",
+    acoes: [],
+  },
+  {
+    numero: "IV",
+    status: "Em Desenvolvimento",
+    statusClass: styles.badgeDesenvolvimento,
+    cardClass: styles.cardDesenvolvimento,
+    titulo: "Manual metodológico de integração estratégica de locais a sistemas municipais de mobilidade",
+    entrega: "Previsão: 2026",
+    acoes: [],
+  },
+];
 
 export default function PortalPage() {
   return (
     <div className={styles.container}>
-      {/* Hero Section */}
       <div className={styles.heroSection}>
         <div className={styles.heroContent}>
           <div className={styles.logosHeader}>
-             <a href="http://www.ita.br/" target="_blank" rel="noreferrer">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/imagens/ita.png" alt="ITA" />
-             </a>
-             <a href="https://sigma.ita.br" target="_blank" rel="noreferrer">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/imagens/sigma.png" alt="Sigma" />
-             </a>
+            <a href="http://www.ita.br/" target="_blank" rel="noreferrer">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/imagens/ita.png" alt="ITA" />
+            </a>
+            <a href="https://sigma.ita.br" target="_blank" rel="noreferrer">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/imagens/sigma.png" alt="Sigma" />
+            </a>
           </div>
+          <span className={styles.heroEyebrow}>Portal de Produtos</span>
           <h1 className={styles.heroTitle}>Estudos para Aviação de Hoje e do Amanhã</h1>
           <p className={styles.heroSubtitle}>
             Explore os produtos desenvolvidos pelo projeto SigmaCity em parceria com a Secretaria de Aviação Civil (SAC) e o Instituto Tecnológico de Aeronáutica (ITA).
@@ -24,89 +70,42 @@ export default function PortalPage() {
         </div>
       </div>
 
-      <h1 className={styles.produtosTitle}>Nossos Produtos</h1>
-
-      {/* Grid de Produtos */}
-      <div className={styles.produtosGrid}>
-        
-        {/* Produto I */}
-        <div className={`glass-panel ${styles.produtoCard} ${styles.cardDisponivel}`}>
-          <div className={`${styles.badge} ${styles.badgeDisponivel}`}>Disponível</div>
-          <div className={styles.produtoNumero}>I</div>
-          <h2 className={styles.produtoTitleText}>
-            Inventário das legislações que exercem impacto nas operações de UAM (envolvendo eVTOL) no contexto do planejamento urbano
-          </h2>
-          <div className={styles.produtoAcoes}>
-            <Link href="/" className={`${styles.btnPortal} ${styles.btnPrimary}`}>
-              <span className={styles.btnIcon}>📊</span> Dashboard Interativo
-            </Link>
-            <Link href="/produtos/produto01" className={`${styles.btnPortal} ${styles.btnSecondary}`}>
-              <span className={styles.btnIcon}>📄</span> Documento Completo
-            </Link>
-          </div>
-          <div className={styles.produtoFooter}>
-            📅 Entrega: Novembro 2025
-          </div>
+      <section className={styles.productsSection}>
+        <div className={styles.sectionHeader}>
+          <span className="eyebrow">Produção técnica</span>
+          <h2>Nossos Produtos</h2>
+          <p>Relatórios, dashboards e materiais de apoio organizados por etapa de entrega.</p>
         </div>
 
-        {/* Produto II */}
-        <div className={`glass-panel ${styles.produtoCard} ${styles.cardAndamento}`}>
-          <div className={`${styles.badge} ${styles.badgeAndamento}`}>Em Andamento</div>
-          <div className={styles.produtoNumero}>II</div>
-          <h2 className={styles.produtoTitleText}>
-            Relatório de diretrizes e parâmetros normativos no âmbito da UAM com os requisitos legais estabelecidos
-          </h2>
-          <div className={styles.produtoAcoes}>
-            <Link href="/dashboard-pii" className={`${styles.btnPortal} ${styles.btnWarning}`}>
-               <span className={styles.btnIcon}>📊</span> Dashboard Interativo (PII)
-            </Link>
-            <Link href="/produtos/produto02" className={`${styles.btnPortal} ${styles.btnWarning}`}>
-              <span className={styles.btnIcon}>📄</span> Documento Completo
-            </Link>
-            <Link href="/produtos/guam" className={`${styles.btnPortal} ${styles.btnWarning}`}>
-               <span className={styles.btnIcon}>📘</span> Guia Ilustrativo GUAM
-            </Link>
-          </div>
-          <div className={styles.produtoFooter}>
-            ⏳ Previsão: Março 2026
-          </div>
-        </div>
+        <div className={styles.produtosGrid}>
+          {produtos.map((produto) => (
+            <article key={produto.numero} className={`glass-panel ${styles.produtoCard} ${produto.cardClass}`}>
+              <div className={styles.cardHeader}>
+                <span className={`${styles.badge} ${produto.statusClass}`}>{produto.status}</span>
+                <div className={styles.produtoNumero}>{produto.numero}</div>
+              </div>
 
-        {/* Produto III */}
-        <div className={`glass-panel ${styles.produtoCard} ${styles.cardDesenvolvimento}`}>
-          <div className={`${styles.badge} ${styles.badgeDesenvolvimento}`}>Em Desenvolvimento</div>
-          <div className={styles.produtoNumero}>III</div>
-          <h2 className={styles.produtoTitleText}>
-            Relatório abordando uma revisão da literatura sobre metodologias de integração de vertiportos
-          </h2>
-          <div className={styles.produtoAcoes}>
-            <button className={`${styles.btnPortal} ${styles.btnDisabled}`} disabled>
-              <span className={styles.btnIcon}>📄</span> Em Breve
-            </button>
-          </div>
-          <div className={styles.produtoFooter}>
-            ⏳ Previsão: 2026
-          </div>
-        </div>
+              <div className={styles.cardBody}>
+                <h3 className={styles.produtoTitleText}>{produto.titulo}</h3>
+              </div>
 
-        {/* Produto IV */}
-        <div className={`glass-panel ${styles.produtoCard} ${styles.cardDesenvolvimento}`}>
-          <div className={`${styles.badge} ${styles.badgeDesenvolvimento}`}>Em Desenvolvimento</div>
-          <div className={styles.produtoNumero}>IV</div>
-          <h2 className={styles.produtoTitleText}>
-            Manual metodológico de integração estratégica de locais a sistemas municipais de mobilidade
-          </h2>
-          <div className={styles.produtoAcoes}>
-            <button className={`${styles.btnPortal} ${styles.btnDisabled}`} disabled>
-              <span className={styles.btnIcon}>📄</span> Em Breve
-            </button>
-          </div>
-          <div className={styles.produtoFooter}>
-            ⏳ Previsão: 2026
-          </div>
-        </div>
+              <div className={styles.produtoAcoes}>
+                {produto.acoes.length ? produto.acoes.map((acao) => (
+                  <Link key={acao.href} href={acao.href} className={`${styles.btnPortal} ${acao.className}`}>
+                    {acao.label}
+                  </Link>
+                )) : (
+                  <button className={`${styles.btnPortal} ${styles.btnDisabled}`} disabled type="button">
+                    Em Breve
+                  </button>
+                )}
+              </div>
 
-      </div>
+              <div className={styles.produtoFooter}>{produto.entrega}</div>
+            </article>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

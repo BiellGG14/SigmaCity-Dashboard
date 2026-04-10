@@ -1,185 +1,288 @@
 .container {
-  max-width: 100vw;
   overflow-x: hidden;
 }
 
 .heroSection {
-  background: linear-gradient(135deg, #004aad 0%, #0066cc 50%, #5de0e6 100%);
-  padding: 80px 20px;
-  text-align: center;
+  background: linear-gradient(135deg, #004aad 0%, #0d6eb8 58%, #2bb8c5 100%);
   color: white;
-  margin-top: -30px;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
+  padding: 76px 20px 82px;
+  text-align: center;
 }
 
 .heroContent {
-  max-width: 1000px;
   margin: 0 auto;
+  max-width: 1040px;
 }
 
 .logosHeader {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 40px;
-  margin-bottom: 40px;
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  margin-bottom: 34px;
 }
 
 .logosHeader img {
-  height: 90px;
-  transition: transform 0.3s ease;
-}
-
-.logosHeader a:last-child img {
-  filter: brightness(0) invert(1);
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  height: 86px;
+  object-fit: contain;
+  padding: 14px;
+  transition: transform 0.25s ease;
 }
 
 .logosHeader img:hover {
-  transform: scale(1.1);
+  transform: translateY(-3px);
+}
+
+.heroEyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.13em;
+  margin-bottom: 14px;
+  text-transform: uppercase;
 }
 
 .heroTitle {
   font-family: var(--font-outfit);
-  font-size: 3rem;
-  font-weight: 800;
+  font-size: clamp(2.3rem, 5vw, 4.6rem);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1.02;
   margin-bottom: 20px;
-  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .heroSubtitle {
-  font-size: 1.2rem;
+  font-size: 1.12rem;
   line-height: 1.8;
-  opacity: 0.95;
+  margin: 0 auto;
+  max-width: 860px;
+  opacity: 0.94;
 }
 
-.produtosTitle {
-  text-align: center;
+.productsSection {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 0 24px 64px;
+}
+
+.sectionHeader {
+  margin-bottom: 26px;
+  max-width: 780px;
+}
+
+.sectionHeader h2 {
+  color: var(--text-dark);
   font-family: var(--font-outfit);
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #004aad;
-  margin: 40px 0 30px 0;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 900;
+  letter-spacing: 0;
+  margin: 10px 0 10px;
+}
+
+.sectionHeader p {
+  color: var(--text-light);
+  line-height: 1.7;
 }
 
 .produtosGrid {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
+  gap: 22px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .produtoCard {
-  border-radius: 20px;
-  padding: 40px 30px;
+  background: white;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
-  position: relative;
-  min-height: 480px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  min-height: 500px;
+  overflow: hidden;
+  padding: 0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .produtoCard:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 22px 52px rgba(18, 58, 99, 0.16);
+  transform: translateY(-4px);
 }
 
 .cardDisponivel {
-  border-top: 6px solid #5de0e6;
+  border-top: 5px solid var(--secondary-cyan);
 }
 
 .cardAndamento {
-  border-top: 6px solid #f39c12;
+  border-top: 5px solid var(--accent-amber);
 }
 
 .cardDesenvolvimento {
-  border-top: 6px solid #95a5a6;
-  opacity: 0.8 !important;
+  border-top: 5px solid #94a3b8;
+}
+
+.cardHeader {
+  align-items: center;
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+  border-bottom: 1px solid var(--border-soft);
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  min-height: 120px;
+  padding: 22px;
 }
 
 .badge {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  padding: 6px 16px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: bold;
+  align-items: center;
+  border-radius: 8px;
+  display: inline-flex;
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+  min-height: 32px;
+  padding: 8px 12px;
   text-transform: uppercase;
-  color: white;
 }
 
-.badgeDisponivel { background: linear-gradient(135deg, #5de0e6 0%, #4dd0d0 100%); }
-.badgeAndamento { background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); }
-.badgeDesenvolvimento { background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%); }
+.badgeDisponivel {
+  background: #e7fbfb;
+  color: #007d86;
+}
+
+.badgeAndamento {
+  background: #fff4dc;
+  color: #9a5a00;
+}
+
+.badgeDesenvolvimento {
+  background: #f1f5f9;
+  color: #5b6778;
+}
 
 .produtoNumero {
-  width: 80px;
-  height: 80px;
-  background: var(--primary-blue);
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  border-radius: 50%;
-  display: flex;
   align-items: center;
+  background: var(--primary-blue);
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  flex: 0 0 72px;
+  font-family: var(--font-outfit);
+  font-size: 34px;
+  font-weight: 900;
+  height: 72px;
   justify-content: center;
-  margin: 0 auto 30px auto;
+  letter-spacing: 0;
 }
 
-.cardDisponivel .produtoNumero { background: linear-gradient(135deg, #004aad 0%, #0066cc 100%); }
-.cardAndamento .produtoNumero { background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); }
-.cardDesenvolvimento .produtoNumero { background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%); }
+.cardAndamento .produtoNumero {
+  background: var(--accent-amber);
+}
+
+.cardDesenvolvimento .produtoNumero {
+  background: #64748b;
+}
+
+.cardBody {
+  flex: 1;
+  padding: 28px 24px 18px;
+}
 
 .produtoTitleText {
-  font-size: 1.15rem;
   color: var(--text-dark);
-  text-align: center;
-  line-height: 1.5;
-  margin-bottom: 30px;
-  flex-grow: 1;
+  font-family: var(--font-outfit);
+  font-size: 1.16rem;
+  font-weight: 800;
+  line-height: 1.45;
+  margin: 0;
 }
 
 .produtoAcoes {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-bottom: 20px;
+  gap: 10px;
+  padding: 0 24px 22px;
 }
 
 .btnPortal {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 14px 20px;
-  border-radius: 12px;
-  font-weight: 600;
-  font-size: 14px;
-  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  border-radius: 8px;
   cursor: pointer;
-  border: none;
+  display: flex;
+  font-size: 14px;
+  font-weight: 800;
+  justify-content: center;
+  min-height: 44px;
+  padding: 12px 16px;
   text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
-.btnPrimary { background: linear-gradient(135deg, #004aad 0%, #0066cc 100%); color: white; }
-.btnPrimary:hover { transform: translateY(-2px); box-shadow: 0 6px 15px rgba(0, 74, 173, 0.4); }
+.btnPortal:hover {
+  transform: translateY(-1px);
+}
 
-.btnSecondary { background: linear-gradient(135deg, #5de0e6 0%, #4dd0d0 100%); color: white; }
-.btnSecondary:hover { transform: translateY(-2px); box-shadow: 0 6px 15px rgba(93, 224, 230, 0.4); }
+.btnPrimary {
+  background: var(--primary-blue);
+  color: white;
+}
 
-.btnWarning { background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); color: white; }
-.btnWarning:hover { transform: translateY(-2px); box-shadow: 0 6px 15px rgba(243, 156, 18, 0.3); }
+.btnSecondary {
+  background: #eefbfc;
+  border-color: #b9edf0;
+  color: #007d86;
+}
 
-.btnDisabled { background: #e2e8f0; color: #94a3b8; cursor: not-allowed; }
+.btnWarning {
+  background: #fff4dc;
+  border-color: #f3cf88;
+  color: #8f5400;
+}
+
+.btnDisabled {
+  background: #f1f5f9;
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.btnDisabled:hover {
+  transform: none;
+}
 
 .produtoFooter {
-  text-align: center;
-  font-size: 14px;
+  border-top: 1px solid var(--border-soft);
   color: var(--text-light);
-  border-top: 1px solid rgba(0,0,0,0.05);
-  padding-top: 20px;
+  font-size: 0.88rem;
+  font-weight: 750;
+  padding: 18px 24px;
+}
+
+@media (max-width: 1180px) {
+  .produtosGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .heroSection {
+    padding: 54px 16px 62px;
+  }
+
+  .logosHeader {
+    flex-direction: column;
+  }
+
+  .productsSection {
+    padding: 0 16px 48px;
+  }
+
+  .produtosGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .cardHeader {
+    align-items: flex-start;
+    flex-direction: column-reverse;
+  }
 }

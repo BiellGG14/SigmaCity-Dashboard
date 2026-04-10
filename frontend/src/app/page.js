@@ -1,50 +1,76 @@
-import Link from 'next/link';
-import styles from './page.module.css';
+import Link from "next/link";
+import styles from "./page.module.css";
+
+const stats = [
+  ["54", "documentos incluídos"],
+  ["664", "itens identificados"],
+  ["83", "diretrizes do Produto II"],
+];
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <div className={styles.heroSection}>
-        <div className={styles.heroContent}>
-          <h1 className="title-gradient animate-fade-in-up">
-            Inteligência Analítica em Legislação AAM
-          </h1>
-          <p className={`${styles.subtitle} animate-fade-in-up`} style={{ animationDelay: '0.1s' }}>
-            Plataforma avançada de consolidação e análise da legislação de Advanced Air Mobility (AAM), projetada para simplificar a tomada de decisão através de dados interativos.
+      <section className={styles.heroSection}>
+        <div className={styles.heroCopy}>
+          <span className="eyebrow">SigmaCity Dashboard</span>
+          <h1>Inteligência analítica para legislação AAM e UAM</h1>
+          <p>
+            Consulte documentos normativos, critérios de seleção, análises PESTEL e diretrizes municipais em uma arquitetura moderna com R Plumber no backend e Next.js no frontend.
           </p>
-          <div className={`${styles.actionGroup} animate-fade-in-up`} style={{ animationDelay: '0.2s' }}>
-            <Link href="/documentos" className={styles.primaryBtn}>
-              Acessar Biblioteca
-            </Link>
-            <Link href="/legislacao" className={styles.secondaryBtn}>
-              Painel Comparativo
-            </Link>
+          <div className={styles.actionGroup}>
+            <Link href="/produto-i" className="button-primary">Explorar Produto I</Link>
+            <Link href="/dashboard-pii" className="button-secondary">Abrir Produto II</Link>
           </div>
         </div>
-      </div>
 
-      <div className={styles.featuresGrid}>
-        <div className={`glass-panel ${styles.featureCard} animate-fade-in-up`} style={{ animationDelay: '0.3s' }}>
-          <div className={styles.cardIcon}>📄</div>
-          <h3>Biblioteca Dinâmica</h3>
-          <p>Acesse centenas de normas, portarias e regulamentos RBAC/ICA. Inclui análise semântica e Extração de Entidades Nomeadas (NER).</p>
-          <Link href="/documentos" className={styles.cardLink}>Explorar Documentos ➔</Link>
+        <div className={styles.heroVisual}>
+          <div className={styles.logoStrip}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/imagens/ita.png" alt="ITA" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/imagens/sigma.png" alt="Sigma" />
+          </div>
+          <div className={styles.statGrid}>
+            {stats.map(([value, label]) => (
+              <div key={label} className={styles.statCard}>
+                <strong>{value}</strong>
+                <span>{label}</span>
+              </div>
+            ))}
+          </div>
         </div>
+      </section>
 
-        <div className={`glass-panel ${styles.featureCard} animate-fade-in-up`} style={{ animationDelay: '0.4s' }}>
-          <div className={styles.cardIcon}>⚖️</div>
-          <h3>Tabelas de Legislação</h3>
-          <p>Consulte critérios de Elegibilidade, Identificação e Inclusão para cenários específicos de AAM em uma interface fluída.</p>
-          <Link href="/legislacao" className={styles.cardLink}>Ver Comparativos ➔</Link>
-        </div>
-
-        <div className={`glass-panel ${styles.featureCard} animate-fade-in-up`} style={{ animationDelay: '0.5s' }}>
-          <div className={styles.cardIcon}>👥</div>
-          <h3>Time de Especialistas</h3>
-          <p>Conheça os pesquisadores e profissionais por trás da estruturação do conhecimento legal aeroespacial do projeto.</p>
-          <Link href="/equipe" className={styles.cardLink}>Ver Equipe ➔</Link>
-        </div>
-      </div>
+      <section className={styles.featuresGrid} aria-label="Acessos principais">
+        <FeatureCard
+          title="Produto I"
+          description="Inventário legislativo, contexto do projeto, objetivos, fundamentos PESTEL e análise detalhada dos documentos processados."
+          href="/produto-i"
+          label="Ver Produto I"
+        />
+        <FeatureCard
+          title="Biblioteca Dinâmica"
+          description="Acesse normas, portarias e regulamentos com resumo, estatísticas textuais, nuvens de palavras e radar PESTEL."
+          href="/documentos"
+          label="Explorar Biblioteca"
+        />
+        <FeatureCard
+          title="Produto II"
+          description="Explore temas, questões técnicas, diretrizes normativas e cobertura PESTEL para gestores municipais."
+          href="/dashboard-pii"
+          label="Abrir Dashboard PII"
+        />
+      </section>
     </div>
+  );
+}
+
+function FeatureCard({ title, description, href, label }) {
+  return (
+    <article className={styles.featureCard}>
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <Link href={href} className={styles.cardLink}>{label}</Link>
+    </article>
   );
 }
