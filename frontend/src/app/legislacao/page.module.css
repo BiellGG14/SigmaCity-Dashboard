@@ -1,0 +1,136 @@
+.tabsContainer {
+  padding: 0;
+  overflow: hidden; /* Garante que os cantos fiquem arredondados e cortem a tabela */
+  margin-top: 20px;
+}
+
+.tabHeader {
+  display: flex;
+  background-color: rgba(248, 250, 252, 0.8);
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.tabBtn {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 18px 24px;
+  font-family: var(--font-inter);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text-light);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.tabBtn:hover {
+  background-color: rgba(0, 74, 173, 0.05);
+  color: var(--primary-blue);
+}
+
+.tabBtn.active {
+  color: var(--primary-blue);
+  border-bottom-color: var(--primary-blue);
+  background-color: white;
+}
+
+.searchContainer {
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: white;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.searchInput {
+  flex: 1;
+  max-width: 400px;
+  padding: 12px 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-md);
+  font-family: var(--font-inter);
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(0, 74, 173, 0.1);
+}
+
+.searchCount {
+  font-size: 13px;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  background-color: white;
+  /* Scrollbar customizada */
+}
+
+.tableWrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.tableWrapper::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 4px;
+}
+
+.modernTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.modernTable th {
+  background-color: #f8fafc;
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 16px 24px;
+  border-bottom: 2px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.modernTable td {
+  padding: 16px 24px;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 14px;
+  color: #334155;
+  vertical-align: top;
+}
+
+.modernTable tr:hover td {
+  background-color: #f8fafc;
+}
+
+/* Badges Condicionais */
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.badgeAceito {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.badgeRejeitado {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.badgeStatus {
+  background-color: #d4edda;
+  color: #155724;
+}
