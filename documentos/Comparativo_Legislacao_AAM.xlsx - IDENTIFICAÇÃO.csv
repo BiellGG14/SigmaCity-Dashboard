@@ -5,7 +5,7 @@ Documentos,Aceitação,Justificativa
 _CEF RBAC 61,Rejeitado,Nenhum conteúdo relevante
 ALERTAn001_2023InfraestruturaparapousoedecolagemdeaeronaveseVTOL,Aceito,"O documento estabelece parâmetros dimensionais obrigatórios e requisitos de segurança para infraestrutura UAM/vertiportos, que devem ser observados no planejamento territorial urbano para implantação desta infraestrutura."
 "Anatel - Ato nº 915, de 01 de fevereiro de 2024",Aceito,"O documento estabelece restrições de altura máxima (6m) para estações base e distâncias mínimas obrigatórias (1-10 km) entre estações, que impactam diretamente o planejamento de infraestrutura de telecomunicações essenciais para operações UAM."
-Artatel_915,Aceito,Documento aceito para composição da base de identificação.
+Anatel_915,Aceito,Documento aceito para composição da base de identificação.
 CEF RBAC 103,Aceito,"O documento estabelece restrições operacionais sobre áreas densamente povoadas que são obrigatórias para o planejamento de localização de vertiportos, impactando diretamente as decisões de uso do solo urbano para infraestrutura UAM."
 CEF RBAC 107,Aceito,"O documento estabelece requisitos obrigatórios de zoneamento de segurança, demarcação de áreas restritas e parâmetros para infraestrutura aeroportuária que constituem limitações administrativas ao uso do solo, diretamente aplicáveis ao planejamento territorial de infraestruturas UAM como vertiportos."
 CEF RBAC 108,Rejeitado,Nenhum conteúdo relevante
@@ -648,8 +648,8 @@ RBAC65,Rejeitado,Nenhum conteúdo relevante
 RBAC67,Rejeitado,Nenhum conteúdo relevante
 RBAC90,Rejeitado,"Apenas 3 das 16 partes analisadas apresentam relevância indireta para planejamento territorial, focando principalmente em aspectos operacionais e de segurança da aviação pública, sem estabelecer normas específicas sobre infraestrutura UAM, zoneamento ou parâmetros edificatórios obrigatórios."
 RBAC91,Aceito,"Partes 1, 2, 5, 14 e 15 estabelecem regras operacionais aplicáveis ao planejamento territorial, incluindo operações em áreas não cadastradas, limitações de ruído, requisitos para aeródromos e restrições para operação sobre áreas densamente povoadas, que impactam diretamente a localização de infraestrutura UAM."
-RBAC_20251015124059,Aceito,"Partes relevantes definem infraestrutura aeronáutica aplicável a UAM (aeródromos, helipontos, FATO, restrições de espaço aéreo), estabelecendo parâmetros obrigatórios para planejamento de vertiportos e integração territorial urbana."
-RBAC_20251015133108,Aceito,"Partes 1, 2 e 4 contêm definições técnicas obrigatórias de aeródromos, helipontos e infraestrutura aeronáutica aplicáveis ao planejamento de vertiportos, estabelecendo parâmetros essenciais para implantação da infraestrutura UAM no território urbano."
+RBAC01,Aceito,"Partes relevantes definem infraestrutura aeronáutica aplicável a UAM (aeródromos, helipontos, FATO, restrições de espaço aéreo), estabelecendo parâmetros obrigatórios para planejamento de vertiportos e integração territorial urbana."
+RBAC01,Aceito,"Partes 1, 2 e 4 contêm definições técnicas obrigatórias de aeródromos, helipontos e infraestrutura aeronáutica aplicáveis ao planejamento de vertiportos, estabelecendo parâmetros essenciais para implantação da infraestrutura UAM no território urbano."
 RBAC_42,Rejeitado,"O documento regula aspectos técnicos e operacionais de aeronaves não tripuladas, sem estabelecer diretrizes sobre planejamento territorial, zoneamento ou parâmetros edificatórios para infraestrutura UAM."
 RBAC_43,Rejeitado,Nenhum conteúdo relevante
 RE0001-230186,Aceito,"O documento estabelece obrigatoriedade de EIA/RIMA para aeroportos, aplicável a vertiportos por equiparação a aeroportos, com diretrizes para análise de impactos ambientais e alternativas locacionais."
