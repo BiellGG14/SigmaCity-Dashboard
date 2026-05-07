@@ -1,25 +1,99 @@
-.gridContainer {
+.analysisShell {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.sourceBar {
+  align-items: center;
+  background: white;
+  border: 1px solid var(--border-soft);
+  border-left: 5px solid var(--secondary-cyan);
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 18px 20px;
+}
+
+.sourceBar span {
+  color: var(--primary-blue);
+  display: block;
+  font-family: var(--font-outfit);
+  font-size: 1.05rem;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+
+.sourceBar p {
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+.sourceButton {
+  align-items: center;
+  background: var(--primary-blue);
+  border-radius: 8px;
+  color: white;
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-weight: 850;
+  justify-content: center;
+  min-height: 44px;
+  padding: 12px 16px;
+}
+
+.tabs {
+  align-items: center;
+  background: white;
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+}
+
+.tabButton {
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  color: var(--text-light);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 850;
+  min-height: 44px;
+  padding: 12px 16px;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tabButton:hover {
+  background: #eef6ff;
+  color: var(--primary-blue);
+}
+
+.activeTab {
+  background: var(--primary-blue);
+  box-shadow: 0 10px 24px rgba(0, 74, 173, 0.16);
+  color: white;
+}
+
+.activeTab:hover {
+  background: var(--primary-blue);
+  color: white;
+}
+
+.analysisTab {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.analysisGrid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
   gap: 24px;
-}
-
-@media (max-width: 968px) {
-  .gridContainer {
-    grid-template-columns: 1fr;
-  }
-}
-
-.mainColumn {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.sideColumn {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  grid-template-columns: minmax(0, 1.3fr) minmax(360px, 0.7fr);
 }
 
 .card {
@@ -27,25 +101,25 @@
 }
 
 .cardTitle {
+  border-bottom: 2px solid rgba(0, 74, 173, 0.1);
+  color: var(--text-dark);
   font-family: var(--font-outfit);
   font-size: 1.3rem;
-  color: var(--text-dark);
   margin-bottom: 20px;
-  border-bottom: 2px solid rgba(0, 74, 173, 0.1);
   padding-bottom: 10px;
 }
 
 .summaryText {
   color: #334155;
-  line-height: 1.8;
   font-size: 1.05rem;
+  line-height: 1.8;
   white-space: pre-wrap;
 }
 
 .statsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .statBox {
@@ -55,80 +129,63 @@
 }
 
 .statBox:hover {
-  transform: translateY(-3px);
   border-color: var(--secondary-cyan);
-}
-
-.statIcon {
-  font-size: 24px;
-  margin-bottom: 10px;
+  transform: translateY(-3px);
 }
 
 .statValue {
-  font-size: 28px;
-  font-weight: 800;
   color: var(--primary-blue);
   font-family: var(--font-outfit);
+  font-size: 28px;
+  font-weight: 800;
   margin-bottom: 4px;
 }
 
 .statTitle {
-  font-size: 12px;
   color: var(--text-light);
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
-.imageWrapper {
+.chartContainer {
+  min-height: 420px;
+}
+
+.radarBox {
+  height: 340px;
   width: 100%;
-  aspect-ratio: 1/1;
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(0,0,0,0.05);
 }
 
-.cloudImage {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.cloudImage:hover {
-  transform: scale(1.05);
-}
-
-.noImage {
-  padding: 40px 20px;
-  text-align: center;
+.emptyState {
   color: var(--text-light);
-  background-color: rgba(0,0,0,0.02);
-  border-radius: var(--radius-md);
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .pestelJustifications {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .pestelItem {
-  background-color: rgba(255, 255, 255, 0.4);
-  padding: 16px;
-  border-radius: 8px;
+  background-color: rgba(246, 249, 252, 0.92);
+  border: 1px solid var(--border-soft);
   border-left: 4px solid var(--secondary-cyan);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.pestelItem p {
+  color: var(--text-light);
+  line-height: 1.7;
 }
 
 .pestelHeader {
+  align-items: center;
   display: flex;
+  gap: 12px;
   justify-content: space-between;
   margin-bottom: 8px;
 }
@@ -139,9 +196,110 @@
 
 .pestelScore {
   background-color: var(--primary-blue);
+  border-radius: 8px;
   color: white;
-  padding: 2px 8px;
-  border-radius: 12px;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 800;
+  padding: 4px 8px;
+}
+
+.cloudCard {
+  padding: 34px;
+}
+
+.cloudHeader {
+  align-items: end;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.cloudHeader p {
+  color: var(--text-light);
+  line-height: 1.7;
+  max-width: 520px;
+}
+
+.cloudTitle {
+  color: var(--text-dark);
+  font-family: var(--font-outfit);
+  font-size: clamp(1.9rem, 3vw, 3rem);
+  line-height: 1.08;
+  margin-top: 10px;
+}
+
+.imageWrapper {
+  align-items: center;
+  background: white;
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  min-height: 680px;
+  overflow: hidden;
+  padding: 20px;
+  width: 100%;
+}
+
+.cloudImage {
+  height: 100%;
+  max-height: 760px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.noImage {
+  align-items: center;
+  background-color: var(--surface-soft);
+  border: 1px dashed var(--border-soft);
+  border-radius: 8px;
+  color: var(--text-light);
+  display: flex;
+  justify-content: center;
+  min-height: 360px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+@media (max-width: 968px) {
+  .analysisGrid,
+  .pestelJustifications,
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sourceBar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .cloudHeader {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .imageWrapper {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 620px) {
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tabButton {
+    width: 100%;
+  }
+
+  .card,
+  .cloudCard {
+    padding: 22px;
+  }
+
+  .imageWrapper {
+    min-height: 360px;
+    padding: 12px;
+  }
 }

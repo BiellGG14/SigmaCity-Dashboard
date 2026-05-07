@@ -102,25 +102,21 @@
   border: 1px solid #e2e8f0;
   border-left: 6px solid var(--accent);
   border-radius: 8px;
-  padding: 20px;
+  min-height: 108px;
+  padding: 24px 22px;
   box-shadow: var(--shadow-sm);
   cursor: pointer;
 }
 
-.summaryCard strong,
 .summaryCard span {
   display: block;
 }
 
-.summaryCard strong {
-  color: var(--accent);
-  font-size: 30px;
-  margin-bottom: 8px;
-}
-
 .summaryCard span {
   color: var(--text-dark);
+  font-size: 1.02rem;
   font-weight: 800;
+  line-height: 1.35;
 }
 
 .contentPanel {

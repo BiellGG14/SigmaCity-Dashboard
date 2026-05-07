@@ -18,13 +18,7 @@ repair_text <- function(x) {
     return(x)
   }
 
-  needs_repair <- grepl("[ÃÂâ]", x)
-  out <- x
-  if (any(needs_repair, na.rm = TRUE)) {
-    repaired <- suppressWarnings(iconv(x[needs_repair], from = "latin1", to = "UTF-8"))
-    out[needs_repair] <- ifelse(is.na(repaired), x[needs_repair], repaired)
-  }
-  out
+  x
 }
 
 repair_object <- function(x) {

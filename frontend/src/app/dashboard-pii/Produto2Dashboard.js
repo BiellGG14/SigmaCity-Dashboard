@@ -5,6 +5,18 @@ import styles from "./page.module.css";
 
 const sourceLabels = ["Normativo", "Científico", "Internacional"];
 
+function normalizeText(value) {
+  return String(value || "");
+}
+
+function normalizeSources(fontes) {
+  if (Array.isArray(fontes)) {
+    return fontes.filter(Boolean);
+  }
+
+  return fontes ? [fontes] : [];
+}
+
 export default function Produto2Dashboard({ data }) {
   const [activeView, setActiveView] = useState("visao");
   const [selectedThemeId, setSelectedThemeId] = useState(data.temas?.[0]?.id);
@@ -25,9 +37,9 @@ export default function Produto2Dashboard({ data }) {
 
     const term = query.toLowerCase();
     return allQuestions.filter((questao) => (
-      questao.txt.toLowerCase().includes(term) ||
-      questao.dir.toLowerCase().includes(term) ||
-      questao.temaNome.toLowerCase().includes(term)
+      normalizeText(questao.txt).toLowerCase().includes(term) ||
+      normalizeText(questao.dir).toLowerCase().includes(term) ||
+      normalizeText(questao.temaNome).toLowerCase().includes(term)
     ));
   }, [query, temas]);
 
@@ -86,7 +98,6 @@ function Overview({ temas, data, sourceIndex, setSourceIndex, onSelectTheme }) {
       <section className={styles.summaryGrid}>
         {temas.map((tema) => (
           <button key={tema.id} type="button" className={styles.summaryCard} style={{ "--accent": tema.cor }} onClick={() => onSelectTheme(tema.id)}>
-            <strong>{tema.questoes?.length || 0}</strong>
             <span>{tema.nome}</span>
           </button>
         ))}
@@ -150,14 +161,16 @@ function QuestionsPanel({ questions, query, setQuery }) {
 }
 
 function QuestionCard({ question }) {
+  const fontes = normalizeSources(question.fontes);
+
   return (
     <article className={styles.questionCard} style={{ "--accent": question.temaCor }}>
       <span>{question.temaNome} - {question.qid}</span>
       <h3>{question.txt}</h3>
       <p>{question.dir}</p>
-      {question.fontes?.length ? (
+      {fontes.length ? (
         <div className={styles.sourceList}>
-          {question.fontes.map((fonte) => <small key={fonte}>{fonte}</small>)}
+          {fontes.map((fonte) => <small key={fonte}>{fonte}</small>)}
         </div>
       ) : null}
     </article>
