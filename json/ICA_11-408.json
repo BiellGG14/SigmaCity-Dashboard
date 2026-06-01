@@ -1,0 +1,370 @@
+{
+  "nome": "ICA 11-408 - Restrições aos objetos projetados",
+  "url": "https://ipdsa.org.br/dados/link/434/arquivo/ICA%2011-408%20-%20Restri____es%20aos%20objetos%20projetados%20no%20espa__o%20a__reo.pdf",
+  "disponivel": true,
+  "data_processamento": "2026-04-07 15:38:59",
+  "resumo": ["Estabelece restrições a objetos projetados no espaço aéreo baseadas em Planos de Zona de Proteção", "Considera espaço aéreo como recurso limitado a ser administrado", "Define competências de administrações municipais/distritais e órgãos do DECEA", "Estabelece autos de embargo para propriedades vizinhas a aeródromos", "Requer compatibilização do ordenamento territorial com restrições aeronáuticas", "Define atribuições conjuntas para autoridades federais, estaduais e municipais", "Estabelece base regulatória para operações de Mobilidade Aérea Urbana (UAM)", "Disciplina uso do solo no entorno de infraestruturas aéreas", "Influencia planejamento urbano através de restrições aeronáuticas"],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [5, 4, 3, 5, 2],
+    "justificativas": ["Estabelece estrutura federativa completa com atribuições conjuntas para autoridades federais, estaduais e municipais, criando sistema de governança territorial obrigatório para proteção do espaço aéreo com impacto direto e abrangente na UAM.", "Impacto relevante ao impor restrições de uso do solo que afetam custos de implantação de vertiportos e valor de propriedades, estabelecendo condicionantes econômicas significativas para o desenvolvimento da UAM.", "Estabelece mecanismos de proteção de comunidades do entorno através de restrições a objetos projetados, com impacto moderado na segurança e aceitação social, mas sem tratar especificamente de inclusão ou equidade.", "Define critérios técnicos para planos de proteção que influenciam o desenvolvimento de infraestruturas, com impacto direto no planejamento tecnológico, mas não aborda especificamente comunicações ou navegação avançada.", "Foca principalmente em segurança operacional através de restrições a objetos projetados, com impacto ambiental indireto através do controle do uso do solo, mas sem tratar especificamente de aspectos ecológicos ou licenciamento ambiental."]
+  },
+  "estatisticas": {
+    "total_palavras": 17064,
+    "palavras_unicas": 2383,
+    "num_sentencas": 1712,
+    "top_50_palavras": {
+      "superfície": 320,
+      "horizontal": 202,
+      "aproximação": 201,
+      "interna": 193,
+      "proteção": 185,
+      "borda": 183,
+      "ica": 175,
+      "pista": 154,
+      "figura": 152,
+      "seção": 146,
+      "plano": 141,
+      "luzes": 138,
+      "tipo": 136,
+      "área": 134,
+      "zona": 131,
+      "fato": 129,
+      "intensidade": 124,
+      "decolagem": 123,
+      "eixo": 122,
+      "objetos": 120,
+      "objeto": 112,
+      "aeródromo": 110,
+      "superfícies": 110,
+      "altura": 109,
+      "tabela": 109,
+      "operação": 100,
+      "obstáculos": 96,
+      "segurança": 95,
+      "metros": 94,
+      "pouso": 89,
+      "elevação": 88,
+      "gradiente": 84,
+      "externa": 80,
+      "iluminação": 80,
+      "dimensões": 78,
+      "distância": 78,
+      "sinalização": 77,
+      "transição": 74,
+      "caso": 73,
+      "largura": 73,
+      "determinada": 71,
+      "antena": 67,
+      "deve": 66,
+      "limites": 65,
+      "ponto": 63,
+      "comprimento": 60,
+      "conforme": 60,
+      "paralela": 59,
+      "visual": 59,
+      "voo": 59
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 81,
+      "urbana": 3,
+      "evtol": 0,
+      "aeronave": 70,
+      "vertiporto": 0,
+      "heliponto": 68,
+      " uam ": 0,
+      "tráfego aéreo": 9,
+      "decolagem": 128,
+      "pouso": 90,
+      " voo ": 45,
+      "aviação": 9
+    },
+    "top_20_bigramas": {
+      "borda interna": 109,
+      "zona proteção": 102,
+      "superfície proteção": 69,
+      "superfície aproximação": 68,
+      "figura superfície": 62,
+      "limitadoras obstáculos": 56,
+      "superfícies limitadoras": 56,
+      "área segurança": 54,
+      "ica figura": 54,
+      "navegação aérea": 51,
+      "eixo pista": 46,
+      "espaço aéreo": 46,
+      "borda externa": 44,
+      "iluminação objetos": 43,
+      "paralela paralela": 43,
+      "seção horizontal": 43,
+      "sinalização iluminação": 42,
+      "prolongamento eixo": 41,
+      "ifr precisão": 37,
+      "superfície horizontal": 37
+    },
+    "palavras_chave": [
+      {
+        "palavra": "superfície",
+        "frequencia": 320,
+        "relevancia": 5.771
+      },
+      {
+        "palavra": "horizontal",
+        "frequencia": 202,
+        "relevancia": 3.354
+      },
+      {
+        "palavra": "aproximação",
+        "frequencia": 201,
+        "relevancia": 3.334
+      },
+      {
+        "palavra": "proteção",
+        "frequencia": 185,
+        "relevancia": 3.021
+      },
+      {
+        "palavra": "interna",
+        "frequencia": 193,
+        "relevancia": 1.906
+      },
+      {
+        "palavra": "intensidade",
+        "frequencia": 124,
+        "relevancia": 1.871
+      },
+      {
+        "palavra": "decolagem",
+        "frequencia": 123,
+        "relevancia": 1.853
+      },
+      {
+        "palavra": "borda",
+        "frequencia": 183,
+        "relevancia": 1.789
+      },
+      {
+        "palavra": "ica",
+        "frequencia": 175,
+        "relevancia": 1.697
+      },
+      {
+        "palavra": "aeródromo",
+        "frequencia": 110,
+        "relevancia": 1.619
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "borda interna",
+        "freq": 109,
+        "tscore": 10.24,
+        "palavra1_freq": 183,
+        "palavra2_freq": 193
+      },
+      {
+        "bigrama": "zona proteção",
+        "freq": 102,
+        "tscore": 9.96,
+        "palavra1_freq": 131,
+        "palavra2_freq": 185
+      },
+      {
+        "bigrama": "superfície proteção",
+        "freq": 69,
+        "tscore": 7.89,
+        "palavra1_freq": 320,
+        "palavra2_freq": 185
+      },
+      {
+        "bigrama": "superfície aproximação",
+        "freq": 68,
+        "tscore": 7.79,
+        "palavra1_freq": 320,
+        "palavra2_freq": 201
+      },
+      {
+        "bigrama": "figura superfície",
+        "freq": 62,
+        "tscore": 7.51,
+        "palavra1_freq": 152,
+        "palavra2_freq": 320
+      },
+      {
+        "bigrama": "limitadoras obstáculos",
+        "freq": 56,
+        "tscore": 7.44,
+        "palavra1_freq": 56,
+        "palavra2_freq": 96
+      },
+      {
+        "bigrama": "superfícies limitadoras",
+        "freq": 56,
+        "tscore": 7.44,
+        "palavra1_freq": 110,
+        "palavra2_freq": 56
+      },
+      {
+        "bigrama": "área segurança",
+        "freq": 54,
+        "tscore": 7.25,
+        "palavra1_freq": 134,
+        "palavra2_freq": 95
+      },
+      {
+        "bigrama": "ica figura",
+        "freq": 54,
+        "tscore": 7.14,
+        "palavra1_freq": 175,
+        "palavra2_freq": 152
+      },
+      {
+        "bigrama": "navegação aérea",
+        "freq": 51,
+        "tscore": 7.12,
+        "palavra1_freq": 56,
+        "palavra2_freq": 52
+      },
+      {
+        "bigrama": "espaço aéreo",
+        "freq": 46,
+        "tscore": 6.76,
+        "palavra1_freq": 54,
+        "palavra2_freq": 57
+      },
+      {
+        "bigrama": "eixo pista",
+        "freq": 46,
+        "tscore": 6.62,
+        "palavra1_freq": 122,
+        "palavra2_freq": 154
+      },
+      {
+        "bigrama": "borda externa",
+        "freq": 44,
+        "tscore": 6.5,
+        "palavra1_freq": 183,
+        "palavra2_freq": 80
+      },
+      {
+        "bigrama": "paralela paralela",
+        "freq": 43,
+        "tscore": 6.53,
+        "palavra1_freq": 59,
+        "palavra2_freq": 59
+      },
+      {
+        "bigrama": "iluminação objetos",
+        "freq": 43,
+        "tscore": 6.47,
+        "palavra1_freq": 80,
+        "palavra2_freq": 120
+      },
+      {
+        "bigrama": "seção horizontal",
+        "freq": 43,
+        "tscore": 6.29,
+        "palavra1_freq": 146,
+        "palavra2_freq": 202
+      },
+      {
+        "bigrama": "sinalização iluminação",
+        "freq": 42,
+        "tscore": 6.43,
+        "palavra1_freq": 77,
+        "palavra2_freq": 80
+      },
+      {
+        "bigrama": "prolongamento eixo",
+        "freq": 41,
+        "tscore": 6.35,
+        "palavra1_freq": 44,
+        "palavra2_freq": 122
+      },
+      {
+        "bigrama": "ifr precisão",
+        "freq": 37,
+        "tscore": 6.06,
+        "palavra1_freq": 50,
+        "palavra2_freq": 54
+      },
+      {
+        "bigrama": "superfície horizontal",
+        "freq": 37,
+        "tscore": 5.46,
+        "palavra1_freq": 320,
+        "palavra2_freq": 202
+      },
+      {
+        "bigrama": "planos zona",
+        "freq": 36,
+        "tscore": 5.94,
+        "palavra1_freq": 46,
+        "palavra2_freq": 131
+      },
+      {
+        "bigrama": "média intensidade",
+        "freq": 36,
+        "tscore": 5.94,
+        "palavra1_freq": 53,
+        "palavra2_freq": 124
+      },
+      {
+        "bigrama": "aproximação decolagem",
+        "freq": 36,
+        "tscore": 5.76,
+        "palavra1_freq": 201,
+        "palavra2_freq": 123
+      },
+      {
+        "bigrama": "intensidade tipo",
+        "freq": 35,
+        "tscore": 5.75,
+        "palavra1_freq": 124,
+        "palavra2_freq": 136
+      },
+      {
+        "bigrama": "voo visual",
+        "freq": 34,
+        "tscore": 5.8,
+        "palavra1_freq": 59,
+        "palavra2_freq": 59
+      },
+      {
+        "bigrama": "superfície transição",
+        "freq": 34,
+        "tscore": 5.59,
+        "palavra1_freq": 320,
+        "palavra2_freq": 74
+      },
+      {
+        "bigrama": "órgão regional",
+        "freq": 33,
+        "tscore": 5.73,
+        "palavra1_freq": 37,
+        "palavra2_freq": 34
+      },
+      {
+        "bigrama": "pista pouso",
+        "freq": 33,
+        "tscore": 5.6,
+        "palavra1_freq": 154,
+        "palavra2_freq": 89
+      },
+      {
+        "bigrama": "eixo fato",
+        "freq": 32,
+        "tscore": 5.49,
+        "palavra1_freq": 122,
+        "palavra2_freq": 129
+      },
+      {
+        "bigrama": "horizontal interna",
+        "freq": 32,
+        "tscore": 5.25,
+        "palavra1_freq": 202,
+        "palavra2_freq": 193
+      }
+    ]
+  }
+}

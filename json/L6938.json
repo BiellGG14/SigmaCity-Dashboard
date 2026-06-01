@@ -1,0 +1,370 @@
+{
+  "nome": "Lei 6.938/1981 - Política Nacional do Meio Ambiente",
+  "url": "https://www.planalto.gov.br/ccivil_03/leis/l6938.htm",
+  "disponivel": true,
+  "data_processamento": "2026-04-07 15:39:04",
+  "resumo": ["Instrumentos da PNMA: Lista ferramentas como o zoneamento ambiental, a avaliação de impactos ambientais (AIA) e o licenciamento de atividades.", "Licenciamento Ambiental: Exige licenciamento prévio para construção e operação de atividades potencialmente poluidoras ou que causem degradação ambiental.", "Implicações para UAM: A infraestrutura (ex: vertiportos) e operações de UAM estão sujeitas ao licenciamento e devem ser planejadas conforme os instrumentos de zoneamento e avaliação de impacto."],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [4, 3, 3, 2, 5],
+    "justificativas": ["Impacto relevante ao estabelecer política nacional ambiental com ação governamental obrigatória para manutenção do equilíbrio ecológico, criando estrutura de governança ambiental que condiciona políticas setoriais incluindo transporte e desenvolvimento urbano.", "Impacto moderado ao condicionar desenvolvimento econômico à preservação ambiental através do licenciamento obrigatório, gerando custos de compliance para empreendimentos de UAM, mas sem mencionar incentivos fiscais ou financiamento específico.", "Impacto moderado ao visar proteção da dignidade humana e qualidade ambiental propícia à vida, criando base para aceitação social de empreendimentos através do controle de impactos, mas sem foco específico em equidade ou inclusão social direta.", "Impacto pontual ao exigir avaliação de impactos ambientais que pode incluir aspectos tecnológicos de poluição sonora e eficiência energética, mas sem especificar requisitos técnicos ou padrões tecnológicos para infraestruturas de UAM.", "Impacto direto e abrangente ao estabelecer marco legal ambiental completo com licenciamento obrigatório, zoneamento ambiental, avaliação de impactos e controle de atividades poluidoras, aplicável diretamente à infraestrutura e operações de UAM."]
+  },
+  "estatisticas": {
+    "total_palavras": 6478,
+    "palavras_unicas": 1748,
+    "num_sentencas": 1006,
+    "top_50_palavras": {
+      "incluído": 157,
+      "ambiental": 105,
+      "meio": 95,
+      "ambiente": 93,
+      "redação": 73,
+      "dada": 72,
+      "recursos": 54,
+      "atividades": 52,
+      "fabricação": 50,
+      "nacional": 50,
+      "ibama": 48,
+      "valor": 46,
+      "produtos": 44,
+      "revogado": 42,
+      "ambientais": 35,
+      "servidão": 35,
+      "federal": 34,
+      "fauna": 33,
+      "cento": 32,
+      "vide": 32,
+      "uso": 31,
+      "licença": 29,
+      "reais": 28,
+      "fiscalização": 27,
+      "órgãos": 27,
+      "área": 26,
+      "será": 25,
+      "controle": 24,
+      "qualidade": 24,
+      "tfa": 24,
+      "desta": 23,
+      "naturais": 23,
+      "áreas": 22,
+      "entidades": 22,
+      "haano": 21,
+      "instituto": 21,
+      "licenciamento": 21,
+      "multa": 21,
+      "órgão": 21,
+      "política": 21,
+      "registro": 21,
+      "ministro": 20,
+      "degradação": 19,
+      "potencialmente": 19,
+      "vistoria": 19,
+      "conama": 18,
+      "conselho": 18,
+      "indústria": 18,
+      "preservação": 18,
+      "público": 18
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 0,
+      "urbana": 0,
+      "evtol": 0,
+      "aeronave": 2,
+      "vertiporto": 0,
+      "heliponto": 0,
+      " uam ": 0,
+      "tráfego aéreo": 0,
+      "decolagem": 0,
+      "pouso": 1,
+      " voo ": 0,
+      "aviação": 0
+    },
+    "top_20_bigramas": {
+      "meio ambiente": 93,
+      "redação dada": 72,
+      "servidão ambiental": 31,
+      "nacional meio": 29,
+      "incluído revogado": 25,
+      "recursos ambientais": 25,
+      "recursos naturais": 20,
+      "política nacional": 19,
+      "qualidade ambiental": 17,
+      "ambiente recursos": 16,
+      "pessoas físicas": 15,
+      "ambiental incluído": 14,
+      "vide fórmula": 14,
+      "partes produtos": 12,
+      "brasileiro meio": 11,
+      "físicas jurídicas": 11,
+      "instituto brasileiro": 11,
+      "licença renovação": 11,
+      "naturais renováveis": 11,
+      "produtos derivados": 11
+    },
+    "palavras_chave": [
+      {
+        "palavra": "incluído",
+        "frequencia": 157,
+        "relevancia": 5.063
+      },
+      {
+        "palavra": "ambiental",
+        "frequencia": 105,
+        "relevancia": 3.119
+      },
+      {
+        "palavra": "ambiente",
+        "frequencia": 93,
+        "relevancia": 2.691
+      },
+      {
+        "palavra": "meio",
+        "frequencia": 95,
+        "relevancia": 1.657
+      },
+      {
+        "palavra": "recursos",
+        "frequencia": 54,
+        "relevancia": 1.378
+      },
+      {
+        "palavra": "atividades",
+        "frequencia": 52,
+        "relevancia": 1.315
+      },
+      {
+        "palavra": "fabricação",
+        "frequencia": 50,
+        "relevancia": 1.252
+      },
+      {
+        "palavra": "nacional",
+        "frequencia": 50,
+        "relevancia": 1.252
+      },
+      {
+        "palavra": "redação",
+        "frequencia": 73,
+        "relevancia": 1.201
+      },
+      {
+        "palavra": "dada",
+        "frequencia": 72,
+        "relevancia": 1.181
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "meio ambiente",
+        "freq": 93,
+        "tscore": 9.5,
+        "palavra1_freq": 95,
+        "palavra2_freq": 93
+      },
+      {
+        "bigrama": "redação dada",
+        "freq": 72,
+        "tscore": 8.39,
+        "palavra1_freq": 73,
+        "palavra2_freq": 72
+      },
+      {
+        "bigrama": "servidão ambiental",
+        "freq": 31,
+        "tscore": 5.47,
+        "palavra1_freq": 35,
+        "palavra2_freq": 105
+      },
+      {
+        "bigrama": "nacional meio",
+        "freq": 29,
+        "tscore": 5.25,
+        "palavra1_freq": 50,
+        "palavra2_freq": 95
+      },
+      {
+        "bigrama": "recursos ambientais",
+        "freq": 25,
+        "tscore": 4.94,
+        "palavra1_freq": 54,
+        "palavra2_freq": 35
+      },
+      {
+        "bigrama": "incluído revogado",
+        "freq": 25,
+        "tscore": 4.8,
+        "palavra1_freq": 157,
+        "palavra2_freq": 42
+      },
+      {
+        "bigrama": "recursos naturais",
+        "freq": 20,
+        "tscore": 4.43,
+        "palavra1_freq": 54,
+        "palavra2_freq": 23
+      },
+      {
+        "bigrama": "política nacional",
+        "freq": 19,
+        "tscore": 4.32,
+        "palavra1_freq": 21,
+        "palavra2_freq": 50
+      },
+      {
+        "bigrama": "qualidade ambiental",
+        "freq": 17,
+        "tscore": 4.03,
+        "palavra1_freq": 24,
+        "palavra2_freq": 105
+      },
+      {
+        "bigrama": "ambiente recursos",
+        "freq": 16,
+        "tscore": 3.81,
+        "palavra1_freq": 93,
+        "palavra2_freq": 54
+      },
+      {
+        "bigrama": "pessoas físicas",
+        "freq": 15,
+        "tscore": 3.86,
+        "palavra1_freq": 17,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "vide fórmula",
+        "freq": 14,
+        "tscore": 3.72,
+        "palavra1_freq": 32,
+        "palavra2_freq": 14
+      },
+      {
+        "bigrama": "ambiental incluído",
+        "freq": 14,
+        "tscore": 3.06,
+        "palavra1_freq": 105,
+        "palavra2_freq": 157
+      },
+      {
+        "bigrama": "partes produtos",
+        "freq": 12,
+        "tscore": 3.44,
+        "palavra1_freq": 12,
+        "palavra2_freq": 44
+      },
+      {
+        "bigrama": "físicas jurídicas",
+        "freq": 11,
+        "tscore": 3.31,
+        "palavra1_freq": 15,
+        "palavra2_freq": 12
+      },
+      {
+        "bigrama": "instituto brasileiro",
+        "freq": 11,
+        "tscore": 3.31,
+        "palavra1_freq": 21,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "naturais renováveis",
+        "freq": 11,
+        "tscore": 3.3,
+        "palavra1_freq": 23,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "licença renovação",
+        "freq": 11,
+        "tscore": 3.3,
+        "palavra1_freq": 29,
+        "palavra2_freq": 16
+      },
+      {
+        "bigrama": "produtos derivados",
+        "freq": 11,
+        "tscore": 3.28,
+        "palavra1_freq": 44,
+        "palavra2_freq": 17
+      },
+      {
+        "bigrama": "brasileiro meio",
+        "freq": 11,
+        "tscore": 3.27,
+        "palavra1_freq": 11,
+        "palavra2_freq": 95
+      },
+      {
+        "bigrama": "potencialmente poluidoras",
+        "freq": 10,
+        "tscore": 3.15,
+        "palavra1_freq": 19,
+        "palavra2_freq": 12
+      },
+      {
+        "bigrama": "renováveis ibama",
+        "freq": 10,
+        "tscore": 3.14,
+        "palavra1_freq": 11,
+        "palavra2_freq": 48
+      },
+      {
+        "bigrama": "órgãos entidades",
+        "freq": 10,
+        "tscore": 3.13,
+        "palavra1_freq": 27,
+        "palavra2_freq": 22
+      },
+      {
+        "bigrama": "controle fiscalização",
+        "freq": 10,
+        "tscore": 3.13,
+        "palavra1_freq": 24,
+        "palavra2_freq": 27
+      },
+      {
+        "bigrama": "revogado ministro",
+        "freq": 10,
+        "tscore": 3.12,
+        "palavra1_freq": 42,
+        "palavra2_freq": 20
+      },
+      {
+        "bigrama": "degradação ambiental",
+        "freq": 10,
+        "tscore": 3.06,
+        "palavra1_freq": 19,
+        "palavra2_freq": 105
+      },
+      {
+        "bigrama": "presidente república",
+        "freq": 9,
+        "tscore": 2.99,
+        "palavra1_freq": 17,
+        "palavra2_freq": 12
+      },
+      {
+        "bigrama": "conselho superior",
+        "freq": 9,
+        "tscore": 2.99,
+        "palavra1_freq": 18,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "sistema nacional",
+        "freq": 9,
+        "tscore": 2.98,
+        "palavra1_freq": 9,
+        "palavra2_freq": 50
+      },
+      {
+        "bigrama": "valor excedente",
+        "freq": 9,
+        "tscore": 2.98,
+        "palavra1_freq": 46,
+        "palavra2_freq": 10
+      }
+    ]
+  }
+}

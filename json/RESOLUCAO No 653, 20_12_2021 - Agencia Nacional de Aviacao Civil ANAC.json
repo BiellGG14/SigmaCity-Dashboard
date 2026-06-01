@@ -1,0 +1,370 @@
+{
+  "nome": "Resolução ANATEL 653/2021",
+  "url": "https://www.anac.gov.br/assuntos/legislacao/legislacao-1/resolucoes/2021/resolucao-no-653-20-12-2021",
+  "disponivel": true,
+  "data_processamento": "2026-04-07 15:39:13",
+  "resumo": ["Regulamenta os serviços de comunicação eletrônica na banda UHF", "Estabelece diretrizes para uso compartilhado de infraestrutura de telecomunicações", "Define requisitos de cobertura para operadores de serviço público"],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [4, 4, 1, 2, 1],
+    "justificativas": ["Estabelece política de compartilhamento de infraestrutura de telecomunicações, demostrando ação estatal na coordenação do setor para eficiência e redução de custos.", "Impacto relevante ao definir diretrizes que reduzem custos de implementação de infraestrutura de comunicações para operadores, viabilizando maior cobertura e acesso a serviços.", "Aborda questões de cobertura de serviços em comunidades, mas não trata especificamente de inclusão social ou equidade no acesso a serviços de transporte.", "Define requisitos técnicos para compartilhamento de infraestrutura de telecomunicações, com impacto moderado em viabilidade de redes de comunicação para UAM.", "Ausência de referência a impactos ambientais ou considerações de sustentabilidade relacionadas a infraestruturas de telecomunicações."]
+  },
+  "estatisticas": {
+    "total_palavras": 3515,
+    "palavras_unicas": 998,
+    "num_sentencas": 346,
+    "top_50_palavras": {
+      "valor": 114,
+      "anac": 61,
+      "alteração": 45,
+      "rbac": 42,
+      "complexidade": 40,
+      "resolução": 39,
+      "kgf": 38,
+      "pmd": 38,
+      "aplicável": 37,
+      "tfac": 36,
+      "aviação": 35,
+      "civil": 34,
+      "programa": 28,
+      "descrição": 26,
+      "fator": 26,
+      "manuais": 26,
+      "nacional": 26,
+      "agência": 25,
+      "cod": 25,
+      "certificado": 23,
+      "emissão": 23,
+      "httpswwwanacgovbrassuntoslegislacaolegislacaoresolucoesresolucaono": 23,
+      "manutenção": 23,
+      "lançamento": 21,
+      "pagamento": 20,
+      "prazo": 20,
+      "aeródromo": 19,
+      "acima": 18,
+      "organização": 17,
+      "aeronave": 16,
+      "cadastral": 16,
+      "revisão": 16,
+      "motor": 15,
+      "restituição": 15,
+      "tipo": 15,
+      "autorização": 14,
+      "certificação": 14,
+      "deverá": 14,
+      "fato": 14,
+      "processo": 14,
+      "será": 14,
+      "similares": 14,
+      "aprovação": 13,
+      "diretamente": 13,
+      "gerador": 13,
+      "operadores": 13,
+      "passivo": 13,
+      "sujeito": 13,
+      "termos": 13,
+      "tripulada": 13
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 0,
+      "urbana": 0,
+      "evtol": 0,
+      "aeronave": 30,
+      "vertiporto": 0,
+      "heliponto": 7,
+      " uam ": 0,
+      "tráfego aéreo": 0,
+      "decolagem": 3,
+      "pouso": 4,
+      " voo ": 5,
+      "aviação": 35
+    },
+    "top_20_bigramas": {
+      "valor valor": 79,
+      "aviação civil": 34,
+      "agência nacional": 25,
+      "cod descrição": 25,
+      "nacional aviação": 25,
+      "civil anac": 24,
+      "resolução agência": 23,
+      "httpswwwanacgovbrassuntoslegislacaolegislacaoresolucoesresolucaono resolução": 22,
+      "pmd kgf": 21,
+      "acima kgf": 17,
+      "descrição valor": 17,
+      "fator cod": 17,
+      "valor complexidade": 17,
+      "pmd acima": 16,
+      "revisão manuais": 16,
+      "aplicável aplicável": 15,
+      "aeronave tripulada": 13,
+      "diretamente anac": 13,
+      "fato gerador": 13,
+      "sujeito passivo": 13
+    },
+    "palavras_chave": [
+      {
+        "palavra": "valor",
+        "frequencia": 114,
+        "relevancia": 2.847
+      },
+      {
+        "palavra": "alteração",
+        "frequencia": 45,
+        "relevancia": 1.511
+      },
+      {
+        "palavra": "anac",
+        "frequencia": 61,
+        "relevancia": 1.325
+      },
+      {
+        "palavra": "complexidade",
+        "frequencia": 40,
+        "relevancia": 1.303
+      },
+      {
+        "palavra": "resolução",
+        "frequencia": 39,
+        "relevancia": 1.262
+      },
+      {
+        "palavra": "aplicável",
+        "frequencia": 37,
+        "relevancia": 1.181
+      },
+      {
+        "palavra": "rbac",
+        "frequencia": 42,
+        "relevancia": 0.831
+      },
+      {
+        "palavra": "programa",
+        "frequencia": 28,
+        "relevancia": 0.827
+      },
+      {
+        "palavra": "descrição",
+        "frequencia": 26,
+        "relevancia": 0.752
+      },
+      {
+        "palavra": "nacional",
+        "frequencia": 26,
+        "relevancia": 0.752
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "valor valor",
+        "freq": 79,
+        "tscore": 8.47,
+        "palavra1_freq": 114,
+        "palavra2_freq": 114
+      },
+      {
+        "bigrama": "aviação civil",
+        "freq": 34,
+        "tscore": 5.77,
+        "palavra1_freq": 35,
+        "palavra2_freq": 34
+      },
+      {
+        "bigrama": "agência nacional",
+        "freq": 25,
+        "tscore": 4.96,
+        "palavra1_freq": 25,
+        "palavra2_freq": 26
+      },
+      {
+        "bigrama": "cod descrição",
+        "freq": 25,
+        "tscore": 4.96,
+        "palavra1_freq": 25,
+        "palavra2_freq": 26
+      },
+      {
+        "bigrama": "nacional aviação",
+        "freq": 25,
+        "tscore": 4.95,
+        "palavra1_freq": 26,
+        "palavra2_freq": 35
+      },
+      {
+        "bigrama": "civil anac",
+        "freq": 24,
+        "tscore": 4.78,
+        "palavra1_freq": 34,
+        "palavra2_freq": 61
+      },
+      {
+        "bigrama": "resolução agência",
+        "freq": 23,
+        "tscore": 4.74,
+        "palavra1_freq": 39,
+        "palavra2_freq": 25
+      },
+      {
+        "bigrama": "httpswwwanacgovbrassuntoslegislacaolegislacaoresolucoesresolucaono resolução",
+        "freq": 22,
+        "tscore": 4.64,
+        "palavra1_freq": 23,
+        "palavra2_freq": 39
+      },
+      {
+        "bigrama": "pmd kgf",
+        "freq": 21,
+        "tscore": 4.49,
+        "palavra1_freq": 38,
+        "palavra2_freq": 38
+      },
+      {
+        "bigrama": "fator cod",
+        "freq": 17,
+        "tscore": 4.08,
+        "palavra1_freq": 26,
+        "palavra2_freq": 25
+      },
+      {
+        "bigrama": "acima kgf",
+        "freq": 17,
+        "tscore": 4.08,
+        "palavra1_freq": 18,
+        "palavra2_freq": 38
+      },
+      {
+        "bigrama": "descrição valor",
+        "freq": 17,
+        "tscore": 3.92,
+        "palavra1_freq": 26,
+        "palavra2_freq": 114
+      },
+      {
+        "bigrama": "valor complexidade",
+        "freq": 17,
+        "tscore": 3.81,
+        "palavra1_freq": 114,
+        "palavra2_freq": 40
+      },
+      {
+        "bigrama": "revisão manuais",
+        "freq": 16,
+        "tscore": 3.97,
+        "palavra1_freq": 16,
+        "palavra2_freq": 26
+      },
+      {
+        "bigrama": "pmd acima",
+        "freq": 16,
+        "tscore": 3.95,
+        "palavra1_freq": 38,
+        "palavra2_freq": 18
+      },
+      {
+        "bigrama": "aplicável aplicável",
+        "freq": 15,
+        "tscore": 3.77,
+        "palavra1_freq": 37,
+        "palavra2_freq": 37
+      },
+      {
+        "bigrama": "sujeito passivo",
+        "freq": 13,
+        "tscore": 3.59,
+        "palavra1_freq": 13,
+        "palavra2_freq": 13
+      },
+      {
+        "bigrama": "fato gerador",
+        "freq": 13,
+        "tscore": 3.59,
+        "palavra1_freq": 14,
+        "palavra2_freq": 13
+      },
+      {
+        "bigrama": "aeronave tripulada",
+        "freq": 13,
+        "tscore": 3.59,
+        "palavra1_freq": 16,
+        "palavra2_freq": 13
+      },
+      {
+        "bigrama": "tripulada pmd",
+        "freq": 13,
+        "tscore": 3.57,
+        "palavra1_freq": 13,
+        "palavra2_freq": 38
+      },
+      {
+        "bigrama": "diretamente anac",
+        "freq": 13,
+        "tscore": 3.54,
+        "palavra1_freq": 13,
+        "palavra2_freq": 61
+      },
+      {
+        "bigrama": "manutenção programa",
+        "freq": 12,
+        "tscore": 3.41,
+        "palavra1_freq": 23,
+        "palavra2_freq": 28
+      },
+      {
+        "bigrama": "operacional aeródromo",
+        "freq": 11,
+        "tscore": 3.3,
+        "palavra1_freq": 12,
+        "palavra2_freq": 19
+      },
+      {
+        "bigrama": "desta resolução",
+        "freq": 11,
+        "tscore": 3.28,
+        "palavra1_freq": 11,
+        "palavra2_freq": 39
+      },
+      {
+        "bigrama": "combustão interna",
+        "freq": 10,
+        "tscore": 3.15,
+        "palavra1_freq": 10,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "autorizações certificações",
+        "freq": 10,
+        "tscore": 3.15,
+        "palavra1_freq": 11,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "programas listas",
+        "freq": 10,
+        "tscore": 3.15,
+        "palavra1_freq": 12,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "equipamentos similares",
+        "freq": 10,
+        "tscore": 3.15,
+        "palavra1_freq": 10,
+        "palavra2_freq": 14
+      },
+      {
+        "bigrama": "helicópteros pmd",
+        "freq": 10,
+        "tscore": 3.12,
+        "palavra1_freq": 11,
+        "palavra2_freq": 38
+      },
+      {
+        "bigrama": "alteração especificações",
+        "freq": 10,
+        "tscore": 3.12,
+        "palavra1_freq": 45,
+        "palavra2_freq": 11
+      }
+    ]
+  }
+}

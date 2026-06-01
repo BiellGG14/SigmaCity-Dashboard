@@ -1,0 +1,370 @@
+{
+  "nome": "Lei nº 12.725/2012 - Controle da fauna nas imediações de aeródromos",
+  "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12725.htm",
+  "disponivel": true,
+  "data_processamento": "2026-04-07 15:39:02",
+  "resumo": ["Esta lei estabelece a Área de Segurança Aeroportuária (ASA) com um raio de 20 km ao redor de aeródromos, onde se aplicam restrições de uso e ocupação do solo.", "As autoridades municipais devem incorporar essas restrições no planejamento territorial e no licenciamento ambiental.", "O documento define atividades atrativas de fauna e estabelece sanções para infrações.", "Suas disposições se aplicam a aeródromos, incluindo infraestruturas de UAM, como vertiportos."],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [4, 3, 3, 2, 4],
+    "justificativas": ["Estabelece articulação federativa entre autoridades de aviação civil, municipais e ambientais, criando estrutura de governança territorial obrigatória para aeródromos que se aplica diretamente a vertiportos UAM.", "Implica custos adicionais para controle de fauna e restrições de uso do solo que impactam a viabilidade econômica de vertiportos, mas sem tratar de incentivos ou financiamento específico.", "Foca na segurança operacional que beneficia a população vizinha, com impacto moderado na aceitação social, mas não aborda especificamente equidade ou inclusão no acesso à UAM.", "Estabelece requisitos gerais para manejo ambiental de aeródromos, mas não aborda tecnologias avançadas de comunicação, navegação ou infraestrutura específica para UAM.", "Impacto relevante ao exigir licenciamento ambiental específico, planos de manejo da fauna e restrições a atividades atrativas de fauna, condicionando a implantação de vertiportos a critérios ambientais."]
+  },
+  "estatisticas": {
+    "total_palavras": 963,
+    "palavras_unicas": 523,
+    "num_sentencas": 53,
+    "top_50_palavras": {
+      "fauna": 33,
+      "autoridade": 17,
+      "aeródromo": 16,
+      "espécimes": 16,
+      "aeronaves": 11,
+      "atividade": 11,
+      "asa": 10,
+      "ambiental": 9,
+      "área": 9,
+      "aviação": 9,
+      "manejo": 9,
+      "municipal": 9,
+      "risco": 9,
+      "segurança": 9,
+      "aeródromos": 8,
+      "potencial": 8,
+      "atração": 7,
+      "previstas": 7,
+      "animais": 6,
+      "atividades": 6,
+      "colisão": 6,
+      "especiais": 6,
+      "meio": 6,
+      "militar": 6,
+      "operacional": 6,
+      "pngrf": 6,
+      "restrições": 6,
+      "uso": 6,
+      "atrativa": 5,
+      "civil": 5,
+      "competente": 5,
+      "nacional": 5,
+      "sanções": 5,
+      "acidentes": 4,
+      "administração": 4,
+      "aeronáutica": 4,
+      "aeronáuticos": 4,
+      "ambiente": 4,
+      "controle": 4,
+      "decorrentes": 4,
+      "desta": 4,
+      "espécie": 4,
+      "espécies": 4,
+      "gerenciamento": 4,
+      "incidentes": 4,
+      "interior": 4,
+      "multa": 4,
+      "parâmetros": 4,
+      "quaisquer": 4,
+      "reais": 4
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 0,
+      "urbana": 0,
+      "evtol": 0,
+      "aeronave": 12,
+      "vertiporto": 0,
+      "heliponto": 0,
+      " uam ": 0,
+      "tráfego aéreo": 0,
+      "decolagem": 1,
+      "pouso": 1,
+      " voo ": 0,
+      "aviação": 9
+    },
+    "top_20_bigramas": {
+      "espécimes fauna": 16,
+      "aeronaves espécimes": 6,
+      "atração espécimes": 6,
+      "potencial atração": 6,
+      "restrições especiais": 6,
+      "segurança operacional": 6,
+      "atividade potencial": 5,
+      "autoridade municipal": 5,
+      "colisão aeronaves": 5,
+      "fauna aeródromos": 5,
+      "manejo fauna": 5,
+      "acidentes incidentes": 4,
+      "aeronáuticos decorrentes": 4,
+      "atividade atrativa": 4,
+      "autoridade ambiental": 4,
+      "autoridade competente": 4,
+      "aviação civil": 4,
+      "decorrentes colisão": 4,
+      "incidentes aeronáuticos": 4,
+      "interior asa": 4
+    },
+    "palavras_chave": [
+      {
+        "palavra": "fauna",
+        "frequencia": 33,
+        "relevancia": 2.116
+      },
+      {
+        "palavra": "autoridade",
+        "frequencia": 17,
+        "relevancia": 1.489
+      },
+      {
+        "palavra": "aeródromo",
+        "frequencia": 16,
+        "relevancia": 1.374
+      },
+      {
+        "palavra": "espécimes",
+        "frequencia": 16,
+        "relevancia": 1.374
+      },
+      {
+        "palavra": "aeronaves",
+        "frequencia": 11,
+        "relevancia": 0.828
+      },
+      {
+        "palavra": "atividade",
+        "frequencia": 11,
+        "relevancia": 0.828
+      },
+      {
+        "palavra": "ambiental",
+        "frequencia": 9,
+        "relevancia": 0.628
+      },
+      {
+        "palavra": "municipal",
+        "frequencia": 9,
+        "relevancia": 0.628
+      },
+      {
+        "palavra": "segurança",
+        "frequencia": 9,
+        "relevancia": 0.628
+      },
+      {
+        "palavra": "aeródromos",
+        "frequencia": 8,
+        "relevancia": 0.533
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "espécimes fauna",
+        "freq": 16,
+        "tscore": 3.86,
+        "palavra1_freq": 16,
+        "palavra2_freq": 33
+      },
+      {
+        "bigrama": "restrições especiais",
+        "freq": 6,
+        "tscore": 2.43,
+        "palavra1_freq": 6,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "segurança operacional",
+        "freq": 6,
+        "tscore": 2.43,
+        "palavra1_freq": 9,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "potencial atração",
+        "freq": 6,
+        "tscore": 2.43,
+        "palavra1_freq": 8,
+        "palavra2_freq": 7
+      },
+      {
+        "bigrama": "atração espécimes",
+        "freq": 6,
+        "tscore": 2.4,
+        "palavra1_freq": 7,
+        "palavra2_freq": 16
+      },
+      {
+        "bigrama": "aeronaves espécimes",
+        "freq": 6,
+        "tscore": 2.37,
+        "palavra1_freq": 11,
+        "palavra2_freq": 16
+      },
+      {
+        "bigrama": "colisão aeronaves",
+        "freq": 5,
+        "tscore": 2.21,
+        "palavra1_freq": 6,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "atividade potencial",
+        "freq": 5,
+        "tscore": 2.2,
+        "palavra1_freq": 11,
+        "palavra2_freq": 8
+      },
+      {
+        "bigrama": "autoridade municipal",
+        "freq": 5,
+        "tscore": 2.17,
+        "palavra1_freq": 17,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "fauna aeródromos",
+        "freq": 5,
+        "tscore": 2.11,
+        "palavra1_freq": 33,
+        "palavra2_freq": 8
+      },
+      {
+        "bigrama": "manejo fauna",
+        "freq": 5,
+        "tscore": 2.1,
+        "palavra1_freq": 9,
+        "palavra2_freq": 33
+      },
+      {
+        "bigrama": "acidentes incidentes",
+        "freq": 4,
+        "tscore": 1.99,
+        "palavra1_freq": 4,
+        "palavra2_freq": 4
+      },
+      {
+        "bigrama": "aeronáuticos decorrentes",
+        "freq": 4,
+        "tscore": 1.99,
+        "palavra1_freq": 4,
+        "palavra2_freq": 4
+      },
+      {
+        "bigrama": "incidentes aeronáuticos",
+        "freq": 4,
+        "tscore": 1.99,
+        "palavra1_freq": 4,
+        "palavra2_freq": 4
+      },
+      {
+        "bigrama": "decorrentes colisão",
+        "freq": 4,
+        "tscore": 1.99,
+        "palavra1_freq": 4,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "risco acidentes",
+        "freq": 4,
+        "tscore": 1.98,
+        "palavra1_freq": 9,
+        "palavra2_freq": 4
+      },
+      {
+        "bigrama": "interior asa",
+        "freq": 4,
+        "tscore": 1.98,
+        "palavra1_freq": 4,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "aviação civil",
+        "freq": 4,
+        "tscore": 1.98,
+        "palavra1_freq": 9,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "operacional aviação",
+        "freq": 4,
+        "tscore": 1.97,
+        "palavra1_freq": 6,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "atividade atrativa",
+        "freq": 4,
+        "tscore": 1.97,
+        "palavra1_freq": 11,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "autoridade competente",
+        "freq": 4,
+        "tscore": 1.96,
+        "palavra1_freq": 17,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "autoridade ambiental",
+        "freq": 4,
+        "tscore": 1.92,
+        "palavra1_freq": 17,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "nativa exótica",
+        "freq": 3,
+        "tscore": 1.73,
+        "palavra1_freq": 3,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "órgão entidade",
+        "freq": 3,
+        "tscore": 1.73,
+        "palavra1_freq": 3,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "sanções administrativas",
+        "freq": 3,
+        "tscore": 1.72,
+        "palavra1_freq": 5,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "uso ocupação",
+        "freq": 3,
+        "tscore": 1.72,
+        "palavra1_freq": 6,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "aeronáutica militar",
+        "freq": 3,
+        "tscore": 1.72,
+        "palavra1_freq": 4,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "segurança aeroportuária",
+        "freq": 3,
+        "tscore": 1.72,
+        "palavra1_freq": 9,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "aeroportuária asa",
+        "freq": 3,
+        "tscore": 1.71,
+        "palavra1_freq": 3,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "colisões aeronaves",
+        "freq": 3,
+        "tscore": 1.71,
+        "palavra1_freq": 3,
+        "palavra2_freq": 11
+      }
+    ]
+  }
+}

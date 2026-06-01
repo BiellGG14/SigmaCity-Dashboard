@@ -1,0 +1,370 @@
+{
+  "nome": "Lei 9.472/1997 - Lei Geral de Telecomunicações",
+  "url": "https://www.planalto.gov.br/ccivil_03/leis/l9472.htm",
+  "disponivel": true,
+  "data_processamento": "2026-04-07 15:39:06",
+  "resumo": ["Estabelece a organização dos serviços de telecomunicações no Brasil e cria a ANATEL como órgão regulador.", "Define competências da União, direitos e deveres dos usuários e princípios de regulação econômica e técnica.", "Introduz normas sobre espectro de radiofrequências, infraestrutura e financiamento setorial.", "Fornece base legal para a integração entre redes de comunicação e políticas públicas de conectividade.", "Apresenta relevância para a UAM por disciplinar comunicações e infraestrutura tecnológica aplicáveis ao espaço aéreo urbano."],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [5, 3, 3, 5, 1],
+    "justificativas": ["Cria a ANATEL como agência reguladora autônoma e estabelece a estrutura de governança estatal para o setor de telecomunicações, com impacto direto e abrangente na regulação das comunicações essenciais para UAM.", "Estabelece mecanismos de financiamento setorial (FISTEL) e regulação econômica que impactam custos de infraestrutura, mas não aborda especificamente incentivos ou modelos de negócio para UAM.", "Define princípios de acesso universal e defesa do consumidor, com impacto moderado na inclusão digital, mas sem tratar especificamente de equidade ou aceitação social da UAM.", "Impacto direto e abrangente ao disciplinar o espectro de radiofrequências, infraestrutura de comunicação e interoperabilidade de redes, elementos críticos para os sistemas CNS/ATM da UAM.", "Ausência de referência a requisitos ou impactos ambientais específicos no texto analisado, com influência mínima no fator ambiental da UAM."]
+  },
+  "estatisticas": {
+    "total_palavras": 9341,
+    "palavras_unicas": 2515,
+    "num_sentencas": 1249,
+    "top_50_palavras": {
+      "telecomunicações": 166,
+      "serviço": 156,
+      "agência": 142,
+      "serviços": 112,
+      "será": 91,
+      "concessão": 66,
+      "público": 66,
+      "regime": 65,
+      "autorização": 63,
+      "serão": 61,
+      "condições": 58,
+      "uso": 52,
+      "poderá": 50,
+      "prestação": 49,
+      "desta": 45,
+      "prazo": 42,
+      "bem": 41,
+      "forma": 38,
+      "interesse": 37,
+      "termos": 37,
+      "conselho": 35,
+      "contrato": 35,
+      "incluído": 35,
+      "prestadoras": 34,
+      "concessionária": 33,
+      "direito": 33,
+      "regulamentação": 33,
+      "prestadora": 32,
+      "radiofreqência": 32,
+      "exploração": 31,
+      "privado": 31,
+      "revogado": 31,
+      "empresas": 30,
+      "permissão": 30,
+      "usuários": 30,
+      "dada": 29,
+      "redação": 29,
+      "disposto": 28,
+      "anos": 27,
+      "mediante": 27,
+      "vigência": 27,
+      "caso": 26,
+      "fiscalização": 26,
+      "objeto": 26,
+      "redes": 26,
+      "suas": 26,
+      "universalização": 26,
+      "bens": 25,
+      "obrigações": 25,
+      "outorga": 25
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 0,
+      "urbana": 0,
+      "evtol": 0,
+      "aeronave": 1,
+      "vertiporto": 0,
+      "heliponto": 0,
+      " uam ": 0,
+      "tráfego aéreo": 0,
+      "decolagem": 0,
+      "pouso": 0,
+      " voo ": 0,
+      "aviação": 0
+    },
+    "top_20_bigramas": {
+      "serviços telecomunicações": 44,
+      "serviço telecomunicações": 39,
+      "regime público": 31,
+      "redação dada": 28,
+      "uso radiofreqência": 25,
+      "regime privado": 24,
+      "conselho diretor": 21,
+      "prestação serviço": 20,
+      "serviço regime": 20,
+      "autorização serviço": 19,
+      "concessão permissão": 17,
+      "prestadora serviço": 17,
+      "permissão autorização": 15,
+      "contrato concessão": 13,
+      "interesse coletivo": 13,
+      "plano geral": 13,
+      "autorização uso": 12,
+      "ministério comunicações": 12,
+      "observado disposto": 12,
+      "presidente república": 12
+    },
+    "palavras_chave": [
+      {
+        "palavra": "telecomunicações",
+        "frequencia": 166,
+        "relevancia": 5.118
+      },
+      {
+        "palavra": "serviços",
+        "frequencia": 112,
+        "relevancia": 3.19
+      },
+      {
+        "palavra": "serviço",
+        "frequencia": 156,
+        "relevancia": 2.851
+      },
+      {
+        "palavra": "agência",
+        "frequencia": 142,
+        "relevancia": 2.547
+      },
+      {
+        "palavra": "concessão",
+        "frequencia": 66,
+        "relevancia": 1.672
+      },
+      {
+        "palavra": "autorização",
+        "frequencia": 63,
+        "relevancia": 1.578
+      },
+      {
+        "palavra": "será",
+        "frequencia": 91,
+        "relevancia": 1.487
+      },
+      {
+        "palavra": "condições",
+        "frequencia": 58,
+        "relevancia": 1.425
+      },
+      {
+        "palavra": "prestação",
+        "frequencia": 49,
+        "relevancia": 1.155
+      },
+      {
+        "palavra": "público",
+        "frequencia": 66,
+        "relevancia": 1.003
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "serviços telecomunicações",
+        "freq": 44,
+        "tscore": 6.33,
+        "palavra1_freq": 112,
+        "palavra2_freq": 166
+      },
+      {
+        "bigrama": "serviço telecomunicações",
+        "freq": 39,
+        "tscore": 5.8,
+        "palavra1_freq": 156,
+        "palavra2_freq": 166
+      },
+      {
+        "bigrama": "regime público",
+        "freq": 31,
+        "tscore": 5.49,
+        "palavra1_freq": 65,
+        "palavra2_freq": 66
+      },
+      {
+        "bigrama": "redação dada",
+        "freq": 28,
+        "tscore": 5.27,
+        "palavra1_freq": 29,
+        "palavra2_freq": 29
+      },
+      {
+        "bigrama": "uso radiofreqência",
+        "freq": 25,
+        "tscore": 4.96,
+        "palavra1_freq": 52,
+        "palavra2_freq": 32
+      },
+      {
+        "bigrama": "regime privado",
+        "freq": 24,
+        "tscore": 4.85,
+        "palavra1_freq": 65,
+        "palavra2_freq": 31
+      },
+      {
+        "bigrama": "conselho diretor",
+        "freq": 21,
+        "tscore": 4.57,
+        "palavra1_freq": 35,
+        "palavra2_freq": 21
+      },
+      {
+        "bigrama": "prestação serviço",
+        "freq": 20,
+        "tscore": 4.29,
+        "palavra1_freq": 49,
+        "palavra2_freq": 156
+      },
+      {
+        "bigrama": "serviço regime",
+        "freq": 20,
+        "tscore": 4.23,
+        "palavra1_freq": 156,
+        "palavra2_freq": 65
+      },
+      {
+        "bigrama": "autorização serviço",
+        "freq": 19,
+        "tscore": 4.12,
+        "palavra1_freq": 63,
+        "palavra2_freq": 156
+      },
+      {
+        "bigrama": "concessão permissão",
+        "freq": 17,
+        "tscore": 4.07,
+        "palavra1_freq": 66,
+        "palavra2_freq": 30
+      },
+      {
+        "bigrama": "prestadora serviço",
+        "freq": 17,
+        "tscore": 3.99,
+        "palavra1_freq": 32,
+        "palavra2_freq": 156
+      },
+      {
+        "bigrama": "permissão autorização",
+        "freq": 15,
+        "tscore": 3.82,
+        "palavra1_freq": 30,
+        "palavra2_freq": 63
+      },
+      {
+        "bigrama": "plano geral",
+        "freq": 13,
+        "tscore": 3.59,
+        "palavra1_freq": 20,
+        "palavra2_freq": 23
+      },
+      {
+        "bigrama": "interesse coletivo",
+        "freq": 13,
+        "tscore": 3.59,
+        "palavra1_freq": 37,
+        "palavra2_freq": 16
+      },
+      {
+        "bigrama": "contrato concessão",
+        "freq": 13,
+        "tscore": 3.54,
+        "palavra1_freq": 35,
+        "palavra2_freq": 66
+      },
+      {
+        "bigrama": "presidente república",
+        "freq": 12,
+        "tscore": 3.46,
+        "palavra1_freq": 16,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "ministério comunicações",
+        "freq": 12,
+        "tscore": 3.45,
+        "palavra1_freq": 15,
+        "palavra2_freq": 20
+      },
+      {
+        "bigrama": "observado disposto",
+        "freq": 12,
+        "tscore": 3.45,
+        "palavra1_freq": 12,
+        "palavra2_freq": 28
+      },
+      {
+        "bigrama": "autorização uso",
+        "freq": 12,
+        "tscore": 3.36,
+        "palavra1_freq": 63,
+        "palavra2_freq": 52
+      },
+      {
+        "bigrama": "prestadoras serviço",
+        "freq": 12,
+        "tscore": 3.3,
+        "palavra1_freq": 34,
+        "palavra2_freq": 156
+      },
+      {
+        "bigrama": "prestação serviços",
+        "freq": 12,
+        "tscore": 3.29,
+        "palavra1_freq": 49,
+        "palavra2_freq": 112
+      },
+      {
+        "bigrama": "termos regulamentação",
+        "freq": 11,
+        "tscore": 3.28,
+        "palavra1_freq": 37,
+        "palavra2_freq": 33
+      },
+      {
+        "bigrama": "modalidade serviço",
+        "freq": 11,
+        "tscore": 3.25,
+        "palavra1_freq": 14,
+        "palavra2_freq": 156
+      },
+      {
+        "bigrama": "agência poderá",
+        "freq": 11,
+        "tscore": 3.09,
+        "palavra1_freq": 142,
+        "palavra2_freq": 50
+      },
+      {
+        "bigrama": "ordem econômica",
+        "freq": 10,
+        "tscore": 3.15,
+        "palavra1_freq": 11,
+        "palavra2_freq": 22
+      },
+      {
+        "bigrama": "geral outorgas",
+        "freq": 10,
+        "tscore": 3.15,
+        "palavra1_freq": 23,
+        "palavra2_freq": 13
+      },
+      {
+        "bigrama": "interesse público",
+        "freq": 10,
+        "tscore": 3.08,
+        "palavra1_freq": 37,
+        "palavra2_freq": 66
+      },
+      {
+        "bigrama": "membros conselho",
+        "freq": 9,
+        "tscore": 2.99,
+        "palavra1_freq": 11,
+        "palavra2_freq": 35
+      },
+      {
+        "bigrama": "direito exploração",
+        "freq": 9,
+        "tscore": 2.96,
+        "palavra1_freq": 33,
+        "palavra2_freq": 31
+      }
+    ]
+  }
+}
