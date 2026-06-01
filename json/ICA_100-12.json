@@ -1,0 +1,370 @@
+{
+  "nome": "ICA 100-12 - Regras do Ar",
+  "url": "https://publicacoes.decea.mil.br/publicacao/ICA-100-12",
+  "disponivel": true,
+  "data_processamento": "2026-04-07 15:38:56",
+  "resumo": ["Estabelece regras para operação de aeronaves em espaço aéreo brasileiro", "Define requisitos para voos visuais (VFR) e por instrumentos (IFR)", "Inclui disposições sobre aeronaves VTOL", "Estabelece limites operacionais em áreas urbanas"],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [3, 2, 4, 5, 1],
+    "justificativas": ["Impacto moderado ao estabelecer regras operacionais obrigatórias através do DECEA com harmonização internacional (OACI), demonstrando coordenação estatal na gestão do espaço aéreo, mas sem políticas de fomento específicas para UAM.", "Impacto pontual ao definir restrições operacionais que podem influenciar custos de operação de aeronaves UAM, mas sem mencionar incentivos econômicos, financiamento ou impactos na viabilidade de modelos de negócio.", "Impacto relevante ao estabelecer requisitos de segurança (alturas mínimas sobre áreas povoadas) que são fundamentais para aceitação pública, gestão de riscos e construção da licença social para operações de UAM em ambiente urbano denso.", "Impacto direto ao definir categorias operacionais específicas (VFR especial, VTOL) e requisitos técnicos para operação em CTR/ATZ que são essenciais para integração de sistemas CNS/ATM e navegação de aeronaves UAM no espaço aéreo urbano controlado.", "Ausência de referência a impactos ecológicos, gestão de poluição sonora, eficiência energética ou qualquer requisito ambiental relacionado a operações aéreas urbanas."]
+  },
+  "estatisticas": {
+    "total_palavras": 13870,
+    "palavras_unicas": 2919,
+    "num_sentencas": 1139,
+    "top_50_palavras": {
+      "voo": 333,
+      "aeronave": 329,
+      "aeródromo": 153,
+      "aéreo": 136,
+      "deverá": 113,
+      "aeronaves": 108,
+      "tráfego": 102,
+      "órgão": 100,
+      "ats": 98,
+      "condições": 77,
+      "controle": 76,
+      "área": 72,
+      "plano": 72,
+      "deverão": 70,
+      "piloto": 70,
+      "seção": 69,
+      "figura": 64,
+      "pouso": 63,
+      "sinais": 62,
+      "interceptada": 60,
+      "regras": 60,
+      "espaço": 59,
+      "serviço": 59,
+      "vfr": 58,
+      "autorização": 56,
+      "nível": 56,
+      "rota": 55,
+      "caso": 53,
+      "hora": 53,
+      "navegação": 53,
+      "ifr": 52,
+      "voos": 52,
+      "aproximação": 50,
+      "comunicação": 50,
+      "nota": 49,
+      "posição": 49,
+      "subseção": 48,
+      "informação": 46,
+      "acima": 45,
+      "operação": 45,
+      "pés": 45,
+      "interceptadora": 43,
+      "balão": 42,
+      "comando": 41,
+      "instrumentos": 41,
+      "apropriado": 39,
+      "destino": 39,
+      "ponto": 39,
+      "qualquer": 39,
+      "altitude": 38
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 11,
+      "urbana": 0,
+      "evtol": 0,
+      "aeronave": 438,
+      "vertiporto": 0,
+      "heliponto": 0,
+      " uam ": 0,
+      "tráfego aéreo": 74,
+      "decolagem": 30,
+      "pouso": 64,
+      " voo ": 236,
+      "aviação": 14
+    },
+    "top_20_bigramas": {
+      "tráfego aéreo": 77,
+      "plano voo": 68,
+      "órgão ats": 60,
+      "espaço aéreo": 56,
+      "aeronave interceptada": 49,
+      "aeronave interceptadora": 36,
+      "controle tráfego": 36,
+      "voo vfr": 34,
+      "condições meteorológicas": 26,
+      "hora estimada": 26,
+      "piloto comando": 25,
+      "regras voo": 24,
+      "aeródromo destino": 22,
+      "serviços tráfego": 21,
+      "órgãos ats": 20,
+      "voo ifr": 20,
+      "voo vigor": 20,
+      "aéreo controlado": 19,
+      "serviço controle": 19,
+      "ats apropriado": 18
+    },
+    "palavras_chave": [
+      {
+        "palavra": "aeronave",
+        "frequencia": 329,
+        "relevancia": 5.729
+      },
+      {
+        "palavra": "voo",
+        "frequencia": 333,
+        "relevancia": 3.487
+      },
+      {
+        "palavra": "aeródromo",
+        "frequencia": 153,
+        "relevancia": 2.314
+      },
+      {
+        "palavra": "aeronaves",
+        "frequencia": 108,
+        "relevancia": 1.522
+      },
+      {
+        "palavra": "aéreo",
+        "frequencia": 136,
+        "relevancia": 1.206
+      },
+      {
+        "palavra": "condições",
+        "frequencia": 77,
+        "relevancia": 1.007
+      },
+      {
+        "palavra": "controle",
+        "frequencia": 76,
+        "relevancia": 0.991
+      },
+      {
+        "palavra": "deverá",
+        "frequencia": 113,
+        "relevancia": 0.964
+      },
+      {
+        "palavra": "tráfego",
+        "frequencia": 102,
+        "relevancia": 0.852
+      },
+      {
+        "palavra": "órgão",
+        "frequencia": 100,
+        "relevancia": 0.832
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "tráfego aéreo",
+        "freq": 77,
+        "tscore": 8.66,
+        "palavra1_freq": 102,
+        "palavra2_freq": 136
+      },
+      {
+        "bigrama": "plano voo",
+        "freq": 68,
+        "tscore": 8.04,
+        "palavra1_freq": 72,
+        "palavra2_freq": 333
+      },
+      {
+        "bigrama": "órgão ats",
+        "freq": 60,
+        "tscore": 7.65,
+        "palavra1_freq": 100,
+        "palavra2_freq": 98
+      },
+      {
+        "bigrama": "espaço aéreo",
+        "freq": 56,
+        "tscore": 7.41,
+        "palavra1_freq": 59,
+        "palavra2_freq": 136
+      },
+      {
+        "bigrama": "aeronave interceptada",
+        "freq": 49,
+        "tscore": 6.8,
+        "palavra1_freq": 329,
+        "palavra2_freq": 60
+      },
+      {
+        "bigrama": "controle tráfego",
+        "freq": 36,
+        "tscore": 5.91,
+        "palavra1_freq": 76,
+        "palavra2_freq": 102
+      },
+      {
+        "bigrama": "aeronave interceptadora",
+        "freq": 36,
+        "tscore": 5.83,
+        "palavra1_freq": 329,
+        "palavra2_freq": 43
+      },
+      {
+        "bigrama": "voo vfr",
+        "freq": 34,
+        "tscore": 5.59,
+        "palavra1_freq": 333,
+        "palavra2_freq": 58
+      },
+      {
+        "bigrama": "hora estimada",
+        "freq": 26,
+        "tscore": 5.08,
+        "palavra1_freq": 53,
+        "palavra2_freq": 32
+      },
+      {
+        "bigrama": "condições meteorológicas",
+        "freq": 26,
+        "tscore": 5.07,
+        "palavra1_freq": 77,
+        "palavra2_freq": 29
+      },
+      {
+        "bigrama": "piloto comando",
+        "freq": 25,
+        "tscore": 4.96,
+        "palavra1_freq": 70,
+        "palavra2_freq": 41
+      },
+      {
+        "bigrama": "regras voo",
+        "freq": 24,
+        "tscore": 4.6,
+        "palavra1_freq": 60,
+        "palavra2_freq": 333
+      },
+      {
+        "bigrama": "aeródromo destino",
+        "freq": 22,
+        "tscore": 4.6,
+        "palavra1_freq": 153,
+        "palavra2_freq": 39
+      },
+      {
+        "bigrama": "serviços tráfego",
+        "freq": 21,
+        "tscore": 4.53,
+        "palavra1_freq": 34,
+        "palavra2_freq": 102
+      },
+      {
+        "bigrama": "órgãos ats",
+        "freq": 20,
+        "tscore": 4.42,
+        "palavra1_freq": 30,
+        "palavra2_freq": 98
+      },
+      {
+        "bigrama": "voo vigor",
+        "freq": 20,
+        "tscore": 4.32,
+        "palavra1_freq": 333,
+        "palavra2_freq": 28
+      },
+      {
+        "bigrama": "voo ifr",
+        "freq": 20,
+        "tscore": 4.19,
+        "palavra1_freq": 333,
+        "palavra2_freq": 52
+      },
+      {
+        "bigrama": "serviço controle",
+        "freq": 19,
+        "tscore": 4.28,
+        "palavra1_freq": 59,
+        "palavra2_freq": 76
+      },
+      {
+        "bigrama": "aéreo controlado",
+        "freq": 19,
+        "tscore": 4.28,
+        "palavra1_freq": 136,
+        "palavra2_freq": 34
+      },
+      {
+        "bigrama": "ats apropriado",
+        "freq": 18,
+        "tscore": 4.18,
+        "palavra1_freq": 98,
+        "palavra2_freq": 39
+      },
+      {
+        "bigrama": "livres tripulados",
+        "freq": 17,
+        "tscore": 4.12,
+        "palavra1_freq": 17,
+        "palavra2_freq": 17
+      },
+      {
+        "bigrama": "balões livres",
+        "freq": 17,
+        "tscore": 4.12,
+        "palavra1_freq": 25,
+        "palavra2_freq": 17
+      },
+      {
+        "bigrama": "autoridade competente",
+        "freq": 17,
+        "tscore": 4.11,
+        "palavra1_freq": 26,
+        "palavra2_freq": 24
+      },
+      {
+        "bigrama": "aproximação instrumentos",
+        "freq": 17,
+        "tscore": 4.09,
+        "palavra1_freq": 50,
+        "palavra2_freq": 41
+      },
+      {
+        "bigrama": "órgão atc",
+        "freq": 17,
+        "tscore": 4.07,
+        "palavra1_freq": 100,
+        "palavra2_freq": 30
+      },
+      {
+        "bigrama": "voo visual",
+        "freq": 17,
+        "tscore": 3.98,
+        "palavra1_freq": 333,
+        "palavra2_freq": 25
+      },
+      {
+        "bigrama": "voo instrumentos",
+        "freq": 16,
+        "tscore": 3.75,
+        "palavra1_freq": 333,
+        "palavra2_freq": 41
+      },
+      {
+        "bigrama": "níveis cruzeiro",
+        "freq": 15,
+        "tscore": 3.86,
+        "palavra1_freq": 22,
+        "palavra2_freq": 30
+      },
+      {
+        "bigrama": "vfr especial",
+        "freq": 15,
+        "tscore": 3.85,
+        "palavra1_freq": 58,
+        "palavra2_freq": 18
+      },
+      {
+        "bigrama": "pouso decolagem",
+        "freq": 15,
+        "tscore": 3.84,
+        "palavra1_freq": 63,
+        "palavra2_freq": 29
+      }
+    ]
+  }
+}

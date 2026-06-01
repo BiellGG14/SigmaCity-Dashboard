@@ -1,0 +1,18 @@
+# OS
+desktop.ini
+Thumbs.db
+
+# R session artifacts
+.Rhistory
+.RData
+.Ruserdata
+
+# RStudio project settings
+.Rproj.user/
+
+# Shiny deployment metadata
+rsconnect/
+
+# Python cache
+__pycache__/
+*.pyc

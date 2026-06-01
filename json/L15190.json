@@ -1,0 +1,370 @@
+{
+  "nome": "Lei 15.190/2025 - Lei Geral do Licenciamento Ambiental",
+  "url": "https://www2.camara.leg.br/legin/fed/lei/2025/lei-15190-8-agosto-2025-797833-publicacaooriginal-176089-pl.html",
+  "disponivel": true,
+  "data_processamento": "2026-04-07 15:39:03",
+  "resumo": ["Estabelece normas gerais para licenciamento ambiental de atividades utilizadoras de recursos ambientais", "Aplica-se aos órgãos e entidades do Sisnama (União, Estados, DF e Municípios)", "Sujeita à licença prévia atividades de construção, instalação, ampliação e operação", "Estabelece licença urbanística e ambiental integrada para municípios", "Define ordem prioritária para gerenciamento de impactos: prevenção, mitigação e compensação", "Mantém independência do licenciamento em relação a certidões de uso do solo", "Determina integração de dados de licenciamento no Sinima", "Estabelece aplicação a infraestruturas de Mobilidade Aérea Urbana (UAM)", "Requer planejamento territorial integrado para projetos de UAM", "Define uso de informações georreferenciadas no sistema ambiental"],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [5, 4, 3, 3, 5],
+    "justificativas": ["Estabelece a estrutura federativa completa do licenciamento ambiental com articulação entre União, estados e municípios, criando sistema nacional de governança ambiental com impacto direto e abrangente na implantação de infraestruturas UAM.", "Impacto relevante ao definir requisitos obrigatórios que afetam custos e prazos de implantação de vertiportos, estabelecendo condicionantes econômicas significativas para a viabilidade financeira dos projetos UAM.", "Estabelece mecanismos de prevenção e mitigação de impactos que beneficiam comunidades vizinhas, com impacto moderado na aceitação social, mas sem tratar especificamente de equidade ou inclusão no acesso à UAM.", "Exige uso de informações georreferenciadas e integração de sistemas, com impacto moderado na infraestrutura tecnológica, mas não aborda especificamente tecnologias avançadas de comunicação ou navegação para UAM.", "Impacto direto e abrangente ao instituir regime nacional de licenciamento ambiental obrigatório para infraestruturas UAM, com hierarquia de mitigação de impactos e integração com planejamento territorial urbano."]
+  },
+  "estatisticas": {
+    "total_palavras": 5372,
+    "palavras_unicas": 1557,
+    "num_sentencas": 408,
+    "top_50_palavras": {
+      "ambiental": 165,
+      "empreendimento": 108,
+      "atividade": 107,
+      "autoridade": 97,
+      "licenciamento": 94,
+      "licenciadora": 86,
+      "ambientais": 84,
+      "licença": 57,
+      "deste": 53,
+      "desta": 45,
+      "impactos": 41,
+      "atividades": 38,
+      "vetado": 38,
+      "deve": 36,
+      "empreendedor": 33,
+      "pode": 32,
+      "empreendimentos": 30,
+      "estudos": 30,
+      "forma": 28,
+      "condicionantes": 27,
+      "estudo": 26,
+      "prazo": 26,
+      "meio": 25,
+      "área": 24,
+      "operação": 24,
+      "pública": 24,
+      "informações": 23,
+      "prazos": 23,
+      "procedimento": 23,
+      "eia": 22,
+      "emissão": 22,
+      "previsto": 22,
+      "dias": 21,
+      "devem": 20,
+      "termos": 20,
+      "ambiente": 19,
+      "manifestação": 19,
+      "autoridades": 18,
+      "demais": 18,
+      "legislação": 18,
+      "licenças": 18,
+      "processo": 18,
+      "casos": 17,
+      "conforme": 17,
+      "previstas": 17,
+      "análise": 16,
+      "instalação": 16,
+      "bem": 15,
+      "caso": 15,
+      "disposto": 15
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 0,
+      "urbana": 1,
+      "evtol": 0,
+      "aeronave": 0,
+      "vertiporto": 0,
+      "heliponto": 0,
+      " uam ": 0,
+      "tráfego aéreo": 0,
+      "decolagem": 0,
+      "pouso": 0,
+      " voo ": 0,
+      "aviação": 0
+    },
+    "top_20_bigramas": {
+      "atividade empreendimento": 106,
+      "autoridade licenciadora": 86,
+      "licenciamento ambiental": 84,
+      "licença ambiental": 28,
+      "atividades empreendimentos": 26,
+      "impactos ambientais": 21,
+      "condicionantes ambientais": 18,
+      "meio ambiente": 18,
+      "licenciadora deve": 14,
+      "degradação meio": 13,
+      "previsto deste": 13,
+      "estudo ambiental": 12,
+      "operação atividade": 12,
+      "vetado vetado": 12,
+      "autoridade envolvida": 11,
+      "recursos ambientais": 11,
+      "ambientais negativos": 10,
+      "ambiental atividade": 10,
+      "autoridades envolvidas": 10,
+      "empreendimento sujeito": 10
+    },
+    "palavras_chave": [
+      {
+        "palavra": "ambiental",
+        "frequencia": 165,
+        "relevancia": 5.112
+      },
+      {
+        "palavra": "empreendimento",
+        "frequencia": 108,
+        "relevancia": 3.071
+      },
+      {
+        "palavra": "atividade",
+        "frequencia": 107,
+        "relevancia": 3.036
+      },
+      {
+        "palavra": "autoridade",
+        "frequencia": 97,
+        "relevancia": 2.695
+      },
+      {
+        "palavra": "licenciamento",
+        "frequencia": 94,
+        "relevancia": 2.594
+      },
+      {
+        "palavra": "licenciadora",
+        "frequencia": 86,
+        "relevancia": 2.328
+      },
+      {
+        "palavra": "ambientais",
+        "frequencia": 84,
+        "relevancia": 2.262
+      },
+      {
+        "palavra": "impactos",
+        "frequencia": 41,
+        "relevancia": 0.929
+      },
+      {
+        "palavra": "atividades",
+        "frequencia": 38,
+        "relevancia": 0.844
+      },
+      {
+        "palavra": "licença",
+        "frequencia": 57,
+        "relevancia": 0.842
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "atividade empreendimento",
+        "freq": 106,
+        "tscore": 10.09,
+        "palavra1_freq": 107,
+        "palavra2_freq": 108
+      },
+      {
+        "bigrama": "autoridade licenciadora",
+        "freq": 86,
+        "tscore": 9.11,
+        "palavra1_freq": 97,
+        "palavra2_freq": 86
+      },
+      {
+        "bigrama": "licenciamento ambiental",
+        "freq": 84,
+        "tscore": 8.85,
+        "palavra1_freq": 94,
+        "palavra2_freq": 165
+      },
+      {
+        "bigrama": "licença ambiental",
+        "freq": 28,
+        "tscore": 4.96,
+        "palavra1_freq": 57,
+        "palavra2_freq": 165
+      },
+      {
+        "bigrama": "atividades empreendimentos",
+        "freq": 26,
+        "tscore": 5.06,
+        "palavra1_freq": 38,
+        "palavra2_freq": 30
+      },
+      {
+        "bigrama": "impactos ambientais",
+        "freq": 21,
+        "tscore": 4.44,
+        "palavra1_freq": 41,
+        "palavra2_freq": 84
+      },
+      {
+        "bigrama": "meio ambiente",
+        "freq": 18,
+        "tscore": 4.22,
+        "palavra1_freq": 25,
+        "palavra2_freq": 19
+      },
+      {
+        "bigrama": "condicionantes ambientais",
+        "freq": 18,
+        "tscore": 4.14,
+        "palavra1_freq": 27,
+        "palavra2_freq": 84
+      },
+      {
+        "bigrama": "licenciadora deve",
+        "freq": 14,
+        "tscore": 3.59,
+        "palavra1_freq": 86,
+        "palavra2_freq": 36
+      },
+      {
+        "bigrama": "degradação meio",
+        "freq": 13,
+        "tscore": 3.59,
+        "palavra1_freq": 13,
+        "palavra2_freq": 25
+      },
+      {
+        "bigrama": "previsto deste",
+        "freq": 13,
+        "tscore": 3.55,
+        "palavra1_freq": 22,
+        "palavra2_freq": 53
+      },
+      {
+        "bigrama": "vetado vetado",
+        "freq": 12,
+        "tscore": 3.39,
+        "palavra1_freq": 38,
+        "palavra2_freq": 38
+      },
+      {
+        "bigrama": "operação atividade",
+        "freq": 12,
+        "tscore": 3.33,
+        "palavra1_freq": 24,
+        "palavra2_freq": 107
+      },
+      {
+        "bigrama": "estudo ambiental",
+        "freq": 12,
+        "tscore": 3.23,
+        "palavra1_freq": 26,
+        "palavra2_freq": 165
+      },
+      {
+        "bigrama": "autoridade envolvida",
+        "freq": 11,
+        "tscore": 3.26,
+        "palavra1_freq": 97,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "recursos ambientais",
+        "freq": 11,
+        "tscore": 3.25,
+        "palavra1_freq": 14,
+        "palavra2_freq": 84
+      },
+      {
+        "bigrama": "autoridades envolvidas",
+        "freq": 10,
+        "tscore": 3.15,
+        "palavra1_freq": 18,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "trinta dias",
+        "freq": 10,
+        "tscore": 3.15,
+        "palavra1_freq": 11,
+        "palavra2_freq": 21
+      },
+      {
+        "bigrama": "ambientais negativos",
+        "freq": 10,
+        "tscore": 3.09,
+        "palavra1_freq": 84,
+        "palavra2_freq": 14
+      },
+      {
+        "bigrama": "empreendimento sujeito",
+        "freq": 10,
+        "tscore": 3.09,
+        "palavra1_freq": 108,
+        "palavra2_freq": 12
+      },
+      {
+        "bigrama": "processo licenciamento",
+        "freq": 10,
+        "tscore": 3.06,
+        "palavra1_freq": 18,
+        "palavra2_freq": 94
+      },
+      {
+        "bigrama": "estudos ambientais",
+        "freq": 10,
+        "tscore": 3.01,
+        "palavra1_freq": 30,
+        "palavra2_freq": 84
+      },
+      {
+        "bigrama": "licenciadora pode",
+        "freq": 10,
+        "tscore": 3,
+        "palavra1_freq": 86,
+        "palavra2_freq": 32
+      },
+      {
+        "bigrama": "ambiental atividade",
+        "freq": 10,
+        "tscore": 2.12,
+        "palavra1_freq": 165,
+        "palavra2_freq": 107
+      },
+      {
+        "bigrama": "complementar dezembro",
+        "freq": 8,
+        "tscore": 2.82,
+        "palavra1_freq": 9,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "efetiva potencialmente",
+        "freq": 8,
+        "tscore": 2.82,
+        "palavra1_freq": 9,
+        "palavra2_freq": 12
+      },
+      {
+        "bigrama": "autoridades licenciadoras",
+        "freq": 8,
+        "tscore": 2.82,
+        "palavra1_freq": 18,
+        "palavra2_freq": 8
+      },
+      {
+        "bigrama": "legislação correlata",
+        "freq": 8,
+        "tscore": 2.82,
+        "palavra1_freq": 18,
+        "palavra2_freq": 8
+      },
+      {
+        "bigrama": "demais estudos",
+        "freq": 8,
+        "tscore": 2.79,
+        "palavra1_freq": 18,
+        "palavra2_freq": 30
+      },
+      {
+        "bigrama": "ambientais efetiva",
+        "freq": 8,
+        "tscore": 2.78,
+        "palavra1_freq": 84,
+        "palavra2_freq": 9
+      }
+    ]
+  }
+}

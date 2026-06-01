@@ -1,0 +1,370 @@
+{
+  "nome": "ICA 63-19 - Critérios de Análise Técnica da Área de Aeródromos",
+  "url": "https://publicacoes.decea.mil.br/publicacao/ica-63-19",
+  "disponivel": true,
+  "data_processamento": "2026-04-07 15:39:00",
+  "resumo": ["Define efeito adverso e critérios para estudos aeronáuticos", "Aplica-se a órgãos do DECEA, operadores de aeródromo e interessados", "Estabelece definições técnicas para aeródromos, helipontos e obstáculos", "Especifica condições para caracterização de efeito adverso", "Estabelece princípio da sombra para análise de obstáculos", "Define procedimentos para estudos aeronáuticos e medidas mitigadoras", "Fornece base regulatória para infraestruturas de UAM (vertiportos)", "Estabelece critérios para integração de operações aéreas em ambiente urbano", "Define instrumentos de planejamento para compatibilidade com espaço aéreo existente"],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [4, 3, 3, 5, 2],
+    "justificativas": ["Estabelece estrutura regulatória do DECEA com competências técnicas para análise de aeródromos e helipontos, criando mecanismos de governança aeronáutica relevantes para a implantação de vertiportos UAM.", "Define critérios técnicos que impactam custos de implantação através de estudos aeronáuticos obrigatórios e medidas mitigadoras, com influência moderada na viabilidade econômica de infraestruturas UAM.", "Estabelece critérios de proteção para comunidades do entorno através da análise de efeitos adversos, com impacto moderado na segurança e aceitação social, mas sem tratar especificamente de inclusão ou equidade.", "Impacto direto e abrangente ao definir critérios técnicos detalhados para superfícies de proteção, princípio da sombra e estudos aeronáuticos, estabelecendo parâmetros técnicos fundamentais para o projeto de vertiportos UAM.", "Foca principalmente em segurança operacional através do controle de obstáculos, com impacto ambiental indireto através do ordenamento territorial, mas sem tratar especificamente de aspectos ecológicos ou licenciamento ambiental."]
+  },
+  "estatisticas": {
+    "total_palavras": 8270,
+    "palavras_unicas": 1668,
+    "num_sentencas": 1450,
+    "top_50_palavras": {
+      "aeródromo": 133,
+      "objeto": 114,
+      "efeito": 92,
+      "aéreo": 89,
+      "aérea": 88,
+      "adverso": 87,
+      "ica": 84,
+      "aproximação": 81,
+      "superfície": 79,
+      "espaço": 76,
+      "caso": 67,
+      "obstáculos": 63,
+      "proteção": 63,
+      "operacional": 59,
+      "procedimentos": 58,
+      "superfícies": 57,
+      "acordo": 55,
+      "navegação": 55,
+      "operação": 54,
+      "aeronáutico": 53,
+      "estudo": 53,
+      "voo": 51,
+      "aeródromos": 50,
+      "área": 50,
+      "decolagem": 50,
+      "operações": 50,
+      "limites": 49,
+      "opea": 49,
+      "zona": 48,
+      "segurança": 47,
+      "medidas": 46,
+      "pista": 44,
+      "carta": 39,
+      "controle": 39,
+      "verticais": 37,
+      "critérios": 36,
+      "aéreas": 34,
+      "será": 34,
+      "prejuízo": 33,
+      "decea": 32,
+      "órgão": 32,
+      "tráfego": 32,
+      "aeronaves": 31,
+      "circulação": 31,
+      "visual": 31,
+      "pouso": 29,
+      "tipo": 29,
+      "aeronave": 28,
+      "instrumentos": 28,
+      "ponto": 28
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 122,
+      "urbana": 0,
+      "evtol": 0,
+      "aeronave": 59,
+      "vertiporto": 0,
+      "heliponto": 33,
+      " uam ": 0,
+      "tráfego aéreo": 18,
+      "decolagem": 50,
+      "pouso": 34,
+      " voo ": 33,
+      "aviação": 8
+    },
+    "top_20_bigramas": {
+      "efeito adverso": 87,
+      "espaço aéreo": 67,
+      "navegação aérea": 53,
+      "estudo aeronáutico": 51,
+      "adverso opea": 40,
+      "limites verticais": 37,
+      "carta acordo": 33,
+      "operações aéreas": 32,
+      "prejuízo operacional": 32,
+      "circulação aérea": 28,
+      "aproximação instrumentos": 25,
+      "limitadoras obstáculos": 24,
+      "operador aeródromo": 24,
+      "superfícies limitadoras": 24,
+      "aproximação decolagem": 21,
+      "adverso cag": 20,
+      "tráfego aéreo": 20,
+      "auxílios navegação": 19,
+      "procedimentos navegação": 19,
+      "zona proteção": 19
+    },
+    "palavras_chave": [
+      {
+        "palavra": "aeródromo",
+        "frequencia": 133,
+        "relevancia": 4.898
+      },
+      {
+        "palavra": "aproximação",
+        "frequencia": 81,
+        "relevancia": 2.684
+      },
+      {
+        "palavra": "superfície",
+        "frequencia": 79,
+        "relevancia": 2.603
+      },
+      {
+        "palavra": "objeto",
+        "frequencia": 114,
+        "relevancia": 2.44
+      },
+      {
+        "palavra": "obstáculos",
+        "frequencia": 63,
+        "relevancia": 1.97
+      },
+      {
+        "palavra": "proteção",
+        "frequencia": 63,
+        "relevancia": 1.97
+      },
+      {
+        "palavra": "efeito",
+        "frequencia": 92,
+        "relevancia": 1.881
+      },
+      {
+        "palavra": "operacional",
+        "frequencia": 59,
+        "relevancia": 1.816
+      },
+      {
+        "palavra": "aéreo",
+        "frequencia": 89,
+        "relevancia": 1.807
+      },
+      {
+        "palavra": "aérea",
+        "frequencia": 88,
+        "relevancia": 1.782
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "efeito adverso",
+        "freq": 87,
+        "tscore": 9.22,
+        "palavra1_freq": 92,
+        "palavra2_freq": 87
+      },
+      {
+        "bigrama": "espaço aéreo",
+        "freq": 67,
+        "tscore": 8.09,
+        "palavra1_freq": 76,
+        "palavra2_freq": 89
+      },
+      {
+        "bigrama": "navegação aérea",
+        "freq": 53,
+        "tscore": 7.2,
+        "palavra1_freq": 55,
+        "palavra2_freq": 88
+      },
+      {
+        "bigrama": "estudo aeronáutico",
+        "freq": 51,
+        "tscore": 7.09,
+        "palavra1_freq": 53,
+        "palavra2_freq": 53
+      },
+      {
+        "bigrama": "adverso opea",
+        "freq": 40,
+        "tscore": 6.24,
+        "palavra1_freq": 87,
+        "palavra2_freq": 49
+      },
+      {
+        "bigrama": "limites verticais",
+        "freq": 37,
+        "tscore": 6.05,
+        "palavra1_freq": 49,
+        "palavra2_freq": 37
+      },
+      {
+        "bigrama": "carta acordo",
+        "freq": 33,
+        "tscore": 5.7,
+        "palavra1_freq": 39,
+        "palavra2_freq": 55
+      },
+      {
+        "bigrama": "operações aéreas",
+        "freq": 32,
+        "tscore": 5.62,
+        "palavra1_freq": 50,
+        "palavra2_freq": 34
+      },
+      {
+        "bigrama": "prejuízo operacional",
+        "freq": 32,
+        "tscore": 5.62,
+        "palavra1_freq": 33,
+        "palavra2_freq": 59
+      },
+      {
+        "bigrama": "circulação aérea",
+        "freq": 28,
+        "tscore": 5.23,
+        "palavra1_freq": 31,
+        "palavra2_freq": 88
+      },
+      {
+        "bigrama": "aproximação instrumentos",
+        "freq": 25,
+        "tscore": 4.95,
+        "palavra1_freq": 81,
+        "palavra2_freq": 28
+      },
+      {
+        "bigrama": "superfícies limitadoras",
+        "freq": 24,
+        "tscore": 4.87,
+        "palavra1_freq": 57,
+        "palavra2_freq": 24
+      },
+      {
+        "bigrama": "limitadoras obstáculos",
+        "freq": 24,
+        "tscore": 4.86,
+        "palavra1_freq": 24,
+        "palavra2_freq": 63
+      },
+      {
+        "bigrama": "operador aeródromo",
+        "freq": 24,
+        "tscore": 4.82,
+        "palavra1_freq": 24,
+        "palavra2_freq": 133
+      },
+      {
+        "bigrama": "aproximação decolagem",
+        "freq": 21,
+        "tscore": 4.48,
+        "palavra1_freq": 81,
+        "palavra2_freq": 50
+      },
+      {
+        "bigrama": "adverso cag",
+        "freq": 20,
+        "tscore": 4.41,
+        "palavra1_freq": 87,
+        "palavra2_freq": 27
+      },
+      {
+        "bigrama": "tráfego aéreo",
+        "freq": 20,
+        "tscore": 4.4,
+        "palavra1_freq": 32,
+        "palavra2_freq": 89
+      },
+      {
+        "bigrama": "auxílios navegação",
+        "freq": 19,
+        "tscore": 4.32,
+        "palavra1_freq": 24,
+        "palavra2_freq": 55
+      },
+      {
+        "bigrama": "zona proteção",
+        "freq": 19,
+        "tscore": 4.28,
+        "palavra1_freq": 48,
+        "palavra2_freq": 63
+      },
+      {
+        "bigrama": "procedimentos navegação",
+        "freq": 19,
+        "tscore": 4.27,
+        "palavra1_freq": 58,
+        "palavra2_freq": 55
+      },
+      {
+        "bigrama": "órgão regional",
+        "freq": 18,
+        "tscore": 4.22,
+        "palavra1_freq": 32,
+        "palavra2_freq": 20
+      },
+      {
+        "bigrama": "regional decea",
+        "freq": 18,
+        "tscore": 4.22,
+        "palavra1_freq": 20,
+        "palavra2_freq": 32
+      },
+      {
+        "bigrama": "regularidade operações",
+        "freq": 18,
+        "tscore": 4.22,
+        "palavra1_freq": 19,
+        "palavra2_freq": 50
+      },
+      {
+        "bigrama": "voo visual",
+        "freq": 18,
+        "tscore": 4.2,
+        "palavra1_freq": 51,
+        "palavra2_freq": 31
+      },
+      {
+        "bigrama": "conforme caso",
+        "freq": 18,
+        "tscore": 4.19,
+        "palavra1_freq": 27,
+        "palavra2_freq": 67
+      },
+      {
+        "bigrama": "verticais superfície",
+        "freq": 18,
+        "tscore": 4.16,
+        "palavra1_freq": 37,
+        "palavra2_freq": 79
+      },
+      {
+        "bigrama": "superfície proteção",
+        "freq": 18,
+        "tscore": 4.1,
+        "palavra1_freq": 79,
+        "palavra2_freq": 63
+      },
+      {
+        "bigrama": "segurança regularidade",
+        "freq": 17,
+        "tscore": 4.1,
+        "palavra1_freq": 47,
+        "palavra2_freq": 19
+      },
+      {
+        "bigrama": "comando aeronáutica",
+        "freq": 16,
+        "tscore": 3.99,
+        "palavra1_freq": 16,
+        "palavra2_freq": 19
+      },
+      {
+        "bigrama": "tipo operação",
+        "freq": 15,
+        "tscore": 3.82,
+        "palavra1_freq": 29,
+        "palavra2_freq": 54
+      }
+    ]
+  }
+}

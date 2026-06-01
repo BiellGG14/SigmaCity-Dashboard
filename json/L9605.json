@@ -1,0 +1,370 @@
+{
+  "nome": "Lei nº 9.605/1998 - Crimes Ambientais",
+  "url": "https://www.planalto.gov.br/ccivil_03/leis/l9605.htm",
+  "disponivel": true,
+  "data_processamento": "2026-04-07 15:39:07",
+  "resumo": ["Tipificação de crimes contra fauna, flora, poluição, ordenamento urbano e patrimônio cultural", "Obrigatoriedade de licenciamento ambiental prévio para atividades potencialmente poluidoras", "Circunstâncias agravantes em áreas urbanas e assentamentos humanos", "Proteção de Unidades de Conservação, Áreas de Proteção Ambiental e bens tombados", "Regime de infrações administrativas com poder de polícia do SISNAMA", "Consideração de poluição atmosférica, hídrica e sonora como crimes ambientais", "Aplicabilidade a empreendimentos de infraestrutura urbana e territorial"],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [3, 1, 3, 1, 5],
+    "justificativas": ["Estabelece obrigações de licenciamento e fiscalização ambiental pelo SISNAMA, criando um arcabouço regulatório que condiciona a implantação de infraestrutura UAM, mas não aborda políticas de fomento, incentivos ou coordenação federativa.", "O texto não contém referências a viabilidade financeira, modelos de negócio, investimentos, geração de empregos ou desenvolvimento regional; seu impacto econômico é apenas indireto por meio de custos de conformidade.", "Protege áreas urbanas e assentamentos humanos (art. 15), considera a saúde da população em crimes de poluição (art. 54) e resguarda o patrimônio cultural (arts. 62–65), elementos que influenciam a localização e aceitação social de vertiports e rotas UAM.", "O documento não menciona tecnologias de suporte, infraestrutura de comunicações, gêmeos digitais ou inovação; restringe-se a exigir licenciamento e estudo de impacto ambiental, sem especificações técnicas.", "A lei é o principal marco legal de proteção ambiental, tipificando crimes de poluição (inclusive sonora e atmosférica), exigindo licenciamento prévio para atividades poluidoras (art. 60), protegendo unidades de conservação (art. 40) e estabelecendo sanções administrativas – todos aplicáveis diretamente à operação e infraestrutura da UAM."]
+  },
+  "estatisticas": {
+    "total_palavras": 4347,
+    "palavras_unicas": 1497,
+    "num_sentencas": 567,
+    "top_50_palavras": {
+      "pena": 82,
+      "multa": 65,
+      "incluído": 47,
+      "ambiental": 36,
+      "anos": 36,
+      "dada": 34,
+      "detenção": 34,
+      "redação": 34,
+      "competente": 31,
+      "três": 31,
+      "crime": 29,
+      "meio": 27,
+      "penas": 27,
+      "ano": 26,
+      "compromisso": 26,
+      "meses": 26,
+      "ambientais": 22,
+      "ambiente": 22,
+      "infração": 22,
+      "será": 22,
+      "atividades": 20,
+      "autoridade": 20,
+      "termo": 20,
+      "autorização": 19,
+      "público": 18,
+      "seis": 18,
+      "dano": 17,
+      "httpswwwplanaltogovbrccivilleislhtm": 17,
+      "licença": 17,
+      "órgão": 17,
+      "qualquer": 17,
+      "quem": 17,
+      "valor": 17,
+      "crimes": 15,
+      "reclusão": 15,
+      "serão": 15,
+      "culposo": 14,
+      "jurídica": 14,
+      "pessoa": 14,
+      "pessoas": 14,
+      "jurídicas": 13,
+      "mediante": 13,
+      "poderá": 13,
+      "prazo": 13,
+      "requerimento": 13,
+      "conservação": 12,
+      "desacordo": 12,
+      "dias": 12,
+      "execução": 12,
+      "fauna": 12
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 0,
+      "urbana": 3,
+      "evtol": 0,
+      "aeronave": 0,
+      "vertiporto": 0,
+      "heliponto": 0,
+      " uam ": 0,
+      "tráfego aéreo": 0,
+      "decolagem": 0,
+      "pouso": 0,
+      " voo ": 0,
+      "aviação": 0
+    },
+    "top_20_bigramas": {
+      "redação dada": 34,
+      "pena detenção": 30,
+      "anos multa": 23,
+      "meio ambiente": 22,
+      "meses ano": 22,
+      "termo compromisso": 20,
+      "três anos": 20,
+      "ano multa": 17,
+      "detenção três": 17,
+      "seis meses": 17,
+      "autoridade competente": 16,
+      "crime culposo": 14,
+      "pena reclusão": 14,
+      "culposo pena": 12,
+      "detenção seis": 12,
+      "mesmas penas": 11,
+      "pessoas físicas": 10,
+      "unidades conservação": 10,
+      "físicas jurídicas": 9,
+      "incluído pena": 9
+    },
+    "palavras_chave": [
+      {
+        "palavra": "pena",
+        "frequencia": 82,
+        "relevancia": 2.651
+      },
+      {
+        "palavra": "incluído",
+        "frequencia": 47,
+        "relevancia": 2.219
+      },
+      {
+        "palavra": "multa",
+        "frequencia": 65,
+        "relevancia": 1.993
+      },
+      {
+        "palavra": "ambiental",
+        "frequencia": 36,
+        "relevancia": 1.585
+      },
+      {
+        "palavra": "detenção",
+        "frequencia": 34,
+        "relevancia": 1.474
+      },
+      {
+        "palavra": "competente",
+        "frequencia": 31,
+        "relevancia": 1.31
+      },
+      {
+        "palavra": "compromisso",
+        "frequencia": 26,
+        "relevancia": 1.045
+      },
+      {
+        "palavra": "anos",
+        "frequencia": 36,
+        "relevancia": 0.951
+      },
+      {
+        "palavra": "dada",
+        "frequencia": 34,
+        "relevancia": 0.885
+      },
+      {
+        "palavra": "redação",
+        "frequencia": 34,
+        "relevancia": 0.885
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "redação dada",
+        "freq": 34,
+        "tscore": 5.79,
+        "palavra1_freq": 34,
+        "palavra2_freq": 34
+      },
+      {
+        "bigrama": "pena detenção",
+        "freq": 30,
+        "tscore": 5.36,
+        "palavra1_freq": 82,
+        "palavra2_freq": 34
+      },
+      {
+        "bigrama": "anos multa",
+        "freq": 23,
+        "tscore": 4.68,
+        "palavra1_freq": 36,
+        "palavra2_freq": 65
+      },
+      {
+        "bigrama": "meio ambiente",
+        "freq": 22,
+        "tscore": 4.66,
+        "palavra1_freq": 27,
+        "palavra2_freq": 22
+      },
+      {
+        "bigrama": "meses ano",
+        "freq": 22,
+        "tscore": 4.66,
+        "palavra1_freq": 26,
+        "palavra2_freq": 26
+      },
+      {
+        "bigrama": "termo compromisso",
+        "freq": 20,
+        "tscore": 4.45,
+        "palavra1_freq": 20,
+        "palavra2_freq": 26
+      },
+      {
+        "bigrama": "três anos",
+        "freq": 20,
+        "tscore": 4.41,
+        "palavra1_freq": 31,
+        "palavra2_freq": 36
+      },
+      {
+        "bigrama": "seis meses",
+        "freq": 17,
+        "tscore": 4.1,
+        "palavra1_freq": 18,
+        "palavra2_freq": 26
+      },
+      {
+        "bigrama": "detenção três",
+        "freq": 17,
+        "tscore": 4.06,
+        "palavra1_freq": 34,
+        "palavra2_freq": 31
+      },
+      {
+        "bigrama": "ano multa",
+        "freq": 17,
+        "tscore": 4.03,
+        "palavra1_freq": 26,
+        "palavra2_freq": 65
+      },
+      {
+        "bigrama": "autoridade competente",
+        "freq": 16,
+        "tscore": 3.96,
+        "palavra1_freq": 20,
+        "palavra2_freq": 31
+      },
+      {
+        "bigrama": "crime culposo",
+        "freq": 14,
+        "tscore": 3.72,
+        "palavra1_freq": 29,
+        "palavra2_freq": 14
+      },
+      {
+        "bigrama": "pena reclusão",
+        "freq": 14,
+        "tscore": 3.67,
+        "palavra1_freq": 82,
+        "palavra2_freq": 15
+      },
+      {
+        "bigrama": "detenção seis",
+        "freq": 12,
+        "tscore": 3.42,
+        "palavra1_freq": 34,
+        "palavra2_freq": 18
+      },
+      {
+        "bigrama": "culposo pena",
+        "freq": 12,
+        "tscore": 3.39,
+        "palavra1_freq": 14,
+        "palavra2_freq": 82
+      },
+      {
+        "bigrama": "mesmas penas",
+        "freq": 11,
+        "tscore": 3.3,
+        "palavra1_freq": 11,
+        "palavra2_freq": 27
+      },
+      {
+        "bigrama": "unidades conservação",
+        "freq": 10,
+        "tscore": 3.15,
+        "palavra1_freq": 10,
+        "palavra2_freq": 12
+      },
+      {
+        "bigrama": "pessoas físicas",
+        "freq": 10,
+        "tscore": 3.15,
+        "palavra1_freq": 14,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "físicas jurídicas",
+        "freq": 9,
+        "tscore": 2.99,
+        "palavra1_freq": 10,
+        "palavra2_freq": 13
+      },
+      {
+        "bigrama": "multa ambas",
+        "freq": 9,
+        "tscore": 2.96,
+        "palavra1_freq": 65,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "três meses",
+        "freq": 9,
+        "tscore": 2.94,
+        "palavra1_freq": 31,
+        "palavra2_freq": 26
+      },
+      {
+        "bigrama": "incluído pena",
+        "freq": 9,
+        "tscore": 2.7,
+        "palavra1_freq": 47,
+        "palavra2_freq": 82
+      },
+      {
+        "bigrama": "incorre mesmas",
+        "freq": 8,
+        "tscore": 2.82,
+        "palavra1_freq": 12,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "estabelecimentos atividades",
+        "freq": 8,
+        "tscore": 2.81,
+        "palavra1_freq": 10,
+        "palavra2_freq": 20
+      },
+      {
+        "bigrama": "ambas penas",
+        "freq": 8,
+        "tscore": 2.81,
+        "palavra1_freq": 9,
+        "palavra2_freq": 27
+      },
+      {
+        "bigrama": "penas cumulativamente",
+        "freq": 8,
+        "tscore": 2.81,
+        "palavra1_freq": 27,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "potencialmente poluidores",
+        "freq": 7,
+        "tscore": 2.64,
+        "palavra1_freq": 7,
+        "palavra2_freq": 7
+      },
+      {
+        "bigrama": "protocolização requerimento",
+        "freq": 7,
+        "tscore": 2.64,
+        "palavra1_freq": 7,
+        "palavra2_freq": 13
+      },
+      {
+        "bigrama": "compromisso deverá",
+        "freq": 7,
+        "tscore": 2.62,
+        "palavra1_freq": 26,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "licença autorização",
+        "freq": 7,
+        "tscore": 2.62,
+        "palavra1_freq": 17,
+        "palavra2_freq": 19
+      }
+    ]
+  }
+}

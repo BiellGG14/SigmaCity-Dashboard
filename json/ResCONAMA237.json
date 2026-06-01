@@ -1,0 +1,370 @@
+{
+  "nome": "Resolução CONAMA nº 2/1990 - Programa SILÊNCIO",
+  "url": "https://conama.mma.gov.br/?option=com_sisconama&task=arquivo.download&id=145",
+  "disponivel": true,
+  "data_processamento": "2026-04-07 15:39:12",
+  "resumo": ["O Programa SILÊNCIO visa à educação e ao controle da poluição sonora em nível nacional.", "O texto preconiza a manutenção do conforto ambiental e a mitigação dos impactos sonoros nos centros urbanos.", "A resolução orienta o desenvolvimento de veículos que operem com menor emissão de ruído.", "A gestão e a implementação das ações de controle são delegadas aos órgãos estaduais e municipais.", "A legislação permite aos municípios e estados a fixação de limites de emissão sonora mais restritivos do que os definidos nacionalmente."],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [4, 2, 5, 3, 5],
+    "justificativas": ["Estabelece a coordenação nacional pelo IBAMA e a cooperação entre esferas federais, estaduais e municipais para o controle de ruídos. Define competências claras para a implementação de programas descentralizados.", "Incentiva a fabricação e o uso de máquinas e equipamentos com menor intensidade de ruído na indústria e veículos. Prevê apoio técnico e logístico, mas sem detalhar mecanismos de financiamento específicos para UAM.", "Foca diretamente na saúde, bem-estar público e qualidade de vida da população. Propõe a introdução do tema em currículos escolares e campanhas educativas para conscientização sobre ruídos.", "Promove o desenvolvimento de dispositivos e motores mais silenciosos. Prevê a capacitação técnica de pessoal para o controle da poluição sonora, embora não mencione tecnologias CNS/ATM ou redes 5G/6G.", "O documento trata especificamente do controle da poluição sonora como um direito ao conforto ambiental. Estabelece diretrizes para a manutenção da qualidade ambiental e mitigação de danos à saúde."]
+  },
+  "estatisticas": {
+    "total_palavras": 2036,
+    "palavras_unicas": 912,
+    "num_sentencas": 81,
+    "top_50_palavras": {
+      "ambiental": 68,
+      "fabricação": 49,
+      "licenciamento": 30,
+      "órgão": 28,
+      "licença": 26,
+      "competente": 22,
+      "ambientais": 21,
+      "atividade": 20,
+      "atividades": 19,
+      "empreendimento": 18,
+      "empreendimentos": 18,
+      "indústria": 14,
+      "empreendedor": 13,
+      "produtos": 13,
+      "inclusive": 11,
+      "meio": 11,
+      "operação": 11,
+      "produção": 11,
+      "tratamento": 11,
+      "ambiente": 10,
+      "estudos": 10,
+      "prazo": 10,
+      "couber": 9,
+      "estados": 9,
+      "impacto": 9,
+      "análise": 8,
+      "beneficiamento": 8,
+      "deverá": 8,
+      "distrito": 8,
+      "instalação": 8,
+      "madeira": 8,
+      "órgãos": 8,
+      "poderá": 8,
+      "prazos": 8,
+      "validade": 8,
+      "artefatos": 7,
+      "considerando": 7,
+      "controle": 7,
+      "esclarecimentos": 7,
+      "federal": 7,
+      "nacional": 7,
+      "necessidade": 7,
+      "processo": 7,
+      "projetos": 7,
+      "borracha": 6,
+      "competentes": 6,
+      "estabelecidos": 6,
+      "licenças": 6,
+      "material": 6,
+      "minerais": 6
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 0,
+      "urbana": 0,
+      "evtol": 0,
+      "aeronave": 1,
+      "vertiporto": 0,
+      "heliponto": 0,
+      " uam ": 0,
+      "tráfego aéreo": 0,
+      "decolagem": 0,
+      "pouso": 0,
+      " voo ": 0,
+      "aviação": 0
+    },
+    "top_20_bigramas": {
+      "órgão ambiental": 25,
+      "ambiental competente": 21,
+      "licenciamento ambiental": 14,
+      "empreendimentos atividades": 13,
+      "atividade empreendimento": 11,
+      "meio ambiente": 10,
+      "impacto ambiental": 8,
+      "distrito federal": 7,
+      "empreendimento atividade": 7,
+      "estudos ambientais": 7,
+      "processo licenciamento": 7,
+      "considerando necessidade": 5,
+      "controle ambiental": 5,
+      "esclarecimentos complementações": 5,
+      "nacional meio": 5,
+      "órgãos competentes": 5,
+      "prazo validade": 5,
+      "tratamento superfície": 5,
+      "ambiental empreendimentos": 4,
+      "consideradas efetiva": 4
+    },
+    "palavras_chave": [
+      {
+        "palavra": "ambiental",
+        "frequencia": 68,
+        "relevancia": 4.234
+      },
+      {
+        "palavra": "fabricação",
+        "frequencia": 49,
+        "relevancia": 2.819
+      },
+      {
+        "palavra": "licenciamento",
+        "frequencia": 30,
+        "relevancia": 1.515
+      },
+      {
+        "palavra": "competente",
+        "frequencia": 22,
+        "relevancia": 1.014
+      },
+      {
+        "palavra": "ambientais",
+        "frequencia": 21,
+        "relevancia": 0.955
+      },
+      {
+        "palavra": "atividade",
+        "frequencia": 20,
+        "relevancia": 0.895
+      },
+      {
+        "palavra": "atividades",
+        "frequencia": 19,
+        "relevancia": 0.837
+      },
+      {
+        "palavra": "órgão",
+        "frequencia": 28,
+        "relevancia": 0.832
+      },
+      {
+        "palavra": "empreendimento",
+        "frequencia": 18,
+        "relevancia": 0.779
+      },
+      {
+        "palavra": "empreendimentos",
+        "frequencia": 18,
+        "relevancia": 0.779
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "órgão ambiental",
+        "freq": 25,
+        "tscore": 4.81,
+        "palavra1_freq": 28,
+        "palavra2_freq": 68
+      },
+      {
+        "bigrama": "ambiental competente",
+        "freq": 21,
+        "tscore": 4.42,
+        "palavra1_freq": 68,
+        "palavra2_freq": 22
+      },
+      {
+        "bigrama": "licenciamento ambiental",
+        "freq": 14,
+        "tscore": 3.47,
+        "palavra1_freq": 30,
+        "palavra2_freq": 68
+      },
+      {
+        "bigrama": "empreendimentos atividades",
+        "freq": 13,
+        "tscore": 3.56,
+        "palavra1_freq": 18,
+        "palavra2_freq": 19
+      },
+      {
+        "bigrama": "atividade empreendimento",
+        "freq": 11,
+        "tscore": 3.26,
+        "palavra1_freq": 20,
+        "palavra2_freq": 18
+      },
+      {
+        "bigrama": "meio ambiente",
+        "freq": 10,
+        "tscore": 3.15,
+        "palavra1_freq": 11,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "impacto ambiental",
+        "freq": 8,
+        "tscore": 2.72,
+        "palavra1_freq": 9,
+        "palavra2_freq": 68
+      },
+      {
+        "bigrama": "distrito federal",
+        "freq": 7,
+        "tscore": 2.64,
+        "palavra1_freq": 8,
+        "palavra2_freq": 7
+      },
+      {
+        "bigrama": "estudos ambientais",
+        "freq": 7,
+        "tscore": 2.61,
+        "palavra1_freq": 10,
+        "palavra2_freq": 21
+      },
+      {
+        "bigrama": "processo licenciamento",
+        "freq": 7,
+        "tscore": 2.61,
+        "palavra1_freq": 7,
+        "palavra2_freq": 30
+      },
+      {
+        "bigrama": "empreendimento atividade",
+        "freq": 7,
+        "tscore": 2.58,
+        "palavra1_freq": 18,
+        "palavra2_freq": 20
+      },
+      {
+        "bigrama": "esclarecimentos complementações",
+        "freq": 5,
+        "tscore": 2.23,
+        "palavra1_freq": 7,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "órgãos competentes",
+        "freq": 5,
+        "tscore": 2.23,
+        "palavra1_freq": 8,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "considerando necessidade",
+        "freq": 5,
+        "tscore": 2.23,
+        "palavra1_freq": 7,
+        "palavra2_freq": 7
+      },
+      {
+        "bigrama": "tratamento superfície",
+        "freq": 5,
+        "tscore": 2.22,
+        "palavra1_freq": 11,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "nacional meio",
+        "freq": 5,
+        "tscore": 2.22,
+        "palavra1_freq": 7,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "prazo validade",
+        "freq": 5,
+        "tscore": 2.22,
+        "palavra1_freq": 10,
+        "palavra2_freq": 8
+      },
+      {
+        "bigrama": "controle ambiental",
+        "freq": 5,
+        "tscore": 2.13,
+        "palavra1_freq": 7,
+        "palavra2_freq": 68
+      },
+      {
+        "bigrama": "couros peles",
+        "freq": 4,
+        "tscore": 2,
+        "palavra1_freq": 4,
+        "palavra2_freq": 4
+      },
+      {
+        "bigrama": "consideradas efetiva",
+        "freq": 4,
+        "tscore": 2,
+        "palavra1_freq": 5,
+        "palavra2_freq": 4
+      },
+      {
+        "bigrama": "efetiva potencialmente",
+        "freq": 4,
+        "tscore": 2,
+        "palavra1_freq": 4,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "metais nãoferrosos",
+        "freq": 4,
+        "tscore": 2,
+        "palavra1_freq": 5,
+        "palavra2_freq": 4
+      },
+      {
+        "bigrama": "documentos projetos",
+        "freq": 4,
+        "tscore": 1.99,
+        "palavra1_freq": 4,
+        "palavra2_freq": 7
+      },
+      {
+        "bigrama": "medidas controle",
+        "freq": 4,
+        "tscore": 1.99,
+        "palavra1_freq": 4,
+        "palavra2_freq": 7
+      },
+      {
+        "bigrama": "solicitação esclarecimentos",
+        "freq": 4,
+        "tscore": 1.99,
+        "palavra1_freq": 5,
+        "palavra2_freq": 7
+      },
+      {
+        "bigrama": "união estados",
+        "freq": 4,
+        "tscore": 1.99,
+        "palavra1_freq": 5,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "inclusive galvanoplastia",
+        "freq": 4,
+        "tscore": 1.99,
+        "palavra1_freq": 11,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "superfície inclusive",
+        "freq": 4,
+        "tscore": 1.98,
+        "palavra1_freq": 6,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "projetos estudos",
+        "freq": 4,
+        "tscore": 1.98,
+        "palavra1_freq": 7,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "estados distrito",
+        "freq": 4,
+        "tscore": 1.98,
+        "palavra1_freq": 9,
+        "palavra2_freq": 8
+      }
+    ]
+  }
+}

@@ -1,0 +1,370 @@
+{
+  "nome": "ICA 53-8 - Serviços de Informação Aeronáutica",
+  "url": "https://publicacoes.decea.mil.br/publicacao/ica-53-8",
+  "disponivel": true,
+  "data_processamento": "2026-04-07 15:38:59",
+  "resumo": ["Estabelece requisitos para Serviços de Informação Aeronáutica", "Define estrutura funcional e áreas de atuação do SIA", "Especifica conteúdo mínimo de dados aeronáuticos", "Regulamenta produtos de informação aeronáutica digital", "Estabelece requisitos para coleta de dados de terreno e obstáculos", "Fornece base técnica para operações de Mobilidade Aérea Urbana"],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [3, 2, 2, 5, 1],
+    "justificativas": ["Impacto moderado ao estabelecer estrutura de serviços de informação aeronáutica com harmonização internacional (OACI), demonstrando coordenação estatal na gestão de dados de navegação aérea, mas sem políticas de fomento específicas para UAM.", "Impacto pontual ao criar estrutura de coleta e gestão de dados que gera custos operacionais para o sistema aeronáutico, mas sem mencionar incentivos econômicos, financiamento ou impactos na viabilidade de negócios de UAM.", "Impacto marginal ao garantir qualidade de informações para segurança de voo, criando benefícios indiretos para confiança pública, mas sem foco específico em inclusão social, equidade ou aceitação pública de operações urbanas.", "Impacto direto e abrangente ao estabelecer requisitos detalhados para dados digitais de terreno e obstáculos (Produto e-TOD), sistemas de informação aeronáutica, metadados e integridade de dados essenciais para navegação CNS/ATM de aeronaves UAM em ambiente urbano complexo.", "Ausência de referência a impactos ecológicos, gestão de recursos naturais, pegada de carbono ou qualquer requisito ambiental relacionado a operações aéreas ou infraestruturas."]
+  },
+  "estatisticas": {
+    "total_palavras": 7339,
+    "palavras_unicas": 1945,
+    "num_sentencas": 1335,
+    "top_50_palavras": {
+      "dados": 279,
+      "informação": 132,
+      "aeronáutica": 125,
+      "informações": 108,
+      "área": 103,
+      "ica": 93,
+      "aeronáuticas": 82,
+      "navegação": 56,
+      "aéreo": 54,
+      "serviços": 53,
+      "aip": 52,
+      "qualidade": 49,
+      "obstáculos": 48,
+      "sistema": 44,
+      "devem": 42,
+      "voo": 39,
+      "conjunto": 37,
+      "gestão": 36,
+      "ais": 34,
+      "espaço": 34,
+      "aérea": 33,
+      "aeródromo": 33,
+      "requisitos": 33,
+      "conjuntos": 32,
+      "controle": 31,
+      "terreno": 31,
+      "aeronáuticos": 29,
+      "notam": 29,
+      "referência": 27,
+      "serviço": 27,
+      "cada": 26,
+      "fornecidos": 25,
+      "internacional": 25,
+      "operações": 24,
+      "serão": 24,
+      "procedimentos": 23,
+      "deve": 22,
+      "integridade": 22,
+      "meio": 22,
+      "coleta": 21,
+      "conforme": 21,
+      "digital": 21,
+      "produtos": 21,
+      "publicação": 21,
+      "aeródromos": 20,
+      "aviação": 20,
+      "comando": 20,
+      "organização": 20,
+      "estão": 19,
+      "pista": 19
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 36,
+      "urbana": 0,
+      "evtol": 0,
+      "aeronave": 28,
+      "vertiporto": 0,
+      "heliponto": 2,
+      " uam ": 0,
+      "tráfego aéreo": 18,
+      "decolagem": 11,
+      "pouso": 9,
+      " voo ": 24,
+      "aviação": 20
+    },
+    "top_20_bigramas": {
+      "informação aeronáutica": 99,
+      "informações aeronáuticas": 70,
+      "dados informações": 60,
+      "espaço aéreo": 34,
+      "conjuntos dados": 32,
+      "navegação aérea": 31,
+      "serviços informação": 29,
+      "dados aeronáuticos": 28,
+      "conjunto dados": 23,
+      "dados obstáculos": 21,
+      "comando aeronáutica": 20,
+      "controle espaço": 20,
+      "gestão qualidade": 20,
+      "tráfego aéreo": 18,
+      "aviação civil": 17,
+      "civil internacional": 16,
+      "dados terreno": 16,
+      "departamento controle": 16,
+      "produtos informação": 15,
+      "aeronáutica departamento": 14
+    },
+    "palavras_chave": [
+      {
+        "palavra": "dados",
+        "frequencia": 279,
+        "relevancia": 3.381
+      },
+      {
+        "palavra": "informação",
+        "frequencia": 132,
+        "relevancia": 2.314
+      },
+      {
+        "palavra": "aeronáutica",
+        "frequencia": 125,
+        "relevancia": 2.167
+      },
+      {
+        "palavra": "informações",
+        "frequencia": 108,
+        "relevancia": 1.816
+      },
+      {
+        "palavra": "aeronáuticas",
+        "frequencia": 82,
+        "relevancia": 1.299
+      },
+      {
+        "palavra": "área",
+        "frequencia": 103,
+        "relevancia": 1.029
+      },
+      {
+        "palavra": "ica",
+        "frequencia": 93,
+        "relevancia": 0.909
+      },
+      {
+        "palavra": "navegação",
+        "frequencia": 56,
+        "relevancia": 0.812
+      },
+      {
+        "palavra": "serviços",
+        "frequencia": 53,
+        "relevancia": 0.758
+      },
+      {
+        "palavra": "qualidade",
+        "frequencia": 49,
+        "relevancia": 0.687
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "informação aeronáutica",
+        "freq": 99,
+        "tscore": 9.72,
+        "palavra1_freq": 132,
+        "palavra2_freq": 125
+      },
+      {
+        "bigrama": "informações aeronáuticas",
+        "freq": 70,
+        "tscore": 8.22,
+        "palavra1_freq": 108,
+        "palavra2_freq": 82
+      },
+      {
+        "bigrama": "dados informações",
+        "freq": 60,
+        "tscore": 7.22,
+        "palavra1_freq": 279,
+        "palavra2_freq": 108
+      },
+      {
+        "bigrama": "espaço aéreo",
+        "freq": 34,
+        "tscore": 5.79,
+        "palavra1_freq": 34,
+        "palavra2_freq": 54
+      },
+      {
+        "bigrama": "conjuntos dados",
+        "freq": 32,
+        "tscore": 5.44,
+        "palavra1_freq": 32,
+        "palavra2_freq": 279
+      },
+      {
+        "bigrama": "navegação aérea",
+        "freq": 31,
+        "tscore": 5.52,
+        "palavra1_freq": 56,
+        "palavra2_freq": 33
+      },
+      {
+        "bigrama": "serviços informação",
+        "freq": 29,
+        "tscore": 5.21,
+        "palavra1_freq": 53,
+        "palavra2_freq": 132
+      },
+      {
+        "bigrama": "dados aeronáuticos",
+        "freq": 28,
+        "tscore": 5.08,
+        "palavra1_freq": 279,
+        "palavra2_freq": 29
+      },
+      {
+        "bigrama": "conjunto dados",
+        "freq": 23,
+        "tscore": 4.5,
+        "palavra1_freq": 37,
+        "palavra2_freq": 279
+      },
+      {
+        "bigrama": "dados obstáculos",
+        "freq": 21,
+        "tscore": 4.18,
+        "palavra1_freq": 279,
+        "palavra2_freq": 48
+      },
+      {
+        "bigrama": "controle espaço",
+        "freq": 20,
+        "tscore": 4.44,
+        "palavra1_freq": 31,
+        "palavra2_freq": 34
+      },
+      {
+        "bigrama": "gestão qualidade",
+        "freq": 20,
+        "tscore": 4.42,
+        "palavra1_freq": 36,
+        "palavra2_freq": 49
+      },
+      {
+        "bigrama": "comando aeronáutica",
+        "freq": 20,
+        "tscore": 4.4,
+        "palavra1_freq": 20,
+        "palavra2_freq": 125
+      },
+      {
+        "bigrama": "tráfego aéreo",
+        "freq": 18,
+        "tscore": 4.21,
+        "palavra1_freq": 19,
+        "palavra2_freq": 54
+      },
+      {
+        "bigrama": "aviação civil",
+        "freq": 17,
+        "tscore": 4.11,
+        "palavra1_freq": 20,
+        "palavra2_freq": 18
+      },
+      {
+        "bigrama": "civil internacional",
+        "freq": 16,
+        "tscore": 3.98,
+        "palavra1_freq": 18,
+        "palavra2_freq": 25
+      },
+      {
+        "bigrama": "departamento controle",
+        "freq": 16,
+        "tscore": 3.98,
+        "palavra1_freq": 16,
+        "palavra2_freq": 31
+      },
+      {
+        "bigrama": "dados terreno",
+        "freq": 16,
+        "tscore": 3.71,
+        "palavra1_freq": 279,
+        "palavra2_freq": 31
+      },
+      {
+        "bigrama": "produtos informação",
+        "freq": 15,
+        "tscore": 3.78,
+        "palavra1_freq": 21,
+        "palavra2_freq": 132
+      },
+      {
+        "bigrama": "aeronáutica departamento",
+        "freq": 14,
+        "tscore": 3.67,
+        "palavra1_freq": 125,
+        "palavra2_freq": 16
+      },
+      {
+        "bigrama": "cadeia dados",
+        "freq": 13,
+        "tscore": 3.44,
+        "palavra1_freq": 16,
+        "palavra2_freq": 279
+      },
+      {
+        "bigrama": "dados digitais",
+        "freq": 13,
+        "tscore": 3.44,
+        "palavra1_freq": 279,
+        "palavra2_freq": 16
+      },
+      {
+        "bigrama": "rio janeiro",
+        "freq": 12,
+        "tscore": 3.46,
+        "palavra1_freq": 12,
+        "palavra2_freq": 12
+      },
+      {
+        "bigrama": "brasil comando",
+        "freq": 12,
+        "tscore": 3.45,
+        "palavra1_freq": 18,
+        "palavra2_freq": 20
+      },
+      {
+        "bigrama": "sistema gestão",
+        "freq": 12,
+        "tscore": 3.4,
+        "palavra1_freq": 44,
+        "palavra2_freq": 36
+      },
+      {
+        "bigrama": "coleta dados",
+        "freq": 12,
+        "tscore": 3.23,
+        "palavra1_freq": 21,
+        "palavra2_freq": 279
+      },
+      {
+        "bigrama": "área área",
+        "freq": 12,
+        "tscore": 3.05,
+        "palavra1_freq": 103,
+        "palavra2_freq": 103
+      },
+      {
+        "bigrama": "regularmente utilizados",
+        "freq": 11,
+        "tscore": 3.31,
+        "palavra1_freq": 11,
+        "palavra2_freq": 13
+      },
+      {
+        "bigrama": "janeiro brasil",
+        "freq": 11,
+        "tscore": 3.31,
+        "palavra1_freq": 12,
+        "palavra2_freq": 18
+      },
+      {
+        "bigrama": "aeródromos regularmente",
+        "freq": 11,
+        "tscore": 3.31,
+        "palavra1_freq": 20,
+        "palavra2_freq": 11
+      }
+    ]
+  }
+}

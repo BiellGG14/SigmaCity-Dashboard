@@ -1,0 +1,370 @@
+{
+  "nome": "Lei nº 7.661/1988 - Plano Nacional de Gerenciamento Costeiro (PNGC)",
+  "url": "https://www.planalto.gov.br/ccivil_03/leis/l7661.htm",
+  "disponivel": true,
+  "data_processamento": "2026-04-07 15:39:05",
+  "resumo": ["Institui o Plano Nacional de Gerenciamento Costeiro (PNGC)", "Define a Zona Costeira como área de interação ar-mar-terra", "Estabelece diretrizes para zoneamento e uso do território", "Regulamenta o licenciamento ambiental na zona costeira", "Articula políticas federais, estaduais e municipais"],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [4, 2, 2, 2, 5],
+    "justificativas": ["Estabelece política nacional de gestão costeira com articulação federativa entre União, estados e municípios, criando estrutura de governança territorial relevante para implantação de infraestruturas UAM em zonas costeiras.", "Impacto indireto ao estabelecer restrições de uso do solo que podem afetar custos de implantação, mas sem tratar especificamente de incentivos ou modelos econômicos para UAM.", "Foca na preservação de bens culturais e naturais com benefícios sociais indiretos, mas não aborda especificamente inclusão, equidade ou aceitação social da UAM.", "Estabelece diretrizes gerais para sistema viário e urbanização, mas não aborda tecnologias avançadas ou infraestruturas específicas para UAM.", "Impacto direto e abrangente ao instituir regime especial de proteção ambiental para zona costeira, com licenciamento obrigatório e zoneamento ecológico que condiciona totalmente a implantação de infraestruturas UAM."]
+  },
+  "estatisticas": {
+    "total_palavras": 671,
+    "palavras_unicas": 404,
+    "num_sentencas": 75,
+    "top_50_palavras": {
+      "nacional": 12,
+      "costeira": 11,
+      "zona": 10,
+      "ambiente": 9,
+      "meio": 8,
+      "recursos": 8,
+      "patrimônio": 7,
+      "pngc": 7,
+      "solo": 7,
+      "costeiro": 6,
+      "cultural": 6,
+      "gerenciamento": 6,
+      "mar": 6,
+      "natural": 6,
+      "plano": 6,
+      "será": 6,
+      "sistema": 6,
+      "uso": 6,
+      "étnico": 5,
+      "forma": 5,
+      "histórico": 5,
+      "naturais": 5,
+      "normas": 5,
+      "águas": 4,
+      "conama": 4,
+      "planos": 4,
+      "qualidade": 4,
+      "acesso": 3,
+      "controle": 3,
+      "demais": 3,
+      "diretrizes": 3,
+      "elaborado": 3,
+      "impacto": 3,
+      "licenciamento": 3,
+      "municípios": 3,
+      "órgãos": 3,
+      "outras": 3,
+      "outros": 3,
+      "paisagístico": 3,
+      "parcelamento": 3,
+      "praias": 3,
+      "previstas": 3,
+      "relativos": 3,
+      "remembramento": 3,
+      "renováveis": 3,
+      "república": 3,
+      "seguintes": 3,
+      "serão": 3,
+      "subsolo": 3,
+      "urbanização": 3
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 0,
+      "urbana": 0,
+      "evtol": 0,
+      "aeronave": 0,
+      "vertiporto": 0,
+      "heliponto": 0,
+      " uam ": 0,
+      "tráfego aéreo": 0,
+      "decolagem": 0,
+      "pouso": 0,
+      " voo ": 0,
+      "aviação": 0
+    },
+    "top_20_bigramas": {
+      "zona costeira": 10,
+      "meio ambiente": 8,
+      "gerenciamento costeiro": 6,
+      "étnico cultural": 5,
+      "natural histórico": 5,
+      "patrimônio natural": 5,
+      "histórico étnico": 4,
+      "cultural paisagístico": 3,
+      "nacional meio": 3,
+      "naturais zona": 3,
+      "outros seguintes": 3,
+      "parcelamento remembramento": 3,
+      "plano nacional": 3,
+      "pngc será": 3,
+      "qualidade meio": 3,
+      "recursos mar": 3,
+      "recursos naturais": 3,
+      "remembramento solo": 3,
+      "será elaborado": 3,
+      "solo subsolo": 3
+    },
+    "palavras_chave": [
+      {
+        "palavra": "nacional",
+        "frequencia": 12,
+        "relevancia": 2.565
+      },
+      {
+        "palavra": "costeira",
+        "frequencia": 11,
+        "relevancia": 2.278
+      },
+      {
+        "palavra": "ambiente",
+        "frequencia": 9,
+        "relevancia": 1.727
+      },
+      {
+        "palavra": "recursos",
+        "frequencia": 8,
+        "relevancia": 1.465
+      },
+      {
+        "palavra": "patrimônio",
+        "frequencia": 7,
+        "relevancia": 1.213
+      },
+      {
+        "palavra": "zona",
+        "frequencia": 10,
+        "relevancia": 1.199
+      },
+      {
+        "palavra": "costeiro",
+        "frequencia": 6,
+        "relevancia": 0.973
+      },
+      {
+        "palavra": "cultural",
+        "frequencia": 6,
+        "relevancia": 0.973
+      },
+      {
+        "palavra": "gerenciamento",
+        "frequencia": 6,
+        "relevancia": 0.973
+      },
+      {
+        "palavra": "meio",
+        "frequencia": 8,
+        "relevancia": 0.879
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "zona costeira",
+        "freq": 10,
+        "tscore": 3.11,
+        "palavra1_freq": 10,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "meio ambiente",
+        "freq": 8,
+        "tscore": 2.79,
+        "palavra1_freq": 8,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "gerenciamento costeiro",
+        "freq": 6,
+        "tscore": 2.43,
+        "palavra1_freq": 6,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "étnico cultural",
+        "freq": 5,
+        "tscore": 2.22,
+        "palavra1_freq": 5,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "natural histórico",
+        "freq": 5,
+        "tscore": 2.22,
+        "palavra1_freq": 6,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "patrimônio natural",
+        "freq": 5,
+        "tscore": 2.21,
+        "palavra1_freq": 7,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "histórico étnico",
+        "freq": 4,
+        "tscore": 1.98,
+        "palavra1_freq": 5,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "outros seguintes",
+        "freq": 3,
+        "tscore": 1.72,
+        "palavra1_freq": 3,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "parcelamento remembramento",
+        "freq": 3,
+        "tscore": 1.72,
+        "palavra1_freq": 3,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "subsolo águas",
+        "freq": 3,
+        "tscore": 1.72,
+        "palavra1_freq": 3,
+        "palavra2_freq": 4
+      },
+      {
+        "bigrama": "cultural paisagístico",
+        "freq": 3,
+        "tscore": 1.72,
+        "palavra1_freq": 6,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "será elaborado",
+        "freq": 3,
+        "tscore": 1.72,
+        "palavra1_freq": 6,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "remembramento solo",
+        "freq": 3,
+        "tscore": 1.71,
+        "palavra1_freq": 3,
+        "palavra2_freq": 7
+      },
+      {
+        "bigrama": "solo subsolo",
+        "freq": 3,
+        "tscore": 1.71,
+        "palavra1_freq": 7,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "qualidade meio",
+        "freq": 3,
+        "tscore": 1.7,
+        "palavra1_freq": 4,
+        "palavra2_freq": 8
+      },
+      {
+        "bigrama": "recursos naturais",
+        "freq": 3,
+        "tscore": 1.7,
+        "palavra1_freq": 8,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "pngc será",
+        "freq": 3,
+        "tscore": 1.7,
+        "palavra1_freq": 7,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "uso solo",
+        "freq": 3,
+        "tscore": 1.7,
+        "palavra1_freq": 6,
+        "palavra2_freq": 7
+      },
+      {
+        "bigrama": "recursos mar",
+        "freq": 3,
+        "tscore": 1.69,
+        "palavra1_freq": 8,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "naturais zona",
+        "freq": 3,
+        "tscore": 1.69,
+        "palavra1_freq": 5,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "plano nacional",
+        "freq": 3,
+        "tscore": 1.67,
+        "palavra1_freq": 6,
+        "palavra2_freq": 12
+      },
+      {
+        "bigrama": "nacional meio",
+        "freq": 3,
+        "tscore": 1.65,
+        "palavra1_freq": 12,
+        "palavra2_freq": 8
+      },
+      {
+        "bigrama": "básico turismo",
+        "freq": 2,
+        "tscore": 1.41,
+        "palavra1_freq": 2,
+        "palavra2_freq": 2
+      },
+      {
+        "bigrama": "comissão interministerial",
+        "freq": 2,
+        "tscore": 1.41,
+        "palavra1_freq": 2,
+        "palavra2_freq": 2
+      },
+      {
+        "bigrama": "critérios padrões",
+        "freq": 2,
+        "tscore": 1.41,
+        "palavra1_freq": 2,
+        "palavra2_freq": 2
+      },
+      {
+        "bigrama": "disposto nesta",
+        "freq": 2,
+        "tscore": 1.41,
+        "palavra1_freq": 2,
+        "palavra2_freq": 2
+      },
+      {
+        "bigrama": "distribuição energia",
+        "freq": 2,
+        "tscore": 1.41,
+        "palavra1_freq": 2,
+        "palavra2_freq": 2
+      },
+      {
+        "bigrama": "energia habitação",
+        "freq": 2,
+        "tscore": 1.41,
+        "palavra1_freq": 2,
+        "palavra2_freq": 2
+      },
+      {
+        "bigrama": "estaduais municipais",
+        "freq": 2,
+        "tscore": 1.41,
+        "palavra1_freq": 2,
+        "palavra2_freq": 2
+      },
+      {
+        "bigrama": "executado observando",
+        "freq": 2,
+        "tscore": 1.41,
+        "palavra1_freq": 2,
+        "palavra2_freq": 2
+      }
+    ]
+  }
+}

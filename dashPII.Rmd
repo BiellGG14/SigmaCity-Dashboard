@@ -1,0 +1,1485 @@
+---
+title: "UAM Cidades - Dashboard Produto II"
+date: "`r Sys.Date()`"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: scroll
+    theme: cosmo
+    favicon: imagens/sigma.png
+runtime: shiny
+resource_files:
+- imagens/sigma.png
+- imagens/ita.png
+---
+```{css}
+/* ============================================================
+   RESET / GLOBAIS
+   ============================================================ */
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  padding-top: 80px !important;
+  margin: 0;
+  color: #2c3e50;
+}
+
+/* ============================================================
+   NAVBAR CUSTOM
+   ============================================================ */
+.navbar {
+  position: fixed !important;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: linear-gradient(90deg, #004aad 0%, #5de0e6 100%) !important;
+  border: none !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  height: 70px; min-height: 70px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+}
+
+.navbar-logo {
+  display: inline-block; width: 72px; height: 72px;
+  margin-right: 12px;
+  transition: transform 0.3s ease;
+}
+.navbar-logo:hover { transform: scale(1.05); }
+.navbar-logo img { width: 100%; height: 100%; object-fit: contain; }
+
+.navbar-controls {
+  display: flex; align-items: center; gap: 12px; margin-left: auto;
+}
+
+.nav-pill-btn {
+  background: rgba(255,255,255,0.18);
+  border: 2px solid white;
+  border-radius: 22px;
+  padding: 9px 20px;
+  color: white; font-size: 13px; font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+  font-family: inherit;
+}
+.nav-pill-btn:hover { background: white; color: #004aad; transform: translateY(-2px); }
+.nav-pill-btn.active { background: white; color: #004aad; }
+
+.nav-icon-btn {
+  background: rgba(255,255,255,0.18);
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 46px; height: 46px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; color: white; font-size: 22px;
+  transition: all 0.25s ease; font-family: inherit;
+}
+.nav-icon-btn:hover { background: white; color: #004aad; transform: scale(1.1); }
+
+.sigma-btn {
+  background: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 46px; height: 46px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; overflow: hidden; white-space: nowrap;
+  transition: all 0.4s ease;
+  text-decoration: none !important;
+}
+.sigma-btn img { width: 28px; height: 28px; object-fit: contain; transition: all 0.3s; }
+.sigma-btn span { display: none; color: #004aad; font-weight: 700; font-size: 13px; margin-left: 6px; opacity: 0; transition: opacity 0.3s; }
+.sigma-btn:hover { width: 130px; border-radius: 23px; box-shadow: 0 4px 15px rgba(0,74,173,0.3); }
+.sigma-btn:hover span { display: inline; opacity: 1; }
+
+.btn-portal {
+  background: white; color: #004aad;
+  border: none; border-radius: 8px;
+  padding: 10px 22px; font-weight: 700; font-size: 13px;
+  cursor: pointer; text-decoration: none !important;
+  display: inline-flex; align-items: center; gap: 6px;
+  transition: all 0.25s ease;
+  box-shadow: 0 3px 10px rgba(255,255,255,0.2);
+  position: absolute; left: 50%; transform: translateX(-50%);
+}
+.btn-portal:hover { background: #f0f8ff; transform: translateX(-50%) translateY(-2px); text-decoration: none; color: #0066cc; }
+
+/* ============================================================
+   CONTAINER PRINCIPAL
+   ============================================================ */
+.main-c {
+  max-width: 1280px; margin: 0 auto; padding: 30px 20px;
+}
+
+/* ============================================================
+   HERO HOME
+   ============================================================ */
+.hero {
+  background: linear-gradient(135deg, #004aad 0%, #0066cc 50%, #5de0e6 100%);
+  border-radius: 18px;
+  padding: 50px 60px;
+  color: white;
+  margin-bottom: 36px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute; top: -60px; right: -80px;
+  width: 350px; height: 350px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 50%;
+}
+.hero::after {
+  content: "";
+  position: absolute; bottom: -40px; left: 20%;
+  width: 200px; height: 200px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 50%;
+}
+.hero-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 20px; padding: 5px 16px;
+  font-size: 11px; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; margin-bottom: 16px;
+}
+.hero h1 { margin: 0 0 12px; font-size: 30px; font-weight: 800; line-height: 1.25; }
+.hero p  { margin: 0; font-size: 16px; opacity: 0.88; max-width: 640px; line-height: 1.65; }
+.hero-meta {
+  margin-top: 28px;
+  display: flex; flex-wrap: wrap; gap: 20px;
+}
+.hero-stat {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 12px; padding: 14px 22px; text-align: center;
+}
+.hero-stat .num { font-size: 28px; font-weight: 800; display: block; }
+.hero-stat .lbl { font-size: 11px; opacity: 0.8; text-transform: uppercase; letter-spacing: 1px; }
+
+/* ============================================================
+   PESTEL RADAR CARD
+   ============================================================ */
+.radar-wrapper {
+  background: white; border-radius: 16px;
+  padding: 28px; margin-bottom: 32px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  border: 1px solid #e8edf5;
+}
+.section-title {
+  font-size: 18px; font-weight: 800; color: #004aad;
+  margin: 0 0 6px;
+}
+.section-sub { font-size: 13px; color: #7f8c8d; margin: 0 0 20px; }
+
+/* ============================================================
+   TEMA CARDS GRID  (página de temas)
+   ============================================================ */
+.temas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+  margin-bottom: 32px;
+}
+
+.tema-card {
+  background: white;
+  border-radius: 14px;
+  padding: 22px 20px;
+  border: 2px solid #e8edf5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.tema-card::before {
+  content: "";
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--tc, #004aad);
+  border-radius: 14px 14px 0 0;
+}
+.tema-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  border-color: var(--tc, #004aad);
+}
+.tema-code {
+  font-size: 10px; font-weight: 800; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--tc, #004aad); margin-bottom: 6px;
+}
+.tema-name { font-size: 15px; font-weight: 700; color: #2c3e50; margin-bottom: 8px; }
+.tema-desc { font-size: 12px; color: #7f8c8d; line-height: 1.55; }
+.tema-q-count {
+  display: inline-block; margin-top: 12px;
+  background: #f0f4f8; border-radius: 20px;
+  padding: 4px 12px; font-size: 11px; font-weight: 700; color: #004aad;
+}
+
+/* ============================================================
+   QUESTÕES — "Painel de Perguntas"
+   ============================================================ */
+.questions-panel { margin-bottom: 32px; }
+.questions-panel h3 {
+  font-size: 20px; font-weight: 800; color: #004aad;
+  margin: 0 0 6px;
+}
+.questions-panel .subline {
+  font-size: 13px; color: #7f8c8d; margin-bottom: 22px;
+}
+
+.q-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+.q-card {
+  background: white;
+  border: 2px solid #e8edf5;
+  border-radius: 12px;
+  padding: 18px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  position: relative;
+}
+.q-card:hover {
+  border-color: var(--qc, #004aad);
+  box-shadow: 0 8px 24px rgba(0,74,173,0.12);
+  transform: translateY(-3px);
+}
+.q-badge {
+  display: inline-block;
+  background: var(--qc, #004aad);
+  color: white; font-size: 10px; font-weight: 800;
+  border-radius: 6px; padding: 3px 8px; margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+.q-text { font-size: 13px; color: #2c3e50; line-height: 1.55; font-weight: 500; }
+.q-arrow {
+  display: flex; align-items: center; gap: 5px;
+  margin-top: 12px; font-size: 11px;
+  color: var(--qc, #004aad); font-weight: 700;
+}
+
+/* filtro de tema */
+.filter-bar {
+  display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;
+}
+.filter-chip {
+  padding: 6px 16px; border-radius: 20px; border: 2px solid #c9d6e0;
+  background: white; color: #7f8c8d; font-size: 12px; font-weight: 700;
+  cursor: pointer; transition: all 0.2s; font-family: inherit;
+}
+.filter-chip:hover { border-color: #004aad; color: #004aad; }
+.filter-chip.on { background: #004aad; color: white; border-color: #004aad; }
+
+/* ============================================================
+   DETALHE DA QUESTÃO + DIRETRIZ (popup style)
+   ============================================================ */
+.detail-panel {
+  background: white; border-radius: 18px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+  padding: 36px 36px 32px;
+  max-width: 900px; margin: 0 auto 36px;
+  border: 1px solid #e8edf5;
+}
+
+.back-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #f0f4f8; border: none; border-radius: 8px;
+  padding: 9px 18px; font-size: 13px; font-weight: 700;
+  color: #004aad; cursor: pointer; margin-bottom: 24px;
+  transition: all 0.2s; font-family: inherit;
+}
+.back-btn:hover { background: #004aad; color: white; }
+
+.detail-tema-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: linear-gradient(90deg, var(--dc, #004aad), #5de0e6);
+  color: white; border-radius: 20px; padding: 6px 18px;
+  font-size: 11px; font-weight: 800; letter-spacing: 1px;
+  text-transform: uppercase; margin-bottom: 16px;
+}
+
+.detail-q-box {
+  background: #f0f4f8;
+  border-left: 5px solid var(--dc, #004aad);
+  border-radius: 0 10px 10px 0;
+  padding: 18px 22px; margin-bottom: 28px;
+}
+.detail-q-label { font-size: 10px; font-weight: 800; color: #7f8c8d; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; }
+.detail-q-text { font-size: 16px; font-weight: 700; color: #2c3e50; line-height: 1.55; margin: 0; }
+
+.detail-dir-box {
+  background: linear-gradient(135deg, #eaf8f2 0%, #e8f4fb 100%);
+  border: 1px solid #b7e4ce;
+  border-radius: 12px; padding: 24px 24px;
+}
+.detail-dir-label {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 10px; font-weight: 800; color: #27ae60;
+  letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px;
+}
+.detail-dir-label::before {
+  content: "✓";
+  background: #27ae60; color: white;
+  border-radius: 50%; width: 18px; height: 18px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px; font-weight: 900; flex-shrink: 0;
+}
+.detail-dir-text { font-size: 14px; color: #2c3e50; line-height: 1.75; margin: 0; }
+
+/* fontes na diretriz */
+.dir-sources {
+  margin-top: 16px; padding-top: 14px;
+  border-top: 1px solid #c8e6da;
+  display: flex; flex-wrap: wrap; gap: 6px;
+}
+.dir-src-chip {
+  background: rgba(39,174,96,0.12);
+  border: 1px solid rgba(39,174,96,0.3);
+  border-radius: 6px; padding: 3px 10px;
+  font-size: 10px; font-weight: 700; color: #27ae60;
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+/* nav de questões dentro do detalhe */
+.q-nav { display: flex; gap: 10px; margin-top: 24px; flex-wrap: wrap; }
+.q-nav-btn {
+  padding: 7px 18px; border-radius: 20px;
+  border: 2px solid #c9d6e0; background: white;
+  font-size: 12px; font-weight: 700; color: #7f8c8d;
+  cursor: pointer; transition: all 0.2s; font-family: inherit;
+}
+.q-nav-btn:hover, .q-nav-btn.ativa { background: #004aad; color: white; border-color: #004aad; }
+
+/* ============================================================
+   HEATMAP PESTEL
+   ============================================================ */
+.heatmap-wrapper { background: white; border-radius: 16px; padding: 28px; margin-bottom: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.07); border: 1px solid #e8edf5; overflow-x: auto; }
+.hm-table { width: 100%; border-collapse: collapse; }
+.hm-table th { padding: 8px 10px; font-size: 11px; font-weight: 800; color: #7f8c8d; text-align: center; letter-spacing: 1px; }
+.hm-table td { padding: 6px 8px; text-align: center; }
+.hm-label { text-align: left !important; font-size: 12px; font-weight: 600; color: #2c3e50; white-space: nowrap; padding-right: 20px !important; }
+.hm-cell {
+  width: 38px; height: 32px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.hm-cell:hover { transform: scale(1.25); box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 2; position: relative; }
+
+/* ============================================================
+   LACUNAS / GAPS
+   ============================================================ */
+.gap-card {
+  background: white; border-radius: 14px; padding: 22px 24px;
+  margin-bottom: 14px;
+  border-left: 5px solid var(--gc, #004aad);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+  display: flex; align-items: center; gap: 20px;
+}
+.gap-rank { font-size: 32px; font-weight: 900; color: var(--gc, #004aad); min-width: 40px; }
+.gap-content { flex: 1; }
+.gap-name { font-size: 16px; font-weight: 800; color: #2c3e50; margin-bottom: 8px; }
+.gap-bars { display: flex; flex-direction: column; gap: 5px; }
+.gap-bar-row { display: flex; align-items: center; gap: 8px; }
+.gap-bar-label { font-size: 11px; color: #7f8c8d; width: 90px; text-align: right; }
+.gap-bar-track { flex: 1; height: 7px; background: #e8edf5; border-radius: 4px; overflow: hidden; }
+.gap-bar-fill { height: 100%; border-radius: 4px; transition: width 0.4s; }
+.gap-bar-val { font-size: 11px; font-weight: 700; color: #2c3e50; width: 20px; }
+.gap-pct-badge {
+  background: var(--gc, #004aad); color: white;
+  border-radius: 10px; padding: 6px 14px; text-align: center;
+  font-size: 20px; font-weight: 900; white-space: nowrap;
+  min-width: 80px;
+}
+.gap-pct-badge span { font-size: 10px; display: block; font-weight: 600; opacity: 0.85; }
+
+/* ============================================================
+   SOMMARIO CARDS (home)
+   ============================================================ */
+.summ-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px; margin-bottom: 32px;
+}
+.summ-card {
+  background: white; border-radius: 12px; padding: 16px 14px;
+  border-top: 4px solid var(--sc, #004aad);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+  border: 1px solid #e8edf5;
+  border-top-width: 4px; border-top-style: solid;
+}
+.summ-val { font-size: 26px; font-weight: 900; color: var(--sc, #004aad); }
+.summ-lbl { font-size: 11px; color: #7f8c8d; margin-top: 4px; text-transform: uppercase; letter-spacing: 1px; }
+
+/* ============================================================
+   TIMELINE / LINHA DO TEMPO
+   ============================================================ */
+.timeline { position: relative; padding-left: 36px; margin-bottom: 40px; }
+.timeline::before {
+  content: "";
+  position: absolute; left: 10px; top: 0; bottom: 0;
+  width: 3px; background: linear-gradient(180deg, #004aad, #5de0e6);
+  border-radius: 2px;
+}
+.tl-item { position: relative; margin-bottom: 28px; }
+.tl-dot {
+  position: absolute; left: -30px; top: 4px;
+  width: 18px; height: 18px;
+  background: var(--td, #004aad); border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 0 3px var(--td, #004aad);
+}
+.tl-content { background: white; border-radius: 12px; padding: 16px 20px; box-shadow: 0 3px 12px rgba(0,0,0,0.07); border: 1px solid #e8edf5; }
+.tl-tit { font-size: 14px; font-weight: 800; color: #2c3e50; margin-bottom: 4px; }
+.tl-txt { font-size: 13px; color: #7f8c8d; line-height: 1.55; margin: 0; }
+
+/* ============================================================
+   EQUIPE
+   ============================================================ */
+.equipe-grid {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 36px 44px; margin-top: 36px;
+}
+.membro-card { text-align: center; width: 150px; }
+.membro-card:hover { transform: translateY(-8px); transition: transform 0.3s; }
+.membro-foto {
+  width: 130px !important; height: 130px !important;
+  border-radius: 50% !important; overflow: hidden !important;
+  margin: 0 auto 14px; border: 3px solid #5de0e6;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  display: block; position: relative; aspect-ratio: 1/1;
+}
+.membro-foto img { width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: center center !important; display: block !important; border-radius: 50% !important; position: absolute !important; top: 0 !important; left: 0 !important; }
+.membro-nome { font-size: 12px; font-weight: 700; color: #2c3e50; min-height: 36px; display: flex; align-items: center; justify-content: center; line-height: 1.4; }
+.linkedin-icon { display: inline-flex; align-items: center; justify-content: center; margin-top: 6px; width: 32px; height: 32px; background: #0077b5; border-radius: 50%; color: white !important; font-size: 14px; font-weight: 900; transition: all 0.3s; text-decoration: none !important; }
+.linkedin-icon:hover { background: #004aad; transform: scale(1.15); }
+
+/* ============================================================
+   SEARCH BAR
+   ============================================================ */
+.search-bar { display: flex; gap: 10px; margin-bottom: 18px; }
+.search-bar input {
+  flex: 1; padding: 12px 18px; font-size: 14px;
+  border: 2px solid #e0e0e0; border-radius: 10px;
+  outline: none; transition: border-color 0.2s; font-family: inherit;
+}
+.search-bar input:focus { border-color: #5de0e6; box-shadow: 0 3px 12px rgba(93,224,230,0.25); }
+.search-bar button {
+  padding: 12px 22px; background: #004aad; color: white;
+  border: none; border-radius: 10px; font-weight: 700; font-size: 14px;
+  cursor: pointer; transition: all 0.2s; font-family: inherit;
+}
+.search-bar button:hover { background: #0066cc; transform: translateY(-2px); }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.page-footer {
+  text-align: center; padding: 20px; margin-top: 30px;
+  border-top: 2px solid #e0e0e0; color: #95a5a6; font-size: 13px;
+}
+.page-footer a { color: #004aad; text-decoration: none; font-weight: 600; }
+
+/* ============================================================
+   RESPONSIVIDADE
+   ============================================================ */
+@media (max-width: 768px) {
+  .hero { padding: 30px 24px; }
+  .hero h1 { font-size: 22px; }
+  .q-grid, .temas-grid { grid-template-columns: 1fr; }
+  .detail-panel { padding: 24px 18px; }
+}
+```
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(shiny)
+library(plotly)
+library(DT)
+
+shiny::addResourcePath('imagens', 'imagens')
+
+parse_bib_urls <- function(bib_path) {
+  if (!file.exists(bib_path)) return(setNames(character(0), character(0)))
+
+  lines <- readLines(bib_path, warn = FALSE, encoding = "UTF-8")
+  urls <- list()
+  current_key <- NULL
+
+  for (line in lines) {
+    key_match <- regexec("^@[^{]+\\{\\s*([^,]+),", line, perl = TRUE)
+    key_capture <- regmatches(line, key_match)[[1]]
+    if (length(key_capture) > 1) {
+      current_key <- trimws(key_capture[2])
+      next
+    }
+
+    if (!is.null(current_key)) {
+      url_match <- regexec("^\\s*url\\s*=\\s*[\\{\"]([^\\}\"]+)[\\}\"],?\\s*$", line, perl = TRUE)
+      url_capture <- regmatches(line, url_match)[[1]]
+      if (length(url_capture) > 1) {
+        urls[[current_key]] <- trimws(url_capture[2])
+      }
+
+      if (grepl("^\\s*}\\s*,?\\s*$", line)) {
+        current_key <- NULL
+      }
+    }
+  }
+
+  unlist(urls)
+}
+
+BIB_PATH <- file.path("Projeto_Sigma_city___Produto_02_Rev_1", "refs", "refs.bib")
+BIB_URLS <- parse_bib_urls(BIB_PATH)
+
+# ============================================================================
+# DADOS DO PRODUTO II
+# ============================================================================
+
+TEMAS <- list(
+  list(id = "ruido", nome = "Ruído Aeronáutico", cor = "#004aad",
+    desc = "Gestão acústica, zoneamento e monitoramento do ruído gerado por aeronaves eVTOL em áreas urbanas.",
+    questoes = list(
+      list(qid="Q01", txt="A legislação de uso do solo do município está adequadamente alinhada com o plano de zoneamento de ruído para as operações de aeronaves urbanas?",
+           dir="Recomenda-se que o zoneamento de ruído municipal incorpore métricas baseadas na percepção humana e utilize ordenanças locais para compatibilizar o uso do solo com as áreas de operação aérea, integrando o zoneamento acústico ao ordenamento territorial urbano.",
+           fontes=c("Alabi_2025","RBAC161EMD04","2020_-_NASA_Technical_Management")),
+      list(qid="Q02", txt="Existe um plano integrado de gestão de ruído que harmonize a legislação municipal com as normas federais para operações aéreas urbanas?",
+           dir="Sugere-se a criação de planos integrados de gestão de ruído que harmonizem as ordenanças locais com normas internacionais e promovam a colaboração entre órgãos reguladores e prefeituras para mitigar ruídos por meio de procedimentos de voo e modificações de horários.",
+           fontes=c("Alabi_2025","2020_-_NASA_Technical_Management")),
+      list(qid="Q03", txt="Existe um plano de zoneamento acústico que estabeleça zonas de exclusão ou rotas de prioridade para evitar o sobrevoo de áreas sensíveis como escolas e hospitais?",
+           dir="Recomenda-se a adoção de zonas tridimensionais de exclusão ao redor de áreas sensíveis, demarcação de equipamentos urbanos como hospitais e escolas, e estabelecimento de rotas aéreas baseadas em prioridade de ruído.",
+           fontes=c("Gao_2023","IS161","Jeong_2021","PCA_351-7")),
+      list(qid="Q04", txt="O município possui corpo técnico qualificado para implementação de sistemas permanentes de monitoramento acústico e ferramentas de simulação?",
+           dir="Recomenda-se a implementação de projetos de monitoramento acústico contínuo utilizando ferramentas de simulação que considerem reflexões sonoras em fachadas, topologia urbana e perfis de vento.",
+           fontes=c("Yunus_2023","Bian_2021","ANAC_Vertiportos_2021","IS161")),
+      list(qid="Q05", txt="Existem mecanismos de fiscalização para evitar a ocupação irregular de solos classificados como incompatíveis com os níveis de exposição sonora previstos?",
+           dir="Deve-se considerar o ruído cumulativo de toda a frota em operação simultânea sobre áreas povoadas, utilizando a métrica de exposição populacional e softwares de modelagem para prever o impacto acústico agregado.",
+           fontes=c("Farazi_2024","2020_-_NASA_Technical_Management","ANAC_Vertiportos_2021")),
+      list(qid="Q06", txt="O município participa ativamente de Comissões de Gerenciamento de Ruído para garantir que reclamações da população sejam integradas às ações de mitigação?",
+           dir="Recomenda-se a criação de mecanismos de participação ativa da comunidade, incluindo a instituição de uma Comissão de Gerenciamento de Ruído Aeronáutico (CGRA).",
+           fontes=c("Torija_2021","CEF_RBAC_161","NASA_AAM_Research_Strategy_2020")),
+      list(qid="Q07", txt="Estão previstas restrições temporais de operação ou o uso obrigatório de tecnologias de baixo ruído para mitigar o incômodo durante períodos de descanso?",
+           dir="Sugere-se a imposição de restrições temporais em períodos noturnos e o incentivo ao uso de aeronaves com tecnologias de propulsão de menor incômodo sonoro.",
+           fontes=c("Alabi_2025","RBAC161EMD04","Schade_2025","PCA_351-7")),
+      list(qid="Q08", txt="Como os novos vertiportos em topos de edifícios estão sendo avaliados quanto ao impacto do efeito de solo sobre a vizinhança imediata?",
+           dir="Deve-se avaliar o impacto do efeito de solo na dispersão do ruído ao projetar vertiportos em topos de edifícios, considerando a circulação de pedestres na vizinhança imediata.",
+           fontes=c("Araghizadeh_2024")),
+      list(qid="Q09", txt="Quais são os canais de transparência utilizados para disponibilizar à comunidade os relatórios de monitoramento e os planos de expansão da infraestrutura aérea?",
+           dir="Recomenda-se a disponibilização transparente e preferencialmente em tempo real de dados de monitoramento acústico e relatórios periódicos com estatísticas de reclamações georreferenciadas.",
+           fontes=c("CEF_RBAC_161","IS161","Alabi_2025","PCA_351-7"))
+    )
+  ),
+  list(id = "integracao", nome = "Integração Urbano-Social", cor = "#0066cc",
+    desc = "Aceitação pública, equidade, acessibilidade e integração multimodal da UAM no tecido urbano.",
+    questoes = list(
+      list(qid="Q01", txt="Como o plano de mobilidade urbana assegura que a localização dos vertiportos promova a equidade social e a integração física com os eixos de transporte público coletivo existentes?",
+           dir="Recomenda-se que a alocação de infraestrutura considere o impacto distributivo, utilizando modelos de decisão multicritério que equilibrem cobertura de demanda com justiça social.",
+           fontes=c("Jin_2025","L12587","PCA_351-7")),
+      list(qid="Q02", txt="Quais estratégias de engajamento comunitário e consultas públicas serão adotadas para garantir a gestão democrática e mitigar a oposição local?",
+           dir="As normas brasileiras preconizam a gestão democrática por meio de consultas públicas e do engajamento comunitário para alinhar o desenvolvimento da rede com as necessidades locais.",
+           fontes=c("Wu_2021","Bhaduri_2026","L10257","L12587")),
+      list(qid="Q03", txt="De que forma o projeto das instalações de vertiportos incorpora o desenho universal para garantir o acesso e a autonomia de idosos e pessoas com deficiência?",
+           dir="A adoção do desenho universal é mandatória em todas as interfaces do sistema para assegurar a autonomia dos passageiros.",
+           fontes=c("L12587","PCA_351-7")),
+      list(qid="Q04", txt="Quais mecanismos regulatórios serão utilizados para proteger a privacidade dos cidadãos contra a intrusão visual?",
+           dir="Recomenda-se a gestão de riscos que contemple barreiras sociais específicas como preocupações com privacidade, intrusão visual e segurança contra atos de interferência ilícita.",
+           fontes=c("Yoo_2022","Yan_2024","Bhaduri_2026")),
+      list(qid="Q05", txt="De que maneira serão estabelecidos os critérios de zoneamento para proteger áreas sensíveis do impacto sonoro e operacional das rotas aéreas?",
+           dir="Critérios de proteção devem ser adotados para evitar a sobrecarga de infraestrutura em áreas sensíveis como escolas e hospitais, mitigando impactos socioambientais.",
+           fontes=c("COnops_CITYAM","L12587","PL743")),
+      list(qid="Q06", txt="Como o município planeja integrar operacionalmente os vertiportos aos sistemas de transporte público existente para garantir uma experiência de viagem multimodal?",
+           dir="A integração física e operacional com hubs de transporte terrestre é essencial para facilitar viagens multimodais porta-a-porta.",
+           fontes=c("Sunitiyoso_2025","Yan_2024","L12587","PCA_351-7")),
+      list(qid="Q07", txt="Existe previsão de subsídios ou obrigações de serviço público para assegurar que as tarifas sejam acessíveis a diferentes classes sociais?",
+           dir="A viabilidade social plena depende da acessibilidade financeira, requerendo que os gestores avaliem a implementação de obrigações de serviço público, subsídios ou designs tarifários estratégicos.",
+           fontes=c("Sunitiyoso_2025","Li_2025")),
+      list(qid="Q08", txt="Quais ferramentas serão utilizadas para o monitoramento contínuo da aceitação pública e para a mediação de conflitos entre operadores e residentes?",
+           dir="O monitoramento contínuo da aceitação social e dos níveis de confiança é indicado para adaptar as intervenções políticas ao longo do tempo.",
+           fontes=c("Bhaduri_2026","Li_2025")),
+      list(qid="Q09", txt="Como o município pretende incentivar o uso da infraestrutura aérea para serviços de interesse coletivo, como emergências médicas e segurança pública?",
+           dir="Recomenda-se que as operações iniciais ocorram de forma gradual em áreas de baixo impacto sonoro para permitir a familiarização tecnológica da sociedade.",
+           fontes=c("PCA_351-7","NASA_AAM_Research_Strategy_2020"))
+    )
+  ),
+  list(id = "uso_solo", nome = "Uso do Solo", cor = "#27ae60",
+    desc = "Zoneamento, plano diretor, PZPV e compatibilização territorial para instalação de vertiportos.",
+    questoes = list(
+      list(qid="Q01", txt="De que maneira o Plano Diretor e a Lei de Uso e Ocupação do Solo podem ser adaptados para reconhecer os vertiportos como infraestruturas permitidas?",
+           dir="As administrações municipais devem revisar seus Planos Diretores e Códigos de Edificação para incluir os vertiportos como categoria específica de uso do solo permitida.",
+           fontes=c("Rohrmeier_2025","Wu_2025","ICA_11-3")),
+      list(qid="Q02", txt="Como as superfícies de proteção de voo (PZPV) serão integradas para impedir a emissão de alvarás de construção acima da altura permitida?",
+           dir="O município deve emitir declarações de ciência sobre as áreas impactadas por limitações de altura e pode utilizar instrumentos jurídicos como o 'direito de laje' para assegurar a desobstrução de corredores aéreos.",
+           fontes=c("ICA_11-3","PCA_351-7")),
+      list(qid="Q03", txt="Quais são as áreas de exclusão identificadas no município (militares, ambientais ou históricas) onde a instalação de vertiportos é legalmente vedada?",
+           dir="A regulação impõe restrições em áreas de preservação ambiental, zonas militares e patrimônios culturais.",
+           fontes=c("Lee_2025","Li_2023","Zelinski_2020","COnops_CITYAM")),
+      list(qid="Q04", txt="Foram estabelecidos critérios de zoneamento de ruído e zonas de amortecimento para proteger áreas sensíveis como escolas e hospitais da vizinhança operacional?",
+           dir="Deve-se adotar zonas de amortecimento (áreas de recuo) ao redor de locais sensíveis para mitigar ruídos e outros impactos de vizinhança.",
+           fontes=c("Lee_2025","Li_2023","COnops_CITYAM")),
+      list(qid="Q05", txt="Existe um fluxo administrativo estabelecido para consultar a autoridade aeronáutica quando novos empreendimentos de interesse público conflitam com as rotas de voo?",
+           dir="O Comando da Aeronáutica realiza estudos técnicos para avaliar se o prejuízo operacional é aceitável mediante medidas mitigadoras, como sinalização luminosa ou alteração de rotas.",
+           fontes=c("ICA_11-3","ICA_63-19")),
+      list(qid="Q06", txt="Quais mecanismos de incentivo a prefeitura oferece para o reaproveitamento de infraestruturas existentes, como estacionamentos, visando a implantação de vertiporto?",
+           dir="A seleção de locais prioriza o reaproveitamento de estruturas subutilizadas, como helipontos existentes, coberturas de edifícios e estacionamentos elevados.",
+           fontes=c("Li_2023","Liu_2026","ANAC_Vertiportos_2021")),
+      list(qid="Q07", txt="Como é realizada a fiscalização conjunta entre município e operador para identificar e remover obstáculos que surjam nas zonas de proteção?",
+           dir="O operador tem a obrigação de realizar levantamentos periódicos e informar à prefeitura sobre o surgimento de novos obstáculos.",
+           fontes=c("ICA_11-408","PCA_351-7")),
+      list(qid="Q08", txt="Quais são as áreas críticas da cidade onde o pouso de emergência deve ser proibido por razões de segurança pública ou proteção de infraestruturas vitais?",
+           dir="O planejamento estratégico municipal deve definir áreas críticas onde o sobrevoo ou o pouso de emergência é restrito ou proibido.",
+           fontes=c("COnops_CITYAM")),
+      list(qid="Q09", txt="De que forma o planejamento municipal assegura que a distribuição dessas infraestruturas promova a equidade social, evitando a segregação de territórios?",
+           dir="A governança conjunta é fundamental para assegurar que o desenvolvimento do novo modal ocorra sob princípios de equidade social, sustentabilidade e fluidez multimodal.",
+           fontes=c("Lee_2025","Straubinger_2021","COnops_CITYAM")),
+      list(qid="Q10", txt="Existe articulação com municípios vizinhos para a gestão do uso do solo em áreas onde as zonas de proteção aérea ultrapassam os limites territoriais da cidade?",
+           dir="A governança conjunta entre órgãos municipais, autoridades aeronáuticas e municípios vizinhos é fundamental.",
+           fontes=c("ICA_11-408","COnops_CITYAM"))
+    )
+  ),
+  list(id = "infra_energetica", nome = "Infraestrutura Energética", cor = "#3498db",
+    desc = "Redes de recarga, armazenamento, estabilidade da rede elétrica e gestão de demanda.",
+    questoes = list(
+      list(qid="Q01", txt="Qual a capacidade excedente da rede elétrica local para suportar carregadores de alta potência sem comprometer o fornecimento residencial e comercial?",
+           dir="A alocação de estações de carregamento exige coordenação entre gestores municipais, operadoras de frotas e concessionárias de energia para garantir que a rede de distribuição possua capacidade suficiente.",
+           fontes=c("Andrenacci_2016","2020_-_NASA_Technical_Management","ANAC_AAM_Panorama_2023")),
+      list(qid="Q02", txt="Existem requisitos mínimos para o uso de sistemas de armazenamento de energia (baterias locais) visando estabilizar a voltagem e evitar picos de demanda?",
+           dir="Recomenda-se a integração de sistemas de armazenamento de energia locais (BESS) que funcionam como amortecedores de carga e suportam os picos de demanda sem sobrecarregar a rede principal.",
+           fontes=c("Chiodo_2019","Andrenacci_2020","FAA_Vertiport_Electrical_Infrastructure_2023")),
+      list(qid="Q03", txt="Como o plano diretor municipal incentiva a integração de fontes renováveis nas estações de recarga para reduzir o impacto ambiental?",
+           dir="Sugere-se a integração de fontes de energia renováveis diretamente nos pontos de recarga para reduzir a dependência da rede urbana.",
+           fontes=c("Mavraj_2022","Andrenacci_2016","2020_-_NASA_Technical_Management")),
+      list(qid="Q04", txt="Quais são os protocolos de segurança e combate a incêndio específicos para as áreas de armazenamento e carregamento de baterias de alta potência?",
+           dir="A segurança operacional requer a implementação de sistemas de combate a incêndio específicos para agentes elétricos e químicos de baterias.",
+           fontes=c("ALERTAn001_2023","FAA_Vertiport_Electrical_Infrastructure_2023")),
+      list(qid="Q05", txt="De que forma será feito o monitoramento da demanda em tempo real para evitar que o carregamento das aeronaves cause instabilidade ou apagões na vizinhança?",
+           dir="O monitoramento e a gestão de riscos são essenciais dado que a aceitação de energia pela aeronave varia conforme a temperatura e o estado da bateria.",
+           fontes=c("Andrenacci_2020","Liu_2021")),
+      list(qid="Q06", txt="Existem regras ou incentivos tarifários para garantir que o carregamento das frotas ocorra prioritariamente em horários de baixo consumo da cidade?",
+           dir="Recomenda-se modelos de tarifação baseados no horário de uso para incentivar o carregamento fora dos períodos de pico da cidade.",
+           fontes=c("Kim_2016")),
+      list(qid="Q07", txt="O município possui critérios e procedimentos para aprovação de estações de recarga em áreas urbanas densas e edifícios, considerando licenciamento ambiental, segurança operacional e integração com infraestrutura terrestre?",
+           dir="A regulação e o planejamento urbano estabelecem facilidades para a expansão desta infraestrutura, como a dispensa de licenciamento ambiental para obras de distribuição de até 138 kV.",
+           fontes=c("L15190","L12651")),
+      list(qid="Q08", txt="Existe previsão para o uso das baterias das aeronaves como reserva estratégica de energia para a rede municipal em situações de emergência?",
+           dir="Sugere-se que as baterias das aeronaves possam atuar como reserva auxiliar para a rede elétrica nacional em momentos críticos.",
+           fontes=c("Mavraj_2022","Andrenacci_2016"))
+    )
+  ),
+  list(id = "infraestrutura", nome = "Infraestrutura (Vertiportos)", cor = "#5de0e6",
+    desc = "Projeto, operação e certificação de vertiportos, vertistops, áreas FATO/TLOF e planos de emergência.",
+    questoes = list(
+      list(qid="Q01", txt="Como o Plano Diretor municipal deve se adequar aos requisitos de zoneamento para proteger as trajetórias de voo contra novos obstáculos urbanos?",
+           dir="O planejamento exige a coordenação entre o controle do espaço aéreo e o planejamento urbano municipal para assegurar que novos empreendimentos imobiliários não interfiram nas trajetórias.",
+           fontes=c("ANAC_Vertiportos_2021","PCA_351-7")),
+      list(qid="Q02", txt="Quais são as exigências para que uma estrutura em edificação privada (como telhados) seja registrada como infraestrutura de transporte público?",
+           dir="As instalações são classificadas como aeródromos públicos e devem ser integradas ao sistema de transporte das cidades.",
+           fontes=c("PL743","RBAC155","ANAC_Vertiportos_2021")),
+      list(qid="Q03", txt="Qual o protocolo de integração entre os serviços de emergência municipais (Bombeiros/SAMU) e o plano de resposta a incidentes do vertiporto?",
+           dir="Toda infraestrutura operacional requer obrigatoriamente um plano de resposta a emergências estabelecendo a coordenação com recursos externos como o corpo de bombeiros e hospitais.",
+           fontes=c("RBAC155")),
+      list(qid="Q04", txt="O município compreende os requisitos regulatórios para dimensionamento de áreas de pouso (FATO/TLOF) conforme a maior aeronave prevista, incluindo zonas de segurança adjacentes e separação horizontal mínima para operações independentes?",
+           dir="O dimensionamento desses componentes estabelece-se a partir da maior dimensão da aeronave de projeto (Dimensão D), valor que considera o diâmetro total do veículo com seus rotores em movimento.",
+           fontes=c("Ahn_2022","ALERTAn001_2023")),
+      list(qid="Q05", txt="Quais os requisitos técnicos de sinalização, iluminação e auxílios visuais obrigatórios para autorizar o funcionamento da infraestrutura no período noturno?",
+           dir="Para viabilizar operações noturnas ou em baixa visibilidade, é necessária a instalação de sistemas de iluminação de perímetro e luzes de aproximação.",
+           fontes=c("RBAC155","PCA_351-7")),
+      list(qid="Q06", txt="Como será garantida a separação física e a segurança de usuários nas zonas de carregamento de energia e troca de baterias?",
+           dir="A infraestrutura deve prever áreas de MRO como hangares e zonas destinadas ao carregamento de energia com afastamentos seguros das zonas de operação.",
+           fontes=c("Yan_2024","ALERTAn001_2023")),
+      list(qid="Q07", txt="Como a infraestrutura será integrada fisicamente aos demais modais de transporte terrestre para facilitar o fluxo de passageiros no nível da rua?",
+           dir="A integração física e operacional com hubs de transporte terrestre é essencial para facilitar viagens multimodais porta-a-porta.",
+           fontes=c("Sunitiyoso_2025","L12587")),
+      list(qid="Q08", txt="Quais são os critérios para a definição de áreas de pouso alternativo (contingência) em solo municipal caso ocorram falhas de energia em voo?",
+           dir="O planejamento de rede deve prever pontos de pouso alternativos ao longo das rotas para situações de contingência relacionadas à autonomia limitada das baterias.",
+           fontes=c("PCA_351-7")),
+      list(qid="Q09", txt="Existe planejamento para a expansão modular da infraestrutura e dos portões de embarque caso a demanda por voos aumente futuramente?",
+           dir="O planejamento deve ser modular e escalonável, permitindo a expansão da infraestrutura conforme o crescimento da demanda e a evolução tecnológica dos veículos.",
+           fontes=c("Jiang_2025","Yan_2024")),
+      list(qid="Q10", txt="Quais as obrigações do operador do vertiporto quanto à manutenção permanente das superfícies de proteção e monitoramento de obstáculos no entorno?",
+           dir="O operador tem a obrigação de realizar levantamentos periódicos e informar à prefeitura sobre o surgimento de novos obstáculos.",
+           fontes=c("ICA_11-408","PCA_351-7")),
+      list(qid="Q11", txt="Como a infraestrutura digital de comunicação garantirá a separação segura entre as aeronaves e o gerenciamento de tráfego no solo e no ar?",
+           dir="O sistema deve contar com infraestrutura digital de comunicação robusta (aeronave-solo e solo-solo) para o gerenciamento do fluxo de tráfego e resolução de conflitos em tempo real.",
+           fontes=c("ANAC_Vertiportos_2021","Yan_2024"))
+    )
+  ),
+  list(id = "governanca", nome = "Governança e Regulação", cor = "#1abc9c",
+    desc = "Marcos regulatórios, competências institucionais, sandbox, planejamento urbano integrado.",
+    questoes = list(
+      list(qid="Q01", txt="Como o município delimitará as competências com as autoridades federais (ANAC/DECEA) para autorizar e fiscalizar voos e locais de pouso em áreas urbanas?",
+           dir="No cenário brasileiro, a ANAC e o DECEA atuam como autoridades competentes, requerendo atuação conjunta para viabilizar o modal.",
+           fontes=c("PCA_351-7")),
+      list(qid="Q02", txt="De que forma o Plano Diretor e a legislação de zoneamento serão atualizados para incorporar as restrições das Zonas de Proteção de Aeródromos e novos corredores aéreos?",
+           dir="A integração da atividade aérea exige que os municípios compatibilizem seu ordenamento territorial com os Planos de Zona de Proteção (PZP) e demais restrições aeronáuticas.",
+           fontes=c("ICA_11-408","diaz2025lineamientos")),
+      list(qid="Q03", txt="Quais são os critérios e protocolos municipais para a emissão da declaração de ciência e a realização de estudos de impacto de vizinhança para vertiportos?",
+           dir="Para a viabilização de aeródromos, o operador deve obter a ciência da administração municipal, formalizada por declaração que ateste o conhecimento sobre as restrições de uso do solo.",
+           fontes=c("ICA_11-3","PL743")),
+      list(qid="Q04", txt="Como a prefeitura pretende estruturar a função do gestor responsável por centralizar e coordenar as demandas do ecossistema de mobilidade aérea?",
+           dir="Recomenda-se a criação da função de Planejador de Mobilidade Aérea Urbana na administração municipal para coordenar pedidos de operadores e alinhar o serviço às metas de planejamento.",
+           fontes=c("COnops_CITYAM")),
+      list(qid="Q05", txt="Como o município planeja participar de ambientes regulatórios experimentais (sandboxes) para testar e incentivar a inovação no setor de transporte aéreo?",
+           dir="A ANAC estabelece ambientes regulatórios experimentais (sandboxes) que permitem o teste de soluções inovadoras mediante o afastamento temporário de certas normas.",
+           fontes=c("ResANAC775")),
+      list(qid="Q06", txt="Qual a estratégia para utilizar a exploração do espaço aéreo ou parcerias público-privadas como fonte de receita e financiamento para a infraestrutura urbana?",
+           dir="O gestor público deve considerar modelos sustentáveis como o uso do espaço aéreo como fonte de receita pública ou a concessão de subvenções para incentivar o desenvolvimento local.",
+           fontes=c("diaz2025lineamientos")),
+      list(qid="Q07", txt="Qual a metodologia da fiscalização municipal para identificar obstáculos físicos que desrespeitem as normas aeronáuticas e comunicar infrações ao órgão regional?",
+           dir="As autoridades municipais devem estruturar processos internos para identificar e comunicar ao órgão aeronáutico objetos ou atividades que violem as zonas de proteção.",
+           fontes=c("ICA_11-408","PCA_351-7")),
+      list(qid="Q08", txt="Como as normas de segurança pública e atendimento a emergências médicas serão integradas às restrições operacionais e de tráfego aéreo ordinárias?",
+           dir="A legislação deve prever isenções para operações de segurança pública e emergências médicas, além de definir claramente a responsabilidade civil associada a operações automatizadas.",
+           fontes=c("2020_-_UAM_Passenger-carrying_OpsCon")),
+      list(qid="Q09", txt="Quais mecanismos de transparência e participação social serão adotados para decidir sobre horários, rotas e níveis aceitáveis de ruído nas áreas residenciais?",
+           dir="A governança eficaz estabelece a participação cidadã como pilar central, exigindo transparência institucional e envolvimento da comunidade em todas as etapas de desenvolvimento.",
+           fontes=c("diaz2025lineamientos","COnops_CITYAM")),
+      list(qid="Q10", txt="Como será coordenada a cooperação entre prefeitura, autoridades ambientais e operadores para o manejo de risco de fauna no entorno dos locais de operação aérea?",
+           dir="A gestão de riscos deve incluir a cooperação com autoridades ambientais para o manejo de fauna no entorno das áreas de operação.",
+           fontes=c("L12725"))
+    )
+  ),
+  list(id = "meio_ambiente", nome = "Meio Ambiente", cor = "#27ae60",
+    desc = "Licenciamento, fauna, LCA de baterias, meteorologia, fauna aviária e APPs.",
+    questoes = list(
+      list(qid="Q01", txt="Quais são as atividades atrativas de fauna proibidas ou restritas dentro do raio de segurança de vinte quilômetros das áreas de pouso e decolagem?",
+           dir="A legislação estabelece a criação de uma Área de Segurança Aeroportuária (ASA) em um raio de 20 km, onde o uso do solo sofre restrições quanto a atividades que atraiam animais.",
+           fontes=c("L12725","ICA_11-3")),
+      list(qid="Q02", txt="Os estudos técnicos de impacto ambiental existentes (EIA/RIMA) são suficientes para atestar a viabilidade de vertiportos em regiões próximas a ecossistemas sensíveis?",
+           dir="Para infraestruturas de grande impacto, é obrigatória a elaboração de EIA/RIMA, abrangendo diagnósticos dos meios físico, biológico e socioeconômico.",
+           fontes=c("ResCONAMA001","ResCONAMA237")),
+      list(qid="Q03", txt="Existe um protocolo estabelecido para o gerenciamento do ciclo de vida das baterias, incluindo logística reversa e descarte sustentável?",
+           dir="A sustentabilidade ambiental plena do modal requer uma análise do ciclo de vida completo (LCA), que quantifica os impactos desde a extração de matérias-primas até o descarte final das baterias.",
+           fontes=c("Liang_2025")),
+      list(qid="Q04", txt="Os procedimentos existentes para emissão de licenças urbanísticas e ambientais são suficientes para regulamentar projetos de infraestrutura de transporte aéreo de nova geração?",
+           dir="O processo de licenciamento ambiental atesta a viabilidade dos empreendimentos por meio de licenças sucessivas: Prévia, de Instalação e de Operação.",
+           fontes=c("L15190","ResCONAMA237")),
+      list(qid="Q05", txt="Existem protocolos municipais para a suspensão imediata de operações aéreas urbanas em caso de eventos meteorológicos extremos ou baixa visibilidade?",
+           dir="É preconizado o monitoramento detalhado em tempo real de tempestades, formação de gelo e tesouras de vento, utilizando sensores de alta resolução integrados a sistemas de IA.",
+           fontes=c("Reiche_2021","PCA_351-7")),
+      list(qid="Q06", txt="Como o licenciamento ambiental considerará o mapeamento de áreas de nidificação e rotas de migração de aves para evitar conflitos operacionais?",
+           dir="A escolha de locais para pouso e decolagem deve integrar critérios de proteção à biodiversidade, evitando áreas de nidificação, rotas de migração de aves e reservas naturais.",
+           fontes=c("COnops_CITYAM")),
+      list(qid="Q07", txt="Qual a estratégia para suprir a lacuna regulatória sobre distâncias de separação seguras entre o modal aéreo e a fauna local?",
+           dir="Identifica-se uma lacuna regulatória quanto à padronização de distâncias de separação seguras entre aeronaves e fauna, o que demanda o desenvolvimento de diretrizes técnicas adicionais.",
+           fontes=c("Sabziyan_Varnousfaderani_2025"))
+    )
+  ),
+  list(id = "tecnologias", nome = "Tecnologias de Suporte", cor = "#16a085",
+    desc = "CNS, 5G/6G, GNSS, UTM, identificação remota, ciber-segurança e interoperabilidade.",
+    questoes = list(
+      list(qid="Q01", txt="O Plano Diretor Municipal contempla a instalação e o compartilhamento de infraestruturas de telecomunicações (antenas e torres) com tecnologia 5G/6G para cobertura do espaço aéreo?",
+           dir="A legislação estabelece que o compartilhamento da infraestrutura física de telecomunicações é obrigatório para otimizar a ocupação do solo municipal.",
+           fontes=c("L13116","Artatel_915")),
+      list(qid="Q02", txt="Os atuais requisitos municipais de redundância e fontes de energia auxiliares para redes de comunicação são suficientes para garantir a continuidade operacional da UAM em cenários de falha do sistema elétrico?",
+           dir="Para garantir a conectividade ar-terra, as redes de telefonia celular 5G e as futuras redes 6G são os pilares de suporte.",
+           fontes=c("Al_Rubaye_2023","Ansari_2021","PCA_351-7")),
+      list(qid="Q03", txt="De que forma o arcabouço regulatório municipal pretende assegurar o acesso efetivo aos dados de Identificação Remota Digital das aeronaves para fins de segurança pública?",
+           dir="Estabelece-se a obrigação do uso de Identificação Remota Digital (uma 'placa digital') para que autoridades de segurança pública possam monitorar voos dentro do perímetro municipal.",
+           fontes=c("Do_2024","FAA_ConOps_v2")),
+      list(qid="Q04", txt="O município dispõe de mapeamento georreferenciado que identifique 'canyons urbanos' e áreas de sombra de sinal GNSS para planejamento de rotas seguras de UAM?",
+           dir="No planejamento urbano, exige-se a densificação de estações rádio-base para mitigar o efeito de canyons urbanos e áreas de sombra de sinal.",
+           fontes=c("Aryendu_2025","Wanniarachchi_2023","ANAC_AAM_Panorama_2023")),
+      list(qid="Q05", txt="De que forma a regulação local assegura a proteção das superfícies de sinal eletromagnético de auxílios à navegação aérea contra interferência de novas edificações?",
+           dir="É mandatório proteger as superfícies de sinal eletromagnético de auxílios terrestres existentes contra novas construções urbanas que possam causar degradação de sinal.",
+           fontes=c("ICA_11-408","ICA_100-31","COnops_CITYAM")),
+      list(qid="Q06", txt="Quais protocolos de segurança cibernética e criptografia são exigidos dos Provedores de Serviço UAM (PSU) que pretendem operar no território municipal?",
+           dir="Identifica-se a necessidade de protocolos de criptografia e autenticação para proteger o sistema contra interferências ilícitas.",
+           fontes=c("Aryendu_2025","FAA_ConOps_v2")),
+      list(qid="Q07", txt="Como será garantida a interoperabilidade técnica entre diferentes operadoras para que sistemas distintos compartilhem o mesmo corredor aéreo de forma coordenada?",
+           dir="A gestão deste tráfego exige integração com plataformas de UTM que automatizam a aprovação de planos de voo e a coordenação de rotas.",
+           fontes=c("Al_Rubaye_2023","FAA_ConOps_v2")),
+      list(qid="Q08", txt="Existe integração de sensores meteorológicos locais ao sistema de gerenciamento de tráfego para prever impactos de microclimas urbanos na estabilidade do link de dados?",
+           dir="Recomenda-se que o monitoramento da eficiência da rede utilize simulações meteorológicas para assegurar a estabilidade da conexão digital sob condições adversas.",
+           fontes=c("Whitworth_2023","Wanniarachchi_2023","PCA_351-7")),
+      list(qid="Q09", txt="Os critérios de confiabilidade e latência mínima exigidos para a rede de dados municipal são compatíveis com os padrões de segurança para voos autônomos de passageiros?",
+           dir="Recomenda-se assegurar a estabilidade da conexão digital sob condições adversas como chuva forte ou turbulência térmica entre edifícios.",
+           fontes=c("Whitworth_2023","PCA_351-7")),
+      list(qid="Q10", txt="O município possui plano de coordenação com a autoridade aeronáutica nacional para mitigar riscos de interferências eletromagnéticas entre equipamentos críticos de navegação aérea e redes Wi-Fi urbanas?",
+           dir="Recomenda-se a proteção das superfícies de sinal eletromagnético de auxílios à navegação contra novas construções urbanas.",
+           fontes=c("ICA_11-408","ICA_100-31"))
+    )
+  ),
+  list(id = "viabilidade", nome = "Viabilidade Econômica", cor = "#2980b9",
+    desc = "Modelos de negócio, demanda, precificação, PPPs, subsídios e captura de valor territorial.",
+    questoes = list(
+      list(qid="Q01", txt="Quais metodologias e indicadores socioeconômicos (renda, densidade, PIB) serão utilizados para identificar os eixos de maior demanda no território municipal?",
+           dir="Metodologias de estimativa utilizam modelos fundamentados em indicadores como densidade populacional, concentração de postos de trabalho, PIB per capita e renda média domiciliar.",
+           fontes=c("Asmer_2024","Long_2023","Goyal_2021","COnops_CITYAM")),
+      list(qid="Q02", txt="Existe uma projeção de demanda de passageiros e cargas para os próximos dez anos que justifique os investimentos públicos e privados em infraestrutura?",
+           dir="O planejamento requer o balanceamento entre a capacidade dos locais de operação e a demanda estimada, incluindo projeções de movimentos para um horizonte de dez anos.",
+           fontes=c("PCA_351-7","ICA_11-3")),
+      list(qid="Q03", txt="De que maneira o município planeja integrar o novo modal aos sistemas de transporte terrestre existentes para reduzir perdas de tempo no último trecho do deslocamento?",
+           dir="A demonstração de benefícios e a integração de sistemas de troca de informações entre modais reforçam o valor utilitário do sistema.",
+           fontes=c("Li_2025","Tuchen_2020","L10257")),
+      list(qid="Q04", txt="Quais são as fontes de recursos e modelos de financiamento previstos (PPPs, fundos federais ou incentivos fiscais) para a construção dos vertiportos?",
+           dir="O financiamento da infraestrutura pode ser viabilizado por meio de PPPs, recursos do Fundo Aeroviário e a possível expansão do uso da CIDE sobre combustíveis.",
+           fontes=c("Ko_2026","Ehrhardt_2024","L11182","PL743")),
+      list(qid="Q05", txt="Como será realizado o monitoramento contínuo do desempenho operacional (atrasos e pontualidade) frente às projeções econômicas iniciais?",
+           dir="O monitoramento da viabilidade requer sistemas de gestão de indicadores de desempenho para acompanhamento tático de atrasos e pontualidade.",
+           fontes=c("PCA_351-7","Chae_2024","Long_2023")),
+      list(qid="Q06", txt="Qual a metodologia adotada para equilibrar a capacidade de atendimento dos locais de pouso com o crescimento estimado da frota aérea?",
+           dir="A eficiência do terminal é monitorada pela taxa de utilização das áreas de pouso e portões, dependendo diretamente do tempo de permanência da aeronave no solo.",
+           fontes=c("Ahn_2022","Rimjha_2021")),
+      list(qid="Q07", txt="Como o planejamento urbano municipal pretende capturar a valorização imobiliária gerada pela instalação de infraestruturas de mobilidade aérea?",
+           dir="O planejamento territorial deve avaliar estratégias de captura de valor, como a valorização imobiliária no entorno das estações.",
+           fontes=c("COnops_CITYAM","Chae_2024","Ko_2026")),
+      list(qid="Q08", txt="Quais são os critérios para a concessão de subsídios focados em benefícios ambientais ou na redução do congestionamento terrestre em rotas específicas?",
+           dir="Aplicação de subsídios governamentais para incentivar a transição para este modal em rotas estratégicas visando benefícios ambientais.",
+           fontes=c("COnops_CITYAM","Chae_2024","Ko_2026")),
+      list(qid="Q09", txt="De que forma a liberdade tarifária dos operadores será harmonizada com o interesse público e a acessibilidade do serviço para diferentes segmentos da população?",
+           dir="A regulação econômica nacional estabelece o regime de liberdade tarifária e de rotas para garantir o desenvolvimento sustentável do setor.",
+           fontes=c("PL743"))
+    )
+  )
+)
+
+# Mapeamento de cores PESTEL heatmap (tema x fator)
+# [N=normativo, C=científico, I=internacional]
+PESTEL_COV <- list(
+  ruido = list(P=c(0,0,0), E=c(0,0,0), S=c(1,1,1), T=c(1,1,1), L=c(1,0,0), A=c(1,1,1)),
+  integracao = list(P=c(1,1,1), E=c(0,0,0), S=c(1,1,1), T=c(0,1,0), L=c(1,0,0), A=c(0,0,0)),
+  uso_solo = list(P=c(1,0,1), E=c(0,0,0), S=c(1,1,0), T=c(0,1,0), L=c(1,0,1), A=c(1,1,1)),
+  infra_energetica = list(P=c(0,0,0), E=c(1,1,1), S=c(0,0,0), T=c(1,1,1), L=c(0,0,0), A=c(1,1,1)),
+  infraestrutura = list(P=c(1,0,0), E=c(0,0,0), S=c(1,1,0), T=c(1,1,1), L=c(1,0,1), A=c(1,1,0)),
+  governanca = list(P=c(1,1,1), E=c(0,1,1), S=c(1,1,1), T=c(0,0,0), L=c(1,0,0), A=c(0,0,0)),
+  meio_ambiente = list(P=c(0,0,0), E=c(0,0,0), S=c(0,1,0), T=c(1,1,1), L=c(1,0,0), A=c(1,1,1)),
+  tecnologias = list(P=c(1,0,1), E=c(0,0,0), S=c(0,0,0), T=c(1,1,1), L=c(1,0,0), A=c(0,0,0)),
+  viabilidade = list(P=c(1,0,1), E=c(1,1,1), S=c(1,1,1), T=c(0,0,0), L=c(1,0,0), A=c(0,0,0))
+)
+
+normalize_ord <- function(x) tolower(iconv(x, to = "ASCII//TRANSLIT"))
+TEMAS <- TEMAS[order(vapply(TEMAS, function(t) normalize_ord(t$nome), character(1)))]
+
+FATORES <- list(
+  list(key="P", label="Político",    cor="#004aad"),
+  list(key="E", label="Econômico",   cor="#0066cc"),
+  list(key="S", label="Social",      cor="#5de0e6"),
+  list(key="T", label="Tecnológico", cor="#27ae60"),
+  list(key="L", label="Legal",       cor="#1abc9c"),
+  list(key="A", label="Ambiental",   cor="#16a085")
+)
+
+total_questoes <- sum(sapply(TEMAS, function(t) length(t$questoes)))
+
+# ============================================================================
+# REACTIVE STATE
+# ============================================================================
+current_page  <- reactiveVal("home")
+tema_ativo    <- reactiveVal(NULL)
+questao_ativa <- reactiveVal(NULL)
+filtro_tema   <- reactiveVal("TODOS")
+busca_q       <- reactiveVal("")
+hm_fonte      <- reactiveVal(0)  # 0=Normativo, 1=Científico, 2=Internacional
+```
+
+```{r, echo=FALSE}
+# ============================================================================
+# NAVBAR
+# ============================================================================
+tags$div(
+  class = "navbar",
+
+  # Logo ITA
+  tags$a(href="https://www.ita.br/", target="_blank", class="navbar-logo",
+    tags$img(src="imagens/ita.png", alt="ITA")),
+
+  tags$span("Sigma City — Produto II",
+            style="color:white;font-size:18px;font-weight:bold;"),
+
+  # Botão Portal (centro)
+  tags$a(href="https://sigmacity.shinyapps.io/Portal/", class="btn-portal",
+         "Portal SigmaCity"),
+
+  tags$div(
+    class="navbar-controls",
+
+    tags$div(class="nav-pill-btn",
+      onclick="Shiny.setInputValue('nav_home',Math.random(),{priority:'event'})",
+      "Início"),
+    tags$div(class="nav-pill-btn",
+      onclick="Shiny.setInputValue('nav_temas',Math.random(),{priority:'event'})",
+      "Temas"),
+    tags$div(class="nav-pill-btn",
+      onclick="Shiny.setInputValue('nav_questoes',Math.random(),{priority:'event'})",
+      "Questões"),
+    tags$div(class="nav-pill-btn",
+      onclick="Shiny.setInputValue('nav_equipe',Math.random(),{priority:'event'})",
+      "Equipe"),
+
+    tags$a(href="https://sigma.ita.br", target="_blank", class="sigma-btn",
+      tags$img(src="imagens/sigma.png", alt="Sigma"),
+      tags$span("Site Sigma"))
+  )
+)
+```
+
+```{r, echo=FALSE}
+# ============================================================================
+# OBSERVERS
+# ============================================================================
+observeEvent(input$nav_home,    { current_page("home");     tema_ativo(NULL); questao_ativa(NULL) })
+observeEvent(input$nav_temas,   { current_page("temas");    tema_ativo(NULL); questao_ativa(NULL) })
+observeEvent(input$nav_questoes,{ current_page("questoes"); tema_ativo(NULL); questao_ativa(NULL) })
+observeEvent(input$nav_equipe,  { current_page("equipe");   tema_ativo(NULL); questao_ativa(NULL) })
+
+observeEvent(input$tema_clicado, {
+  tema_ativo(input$tema_clicado)
+  questao_ativa(NULL)
+  current_page("tema_detalhe")
+})
+
+observeEvent(input$questao_clicada, {
+  parts <- strsplit(input$questao_clicada, "\\|")[[1]]
+  tema_ativo(parts[1])
+  questao_ativa(parts[2])
+  current_page("questao_detalhe")
+})
+
+observeEvent(input$back_to_temas,    { current_page("temas");       questao_ativa(NULL) })
+observeEvent(input$back_to_tema,     { current_page("tema_detalhe"); questao_ativa(NULL) })
+observeEvent(input$back_to_questoes, { current_page("questoes");     questao_ativa(NULL) })
+
+observeEvent(input$filtro_chip, { filtro_tema(input$filtro_chip) })
+observeEvent(input$busca_input_enter, { busca_q(input$busca_q_input) })
+observeEvent(input$hm_btn, { hm_fonte(as.integer(input$hm_btn)) })
+
+observeEvent(input$q_nav_btn, {
+  parts <- strsplit(input$q_nav_btn, "\\|")[[1]]
+  tema_ativo(parts[1])
+  questao_ativa(parts[2])
+  current_page("questao_detalhe")
+})
+```
+
+```{r, echo=FALSE}
+# ============================================================================
+# RENDER PRINCIPAL
+# ============================================================================
+renderUI({
+  pg <- current_page()
+
+  # ── HELPERS ──────────────────────────────────────────────────────────────
+  get_tema <- function(tid) TEMAS[[which(sapply(TEMAS, function(t) t$id == tid))]]
+  get_qs   <- function(tid) get_tema(tid)$questoes
+  get_q    <- function(tid, qid) {
+    qs <- get_qs(tid)
+    qs[[which(sapply(qs, function(q) q$qid == qid))]]
+  }
+
+  # ═══════════════════════════════════════════════════════════════════════
+  # HOME
+  # ═══════════════════════════════════════════════════════════════════════
+  if (pg == "home") {
+    tagList(
+      tags$div(class="main-c",
+
+        # Hero Banner
+        tags$div(class="hero",
+          tags$div(class="hero-badge", "SIGMA CITY · PRODUCT II"),
+          tags$h1("Diretrizes para a Mobilidade Aérea Urbana"),
+          tags$p("Análise integrada dos desafios técnicos, regulatórios, ambientais e socioeconômicos para a implementação da UAM no Brasil — diretrizes normativas para gestores municipais."),
+          tags$div(class="hero-meta",
+            tags$div(class="hero-stat",
+              tags$span(class="num", "9"),  tags$span(class="lbl", "Temas")),
+            tags$div(class="hero-stat",
+              tags$span(class="num", total_questoes), tags$span(class="lbl", "Questões"))
+          )
+        ),
+
+        # Cards resumo PESTEL
+        tags$h3(class="section-title", "Cobertura PESTEL por Tema"),
+        tags$p(class="section-sub", "Clique em um tema para explorar as questões e diretrizes"),
+        tags$div(class="summ-grid",
+          lapply(TEMAS, function(t) {
+            n_qs <- length(t$questoes)
+            tags$div(
+              class="summ-card",
+              style=paste0("--sc:", t$cor, "; cursor:pointer;"),
+              onclick=sprintf("Shiny.setInputValue('tema_clicado','%s',{priority:'event'})", t$id),
+              tags$div(class="summ-val", n_qs),
+              tags$div(class="summ-lbl", t$nome),
+              tags$div(style="margin-top:8px;font-size:11px;color:#7f8c8d;",
+                       paste0(n_qs, " questões"))
+            )
+          })
+        ),
+
+        # Mapa de calor
+        tags$div(class="heatmap-wrapper",
+          tags$h3(class="section-title", "Tema × Fator PESTEL"),
+          tags$p(class="section-sub", "Selecione a dimensão de análise"),
+
+          tags$div(class="filter-bar",
+            lapply(seq_along(c("Normativo", "Científico", "Internacional")), function(i) {
+              FONTES <- c("Normativo", "Científico", "Internacional")
+              SRC_COLS <- c("#004aad", "#5de0e6", "#27ae60")
+              fi <- hm_fonte()
+              tags$button(
+                class=if(fi == i-1) "filter-chip on" else "filter-chip",
+                style=if(fi == i-1) paste0("background:",SRC_COLS[i],";border-color:",SRC_COLS[i],";") else "",
+                onclick=sprintf("Shiny.setInputValue('hm_btn','%d',{priority:'event'})", i-1),
+                FONTES[i])
+            })
+          ),
+
+          tags$table(class="hm-table",
+            tags$thead(
+              tags$tr(
+                tags$th(style="text-align:left;font-size:11px;color:#7f8c8d;padding:6px 12px;", "Área Temática"),
+                lapply(FATORES, function(f)
+                  tags$th(style=paste0("text-align:center;color:",f$cor,";font-size:12px;"), f$label)),
+                tags$th(style="text-align:right;font-size:11px;color:#7f8c8d;padding:6px 8px;", "Total")
+              )
+            ),
+            tags$tbody(
+              lapply(TEMAS, function(t) {
+                fi <- hm_fonte()
+                row_vals <- sapply(FATORES, function(f) PESTEL_COV[[t$id]][[f$key]][fi+1])
+                row_total <- sum(row_vals)
+                row_col <- if(row_total >= 5) "#004aad" else if(row_total >= 3) "#27ae60" else if(row_total >= 1) "#5de0e6" else "#95a5a6"
+                tags$tr(
+                  tags$td(class="hm-label", t$nome),
+                  lapply(seq_along(FATORES), function(fi2) {
+                    val <- row_vals[fi2]
+                    f   <- FATORES[[fi2]]
+                    bg  <- if(val == 1) f$cor else "#f0f4f8"
+                    txt <- if(val == 1) "white" else "#c0c0c0"
+                    tags$td(
+                      class="hm-cell",
+                      style=paste0("background:", bg, ";color:", txt, ";font-size:14px;font-weight:800;width:38px;"),
+                      onclick=sprintf("Shiny.setInputValue('questao_clicada','%s|Q01',{priority:'event'})", t$id),
+                      if(val==1) "✓" else "·"
+                    )
+                  }),
+                  tags$td(style="text-align:right;padding:4px 10px;",
+                    tags$span(style=paste0("font-weight:800;color:",row_col,";font-size:13px;"), row_total)
+                  )
+                )
+              })
+            ),
+            tags$tfoot(
+              tags$tr(
+                tags$td(style="padding:6px 12px;font-size:11px;color:#7f8c8d;font-weight:700;"),
+                lapply(FATORES, function(f) {
+                  fi <- hm_fonte()
+                  cnt <- sum(sapply(PESTEL_COV, function(t) t[[f$key]][fi+1]))
+                  tags$td(style="text-align:center;padding:4px 2px;",
+                    tags$span(style=paste0("font-weight:800;color:",f$cor,";font-size:13px;"), cnt))
+                }),
+                tags$td()
+              )
+            )
+          )
+        ),
+
+        # Contexto do Produto
+        tags$div(
+          style="background:white;border-radius:16px;padding:30px;margin-bottom:32px;box-shadow:0 4px 20px rgba(0,0,0,0.07);border:1px solid #e8edf5;",
+          h3("Questão Norteadora", style="color:#004aad;margin-top:0;"),
+          tags$blockquote(
+            style="border-left:5px solid #5de0e6;padding:14px 20px;background:#f0f9ff;border-radius:0 10px 10px 0;margin:0 0 24px;",
+            tags$p(style="font-size:16px;font-style:italic;margin:0;color:#2c3e50;font-weight:600;",
+              "Quais são as diretrizes para que gestores municipais possam planejar e regular a Mobilidade Aérea Urbana (UAM) com aeronaves eVTOL no território brasileiro?")
+          ),
+          h4("Objetivo Geral", style="color:#004aad;"),
+          tags$p(style="line-height:1.75;",
+            "Consolidar diretrizes normativas, científicas e internacionais capazes de orientar administrações municipais na preparação do ambiente regulatório, territorial, tecnológico e ambiental necessário para a implementação segura e equitativa da Mobilidade Aérea Urbana."),
+          h4("Sobre o Dashboard", style="color:#004aad;"),
+          tags$ul(
+            style="line-height:2;",
+            tags$li(HTML("<strong>Temas</strong> — conheça os 9 eixos temáticos do Produto II")),
+            tags$li(HTML("<strong>Questões</strong> — explore as questões técnicas e clique para ver a diretriz que a responde"))
+          )
+        ),
+
+        # Linha do tempo de temas
+        tags$h3(class="section-title", "Jornada Temática"),
+        tags$p(class="section-sub", "Da regulação à viabilidade — os 9 eixos do Produto II"),
+        tags$div(class="timeline",
+          lapply(TEMAS, function(t) {
+            tags$div(class="tl-item",
+              tags$div(class="tl-dot", style=paste0("--td:", t$cor, ";")),
+              tags$div(class="tl-content",
+                tags$div(class="tl-tit", t$nome),
+                tags$p(class="tl-txt", t$desc)
+              )
+            )
+          })
+        ),
+
+        tags$div(class="page-footer",
+          tags$p(tags$a("Instituto Tecnológico de Aeronáutica (ITA)", href="http://www.ita.br/", target="_blank"),
+            " | ", tags$a("Projeto Sigma City", href="https://sigma.ita.br", target="_blank"),
+            " | TED n. 1525720240005-003882/2024")
+        )
+      )
+    )
+
+  # ═══════════════════════════════════════════════════════════════════════
+  # TEMAS
+  # ═══════════════════════════════════════════════════════════════════════
+  } else if (pg == "temas") {
+    tagList(
+      tags$div(class="main-c",
+        tags$h2(class="section-title", "Áreas Temáticas"),
+        tags$p(class="section-sub", "Selecione um tema para explorar suas questões e diretrizes"),
+        tags$div(class="temas-grid",
+          lapply(TEMAS, function(t) {
+            tags$div(
+              class="tema-card",
+              style=paste0("--tc:", t$cor, ";"),
+              onclick=sprintf("Shiny.setInputValue('tema_clicado','%s',{priority:'event'})", t$id),
+              tags$div(class="tema-name", t$nome),
+              tags$div(class="tema-desc", t$desc),
+              tags$span(class="tema-q-count", paste0(length(t$questoes), " questões"))
+            )
+          })
+        )
+      )
+    )
+
+  # ═══════════════════════════════════════════════════════════════════════
+  # TEMA DETALHE — lista de questões do tema
+  # ═══════════════════════════════════════════════════════════════════════
+  } else if (pg == "tema_detalhe" && !is.null(tema_ativo())) {
+    t <- get_tema(tema_ativo())
+    tagList(
+      tags$div(class="main-c",
+        tags$button(class="back-btn",
+          onclick="Shiny.setInputValue('back_to_temas',Math.random(),{priority:'event'})",
+          HTML("← Voltar para Temas")),
+
+        tags$div(style=paste0("background:linear-gradient(135deg,",t$cor,",#5de0e6);border-radius:16px;padding:30px;color:white;margin-bottom:28px;"),
+          tags$h2(style="margin:0 0 8px;font-size:24px;", t$nome),
+          tags$p(style="margin:0;opacity:0.9;font-size:14px;", t$desc)
+        ),
+
+        tags$h3(class="section-title", paste0(length(t$questoes), " Questões — clique para ver a diretriz")),
+        tags$div(class="q-grid",
+          lapply(t$questoes, function(q) {
+            tags$div(
+              class="q-card",
+              style=paste0("--qc:", t$cor, ";"),
+              onclick=sprintf("Shiny.setInputValue('questao_clicada','%s|%s',{priority:'event'})", t$id, q$qid),
+              tags$div(class="q-badge", q$qid),
+              tags$div(class="q-text", q$txt),
+              tags$div(class="q-arrow", HTML("Ver diretriz &nbsp;→"))
+            )
+          })
+        )
+      )
+    )
+
+  # ═══════════════════════════════════════════════════════════════════════
+  # QUESTÃO DETALHE (questão + diretriz + nav entre questões)
+  # ═══════════════════════════════════════════════════════════════════════
+  } else if (pg == "questao_detalhe" && !is.null(tema_ativo()) && !is.null(questao_ativa())) {
+    t   <- get_tema(tema_ativo())
+    q   <- get_q(tema_ativo(), questao_ativa())
+    qs  <- t$questoes
+    cur_idx <- which(sapply(qs, function(x) x$qid == questao_ativa()))
+
+    tagList(
+      tags$div(class="main-c",
+        tags$div(style="display:flex;gap:10px;margin-bottom:6px;",
+          tags$button(class="back-btn",
+            onclick="Shiny.setInputValue('back_to_tema',Math.random(),{priority:'event'})",
+            HTML(paste0("← ", t$nome))),
+          tags$button(class="back-btn",
+            onclick="Shiny.setInputValue('back_to_questoes',Math.random(),{priority:'event'})",
+            HTML("← Painel de Questões"))
+        ),
+
+        tags$div(class="detail-panel", style=paste0("--dc:", t$cor, ";"),
+
+          tags$div(class="detail-tema-badge",
+            style=paste0("background:linear-gradient(90deg,", t$cor, ",#5de0e6);"),
+            t$nome),
+
+          # Box da Questão
+          tags$div(class="detail-q-box",
+            tags$div(class="detail-q-label", paste0("Questão Técnica — ", q$qid)),
+            tags$p(class="detail-q-text", q$txt)
+          ),
+
+          # Box da Diretriz
+          tags$div(class="detail-dir-box",
+            tags$div(class="detail-dir-label", "Diretriz Normativa"),
+            tags$p(class="detail-dir-text", q$dir),
+            tags$div(class="dir-sources",
+              lapply(q$fontes, function(f) {
+                link <- unname(BIB_URLS[f])
+                if (!is.na(link) && nzchar(link)) {
+                  tags$a(class="dir-src-chip", href=link, target="_blank", rel="noopener noreferrer", f)
+                } else {
+                  tags$span(class="dir-src-chip", f)
+                }
+              })
+            )
+          ),
+
+          # Navegação entre questões
+          tags$div(
+            style="margin-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;",
+            if (cur_idx > 1) {
+              prev_q <- qs[[cur_idx - 1]]
+              tags$button(class="q-nav-btn",
+                onclick=sprintf("Shiny.setInputValue('questao_clicada','%s|%s',{priority:'event'})", t$id, prev_q$qid),
+                HTML(paste0("← ", prev_q$qid)))
+            } else tags$div(),
+            tags$span(style="font-size:12px;color:#7f8c8d;", paste0(cur_idx, " / ", length(qs))),
+            if (cur_idx < length(qs)) {
+              next_q <- qs[[cur_idx + 1]]
+              tags$button(class="q-nav-btn",
+                onclick=sprintf("Shiny.setInputValue('questao_clicada','%s|%s',{priority:'event'})", t$id, next_q$qid),
+                HTML(paste0(next_q$qid, " →")))
+            } else tags$div()
+          ),
+
+          # Índice de todas as questões do tema
+          tags$div(
+            style="margin-top:20px;padding-top:18px;border-top:1px solid #e8edf5;",
+            tags$p(style="font-size:11px;font-weight:800;color:#7f8c8d;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;",
+                   paste0("Questões de ", t$nome)),
+            tags$div(style="display:flex;flex-wrap:wrap;gap:6px;",
+              lapply(qs, function(qi) {
+                is_active <- qi$qid == questao_ativa()
+                tags$button(
+                  class=if(is_active) "q-nav-btn ativa" else "q-nav-btn",
+                  onclick=sprintf("Shiny.setInputValue('questao_clicada','%s|%s',{priority:'event'})", t$id, qi$qid),
+                  qi$qid
+                )
+              })
+            )
+          )
+        )
+      )
+    )
+
+  # ═══════════════════════════════════════════════════════════════════════
+  # PAINEL DE QUESTÕES — grid global com filtro e busca
+  # ═══════════════════════════════════════════════════════════════════════
+  } else if (pg == "questoes") {
+    filtro_atual <- filtro_tema()
+    busca_atual  <- busca_q()
+
+    # montar lista filtrada
+    pares <- unlist(lapply(TEMAS, function(t) {
+      lapply(t$questoes, function(q) list(tid=t$id, tnom=t$nome, tcor=t$cor, qid=q$qid, qtxt=q$txt))
+    }), recursive=FALSE)
+
+    if (filtro_atual != "TODOS") pares <- Filter(function(x) x$tid == filtro_atual, pares)
+    if (nchar(busca_atual) > 2)
+      pares <- Filter(function(x) grepl(tolower(busca_atual), tolower(x$qtxt)), pares)
+
+    tagList(
+      tags$div(class="main-c",
+        tags$div(class="questions-panel",
+          tags$h2(class="section-title", "Painel de Questões"),
+          tags$p(class="subline", "Clique em qualquer questão para ver a diretriz que a responde"),
+
+          # Busca
+          tags$div(class="search-bar",
+            textInput("busca_q_input", label=NULL,
+                      placeholder="Buscar questão...",
+                      value=busca_atual),
+            tags$button(
+              onclick="Shiny.setInputValue('busca_input_enter',Math.random(),{priority:'event'})",
+              "Buscar")
+          ),
+          tags$script(HTML("
+            $(document).ready(function(){
+              $('#busca_q_input').on('keypress',function(e){
+                if(e.which===13){ e.preventDefault();
+                Shiny.setInputValue('busca_input_enter',Math.random(),{priority:'event'}); }
+              });
+            });
+          ")),
+
+          # Filtros por tema
+          tags$div(class="filter-bar",
+            tags$button(
+              class=if(filtro_tema()=="TODOS") "filter-chip on" else "filter-chip",
+              onclick="Shiny.setInputValue('filtro_chip','TODOS',{priority:'event'})",
+              "Todos"),
+            lapply(TEMAS, function(t) {
+              tags$button(
+                class=if(filtro_tema()==t$id) "filter-chip on" else "filter-chip",
+                style=if(filtro_tema()==t$id) paste0("background:",t$cor,";border-color:",t$cor,";") else "",
+                onclick=sprintf("Shiny.setInputValue('filtro_chip','%s',{priority:'event'})", t$id),
+                t$nome
+              )
+            })
+          ),
+
+          tags$p(style="font-size:13px;color:#7f8c8d;margin-bottom:16px;",
+                 paste0(length(pares), " questão(ões) encontrada(s)")),
+
+          tags$div(class="q-grid",
+            lapply(pares, function(x) {
+              tags$div(
+                class="q-card",
+                style=paste0("--qc:", x$tcor, ";"),
+                onclick=sprintf("Shiny.setInputValue('questao_clicada','%s|%s',{priority:'event'})", x$tid, x$qid),
+                tags$div(class="q-badge", style=paste0("background:", x$tcor, ";"),
+                         x$qid),
+                tags$div(class="q-text", x$qtxt),
+                tags$div(class="q-arrow", HTML("Ver diretriz &nbsp;→"))
+              )
+            })
+          )
+        )
+      )
+    )
+
+  # ═══════════════════════════════════════════════════════════════════════
+  # PESTEL
+  # ═══════════════════════════════════════════════════════════════════════
+  } else if (pg == "pestel") {
+
+    FONTES <- c("Normativo", "Científico", "Internacional")
+    SRC_COLS <- c("#004aad", "#5de0e6", "#27ae60")
+    fi <- hm_fonte()
+
+    tagList(
+      tags$div(class="main-c",
+
+        # Mapa de calor
+        tags$div(class="heatmap-wrapper",
+          tags$h3(class="section-title", "Tema × Fator PESTEL"),
+          tags$p(class="section-sub", "Selecione a dimensão de análise"),
+
+          tags$div(class="filter-bar",
+            lapply(seq_along(FONTES), function(i) {
+              tags$button(
+                class=if(fi == i-1) "filter-chip on" else "filter-chip",
+                style=if(fi == i-1) paste0("background:",SRC_COLS[i],";border-color:",SRC_COLS[i],";") else "",
+                onclick=sprintf("Shiny.setInputValue('hm_btn','%d',{priority:'event'})", i-1),
+                FONTES[i])
+            })
+          ),
+
+          tags$table(class="hm-table",
+            tags$thead(
+              tags$tr(
+                tags$th(style="text-align:left;font-size:11px;color:#7f8c8d;padding:6px 12px;", "Área Temática"),
+                lapply(FATORES, function(f)
+                  tags$th(style=paste0("text-align:center;color:",f$cor,";font-size:12px;"), f$label)),
+                tags$th(style="text-align:right;font-size:11px;color:#7f8c8d;padding:6px 8px;", "Total")
+              )
+            ),
+            tags$tbody(
+              lapply(TEMAS, function(t) {
+                row_vals <- sapply(FATORES, function(f) PESTEL_COV[[t$id]][[f$key]][fi+1])
+                row_total <- sum(row_vals)
+                row_col <- if(row_total >= 5) "#004aad" else if(row_total >= 3) "#27ae60" else if(row_total >= 1) "#5de0e6" else "#95a5a6"
+                tags$tr(
+                  tags$td(class="hm-label", t$nome),
+                  lapply(seq_along(FATORES), function(fi2) {
+                    val <- row_vals[fi2]
+                    f   <- FATORES[[fi2]]
+                    bg  <- if(val == 1) f$cor else "#f0f4f8"
+                    txt <- if(val == 1) "white" else "#c0c0c0"
+                    tags$td(
+                      class="hm-cell",
+                      style=paste0("background:", bg, ";color:", txt, ";font-size:14px;font-weight:800;width:38px;"),
+                      onclick=sprintf("Shiny.setInputValue('questao_clicada','%s|Q01',{priority:'event'})", t$id),
+                      if(val==1) "✓" else "·"
+                    )
+                  }),
+                  tags$td(style="text-align:right;padding:4px 10px;",
+                    tags$span(style=paste0("font-weight:800;color:",row_col,";font-size:13px;"), row_total)
+                  )
+                )
+              })
+            ),
+            tags$tfoot(
+              tags$tr(
+                tags$td(style="padding:6px 12px;font-size:11px;color:#7f8c8d;font-weight:700;"),
+                lapply(FATORES, function(f) {
+                  cnt <- sum(sapply(PESTEL_COV, function(t) t[[f$key]][fi+1]))
+                  tags$td(style="text-align:center;padding:4px 2px;",
+                    tags$span(style=paste0("font-weight:800;color:",f$cor,";font-size:13px;"), cnt))
+                }),
+                tags$td()
+              )
+            )
+          )
+        )
+      )
+    )
+
+  # ═══════════════════════════════════════════════════════════════════════
+  # EQUIPE
+  # ═══════════════════════════════════════════════════════════════════════
+  } else if (pg == "equipe") {
+    equipe <- list(
+      list(nome="Prof. Dr. Cláudio Jorge Pinto Alves",
+           foto="imagens/claudio_jorge.png",
+           linkedin="https://www.linkedin.com/in/claudio-jorge-pinto-alves-78149010/"),
+      list(nome="Prof. Dr. Marcelo Xavier Guterres",
+           foto="imagens/marcelo_guterres.png",
+           linkedin="https://www.linkedin.com/in/profguterres/"),
+      list(nome="Prof. Dr. Flávio Mendes Neto",
+           foto="imagens/flavio_mendes.png",
+           linkedin="https://www.linkedin.com/in/ffllaavviioo/"),
+      list(nome="Profa. Dra. Mayara Condé Rocha Murça",
+           foto="imagens/mayara_conde.png",
+           linkedin="https://www.linkedin.com/in/mayara-condé-rocha-murça-a4a8482ba/"),
+      list(nome="Prof. Dr. Daniel Alberto Pamplona",
+           foto="imagens/daniel_pamplona.png",
+           linkedin="https://www.linkedin.com/in/daniel-pamplona-024389140/"),
+      list(nome="MSc. Marcelo Saraiva Peres",
+           foto="imagens/marcelo_saraiva.png",
+           linkedin="https://www.linkedin.com/in/marcelo-saraiva-peres-563a8b104/"),
+      list(nome="Gabriel Luiz Goulart Rufino",
+           foto="imagens/gabriel_goulart.png",
+           linkedin="https://www.linkedin.com/in/gabriel-luiz-11294919b/"),
+      list(nome="Rodrigo Mollo Furlan",
+           foto="imagens/rodrigo_mollo.png",
+           linkedin="https://www.linkedin.com/in/rodrigo-furlan-67b264209/")
+    )
+
+    tagList(
+      tags$div(class="main-c",
+        tags$div(style="text-align:center;margin-bottom:32px;",
+          h2("Equipe Sigma City", style="color:#004aad;font-weight:800;margin-bottom:8px;"),
+          p("Especialistas responsáveis pelo desenvolvimento do Produto II",
+            style="color:#7f8c8d;font-size:15px;")
+        ),
+        tags$div(class="equipe-grid",
+          lapply(equipe, function(m) {
+            tags$div(class="membro-card",
+              tags$a(href=m$linkedin, target="_blank", class="membro-foto",
+                style="display:block;position:relative;",
+                tags$img(src=m$foto, alt=m$nome,
+                  onerror="this.style.display='none';this.parentElement.style.background='#e0e0e0';")),
+              tags$div(class="membro-nome", m$nome),
+              tags$a(href=m$linkedin, target="_blank", class="linkedin-icon",
+                title=paste0("LinkedIn — ", m$nome), HTML("in"))
+            )
+          })
+        ),
+        tags$div(class="page-footer",
+          tags$p(tags$a("Instituto Tecnológico de Aeronáutica (ITA)", href="http://www.ita.br/", target="_blank"),
+            " | ", tags$a("Projeto Sigma City", href="https://sigma.ita.br", target="_blank"))
+        )
+      )
+    )
+
+  } else {
+    tags$div(class="main-c", h3("Página não encontrada"))
+  }
+})
+```

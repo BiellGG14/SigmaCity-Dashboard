@@ -1,0 +1,1974 @@
+---
+title: "Legislação UAM - Dashboard Interativo"
+date: "`r Sys.Date()`"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: scroll
+    theme: cosmo
+    favicon: imagens/sigma.png
+runtime: shiny
+resource_files:
+- json/ALERTAn001_2023.json
+- json/Artatel_915.json
+- json/CEF_RBAC_161.json
+- "json/ICA_11-3.json"
+- "json/ICA_11-408.json"
+- "json/ICA_53-8.json"
+- "json/ICA_63-19.json"
+- "json/ICA_100-4.json"
+- "json/ICA_100-12.json"
+- "json/ICA_100-31.json"
+- "json/ICA_100-36.json"
+- json/L6766.json
+- json/L6902.json
+- json/L6938.json
+- json/L7565.json
+- json/L7661.json
+- json/L9472.json
+- json/L10098.json
+- json/L10257.json
+- json/L10636.json
+- json/L11182.json
+- json/L12587.json
+- json/L12651.json
+- json/L12725.json
+- json/L13116.json
+- json/L13146.json
+- json/L15190.json
+- "json/PCA_351-7.json"
+- json/PL743.json
+- json/RBAC135.json
+- json/RBAC155.json
+- json/RBAC161EMD04.json
+- json/ResANAC775.json
+- json/ResCONAMA001.json
+- json/ResCONAMA237.json
+- json/ANEEL1000.json
+- json/CONAMA_RES_CONS_1990_002.json
+- json/D6780.json
+- json/D99274.json
+- "json/ICA 100-40_06.06.23.json"
+- json/L12187.json
+- json/L13465.json
+- json/L8078compilado.json
+- json/L9074CONSOL.json
+- json/L9427consol.json
+- json/L9503Compilado.json
+- json/L9605.json
+- json/RBAC139.json
+- "json/RESOLUCAO No 653, 20_12_2021 - Agencia Nacional de Aviacao Civil ANAC.json"
+- "json/RESOLUCAO No 736, 09_02_2024 - Agencia Nacional de Aviacao Civil ANAC.json"
+- json/IS161.json
+- "json/MCA 100-20.json"
+- "json/RBAC 91 EMD 05.json"
+- "json/RESOLUCAO NORMATIVA ANEEL N 1.059.json"
+- imagens/sigma.png
+- imagens/ita.png
+- "imagens/nuvem de palavras/"
+---
+```{css}
+/* ============================================
+   ESTILOS DA PÁGINA EQUIPE - VERSÃO CORRIGIDA
+   ============================================ */
+
+/* Container da equipe */
+.equipe-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Grid de membros - Layout flexível centralizado */
+.equipe-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 50px;
+  margin-top: 40px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0;
+}
+
+/* Card de cada membro */
+.membro-card {
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 160px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.membro-card:hover {
+  transform: translateY(-8px);
+}
+
+/* ============================================
+   FOTO CIRCULAR - CORREÇÕES CRÍTICAS
+   ============================================ */
+
+.membro-foto {
+  width: 140px !important;
+  height: 140px !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  margin: 0 auto 15px auto;
+  border: 3px solid #5de0e6;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  display: block !important;
+  position: relative;
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+}
+
+.membro-foto:hover {
+  border-color: #004aad;
+  box-shadow: 0 8px 25px rgba(0, 74, 173, 0.3);
+  transform: scale(1.05);
+}
+
+/* IMAGEM - CORREÇÃO PRINCIPAL */
+.membro-foto img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  display: block !important;
+  border-radius: 50% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+.membro-foto:hover img {
+  filter: brightness(1.08);
+}
+
+/* Nome do membro */
+.membro-nome {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+  line-height: 1.4;
+  padding: 0 5px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+/* Link do LinkedIn */
+.linkedin-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  width: 36px;
+  height: 36px;
+  background-color: #0077b5;
+  border-radius: 50%;
+  color: white !important;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+}
+
+.linkedin-icon:hover {
+  background-color: #004aad;
+  transform: scale(1.15);
+  box-shadow: 0 4px 15px rgba(0, 119, 181, 0.4);
+}
+
+/* ============================================
+   RESETAR E ESCONDER ELEMENTOS PADRÃO
+   ============================================ */
+
+.navbar.navbar-inverse.navbar-fixed-top {
+  display: none !important;
+}
+
+.navbar > .container-fluid {
+  display: none !important;
+}
+
+/* ============================================
+   CABEÇALHO CUSTOMIZADO
+   ============================================ */
+
+.navbar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: linear-gradient(90deg, #004aad 0%, #5de0e6 100%) !important;
+  border: none !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  height: 70px;
+  min-height: 70px;
+}
+
+body {
+  padding-top: 80px !important;
+}
+
+.navbar-logo {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+}
+
+.navbar-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.navbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-button {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 24px;
+}
+
+.header-button:hover {
+  background: white;
+  color: #004aad;
+  transform: scale(1.1);
+}
+
+.biblioteca-button {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 12px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.biblioteca-button:hover {
+  background: white;
+  color: #004aad;
+  transform: scale(1.05);
+}
+
+/* ============================================
+   BOTÃO PORTAL SIGMACITY
+   ============================================ */
+
+.btn-portal-sigma {
+  background: white; color: #004aad;
+  border: none; border-radius: 8px;
+  padding: 10px 22px; font-weight: 700; font-size: 13px;
+  cursor: pointer; text-decoration: none !important;
+  display: inline-flex; align-items: center; gap: 6px;
+  transition: all 0.25s ease;
+  box-shadow: 0 3px 10px rgba(255,255,255,0.2);
+  position: absolute; left: 50%; transform: translateX(-50%);
+}
+.btn-portal-sigma:hover { background: #f0f8ff; transform: translateX(-50%) translateY(-2px); text-decoration: none; color: #0066cc; }
+
+.section.level1 {
+  display: none;
+}
+
+.section.level1.active {
+  display: block;
+}
+
+.tabset-custom {
+  margin-top: 20px;
+}
+
+.tabset-custom .nav-tabs {
+  border-bottom: 3px solid #004aad;
+  margin-bottom: 20px;
+}
+
+.tabset-custom .nav-tabs li a {
+  color: #7f8c8d;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 12px 30px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.tabset-custom .nav-tabs li a:hover {
+  background-color: #e8f4f8;
+  border-bottom-color: #5de0e6;
+}
+
+.tabset-custom .nav-tabs li.active a {
+  color: #004aad;
+  border-bottom-color: #004aad;
+  background-color: transparent;
+}
+
+.main-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.doc-card:hover {
+  border-color: #004aad !important;
+  box-shadow: 0 6px 20px rgba(0,74,173,0.15) !important;
+  transform: translateY(-3px) !important;
+}
+
+.biblioteca-search {
+  width: 100%;
+  max-width: 400px;
+}
+
+.biblioteca-search input {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.biblioteca-search input:focus {
+  outline: none;
+  border-color: #5de0e6;
+  box-shadow: 0 4px 12px rgba(93, 224, 230, 0.3);
+}
+
+.resultado-discreto {
+  font-size: 14px;
+  color: #7f8c8d;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+.biblioteca-header-discreto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.biblioteca-header-info {
+  flex: 1;
+  text-align: left;
+}
+
+.biblioteca-header-info h3 {
+  color: #2c3e50;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+}
+
+.biblioteca-header-info p {
+  color: #7f8c8d;
+  font-size: 14px;
+  margin: 0;
+}
+
+.biblioteca-header-search {
+  flex: 0 0 auto;
+  min-width: 400px;
+}
+
+.doc-item-home {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.doc-item-home:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15) !important;
+}
+
+/* ============================================
+   RESPONSIVIDADE GERAL
+   ============================================ */
+
+@media (max-width: 768px) {
+  .equipe-grid {
+    gap: 30px 30px;
+  }
+  
+  .membro-card {
+    width: 140px;
+  }
+  
+  .membro-foto {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  
+  .membro-nome {
+    font-size: 12px;
+    min-height: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .equipe-grid {
+    gap: 25px 20px;
+  }
+  
+  .membro-card {
+    width: 120px;
+  }
+  
+  .membro-foto {
+    width: 100px !important;
+    height: 100px !important;
+  }
+}
+/* ============================================
+   BOTÃO SIGMA - NOVO
+   ============================================ */
+
+.sigma-button {
+  background: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  text-decoration: none !important;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.sigma-button img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.sigma-button span {
+  display: none;
+  color: #004aad;
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sigma-button:hover {
+  width: 160px;
+  border-radius: 25px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 74, 173, 0.3);
+}
+
+.sigma-button:hover img {
+  width: 28px;
+  height: 28px;
+}
+
+.sigma-button:hover span {
+  display: inline;
+  opacity: 1;
+}
+```
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(shiny)
+library(DT)
+library(plotly)
+library(tidyverse)
+library(jsonlite)
+
+# ============================================================================
+# CONFIGURAÇÃO: LER JSONS
+# ============================================================================
+
+pasta_json <- "json"
+
+ler_todos_jsons <- function() {
+  arquivos_json <- list.files(pasta_json, pattern = "\\.json$", full.names = TRUE)
+
+  dados <- list()
+  nomes <- c()
+  mapeamento_arquivos <- list()
+
+  for (arquivo in arquivos_json) {
+    tryCatch({
+      json_data <- fromJSON(arquivo)
+      nome_doc <- json_data$nome
+      nome_arquivo_json <- tools::file_path_sans_ext(basename(arquivo))
+
+      dados[[nome_doc]] <- json_data
+      nomes <- c(nomes, nome_doc)
+      mapeamento_arquivos[[nome_doc]] <- nome_arquivo_json
+    }, error = function(e) {
+      message("Erro ao ler ", arquivo, ": ", e$message)
+    })
+  }
+
+  return(list(dados = dados, nomes = nomes, mapeamento = mapeamento_arquivos))
+}
+
+sistema_dados <- ler_todos_jsons()
+documentos <- sistema_dados$dados
+lista_documentos <- sistema_dados$nomes
+mapeamento_json_para_imagem <- sistema_dados$mapeamento
+
+# ============================================================================
+# LER CSVs DO FLUXO DE SELEÇÃO DE LEGISLAÇÕES
+# ============================================================================
+df_identificacao <- readr::read_csv(
+  "documentos/Comparativo_Legislacao_AAM.xlsx - IDENTIFICAÇÃO.csv",
+  show_col_types = FALSE
+) |> as.data.frame()
+
+df_elegibilidade <- readr::read_csv(
+  "documentos/Comparativo_Legislacao_AAM.xlsx - ELEGIBILIDADE.csv",
+  show_col_types = FALSE
+) |> as.data.frame()
+
+df_inclusao <- readr::read_csv(
+  "documentos/Comparativo_Legislacao_AAM.xlsx - INCLUSÃO.csv",
+  show_col_types = FALSE
+) |> as.data.frame()
+
+# Manter alias para compatibilidade com o botão da home
+df_legislacao <- df_identificacao
+
+# ============================================================================
+# CONFIGURAR ACESSO ÀS IMAGENS NO SHINY
+# ============================================================================
+
+shiny::addResourcePath('imagens', 'imagens')
+
+# ============================================================================
+# FUNÇÃO: MAPEAR DOCUMENTO PARA IMAGEM DA NUVEM
+# ============================================================================
+
+obter_imagem_nuvem <- function(nome_doc) {
+  nome_arquivo_json <- mapeamento_json_para_imagem[[nome_doc]]
+
+  if (is.null(nome_arquivo_json)) {
+    return(NULL)
+  }
+
+  caminho_imagem <- paste0("imagens/nuvem de palavras/", nome_arquivo_json, "_nuvem.png")
+
+  return(caminho_imagem)
+}
+
+if (length(lista_documentos) == 0) {
+  lista_documentos <- c("Nenhum documento encontrado")
+  documentos <- list(
+    "Nenhum documento encontrado" = list(
+      disponivel = FALSE,
+      resumo = c("Execute o script 'gerar_jsons_documentos.R' primeiro"),
+      pestel = list(
+        fatores = c("Político", "Econômico", "Social", "Tecnológico", "Ambiental"),
+        pontuacoes = c(0, 0, 0, 0, 0),
+        justificativas = rep("N/A", 5)
+      ),
+      estatisticas = list(
+        total_palavras = 0,
+        palavras_unicas = 0,
+        tamanho_medio_palavra = 0,
+        num_sentencas = 0,
+        palavras_por_sentenca = 0
+      )
+    )
+  )
+}
+
+# ============================================================================
+# REACTIVE VALUES
+# ============================================================================
+
+current_page <- reactiveVal("home")
+doc_selecionado <- reactiveVal(NULL)
+termo_busca_biblioteca <- reactiveVal(NULL)
+inicializado <- reactiveVal(FALSE)
+```
+```{r, echo=FALSE}
+# ============================================================================
+# CABEÇALHO PERSONALIZADO
+# ============================================================================
+
+tags$div(
+  class = "navbar",
+  
+  # Logo e Título (esquerda)
+  tags$div(
+    class = "navbar-brand",
+    style = "display: flex; align-items: center;",
+    
+    # Logo ITA clicável
+    tags$a(
+      href = "https://www.ita.br/",
+      target = "_blank",
+      class = "navbar-logo",
+      title = "Instituto Tecnológico de Aeronáutica",
+      tags$img(
+        src = "imagens/ita.png",
+        alt = "Logo ITA",
+        style = "display: block;"
+      )
+    ),
+    
+    # Título
+    tags$span("Sigma City - Dashboard Interativo", 
+              style = "color: white; font-size: 20px; font-weight: bold;")
+  ),
+  
+  # Botão Portal SigmaCity (centralizado)
+  tags$a(
+    href = "https://sigmacity.shinyapps.io/Portal/",
+    class = "btn-portal-sigma",
+    title = "Portal SigmaCity",
+    "Portal SigmaCity"
+  ),
+  
+  # Controles (direita)
+  tags$div(
+    class = "navbar-controls",
+    style = "margin-left: auto;",
+    
+    # Botão EQUIPE
+    tags$div(
+      class = "biblioteca-button",
+      onclick = "Shiny.setInputValue('btn_equipe', Math.random(), {priority: 'event'})",
+      title = "Equipe Sigma City",
+      "Equipe"
+    ),
+    
+    # Botão DOCUMENTOS
+    tags$div(
+      class = "biblioteca-button",
+      onclick = "Shiny.setInputValue('btn_documentos', Math.random(), {priority: 'event'})",
+      title = "Biblioteca de Documentos",
+      "Documentos"
+    ),
+    
+    # Botão HOME
+    tags$div(
+      class = "header-button",
+      onclick = "Shiny.setInputValue('btn_home', Math.random(), {priority: 'event'})",
+      title = "Home",
+      HTML("&#8962;")
+    ),
+
+    # Botão SIGMA (NOVO)
+    tags$a(
+      href = "https://sigma.ita.br",
+      target = "_blank",
+      class = "sigma-button",
+      title = "Site Sigma",
+      tags$img(
+        src = "imagens/sigma.png",
+        alt = "Sigma"
+      ),
+      tags$span("Site Sigma")
+    )
+  )
+)
+
+# ============================================================================
+# INICIALIZAÇÃO
+# ============================================================================
+
+observeEvent(session$clientData$url_search, {
+  if (!inicializado()) {
+    current_page("home")
+    doc_selecionado(NULL)
+    termo_busca_biblioteca(NULL)
+    inicializado(TRUE)
+  }
+}, once = TRUE, ignoreNULL = FALSE, priority = 9999)
+
+# ============================================================================
+# OBSERVERS
+# ============================================================================
+
+observeEvent(input$btn_home, {
+  req(inicializado())
+  current_page("home")
+  termo_busca_biblioteca(NULL)
+  doc_selecionado(NULL)
+})
+
+observeEvent(input$btn_equipe, {
+  req(inicializado())
+  current_page("equipe")
+  termo_busca_biblioteca(NULL)
+  doc_selecionado(NULL)
+})
+
+observeEvent(input$btn_documentos, {
+  req(inicializado())
+  current_page("biblioteca")
+  termo_busca_biblioteca(NULL)
+  doc_selecionado(NULL)
+  updateTextInput(session, "busca_biblioteca", value = "")
+})
+
+observeEvent(input$busca_biblioteca_valor, {
+  req(inicializado())
+  termo <- trimws(input$busca_biblioteca_valor)
+  if (termo != "") {
+    termo_busca_biblioteca(termo)
+  } else {
+    termo_busca_biblioteca(NULL)
+  }
+})
+
+observeEvent(input$doc_clicado, {
+  req(inicializado())
+  doc_selecionado(input$doc_clicado)
+  current_page("documento")
+})
+
+observeEvent(input$doc_home_clicado, {
+  req(inicializado())
+  doc_selecionado(input$doc_home_clicado)
+  current_page("documento")
+})
+
+observeEvent(input$btn_legislacao, {
+  req(inicializado())
+  current_page("legislacao")
+})
+
+observeEvent(input$btn_voltar_legislacao, {
+  req(inicializado())
+  current_page("home")
+})
+```
+```{r, echo=FALSE}
+# ============================================================================
+# CONTEÚDO PRINCIPAL
+# ============================================================================
+
+renderUI({
+  if (current_page() == "home") {
+    # ========================================================================
+    # PÁGINA HOME
+    # ========================================================================
+    
+    total_docs <- length(lista_documentos)
+    docs_disponiveis <- sum(sapply(documentos, function(d) !is.null(d) && d$disponivel))
+    
+    tagList(
+      tags$div(
+        class = "main-container",
+        style = "padding: 30px; max-width: 1200px; margin: 0 auto;",
+        
+        # Logos clicáveis no topo
+        tags$div(
+          style = "text-align: center; margin-bottom: 30px;",
+          tags$a(
+            href = "http://www.ita.br/",
+            target = "_blank",
+            tags$img(src = "imagens/ita.png", style = "height: 100px; margin: 0 30px;")
+          ),
+          tags$a(
+            href = "https://sigma.ita.br",
+            target = "_blank",
+            tags$img(src = "imagens/sigma.png", style = "height: 100px; margin: 0 30px;")
+          )
+        ),
+        
+        # Título Principal
+        h2("Produto I - SigmaCity: Estudos para Aviação de Hoje e do Amanhã", 
+           style = "color: #004aad; margin-bottom: 25px; font-weight: bold; text-align: center;"),
+        
+        # Box com conteúdo
+        tags$div(
+          style = "background-color: #f8f9fa; padding: 30px; border-radius: 8px; margin-bottom: 40px; border: 2px solid #dee2e6;",
+          
+          h4(tags$strong("Contexto do Projeto"), style = "color: #2c3e50; margin-top: 0; margin-bottom: 15px;"),
+          p("Este relatório apresenta o Produto I do projeto SigmaCity, desenvolvido no âmbito da Meta 2 | Etapa 8 do Instituto Tecnológico de Aeronáutica (ITA), com previsão de entrega para novembro de 2025. O trabalho insere-se no TED n. 1525720240005-003882/2024, firmado entre a Secretaria de Aviação Civil (SAC) e o ITA, com foco em 'Estudos para Aviação de Hoje e do Amanhã'.",
+            style = "line-height: 1.8; text-align: justify; margin-bottom: 25px;"),
+          
+          hr(style = "border-top: 1px solid #dee2e6; margin: 25px 0;"),
+          
+          h4(tags$strong("Questão Norteadora"), style = "color: #2c3e50; margin-bottom: 15px;"),
+          tags$p(
+            style = "line-height: 1.8; text-align: justify; font-size: 16px; font-style: italic; margin-bottom: 25px;",
+            "Como identificar as legislações vigentes de planejamento urbano que impactam as operações UAM envolvendo eVTOL?"
+          ),
+          
+          hr(style = "border-top: 1px solid #dee2e6; margin: 25px 0;"),
+          
+          h4(tags$strong("Objetivo Geral"), style = "color: #2c3e50; margin-bottom: 15px;"),
+          p("Identificar as legislações vigentes de planejamento urbano que impactam as operações UAM envolvendo eVTOL.",
+            style = "line-height: 1.8; text-align: justify; margin-bottom: 25px;"),
+          
+          hr(style = "border-top: 1px solid #dee2e6; margin: 25px 0;"),
+          
+          h4(tags$strong("Objetivos Específicos"), style = "color: #2c3e50; margin-bottom: 15px;"),
+          tags$ol(
+            style = "line-height: 2; text-align: justify; margin-bottom: 0;",
+            tags$li("Levantar as normas, planos diretores, instrumentos urbanísticos e atos regulatórios nacionais e locais que dialogam com a implantação de infraestruturas de UAM/eVTOL;"),
+            tags$li("Classificar essas legislações e instrumentos segundo os fatores PESTEL, evidenciando onde estão as maiores restrições e condicionantes ao uso do espaço urbano-aeronáutico;"),
+            tags$li("Analisar os impactos urbanos, ambientais e tecnológicos dessas exigências normativas sobre as operações UAM com eVTOL, especialmente quanto à localização de vertiportos, rotas e integração com o tecido urbano;"),
+            tags$li("Avaliar a aderência dessas legislações às demandas emergentes da mobilidade aérea urbana, apontando lacunas regulatórias e pontos que exigem atualização ou harmonização interinstitucional.")
+          ),
+          
+          hr(style = "border-top: 1px solid #dee2e6; margin: 25px 0;"),
+          
+          h4(tags$strong("Ferramenta de Análise: PESTEL"), style = "color: #2c3e50; margin-top: 0; margin-bottom: 15px;"),
+          p("A Mobilidade Aérea Urbana (UAM) emerge como uma das inovações disruptivas do setor de transportes no século XXI, impulsionada pelos avanços no desenvolvimento de aeronaves elétricas de decolagem e pouso vertical (eVTOL). A viabilidade da UAM não depende exclusivamente da maturidade tecnológica, mas requer análise cuidadosa de múltiplos fatores externos capazes de acelerar ou limitar sua implementação.",
+            style = "line-height: 1.8; text-align: justify; margin-bottom: 15px;"),
+          p("A ferramenta PESTEL oferece um arcabouço estruturado para compreender os condicionantes do sucesso da UAM no Brasil. Seu propósito principal é identificar, categorizar e analisar os fatores externos que impactam a mobilidade aérea urbana no âmbito do planejamento territorial urbano.",
+            style = "line-height: 1.8; text-align: justify; margin-bottom: 20px;"),
+          p(tags$strong("Cada um desses fatores interage de maneira dinâmica:"), 
+            style = "line-height: 1.8; text-align: justify; margin-bottom: 15px;"),
+          tags$ul(
+            style = "line-height: 1.8; text-align: justify;",
+            tags$li("O ambiente político-regulatório define a possibilidade de operação das aeronaves e da infraestrutura de apoio;"),
+            tags$li("As condições econômicas estabelecem a viabilidade financeira e a atratividade para investidores;"),
+            tags$li("Os aspectos sociais determinam a aceitação pública e a demanda por esse novo modal;"),
+            tags$li("Os avanços tecnológicos viabilizam o desempenho, a segurança e a escalabilidade;"),
+            tags$li("As variáveis ambientais trazem tanto oportunidades (sustentabilidade) quanto restrições (ruído e emissões);"),
+            tags$li("O fator legal confere segurança jurídica e previsibilidade aos atores do setor.")
+          ),
+
+          hr(style = "border-top: 2px solid #dee2e6; margin: 30px 0;"),
+
+          tags$div(
+            style = "text-align: center; padding: 10px 0 5px;",
+            actionButton(
+              "btn_legislacao",
+              label = paste0("Visualizar todas as ", nrow(df_legislacao), " legislações analisadas"),
+              style = paste0(
+                "background-color: #004aad; color: white; border: none; ",
+                "padding: 12px 28px; font-size: 15px; font-weight: 600; ",
+                "border-radius: 6px; cursor: pointer; ",
+                "box-shadow: 0 2px 6px rgba(0,74,173,0.35); ",
+                "transition: background-color 0.2s ease;"
+              )
+            )
+          )
+        ),
+        
+        # Listagem de Documentos
+        tags$div(
+          style = "margin-bottom: 40px;",
+          h3("Documentos Analisados", 
+             style = "color: #004aad; margin-bottom: 25px; text-align: center; font-weight: bold;"),
+          
+          tags$div(
+            style = "background-color: #f8f9fa; padding: 25px; border-radius: 8px; border: 2px solid #dee2e6;",
+            h3(style = "margin: 0; margin-bottom: 25px; font-size: 24px; font-weight: bold;",
+              paste0("Total de ", total_docs, " Documentos")
+            ),
+
+            tags$div(
+              style = "display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 15px;",
+              lapply(1:length(lista_documentos), function(i) {
+                nome_doc <- lista_documentos[i]
+                doc <- documentos[[nome_doc]]
+                disponivel <- !is.null(doc) && doc$disponivel
+                
+                tags$div(
+                  class = "doc-item-home",
+                  onclick = sprintf("Shiny.setInputValue('doc_home_clicado', '%s', {priority: 'event'})", nome_doc),
+                  style = paste0(
+                    "display: flex; align-items: center; padding: 12px 15px; ",
+                    "background-color: white; border-radius: 6px; ",
+                    "border-left: 4px solid ", if(disponivel) "#5de0e6" else "#95a5a6", "; ",
+                    "box-shadow: 0 2px 4px rgba(0,0,0,0.1); ",
+                    "transition: all 0.2s ease;"
+                  ),
+                  tags$span(
+                    paste0(i, "."),
+                    style = paste0(
+                      "background-color: ", if(disponivel) "#004aad" else "#95a5a6", "; ",
+                      "color: white; padding: 4px 10px; border-radius: 4px; ",
+                      "font-weight: bold; margin-right: 12px; font-size: 14px; min-width: 35px; text-align: center;"
+                    )
+                  ),
+                  tags$span(
+                    nome_doc,
+                    style = paste0(
+                      "font-size: 13px; color: ", if(disponivel) "#2c3e50" else "#7f8c8d", "; ",
+                      "line-height: 1.4;"
+                    )
+                  )
+                )
+              })
+            )
+          )
+        ),
+        
+        # Fatores PESTEL
+        h3("Fatores PESTEL: Definições e Impactos na UAM", 
+           style = "color: #004aad; margin-top: 40px; margin-bottom: 25px; text-align: center; font-weight: bold;"),
+        
+        tags$div(
+          style = "display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 25px; margin-top: 25px;",
+          
+          # Fator Político
+          tags$div(
+            style = "background: linear-gradient(135deg, #330867 0%, #00f2fe 100%); padding: 25px; border-radius: 12px; color: white; box-shadow: 0 6px 12px rgba(0,0,0,0.15);",
+            h4("Político", style = "margin-top: 0; font-weight: bold; margin-bottom: 15px;"),
+            p("Refere-se à influência do governo, à formulação de políticas públicas e à estabilidade política que fundamentam o ecossistema da Mobilidade Aérea Urbana.",
+              style = "font-size: 15px; line-height: 1.7; margin-bottom: 15px;"),
+            tags$strong("Inclui:", style = "display: block; margin-bottom: 10px;"),
+            tags$ul(
+              style = "font-size: 14px; line-height: 1.6; padding-left: 20px;",
+              tags$li("Autonomia e proatividade de agências reguladoras (ANAC, DECEA)"),
+              tags$li("Criação de mecanismos inovadores (sandbox regulatório)"),
+              tags$li("Políticas de fomento e incentivos fiscais"),
+              tags$li("Estratégia de harmonização internacional de normas"),
+              tags$li("Desafios de coordenação federativa e vontade política")
+            )
+          ),
+          
+          # Fator Econômico
+          tags$div(
+            style = "background: linear-gradient(135deg, #330867 0%, #00f2fe 100%); padding: 25px; border-radius: 12px; color: white; box-shadow: 0 6px 12px rgba(0,0,0,0.15);",
+            h4("Econômico", style = "margin-top: 0; font-weight: bold; margin-bottom: 15px;"),
+            p("Trata da viabilidade financeira, custos, sustentabilidade dos modelos de negócio e impacto macroeconômico do ecossistema UAM.",
+              style = "font-size: 15px; line-height: 1.7; margin-bottom: 15px;"),
+            tags$strong("Inclui:", style = "display: block; margin-bottom: 10px;"),
+            tags$ul(
+              style = "font-size: 14px; line-height: 1.6; padding-left: 20px;",
+              tags$li("Análise de custos operacionais (CAPEX/OPEX) e escalabilidade"),
+              tags$li("Estratégias de financiamento (BNDES, incentivos fiscais, debêntures)"),
+              tags$li("Impacto no desenvolvimento regional e eficiência urbana"),
+              tags$li("Integração multimodal e viabilidade do serviço"),
+              tags$li("Geração de empregos e desenvolvimento de cadeia produtiva")
+            )
+          ),
+          
+          # Fator Social
+          tags$div(
+            style = "background: linear-gradient(135deg, #330867 0%, #00f2fe 100%); padding: 25px; border-radius: 12px; color: white; box-shadow: 0 6px 12px rgba(0,0,0,0.15);",
+            h4("Social", style = "margin-top: 0; font-weight: bold; margin-bottom: 15px;"),
+            p("Evidencia as tendências demográficas, culturais, comportamentais e de percepção da sociedade que impactam a adoção da UAM.",
+              style = "font-size: 15px; line-height: 1.7; margin-bottom: 15px;"),
+            tags$strong("Inclui:", style = "display: block; margin-bottom: 10px;"),
+            tags$ul(
+              style = "font-size: 14px; line-height: 1.6; padding-left: 20px;",
+              tags$li("Aceitação pública e mitigação de impactos percebidos"),
+              tags$li("Gestão de ruído e perturbação visual"),
+              tags$li("Necessidade de equidade, acessibilidade e inclusão"),
+              tags$li("Evitar que se torne um serviço de elite"),
+              tags$li("Comunicação transparente sobre protocolos de segurança")
+            )
+          ),
+          
+          # Fator Tecnológico
+          tags$div(
+            style = "background: linear-gradient(135deg, #330867 0%, #00f2fe 100%); padding: 25px; border-radius: 12px; color: white; box-shadow: 0 6px 12px rgba(0,0,0,0.15);",
+            h4("Tecnológico", style = "margin-top: 0; font-weight: bold; margin-bottom: 15px;"),
+            p("Abrange o desenvolvimento, integração e adoção de tecnologias que condicionam a viabilidade das operações UAM.",
+              style = "font-size: 15px; line-height: 1.7; margin-bottom: 15px;"),
+            tags$strong("Componentes principais:", style = "display: block; margin-bottom: 10px;"),
+            tags$ul(
+              style = "font-size: 14px; line-height: 1.6; padding-left: 20px;",
+              tags$li("Tecnologias de Suporte: CNS/ATM, redes 5G/6G, sistemas de navegação"),
+              tags$li("Infraestrutura Terrestre e de Energia: vertiportos, recarga rápida"),
+              tags$li("Gêmeos Digitais: planejamento tridimensional do espaço aéreo"),
+              tags$li("Normas técnicas (ICA, RBAC) que influenciam operações"),
+              tags$li("Integração de sistemas para operações seguras em ambiente urbano")
+            )
+          ),
+          
+          # Fator Ambiental
+          tags$div(
+            style = "background: linear-gradient(135deg, #330867 0%, #00f2fe 100%); padding: 25px; border-radius: 12px; color: white; box-shadow: 0 6px 12px rgba(0,0,0,0.15);",
+            h4("Ambiental", style = "margin-top: 0; font-weight: bold; margin-bottom: 15px;"),
+            p("Relaciona-se aos impactos ecológicos, conformidade com legislação verde e gestão de recursos naturais.",
+              style = "font-size: 15px; line-height: 1.7; margin-bottom: 15px;"),
+            tags$strong("Inclui:", style = "display: block; margin-bottom: 10px;"),
+            tags$ul(
+              style = "font-size: 14px; line-height: 1.6; padding-left: 20px;",
+              tags$li("Pegada de carbono e eficiência energética (matriz nacional)"),
+              tags$li("Gestão proativa de poluição sonora"),
+              tags$li("Modelagem acústica e planejamento de rotas"),
+              tags$li("Integração ao planejamento urbano e impacto na biodiversidade"),
+              tags$li("Licenciamento ambiental e conformidade normativa")
+            )
+          ),
+          
+          # Fator Legal
+          tags$div(
+            style = "background: linear-gradient(135deg, #330867 0%, #00f2fe 100%); padding: 25px; border-radius: 12px; color: white; box-shadow: 0 6px 12px rgba(0,0,0,0.15);",
+            h4("Legal", style = "margin-top: 0; font-weight: bold; margin-bottom: 15px;"),
+            p("Aborda a estrutura hierárquica do ordenamento jurídico que rege a Mobilidade Aérea Urbana.",
+              style = "font-size: 15px; line-height: 1.7; margin-bottom: 15px;"),
+            tags$strong("Organização hierárquica:", style = "display: block; margin-bottom: 10px;"),
+            tags$ul(
+              style = "font-size: 14px; line-height: 1.6; padding-left: 20px;",
+              tags$li("Leis Complementares (topo da hierarquia)"),
+              tags$li("Leis Ordinárias"),
+              tags$li("Decretos e Normas Regulamentares"),
+              tags$li("Atos Administrativos/Normativos (ANAC, DECEA)"),
+              tags$li("Projetos de Lei em tramitação")
+            ),
+            p(tags$em("Esta hierarquia determina validade, supremacia e força vinculante, sendo fundamental para segurança jurídica."),
+              style = "font-size: 13px; margin-top: 15px; opacity: 0.9;")
+          )
+        ),
+        
+        # Rodapé
+        tags$div(
+          style = "text-align: center; padding: 20px; margin-top: 30px; border-top: 2px solid #004aad;",
+          p(tags$strong(
+            tags$a("Instituto Tecnológico de Aeronáutica (ITA)", 
+                   href = "http://www.ita.br/", 
+                   target = "_blank",
+                   style = "color: #004aad; text-decoration: none;"),
+            " | ",
+            tags$a("Secretaria de Aviação Civil (SAC)", 
+                   href = "https://www.gov.br/portos-e-aeroportos/pt-br/assuntos/conteudo/aviacao/secretaria-nacional-de-aviacao-civil",
+                   target = "_blank",
+                   style = "color: #004aad; text-decoration: none;")
+          ),
+            style = "color: #7f8c8d; margin: 0; font-size: 14px;"),
+          p("TED n. 1525720240005-003882/2024",
+            style = "color: #95a5a6; margin-top: 5px; font-size: 12px;")
+        )
+      )
+    )
+
+  } else if (current_page() == "equipe") {
+    # ========================================================================
+    # PÁGINA EQUIPE - VERSÃO CORRIGIDA
+    # ========================================================================
+    
+    equipe <- list(
+      list(
+        nome = "Prof. Dr. Cláudio Jorge Pinto Alves",
+        foto = "imagens/claudio_jorge.png",
+        linkedin = "https://www.linkedin.com/in/claudio-jorge-pinto-alves-78149010/"
+      ),
+      list(
+        nome = "Prof. Dr. Marcelo Xavier Guterres",
+        foto = "imagens/marcelo_guterres.png",
+        linkedin = "https://www.linkedin.com/in/profguterres/"
+      ),
+      list(
+        nome = "Prof. Dr. Flávio Mendes Neto",
+        foto = "imagens/flavio_mendes.png",
+        linkedin = "https://www.linkedin.com/in/ffllaavviioo/"
+      ),
+      list(
+        nome = "Profa. Dra. Mayara Condé Rocha Murça",
+        foto = "imagens/mayara_conde.png",
+        linkedin = "https://www.linkedin.com/in/mayara-condé-rocha-murça-a4a8482ba/"
+      ),
+      list(
+        nome = "Prof. Dr. Daniel Alberto Pamplona",
+        foto = "imagens/daniel_pamplona.png",
+        linkedin = "https://www.linkedin.com/in/daniel-pamplona-024389140/"
+      ),
+      list(
+        nome = "MSc. Marcelo Saraiva Peres",
+        foto = "imagens/marcelo_saraiva.png",
+        linkedin = "https://www.linkedin.com/in/marcelo-saraiva-peres-563a8b104/"
+      ),
+      list(
+        nome = "Gabriel Luiz Goulart Rufino",
+        foto = "imagens/gabriel_goulart.png",
+        linkedin = "https://www.linkedin.com/in/gabriel-luiz-11294919b/"
+      ),
+      list(
+        nome = "Rodrigo Mollo Furlan",
+        foto = "imagens/rodrigo_mollo.png",
+        linkedin = "https://www.linkedin.com/in/rodrigo-furlan-67b264209/"
+      )
+    )
+    
+    tagList(
+      tags$div(
+        class = "equipe-container",
+        
+        # Título da página
+        tags$div(
+          style = "text-align: center; margin-bottom: 30px;",
+          h2("Equipe Sigma City", 
+             style = "color: #004aad; font-weight: bold; margin-bottom: 10px;"),
+          p("Conheça os profissionais responsáveis pelo desenvolvimento deste projeto",
+            style = "color: #7f8c8d; font-size: 16px;")
+        ),
+        
+        # Grid de membros - ESTRUTURA CORRIGIDA
+        tags$div(
+          class = "equipe-grid",
+          lapply(equipe, function(membro) {
+            tags$div(
+              class = "membro-card",
+              
+              # Container da foto com link para LinkedIn
+              tags$a(
+                href = membro$linkedin,
+                target = "_blank",
+                class = "membro-foto",
+                style = "display: block; position: relative;",
+                tags$img(
+                  src = membro$foto,
+                  alt = membro$nome,
+                  style = "width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 50%;",
+                  onerror = "this.style.display='none'; this.parentElement.style.backgroundColor='#e0e0e0';"
+                )
+              ),
+              
+              # Nome do membro
+              tags$div(
+                class = "membro-nome",
+                membro$nome
+              ),
+              
+              # Ícone LinkedIn
+              tags$a(
+                href = membro$linkedin,
+                target = "_blank",
+                class = "linkedin-icon",
+                title = paste0("LinkedIn - ", membro$nome),
+                HTML("in")
+              )
+            )
+          })
+        ),
+        
+        # Rodapé
+        tags$div(
+          style = "text-align: center; padding: 40px 20px 20px; margin-top: 60px; border-top: 2px solid #e0e0e0;",
+          p(
+            tags$strong(
+              tags$a("Instituto Tecnológico de Aeronáutica (ITA)", 
+                     href = "http://www.ita.br/", 
+                     target = "_blank",
+                     style = "color: #004aad; text-decoration: none;"),
+              " | ",
+              tags$a("Projeto Sigma City", 
+                     href = "https://sigma.ita.br", 
+                     target = "_blank",
+                     style = "color: #004aad; text-decoration: none;")
+            ),
+            style = "color: #7f8c8d; font-size: 14px; margin: 0;"
+          )
+        )
+      )
+    )
+
+  } else if (current_page() == "biblioteca") {
+    # ========================================================================
+    # PÁGINA BIBLIOTECA
+    # ========================================================================
+    
+    buscar_documentos <- function(termo) {
+      if (is.null(termo) || termo == "") return(NULL)
+      
+      termo_lower <- tolower(termo)
+      resultados <- list()
+      
+      for (nome_doc in lista_documentos) {
+        doc <- documentos[[nome_doc]]
+        if (is.null(doc) || !doc$disponivel) next
+        
+        titulo_match <- grepl(termo_lower, tolower(nome_doc))
+        
+        palavras_chave_match <- FALSE
+        if (!is.null(doc$estatisticas$palavras_chave)) {
+          if (is.data.frame(doc$estatisticas$palavras_chave)) {
+            palavras <- tolower(doc$estatisticas$palavras_chave$palavra)
+          } else {
+            palavras <- tolower(sapply(doc$estatisticas$palavras_chave, function(x) x$palavra))
+          }
+          palavras_chave_match <- any(grepl(termo_lower, palavras))
+        }
+        
+        resumo_text <- tolower(paste(doc$resumo, collapse = " "))
+        resumo_match <- grepl(termo_lower, resumo_text)
+        
+        if (titulo_match || palavras_chave_match || resumo_match) {
+          resultados[[nome_doc]] <- list(
+            nome = nome_doc,
+            titulo_match = titulo_match,
+            palavras_chave_match = palavras_chave_match,
+            resumo_match = resumo_match
+          )
+        }
+      }
+      
+      return(resultados)
+    }
+    
+    if (!is.null(termo_busca_biblioteca())) {
+      resultados <- buscar_documentos(termo_busca_biblioteca())
+      docs_a_mostrar <- if(is.null(resultados) || length(resultados) == 0) {
+        list()
+      } else {
+        names(resultados)
+      }
+      titulo_pagina <- paste0('Resultados para: "', termo_busca_biblioteca(), '"')
+      subtitulo <- paste0(length(docs_a_mostrar), " documento(s) encontrado(s)")
+      mostrar_resultado_discreto <- TRUE
+    } else {
+      docs_a_mostrar <- lista_documentos
+      titulo_pagina <- "Documentos"
+      subtitulo <- paste0(length(docs_a_mostrar), " documento(s) disponível(is)")
+      mostrar_resultado_discreto <- FALSE
+    }
+    
+    tagList(
+      tags$div(
+        class = "main-container",
+        style = "padding: 30px; max-width: 1200px; margin: 0 auto;",
+        
+        tags$div(
+          class = "biblioteca-header-discreto",
+          
+          tags$div(
+            class = "biblioteca-header-info",
+            h3(titulo_pagina),
+            p(subtitulo)
+          ),
+          
+          tags$div(
+            class = "biblioteca-header-search",
+            tags$div(
+              class = "biblioteca-search",
+              textInput(
+                "busca_biblioteca",
+                label = NULL,
+                placeholder = "Buscar documento..."
+              ),
+              tags$script(HTML("
+                $(document).ready(function() {
+                  $('#busca_biblioteca').on('keypress', function(e) {
+                    if(e.which === 13) {
+                      e.preventDefault();
+                      Shiny.setInputValue('busca_biblioteca_valor', $(this).val(), {priority: 'event'});
+                    }
+                  });
+                });
+              "))
+            )
+          )
+        ),
+        
+        if (mostrar_resultado_discreto && length(docs_a_mostrar) > 0) {
+          tags$div(
+            class = "resultado-discreto",
+            paste0("✓ Encontrados ", length(docs_a_mostrar), " resultado(s) para sua busca")
+          )
+        },
+        
+        if (length(docs_a_mostrar) == 0 && !is.null(termo_busca_biblioteca())) {
+          tags$div(
+            style = "background-color: #fff3cd; padding: 40px; text-align: center; border-radius: 8px; border-left: 4px solid #ffc107;",
+            h3("Nenhum documento encontrado", style = "color: #856404; margin-bottom: 15px;"),
+            p(paste0('Não foram encontrados documentos contendo "', termo_busca_biblioteca(), '".'), 
+              style = "color: #856404; font-size: 16px; margin-bottom: 10px;"),
+            p("Tente usar outros termos de busca.", 
+              style = "color: #856404; font-size: 14px;")
+          )
+        } else {
+          tags$div(
+            style = "display: grid; gap: 20px;",
+            lapply(docs_a_mostrar, function(nome_doc) {
+              doc <- documentos[[nome_doc]]
+              
+              tags_encontrado <- c()
+              if (!is.null(termo_busca_biblioteca()) && !is.null(resultados[[nome_doc]])) {
+                resultado <- resultados[[nome_doc]]
+                if (resultado$titulo_match) tags_encontrado <- c(tags_encontrado, "Título")
+                if (resultado$palavras_chave_match) tags_encontrado <- c(tags_encontrado, "Palavras-chave")
+                if (resultado$resumo_match) tags_encontrado <- c(tags_encontrado, "Resumo")
+              }
+              
+              tags$div(
+                class = "doc-card",
+                onclick = sprintf("Shiny.setInputValue('doc_clicado', '%s', {priority: 'event'})", nome_doc),
+                style = "background-color: white; border: 2px solid #e0e0e0; border-radius: 8px; padding: 25px; cursor: pointer; transition: all 0.3s ease;",
+                
+                h4(nome_doc, 
+                   style = "color: #004aad; margin-top: 0; margin-bottom: 15px; font-weight: bold;"),
+                
+                if (length(tags_encontrado) > 0) {
+                  tags$div(
+                    style = "margin-bottom: 15px;",
+                    lapply(tags_encontrado, function(tag) {
+                      tags$span(
+                        paste0("✓ ", tag),
+                        style = "display: inline-block; background-color: #e8f4f8; color: #004aad; padding: 5px 12px; border-radius: 15px; margin-right: 8px; font-size: 13px; font-weight: bold;"
+                      )
+                    })
+                  )
+                },
+                
+                if (!is.null(doc) && doc$disponivel) {
+                  tags$div(
+                    style = "color: #7f8c8d; line-height: 1.6;",
+                    p(paste(head(doc$resumo, 2), collapse = " "),
+                      style = "margin: 0;")
+                  )
+                } else {
+                  tags$div(
+                    style = "color: #95a5a6; font-style: italic;",
+                    p("Documento em processamento...", style = "margin: 0;")
+                  )
+                },
+                
+                tags$div(
+                  style = "margin-top: 15px; text-align: right;",
+                  tags$span(
+                    "Ver análise completa →",
+                    style = "color: #004aad; font-weight: bold; font-size: 14px;"
+                  )
+                )
+              )
+            })
+          )
+        }
+      )
+    )
+
+  } else if (current_page() == "legislacao") {
+    # ========================================================================
+    # PÁGINA: FLUXO COMPLETO DE SELEÇÃO DE LEGISLAÇÕES
+    # ========================================================================
+
+    # Helper para construir cada tabela DT
+    make_leg_table <- function(df, tipo = c("aceitacao", "status")) {
+      tipo <- match.arg(tipo)
+
+      # Normalizar nome da primeira coluna para "Documento"
+      if (names(df)[1] == "Documentos") names(df)[1] <- "Documento"
+
+      col_opts <- list(
+        pageLength = 100,
+        lengthMenu = c(50, 100, 200, 500),
+        dom = "lfrtip",
+        language = list(
+          search = "Buscar:",
+          lengthMenu = "Mostrar _MENU_ por página",
+          info = "Exibindo _START_ a _END_ de _TOTAL_ registros",
+          paginate = list(previous = "Anterior", `next` = "Próximo"),
+          zeroRecords = "Nenhum registro encontrado"
+        ),
+        columnDefs = list(
+          list(width = "200px", targets = 0),
+          list(width = "110px", targets = 1, className = "dt-center")
+        ),
+        scrollX = TRUE,
+        scrollY = "65vh",
+        scrollCollapse = TRUE,
+        paging = FALSE,
+        autoWidth = FALSE
+      )
+
+      dt <- datatable(
+        df,
+        options = col_opts,
+        rownames = FALSE,
+        class = "cell-border stripe hover",
+        filter = "top"
+      )
+
+      if (tipo == "aceitacao") {
+        dt <- dt %>%
+          formatStyle(
+            "Aceitação",
+            backgroundColor = styleEqual(
+              c("Aceito", "Rejeitado"),
+              c("#d4edda", "#f8d7da")
+            ),
+            color = styleEqual(
+              c("Aceito", "Rejeitado"),
+              c("#155724", "#721c24")
+            ),
+            fontWeight = "bold"
+          )
+      } else {
+        dt <- dt %>%
+          formatStyle(
+            "Status",
+            backgroundColor = "#d4edda",
+            color = "#155724",
+            fontWeight = "bold"
+          )
+      }
+      dt
+    }
+
+    # Contagens para o funil
+    n_id   <- nrow(df_identificacao)
+    n_eleg <- nrow(df_elegibilidade)
+    n_inc  <- nrow(df_inclusao)
+
+    # Estilo compartilhado para os cards do funil
+    funil_card <- function(numero, label, cor_borda, cor_texto, cor_bg) {
+      tags$div(
+        style = paste0(
+          "flex: 1; text-align: center; padding: 18px 10px; ",
+          "background-color: ", cor_bg, "; ",
+          "border-radius: 8px; border-top: 5px solid ", cor_borda, "; ",
+          "box-shadow: 0 2px 6px rgba(0,0,0,0.08);"
+        ),
+        tags$span(
+          as.character(numero),
+          style = paste0(
+            "display: block; font-size: 36px; font-weight: 800; ",
+            "color: ", cor_texto, "; line-height: 1.1;"
+          )
+        ),
+        tags$span(
+          label,
+          style = paste0(
+            "display: block; font-size: 11px; font-weight: 700; ",
+            "color: ", cor_texto, "; text-transform: uppercase; ",
+            "letter-spacing: 0.05em; margin-top: 4px;"
+          )
+        )
+      )
+    }
+
+    funil_seta <- tags$div(
+      style = paste0(
+        "display: flex; align-items: center; justify-content: center; ",
+        "font-size: 22px; color: #adb5bd; padding: 0 6px; flex-shrink: 0;"
+      ),
+      "\u2192"
+    )
+
+    tagList(
+      tags$div(
+        class = "main-container",
+        style = "padding: 20px 30px; width: 100%;",
+
+        # ── Cabeçalho ──────────────────────────────────────────────────────
+        tags$div(
+          style = paste0(
+            "display: flex; align-items: center; ",
+            "margin-bottom: 28px; gap: 16px;"
+          ),
+          actionButton(
+            "btn_voltar_legislacao",
+            label = "\u2190 Voltar",
+            style = paste0(
+              "background-color: transparent; color: #004aad; ",
+              "border: 2px solid #004aad; padding: 8px 18px; ",
+              "font-size: 14px; font-weight: 600; border-radius: 6px; ",
+              "cursor: pointer; white-space: nowrap;"
+            )
+          ),
+          tags$div(
+            h2("Legisla\u00e7\u00f5es Analisadas \u2014 Fluxo de Sele\u00e7\u00e3o",
+               style = "color: #004aad; margin: 0; font-weight: bold;"),
+            p(paste0(
+              "Web scraping \u2192 triagem LLM",
+              "\u2192 revis\u00e3o pela equipe ITA"
+            ),
+              style = paste0(
+                "margin: 4px 0 0; font-size: 13px; color: #6c757d;"
+              ))
+          )
+        ),
+
+        # ── Funil ──────────────────────────────────────────────────────────
+        tags$div(
+          style = paste0(
+            "display: flex; align-items: stretch; gap: 0; ",
+            "margin-bottom: 30px;"
+          ),
+          funil_card(n_id,   "Identificados",  "#004aad", "#004aad", "#eef2fb"),
+          funil_seta,
+          funil_card(n_eleg, "Eleg\u00edveis",      "#e67e22", "#b75b10", "#fef3e2"),
+          funil_seta,
+          funil_card(n_inc,  "Inclu\u00eddos",      "#198754", "#155724", "#d4edda")
+        ),
+
+        # ── Abas ───────────────────────────────────────────────────────────
+        tags$div(
+          style = paste0(
+            "background-color: white; border-radius: 8px; ",
+            "border: 2px solid #dee2e6; padding: 12px 16px;"
+          ),
+          tabsetPanel(
+            type = "tabs",
+
+            # ── Aba 1: IDENTIFICAÇÃO ──────────────────────────────────────
+            tabPanel(
+              title = paste0("Identifica\u00e7\u00e3o (", n_id, ")"),
+              tags$div(
+                style = "margin-top: 20px;",
+                p(paste0(
+                  "Conjunto total de documentos obtidos via web scraping. ",
+                  "Cada documento foi avaliado quanto \u00e0 ader\u00eancia ",
+                  "ao tema UAM."
+                ),
+                  style = paste0(
+                    "font-size: 13px; color: #495057; ",
+                    "margin-bottom: 16px; font-style: italic;"
+                  )),
+                DT::renderDataTable({
+                  make_leg_table(df_identificacao, tipo = "aceitacao")
+                })
+              )
+            ),
+
+            # ── Aba 2: ELEGIBILIDADE ──────────────────────────────────────
+            tabPanel(
+              title = paste0("Elegibilidade (", n_eleg, ")"),
+              tags$div(
+                style = "margin-top: 20px;",
+                p(paste0(
+                  "Documentos processados pela API DeepSeek e classificados ",
+                  "como potencialmente relevantes para o planejamento urbano UAM."
+                ),
+                  style = paste0(
+                    "font-size: 13px; color: #495057; ",
+                    "margin-bottom: 16px; font-style: italic;"
+                  )),
+                DT::renderDataTable({
+                  make_leg_table(df_elegibilidade, tipo = "aceitacao")
+                })
+              )
+            ),
+
+            # ── Aba 3: INCLUSÃO ───────────────────────────────────────────
+            tabPanel(
+              title = paste0("Inclus\u00e3o (", n_inc, ")"),
+              tags$div(
+                style = "margin-top: 20px;",
+                p(paste0(
+                  "Lista final de documentos inclu\u00eddos na an\u00e1lise, ",
+                  "ap\u00f3s revis\u00e3o manual pela equipe do ITA."
+                ),
+                  style = paste0(
+                    "font-size: 13px; color: #495057; ",
+                    "margin-bottom: 16px; font-style: italic;"
+                  )),
+                DT::renderDataTable({
+                  make_leg_table(df_inclusao, tipo = "status")
+                })
+              )
+            )
+          )
+        )
+      )
+    )
+
+  } else if (current_page() == "documento") {
+    # ========================================================================
+    # PÁGINA DE ANÁLISE DO DOCUMENTO
+    # ========================================================================
+    doc <- documentos[[doc_selecionado()]]
+    
+    tagList(
+      tags$div(
+        class = "main-container",
+        
+        tags$div(
+          style = "background: linear-gradient(90deg, #004aad 0%, #5de0e6 100%); color: white; padding: 25px 20px 20px 20px; border-radius: 8px; margin-bottom: 30px; text-align: center;",
+          
+          if (!is.null(doc$url) && doc$url != "") {
+            tags$a(
+              href = doc$url,
+              target = "_blank",
+              style = "text-decoration: none; color: white; display: block; transition: all 0.3s ease;",
+              onmouseover = "this.style.opacity='0.85'; this.style.transform='scale(1.02)';",
+              onmouseout = "this.style.opacity='1'; this.style.transform='scale(1)';",
+              h2(doc_selecionado(), style = "margin: 0 0 8px 0; font-weight: bold;"),
+              
+              tags$p(
+                style = "margin: 0; font-size: 13px; opacity: 0.9; font-weight: normal;",
+                "📄 Clique para acessar o documento original"
+              )
+            )
+          } else {
+            tagList(
+              h2(doc_selecionado(), style = "margin: 0; font-weight: bold;")
+            )
+          }
+        ),
+        
+        tags$div(
+          class = "tabset-custom",
+          
+          tags$ul(
+            class = "nav nav-tabs",
+            role = "tablist",
+            tags$li(
+              class = "active",
+              tags$a(
+                href = "#visao-geral",
+                `data-toggle` = "tab",
+                "Visão Geral"
+              )
+            ),
+            tags$li(
+              tags$a(
+                href = "#nuvem-palavras",
+                `data-toggle` = "tab",
+                "Nuvem de Palavras"
+              )
+            )
+          ),
+          
+          tags$div(
+            class = "tab-content",
+            
+            tags$div(
+              id = "visao-geral",
+              class = "tab-pane active",
+              
+              tags$div(
+                style = "display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px;",
+                
+                tags$div(
+                  tags$div(
+                    style = "margin-bottom: 30px;",
+                    h4("Resumo do Documento", style = "color: #2c3e50; margin-bottom: 20px; font-weight: bold;"),
+                    if(is.null(doc) || !doc$disponivel) {
+                      tags$div(
+                        style = "background-color: #fff3cd; padding: 30px; border-left: 4px solid #ffc107; border-radius: 5px; text-align: center;",
+                        h4("Documento em Processamento", style = "color: #856404;"),
+                        p("As informações deste documento ainda não estão disponíveis.", style = "color: #856404;")
+                      )
+                    } else {
+                      tags$div(
+                        style = "background-color: #e8f4f8; padding: 20px; border-left: 4px solid #3498db; border-radius: 5px;",
+                        tags$ul(
+                          style = "list-style-type: disc; padding-left: 20px; margin: 0;",
+                          lapply(doc$resumo, function(item) {
+                            tags$li(item, style = "margin-bottom: 10px; line-height: 1.6;")
+                          })
+                        )
+                      )
+                    }
+                  ),
+                  
+                  tags$div(
+                    h4("Análise PESTEL", style = "color: #2c3e50; margin-bottom: 20px; font-weight: bold;"),
+                    if(is.null(doc) || !doc$disponivel) {
+                      tags$div("Dados não disponíveis")
+                    } else {
+                      df_pestel <- data.frame(
+                        Fator = doc$pestel$fatores,
+                        Pontuacao = doc$pestel$pontuacoes,
+                        Justificativa = doc$pestel$justificativas,
+                        stringsAsFactors = FALSE
+                      )
+                      DT::renderDataTable({
+                        datatable(
+                          df_pestel,
+                          options = list(
+                            pageLength = 6,
+                            dom = 't',
+                            scrollY = '400px',
+                            scrollCollapse = FALSE,
+                            paging = FALSE,
+                            columnDefs = list(
+                              list(width = '120px', targets = 0),
+                              list(width = '100px', targets = 1),
+                              list(width = '600px', targets = 2)
+                            )
+                          ),
+                          rownames = FALSE,
+                          class = 'cell-border stripe'
+                        ) %>%
+                          formatStyle(
+                            'Pontuacao',
+                            color = 'white',
+                            background = styleColorBar(c(0, 5), '#004aad'),
+                            backgroundSize = '100% 90%',
+                            backgroundRepeat = 'no-repeat',
+                            backgroundPosition = 'center'
+                          )
+                      })
+                    }
+                  )
+                ),
+                
+                tags$div(
+                  tags$div(
+                    style = "margin-bottom: 30px;",
+                    h4("Gráfico Radar PESTEL", style = "color: #2c3e50; margin-bottom: 20px; font-weight: bold;"),
+                    if(is.null(doc) || !doc$disponivel) {
+                      plotly::renderPlotly({
+                        plot_ly() %>%
+                          layout(
+                            xaxis = list(visible = FALSE),
+                            yaxis = list(visible = FALSE),
+                            annotations = list(
+                              list(
+                                text = "Dados não disponíveis",
+                                xref = "paper",
+                                yref = "paper",
+                                x = 0.5,
+                                y = 0.5,
+                                showarrow = FALSE,
+                                font = list(size = 20, color = "#856404")
+                              )
+                            )
+                          )
+                      })
+                    } else {
+                      plotly::renderPlotly({
+                        r_valores <- c(doc$pestel$pontuacoes, doc$pestel$pontuacoes[1])
+                        theta_valores <- c(doc$pestel$fatores, doc$pestel$fatores[1])
+                        
+                        plot_ly(
+                          type = 'scatterpolar',
+                          r = r_valores,
+                          theta = theta_valores,
+                          fill = 'toself',
+                          fillcolor = 'rgba(52, 152, 219, 0.4)',
+                          line = list(color = '#3498db', width = 2),
+                          marker = list(size = 10, color = '#2c3e50')
+                        ) %>%
+                          layout(
+                            polar = list(
+                              radialaxis = list(
+                                visible = TRUE,
+                                range = c(0, 5),
+                                tickvals = c(1, 2, 3, 4, 5)
+                              )
+                            ),
+                            showlegend = FALSE
+                          )
+                      })
+                    }
+                  ),
+                  
+                  tags$div(
+                    style = "margin-bottom: 30px;",
+                    h4("Palavras-Chave", style = "color: #2c3e50; margin-bottom: 20px; font-weight: bold;"),
+                    if(is.null(doc) || !doc$disponivel || is.null(doc$estatisticas$palavras_chave)) {
+                      tags$div(
+                        style = "padding: 15px; background-color: #f8f9fa; border-radius: 5px;",
+                        p("Palavras-chave não disponíveis", style = "color: #7f8c8d; margin: 0;")
+                      )
+                    } else {
+                      keywords_data <- doc$estatisticas$palavras_chave
+                      
+                      if(length(keywords_data) == 0) {
+                        tags$div(
+                          style = "padding: 15px; background-color: #f8f9fa; border-radius: 5px;",
+                          p("Nenhuma palavra-chave identificada", style = "color: #7f8c8d; margin: 0;")
+                        )
+                      } else {
+                        if(is.data.frame(keywords_data)) {
+                          palavras <- keywords_data$palavra
+                        } else {
+                          palavras <- sapply(keywords_data, function(x) x$palavra)
+                        }
+                        
+                        palavras_texto <- paste(palavras, collapse = ", ")
+                        
+                        tags$div(
+                          style = "padding: 15px; background-color: #f8f9fa; border-radius: 5px;",
+                          p(
+                            style = "margin: 0; color: #2c3e50; line-height: 1.6;",
+                            tags$strong("Palavras-Chave: "),
+                            tags$span(palavras_texto, style = "color: #7f8c8d;")
+                          )
+                        )
+                      }
+                    }
+                  ),
+                  
+                  tags$div(
+                    h4("Métricas Principais", style = "color: #2c3e50; margin-bottom: 20px; font-weight: bold;"),
+                    if(is.null(doc) || !doc$disponivel) {
+                      tags$div(
+                        style = "background-color: #fff3cd; padding: 30px; text-align: center;",
+                        h4("Estatísticas em Processamento", style = "color: #856404;")
+                      )
+                    } else {
+                      pontuacao_max <- max(doc$pestel$pontuacoes)
+                      fatores_maximos <- doc$pestel$fatores[doc$pestel$pontuacoes == pontuacao_max]
+                      fator_max_texto <- paste(fatores_maximos, collapse = " & ")
+                      stats <- doc$estatisticas
+                      
+                      tags$div(
+                        style = "display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;",
+                        
+                        tags$div(
+                          style = "text-align: center; padding: 20px; background-color: #5de0e6; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);",
+                          h3(fator_max_texto, style = "margin: 0; font-size: 16px; font-weight: bold;"),
+                          p(if(length(fatores_maximos) > 1) "Fatores Mais Impactados" else "Fator Mais Impactado",
+                            style = "margin-top: 10px; opacity: 0.9; font-size: 13px;")
+                        ),
+                        
+                        tags$div(
+                          style = "text-align: center; padding: 20px; background-color: #5de0e6; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);",
+                          h2(format(stats$total_palavras, big.mark = "."), style = "margin: 0; font-size: 32px; font-weight: bold;"),
+                          p("Total de Palavras", style = "margin-top: 10px; opacity: 0.9; font-size: 13px;")
+                        ),
+                        
+                        tags$div(
+                          style = "text-align: center; padding: 20px; background-color: #5de0e6; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);",
+                          h2(format(stats$palavras_unicas, big.mark = "."), style = "margin: 0; font-size: 32px; font-weight: bold;"),
+                          p("Palavras Únicas", style = "margin-top: 10px; opacity: 0.9; font-size: 13px;")
+                        )
+                      )
+                    }
+                  )
+                )
+              )
+            ),
+            
+            tags$div(
+              id = "nuvem-palavras",
+              class = "tab-pane",
+              
+              tags$div(
+                style = "display: grid; grid-template-columns: 2fr 1fr; gap: 30px; margin-top: 20px;",
+                
+                tags$div(
+                  h4("Nuvem de Palavras", style = "color: #2c3e50; margin-bottom: 20px; font-weight: bold;"),
+                  if(is.null(doc) || !doc$disponivel) {
+                    tags$div(
+                      style = "background-color: #fff3cd; padding: 30px; text-align: center; border-radius: 10px;",
+                      h4("Nuvem de Palavras não disponível", style = "color: #856404;")
+                    )
+                  } else {
+                    caminho_imagem <- obter_imagem_nuvem(doc_selecionado())
+                    
+                    if(is.null(caminho_imagem)) {
+                      tags$div(
+                        style = "background-color: #fff3cd; padding: 30px; text-align: center; border-radius: 10px;",
+                        h4("Imagem não encontrada", style = "color: #856404;")
+                      )
+                    } else {
+                      tags$div(
+                        style = "text-align: center;",
+                        tags$img(
+                          src = caminho_imagem,
+                          style = "max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"
+                        )
+                      )
+                    }
+                  }
+                ),
+                
+                tags$div(
+                  tags$div(
+                    style = "margin-bottom: 30px;",
+                    h4("Ranking de Palavras", style = "color: #2c3e50; margin-bottom: 20px; font-weight: bold;"),
+                    if(is.null(doc) || !doc$disponivel || is.null(doc$estatisticas$top_50_palavras)) {
+                      tags$div("Dados não disponíveis")
+                    } else {
+                      df_palavras <- data.frame(
+                        palavra = names(doc$estatisticas$top_50_palavras),
+                        freq = unlist(doc$estatisticas$top_50_palavras),
+                        stringsAsFactors = FALSE
+                      ) %>%
+                        arrange(desc(freq)) %>%
+                        head(20)
+                      
+                      cores <- c("#004aad", "#0b5ab8", "#1669c3", "#2179ce", "#2c88d9",
+                                "#3798e4", "#42a7ef", "#4db7fa", "#54c4f8", "#5bcff7",
+                                "#5ddaf5", "#5de0e6", "#51d4df", "#45c9d8", "#39bdd1",
+                                "#2db2ca", "#21a6c3", "#159bbc", "#098fb5", "#0084ae")
+                      
+                      tags$div(
+                        style = "max-height: 400px; overflow-y: auto; padding-right: 10px;",
+                        lapply(1:nrow(df_palavras), function(i) {
+                          tags$div(
+                            style = paste0("display: flex; align-items: center; padding: 10px 15px; margin-bottom: 8px; background-color: #f8f9fa; border-radius: 5px; border-left: 4px solid ", cores[i], ";"),
+                            tags$span(paste0("#", i), 
+                                    style = paste0("background-color: ", cores[i], "; color: white; padding: 4px 8px; border-radius: 3px; font-weight: bold; margin-right: 10px; font-size: 12px;")),
+                            tags$span(df_palavras$palavra[i], 
+                                    style = "font-weight: bold; color: #2c3e50; font-size: 14px;")
+                          )
+                        })
+                      )
+                    }
+                  ),
+                  
+                  if(!is.null(doc) && doc$disponivel && !is.null(doc$estatisticas$top_50_palavras)) {
+                    total_palavras_nuvem <- length(doc$estatisticas$top_50_palavras)
+                    palavra_mais_freq <- names(doc$estatisticas$top_50_palavras)[1]
+                    
+                    tags$div(
+                      style = "background-color: #e8f4f8; padding: 15px 20px; border-left: 4px solid #004aad; border-radius: 5px;",
+                      p(
+                        style = "margin: 0; color: #2c3e50; font-size: 14px; line-height: 1.8;",
+                        strong("Palavras na Nuvem: "),
+                        tags$span(total_palavras_nuvem, style = "font-size: 16px;")
+                      ),
+                      p(
+                        style = "margin: 0; color: #2c3e50; font-size: 14px; line-height: 1.8;",
+                        strong("Palavra Mais Frequente: "),
+                        tags$span(toupper(palavra_mais_freq), style = "font-size: 16px;")
+                      )
+                    )
+                  }
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  }
+})
+```

@@ -1,0 +1,370 @@
+{
+  "nome": "Resolução ANAC nº 736/2024 - Operadores de Aeródromo",
+  "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2024/arquivos-2a-redir-del/4-resolucao-no-736-de-09-de-fevereiro-de-2024.pdf",
+  "disponivel": true,
+  "data_processamento": "2026-04-07 15:39:13",
+  "resumo": ["Definição do operador de aeródromo como o responsável legal perante a ANAC.", "Exigência de homologação (uso público) ou registro (uso privativo) para abertura ao tráfego aéreo.", "Obrigatoriedade de cadastro atualizado de todas as infraestruturas e auxílios à navegação aérea.", "Possibilidade de exclusão do cadastro em caso de conflito com normas municipais, estaduais ou federais.", "Estabelecimento de sanções administrativas e multas para o descumprimento das normas de atualização cadastral."],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [5, 1, 1, 2, 2],
+    "justificativas": ["Estabelece marco regulatório para constituição de operadores de aeródromo, definindo responsabilidades perante ANAC, conformidade com normas do Comando da Aeronáutica e legislações municipais/estaduais/federais, evidenciando atuação governamental com coordenação federativa.", "O texto não aborda aspectos de viabilidade financeira, custos operacionais, incentivos fiscais, financiamento ou impactos econômicos da UAM. Não há menção a modelos de negócio ou desenvolvimento regional.", "Não há referência a aceitação pública, ruído, percepção de risco, acessibilidade ou inclusão social. Foca em aspectos técnicos e administrativos.", "Exige cadastro de instalações e equipamentos de auxílio à navegação, indiretamente requerendo infraestrutura tecnológica dos aeródromos. Sem detalhamento de parâmetros técnicos ou inovações.", "Previsão de exclusão do cadastro em conflito com legislações ambientais municipais/estaduais, sugerindo conformidade com requisitos ambientais locais, mas sem detalhamento de impactos ecológicos ou específicos."]
+  },
+  "estatisticas": {
+    "total_palavras": 856,
+    "palavras_unicas": 457,
+    "num_sentencas": 96,
+    "top_50_palavras": {
+      "anac": 33,
+      "aeródromo": 31,
+      "resolução": 20,
+      "aviação": 13,
+      "cadastro": 13,
+      "uso": 13,
+      "civil": 12,
+      "operador": 12,
+      "infraestrutura": 11,
+      "agência": 10,
+      "nacional": 10,
+      "informações": 9,
+      "público": 9,
+      "httpswwwanacgovbrassuntoslegislacaolegislacaoresolucoesresolucao": 8,
+      "aeródromos": 7,
+      "responsável": 7,
+      "aeroportuária": 6,
+      "portal": 6,
+      "termos": 6,
+      "caso": 5,
+      "civis": 5,
+      "classe": 5,
+      "condições": 5,
+      "conforme": 5,
+      "dados": 5,
+      "deverá": 5,
+      "fevereiro": 5,
+      "legislação": 5,
+      "oficial": 5,
+      "utilização": 5,
+      "aéreo": 4,
+      "ato": 4,
+      "buscar": 4,
+      "capítulo": 4,
+      "constituição": 4,
+      "desta": 4,
+      "específico": 4,
+      "operacionais": 4,
+      "página": 4,
+      "portarias": 4,
+      "seção": 4,
+      "superintendência": 4,
+      "abertura": 3,
+      "aeronaves": 3,
+      "aplicáveis": 3,
+      "constituído": 3,
+      "conteúdo": 3,
+      "diário": 3,
+      "incidência": 3,
+      "informação": 3
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 2,
+      "urbana": 0,
+      "evtol": 0,
+      "aeronave": 3,
+      "vertiporto": 0,
+      "heliponto": 0,
+      " uam ": 0,
+      "tráfego aéreo": 3,
+      "decolagem": 1,
+      "pouso": 1,
+      " voo ": 1,
+      "aviação": 13
+    },
+    "top_20_bigramas": {
+      "aviação civil": 12,
+      "agência nacional": 10,
+      "nacional aviação": 10,
+      "civil anac": 9,
+      "operador aeródromo": 9,
+      "resolução agência": 8,
+      "uso público": 8,
+      "httpswwwanacgovbrassuntoslegislacaolegislacaoresolucoesresolucao resolução": 7,
+      "aeródromo uso": 6,
+      "infraestrutura aeroportuária": 6,
+      "caso aeródromo": 5,
+      "ato específico": 4,
+      "buscar portal": 4,
+      "cadastro aeródromo": 4,
+      "constituição operador": 4,
+      "desta resolução": 4,
+      "específico superintendência": 4,
+      "responsável infraestrutura": 4,
+      "superintendência responsável": 4,
+      "aeródromo perante": 3
+    },
+    "palavras_chave": [
+      {
+        "palavra": "aeródromo",
+        "frequencia": 31,
+        "relevancia": 3.256
+      },
+      {
+        "palavra": "anac",
+        "frequencia": 33,
+        "relevancia": 2.116
+      },
+      {
+        "palavra": "resolução",
+        "frequencia": 20,
+        "relevancia": 1.845
+      },
+      {
+        "palavra": "cadastro",
+        "frequencia": 13,
+        "relevancia": 1.04
+      },
+      {
+        "palavra": "operador",
+        "frequencia": 12,
+        "relevancia": 0.933
+      },
+      {
+        "palavra": "infraestrutura",
+        "frequencia": 11,
+        "relevancia": 0.828
+      },
+      {
+        "palavra": "nacional",
+        "frequencia": 10,
+        "relevancia": 0.727
+      },
+      {
+        "palavra": "informações",
+        "frequencia": 9,
+        "relevancia": 0.628
+      },
+      {
+        "palavra": "aviação",
+        "frequencia": 13,
+        "relevancia": 0.624
+      },
+      {
+        "palavra": "uso",
+        "frequencia": 13,
+        "relevancia": 0.624
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "aviação civil",
+        "freq": 12,
+        "tscore": 3.41,
+        "palavra1_freq": 13,
+        "palavra2_freq": 12
+      },
+      {
+        "bigrama": "agência nacional",
+        "freq": 10,
+        "tscore": 3.13,
+        "palavra1_freq": 10,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "nacional aviação",
+        "freq": 10,
+        "tscore": 3.11,
+        "palavra1_freq": 10,
+        "palavra2_freq": 13
+      },
+      {
+        "bigrama": "operador aeródromo",
+        "freq": 9,
+        "tscore": 2.86,
+        "palavra1_freq": 12,
+        "palavra2_freq": 31
+      },
+      {
+        "bigrama": "civil anac",
+        "freq": 9,
+        "tscore": 2.85,
+        "palavra1_freq": 12,
+        "palavra2_freq": 33
+      },
+      {
+        "bigrama": "uso público",
+        "freq": 8,
+        "tscore": 2.78,
+        "palavra1_freq": 13,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "resolução agência",
+        "freq": 8,
+        "tscore": 2.75,
+        "palavra1_freq": 20,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "httpswwwanacgovbrassuntoslegislacaolegislacaoresolucoesresolucao resolução",
+        "freq": 7,
+        "tscore": 2.58,
+        "palavra1_freq": 8,
+        "palavra2_freq": 20
+      },
+      {
+        "bigrama": "infraestrutura aeroportuária",
+        "freq": 6,
+        "tscore": 2.42,
+        "palavra1_freq": 11,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "aeródromo uso",
+        "freq": 6,
+        "tscore": 2.26,
+        "palavra1_freq": 31,
+        "palavra2_freq": 13
+      },
+      {
+        "bigrama": "caso aeródromo",
+        "freq": 5,
+        "tscore": 2.16,
+        "palavra1_freq": 5,
+        "palavra2_freq": 31
+      },
+      {
+        "bigrama": "ato específico",
+        "freq": 4,
+        "tscore": 1.99,
+        "palavra1_freq": 4,
+        "palavra2_freq": 4
+      },
+      {
+        "bigrama": "específico superintendência",
+        "freq": 4,
+        "tscore": 1.99,
+        "palavra1_freq": 4,
+        "palavra2_freq": 4
+      },
+      {
+        "bigrama": "buscar portal",
+        "freq": 4,
+        "tscore": 1.99,
+        "palavra1_freq": 4,
+        "palavra2_freq": 6
+      },
+      {
+        "bigrama": "superintendência responsável",
+        "freq": 4,
+        "tscore": 1.98,
+        "palavra1_freq": 4,
+        "palavra2_freq": 7
+      },
+      {
+        "bigrama": "constituição operador",
+        "freq": 4,
+        "tscore": 1.97,
+        "palavra1_freq": 4,
+        "palavra2_freq": 12
+      },
+      {
+        "bigrama": "responsável infraestrutura",
+        "freq": 4,
+        "tscore": 1.96,
+        "palavra1_freq": 7,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "desta resolução",
+        "freq": 4,
+        "tscore": 1.95,
+        "palavra1_freq": 4,
+        "palavra2_freq": 20
+      },
+      {
+        "bigrama": "cadastro aeródromo",
+        "freq": 4,
+        "tscore": 1.76,
+        "palavra1_freq": 13,
+        "palavra2_freq": 31
+      },
+      {
+        "bigrama": "tráfego aéreo",
+        "freq": 3,
+        "tscore": 1.72,
+        "palavra1_freq": 3,
+        "palavra2_freq": 4
+      },
+      {
+        "bigrama": "diário oficial",
+        "freq": 3,
+        "tscore": 1.72,
+        "palavra1_freq": 3,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "oficial união",
+        "freq": 3,
+        "tscore": 1.72,
+        "palavra1_freq": 5,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "seção página",
+        "freq": 3,
+        "tscore": 1.72,
+        "palavra1_freq": 4,
+        "palavra2_freq": 4
+      },
+      {
+        "bigrama": "portal buscar",
+        "freq": 3,
+        "tscore": 1.72,
+        "palavra1_freq": 6,
+        "palavra2_freq": 4
+      },
+      {
+        "bigrama": "aeródromos civis",
+        "freq": 3,
+        "tscore": 1.71,
+        "palavra1_freq": 7,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "uso privativo",
+        "freq": 3,
+        "tscore": 1.71,
+        "palavra1_freq": 13,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "público classe",
+        "freq": 3,
+        "tscore": 1.7,
+        "palavra1_freq": 9,
+        "palavra2_freq": 5
+      },
+      {
+        "bigrama": "cadastro aeródromos",
+        "freq": 3,
+        "tscore": 1.67,
+        "palavra1_freq": 13,
+        "palavra2_freq": 7
+      },
+      {
+        "bigrama": "aeródromo perante",
+        "freq": 3,
+        "tscore": 1.67,
+        "palavra1_freq": 31,
+        "palavra2_freq": 3
+      },
+      {
+        "bigrama": "perante anac",
+        "freq": 3,
+        "tscore": 1.67,
+        "palavra1_freq": 3,
+        "palavra2_freq": 33
+      }
+    ]
+  }
+}

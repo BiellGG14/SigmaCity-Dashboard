@@ -1,0 +1,370 @@
+{
+  "nome": "Lei 13.465/2017 - Regularização Fundiária",
+  "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13465.htm",
+  "disponivel": true,
+  "data_processamento": "2026-04-07 15:39:03",
+  "resumo": ["Define procedimentos para regularização de ocupações urbanas irregulares", "Estabelece conceitos como núcleo urbano informativo consolidado e reurbanização", "Institui competências das esferas administrativas para regularização de áreas", "Prevê compensação ambiental em processos de regularização", "Estabelece regimes simplificados para reconhecimento de posses", "Criação de diretrizes para ordenamento territorial em áreas ocupadas"],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [4, 3, 2, 1, 3],
+    "justificativas": ["Demonstra ação estatal em regulação de uso do solo urbano através de processos de regularização, delegando competências aos municípios, com impacto moderado em governança federativa para planejamento urbano.", "Implica custos para regularização e reurbanização que afetam valor de propriedades e viabilidade de projetos urbanos, com impacto moderado em viabilidade econômica de infraestruturas de UAM.", "Beneficia comunidades por regularizar ocupações, mas foca em populações de baixa renda sem tratar especificamente de inclusão ou equidade em novos modais de transporte.", "Não aborda tecnologias específicas de transporte, mantém foco em instrumentos legais tradicionais de ordenamento territorial.", "Exige compensação ambiental em processos de regularização, integrando considerações ambientais, com impacto moderado na sustentabilidade de projetos urbanos que possam incluir UAM."]
+  },
+  "estatisticas": {
+    "total_palavras": 14896,
+    "palavras_unicas": 2997,
+    "num_sentencas": 1880,
+    "top_50_palavras": {
+      "imóveis": 157,
+      "união": 147,
+      "regularização": 132,
+      "fundiária": 125,
+      "deste": 114,
+      "registro": 114,
+      "imóvel": 108,
+      "será": 94,
+      "forma": 88,
+      "área": 82,
+      "áreas": 80,
+      "federal": 80,
+      "valor": 80,
+      "desta": 79,
+      "trata": 79,
+      "reurb": 77,
+      "caso": 69,
+      "dezembro": 69,
+      "patrimônio": 69,
+      "público": 69,
+      "secretaria": 67,
+      "spu": 64,
+      "direito": 62,
+      "prazo": 61,
+      "projeto": 61,
+      "disposto": 60,
+      "poderá": 60,
+      "seguintes": 57,
+      "domínio": 54,
+      "matrícula": 54,
+      "uso": 53,
+      "httpswwwplanaltogovbrccivilatoleilhtm": 52,
+      "objeto": 51,
+      "condições": 49,
+      "serão": 48,
+      "título": 47,
+      "termos": 46,
+      "unidades": 46,
+      "urbano": 46,
+      "cento": 45,
+      "município": 45,
+      "distrito": 44,
+      "deverá": 43,
+      "hipótese": 43,
+      "municípios": 43,
+      "poderão": 43,
+      "propriedade": 43,
+      "ato": 42,
+      "fins": 42,
+      "mediante": 41
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 1,
+      "aérea": 0,
+      "urbana": 47,
+      "evtol": 0,
+      "aeronave": 0,
+      "vertiporto": 0,
+      "heliponto": 0,
+      " uam ": 0,
+      "tráfego aéreo": 0,
+      "decolagem": 0,
+      "pouso": 0,
+      " voo ": 0,
+      "aviação": 0
+    },
+    "top_20_bigramas": {
+      "regularização fundiária": 107,
+      "patrimônio união": 62,
+      "secretaria patrimônio": 57,
+      "união spu": 57,
+      "registro imóveis": 47,
+      "distrito federal": 44,
+      "projeto regularização": 41,
+      "trata deste": 35,
+      "direito real": 33,
+      "passa vigorar": 32,
+      "demarcação urbanística": 23,
+      "núcleo urbano": 23,
+      "seguintes alterações": 23,
+      "vigorar seguintes": 23,
+      "reforma agrária": 22,
+      "municípios distrito": 21,
+      "núcleos urbanos": 21,
+      "urbanos informais": 21,
+      "infraestrutura essencial": 20,
+      "cartório registro": 19
+    },
+    "palavras_chave": [
+      {
+        "palavra": "regularização",
+        "frequencia": 132,
+        "relevancia": 4.112
+      },
+      {
+        "palavra": "fundiária",
+        "frequencia": 125,
+        "relevancia": 3.851
+      },
+      {
+        "palavra": "registro",
+        "frequencia": 114,
+        "relevancia": 3.445
+      },
+      {
+        "palavra": "imóveis",
+        "frequencia": 157,
+        "relevancia": 3.038
+      },
+      {
+        "palavra": "união",
+        "frequencia": 147,
+        "relevancia": 2.807
+      },
+      {
+        "palavra": "deste",
+        "frequencia": 114,
+        "relevancia": 2.067
+      },
+      {
+        "palavra": "imóvel",
+        "frequencia": 108,
+        "relevancia": 1.936
+      },
+      {
+        "palavra": "dezembro",
+        "frequencia": 69,
+        "relevancia": 1.867
+      },
+      {
+        "palavra": "patrimônio",
+        "frequencia": 69,
+        "relevancia": 1.867
+      },
+      {
+        "palavra": "secretaria",
+        "frequencia": 67,
+        "relevancia": 1.801
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "regularização fundiária",
+        "freq": 107,
+        "tscore": 10.24,
+        "palavra1_freq": 132,
+        "palavra2_freq": 125
+      },
+      {
+        "bigrama": "patrimônio união",
+        "freq": 62,
+        "tscore": 7.79,
+        "palavra1_freq": 69,
+        "palavra2_freq": 147
+      },
+      {
+        "bigrama": "secretaria patrimônio",
+        "freq": 57,
+        "tscore": 7.51,
+        "palavra1_freq": 67,
+        "palavra2_freq": 69
+      },
+      {
+        "bigrama": "união spu",
+        "freq": 57,
+        "tscore": 7.47,
+        "palavra1_freq": 147,
+        "palavra2_freq": 64
+      },
+      {
+        "bigrama": "registro imóveis",
+        "freq": 47,
+        "tscore": 6.68,
+        "palavra1_freq": 114,
+        "palavra2_freq": 157
+      },
+      {
+        "bigrama": "distrito federal",
+        "freq": 44,
+        "tscore": 6.6,
+        "palavra1_freq": 44,
+        "palavra2_freq": 80
+      },
+      {
+        "bigrama": "projeto regularização",
+        "freq": 41,
+        "tscore": 6.32,
+        "palavra1_freq": 61,
+        "palavra2_freq": 132
+      },
+      {
+        "bigrama": "trata deste",
+        "freq": 35,
+        "tscore": 5.81,
+        "palavra1_freq": 79,
+        "palavra2_freq": 114
+      },
+      {
+        "bigrama": "direito real",
+        "freq": 33,
+        "tscore": 5.72,
+        "palavra1_freq": 62,
+        "palavra2_freq": 33
+      },
+      {
+        "bigrama": "passa vigorar",
+        "freq": 32,
+        "tscore": 5.64,
+        "palavra1_freq": 32,
+        "palavra2_freq": 32
+      },
+      {
+        "bigrama": "demarcação urbanística",
+        "freq": 23,
+        "tscore": 4.78,
+        "palavra1_freq": 26,
+        "palavra2_freq": 30
+      },
+      {
+        "bigrama": "núcleo urbano",
+        "freq": 23,
+        "tscore": 4.78,
+        "palavra1_freq": 26,
+        "palavra2_freq": 46
+      },
+      {
+        "bigrama": "seguintes alterações",
+        "freq": 23,
+        "tscore": 4.78,
+        "palavra1_freq": 57,
+        "palavra2_freq": 23
+      },
+      {
+        "bigrama": "vigorar seguintes",
+        "freq": 23,
+        "tscore": 4.77,
+        "palavra1_freq": 32,
+        "palavra2_freq": 57
+      },
+      {
+        "bigrama": "reforma agrária",
+        "freq": 22,
+        "tscore": 4.68,
+        "palavra1_freq": 23,
+        "palavra2_freq": 27
+      },
+      {
+        "bigrama": "núcleos urbanos",
+        "freq": 21,
+        "tscore": 4.57,
+        "palavra1_freq": 21,
+        "palavra2_freq": 31
+      },
+      {
+        "bigrama": "urbanos informais",
+        "freq": 21,
+        "tscore": 4.57,
+        "palavra1_freq": 31,
+        "palavra2_freq": 21
+      },
+      {
+        "bigrama": "municípios distrito",
+        "freq": 21,
+        "tscore": 4.55,
+        "palavra1_freq": 43,
+        "palavra2_freq": 44
+      },
+      {
+        "bigrama": "infraestrutura essencial",
+        "freq": 20,
+        "tscore": 4.46,
+        "palavra1_freq": 28,
+        "palavra2_freq": 21
+      },
+      {
+        "bigrama": "cartório registro",
+        "freq": 19,
+        "tscore": 4.32,
+        "palavra1_freq": 21,
+        "palavra2_freq": 114
+      },
+      {
+        "bigrama": "urbano informal",
+        "freq": 18,
+        "tscore": 4.23,
+        "palavra1_freq": 46,
+        "palavra2_freq": 22
+      },
+      {
+        "bigrama": "unidades imobiliárias",
+        "freq": 18,
+        "tscore": 4.23,
+        "palavra1_freq": 46,
+        "palavra2_freq": 23
+      },
+      {
+        "bigrama": "oficial cartório",
+        "freq": 16,
+        "tscore": 3.99,
+        "palavra1_freq": 34,
+        "palavra2_freq": 21
+      },
+      {
+        "bigrama": "direitos reais",
+        "freq": 16,
+        "tscore": 3.99,
+        "palavra1_freq": 29,
+        "palavra2_freq": 25
+      },
+      {
+        "bigrama": "legitimação fundiária",
+        "freq": 16,
+        "tscore": 3.94,
+        "palavra1_freq": 29,
+        "palavra2_freq": 125
+      },
+      {
+        "bigrama": "unidade imobiliária",
+        "freq": 15,
+        "tscore": 3.86,
+        "palavra1_freq": 32,
+        "palavra2_freq": 21
+      },
+      {
+        "bigrama": "revogado revogado",
+        "freq": 15,
+        "tscore": 3.86,
+        "palavra1_freq": 30,
+        "palavra2_freq": 30
+      },
+      {
+        "bigrama": "cento valor",
+        "freq": 15,
+        "tscore": 3.81,
+        "palavra1_freq": 45,
+        "palavra2_freq": 80
+      },
+      {
+        "bigrama": "oficial registro",
+        "freq": 15,
+        "tscore": 3.81,
+        "palavra1_freq": 34,
+        "palavra2_freq": 114
+      },
+      {
+        "bigrama": "fundiária urbana",
+        "freq": 15,
+        "tscore": 3.79,
+        "palavra1_freq": 125,
+        "palavra2_freq": 38
+      }
+    ]
+  }
+}

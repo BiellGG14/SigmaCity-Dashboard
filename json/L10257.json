@@ -1,0 +1,370 @@
+{
+  "nome": "Lei 10.257/2001 - Estatuto da Cidade",
+  "url": "http://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10257.htm",
+  "disponivel": true,
+  "data_processamento": "2026-04-07 15:39:00",
+  "resumo": ["Finalidade: Regulamenta os arts. 182 e 183 da Constituição Federal, estabelecendo diretrizes gerais da política urbana e normas de ordem pública e interesse social para regular o uso da propriedade urbana em prol do bem coletivo, da segurança, do bem-estar dos cidadãos e do equilíbrio ambiental.", "Instrumentos Principais: Inclui o Plano Diretor (obrigatório para cidades acima de 20 mil habitantes), o Estudo Prévio de Impacto de Vizinhança (EIV), as Operações Urbanas Consorciadas, a Outorga Onerosa do Direito de Construir e o Direito de Preempção (direito de preferência do município na compra de imóveis).", "Implicações para UAM: O Estatuto fornece o marco legal para integrar infraestruturas de UAM (como vertiportos) ao tecido urbano. O EIV avalia impactos no tráfego e na mobilidade, e o Plano Diretor define zonas e parâmetros para implantação de equipamentos urbanos, assegurando que a infraestrutura de UAM seja planejada de forma ordenada e sustentável."],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [4, 3, 4, 2, 4],
+    "justificativas": ["Estabelece diretrizes fundamentais da política urbana nacional, define instrumentos de gestão municipal (plano diretor, EIV) e confere ao Poder Público municipal preferência na aquisição de imóveis (direito de preempção), criando o marco governamental essencial para implementação de políticas de UAM.", "Impacto indireto ao criar condições para investimentos através do ordenamento do uso do solo e instrumentos como operações urbanas consorciadas, sem menção específica a incentivos fiscais ou modelos de negócio para UAM, mas estabelecendo base para viabilidade econômica de infraestruturas urbanas.", "Foca explicitamente no \"bem-estar dos cidadãos\", \"funções sociais da cidade\" e \"qualidade de vida da população\", exigindo no EIV análise de impactos na vizinhança e mobilidade urbana, fundamentais para aceitação social da UAM e mitigação de efeitos negativos sobre comunidades.", "Menção pontual à necessidade de infraestrutura urbana adequada e análise de demanda por transporte, sem especificar requisitos técnicos ou padrões tecnológicos para infraestruturas de UAM, focando principalmente no planejamento territorial convencional.", "Estabelece explicitamente \"equilíbrio ambiental\" como finalidade da lei e inclui no EIV a análise de impactos ambientais, além de orientar o planejamento urbano para sustentabilidade, criando base legal para avaliação ambiental de infraestruturas de UAM."]
+  },
+  "estatisticas": {
+    "total_palavras": 4061,
+    "palavras_unicas": 1354,
+    "num_sentencas": 415,
+    "top_50_palavras": {
+      "incluído": 53,
+      "direito": 52,
+      "urbana": 50,
+      "plano": 47,
+      "imóvel": 41,
+      "desta": 38,
+      "municipal": 37,
+      "diretor": 36,
+      "público": 33,
+      "urbano": 33,
+      "uso": 32,
+      "áreas": 29,
+      "área": 26,
+      "social": 25,
+      "poderá": 24,
+      "interesse": 22,
+      "diretrizes": 20,
+      "parcelamento": 20,
+      "solo": 19,
+      "especial": 18,
+      "proprietário": 18,
+      "superfície": 18,
+      "urbanas": 18,
+      "população": 17,
+      "edificação": 16,
+      "município": 16,
+      "prazo": 16,
+      "trata": 16,
+      "utilização": 16,
+      "ambiental": 15,
+      "desenvolvimento": 15,
+      "anos": 14,
+      "construir": 14,
+      "forma": 14,
+      "municípios": 14,
+      "públicos": 14,
+      "urbanos": 14,
+      "vigência": 14,
+      "condições": 13,
+      "expansão": 13,
+      "instrumentos": 13,
+      "meio": 13,
+      "redação": 13,
+      "será": 13,
+      "urbanização": 13,
+      "valor": 13,
+      "vetado": 13,
+      "concessão": 12,
+      "dada": 12,
+      "fins": 12
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 4,
+      "aérea": 0,
+      "urbana": 68,
+      "evtol": 0,
+      "aeronave": 0,
+      "vertiporto": 0,
+      "heliponto": 0,
+      " uam ": 0,
+      "tráfego aéreo": 0,
+      "decolagem": 0,
+      "pouso": 0,
+      " voo ": 0,
+      "aviação": 0
+    },
+    "top_20_bigramas": {
+      "plano diretor": 36,
+      "interesse social": 15,
+      "direito superfície": 14,
+      "imóvel urbano": 14,
+      "público municipal": 14,
+      "direito construir": 13,
+      "expansão urbana": 13,
+      "cinco anos": 11,
+      "redação dada": 11,
+      "política urbana": 10,
+      "regularização fundiária": 10,
+      "direito preempção": 9,
+      "ocupação solo": 9,
+      "parcelamento edificação": 9,
+      "uso ocupação": 9,
+      "edificação utilização": 8,
+      "usucapião especial": 8,
+      "direito real": 7,
+      "operação urbana": 7,
+      "urbana consorciada": 7
+    },
+    "palavras_chave": [
+      {
+        "palavra": "incluído",
+        "frequencia": 53,
+        "relevancia": 3.989
+      },
+      {
+        "palavra": "municipal",
+        "frequencia": 37,
+        "relevancia": 2.539
+      },
+      {
+        "palavra": "direito",
+        "frequencia": 52,
+        "relevancia": 2.337
+      },
+      {
+        "palavra": "urbana",
+        "frequencia": 50,
+        "relevancia": 2.226
+      },
+      {
+        "palavra": "plano",
+        "frequencia": 47,
+        "relevancia": 2.06
+      },
+      {
+        "palavra": "imóvel",
+        "frequencia": 41,
+        "relevancia": 1.735
+      },
+      {
+        "palavra": "desta",
+        "frequencia": 38,
+        "relevancia": 1.576
+      },
+      {
+        "palavra": "diretor",
+        "frequencia": 36,
+        "relevancia": 1.472
+      },
+      {
+        "palavra": "público",
+        "frequencia": 33,
+        "relevancia": 1.317
+      },
+      {
+        "palavra": "urbano",
+        "frequencia": 33,
+        "relevancia": 1.317
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "plano diretor",
+        "freq": 36,
+        "tscore": 5.93,
+        "palavra1_freq": 47,
+        "palavra2_freq": 36
+      },
+      {
+        "bigrama": "interesse social",
+        "freq": 15,
+        "tscore": 3.84,
+        "palavra1_freq": 22,
+        "palavra2_freq": 25
+      },
+      {
+        "bigrama": "direito superfície",
+        "freq": 14,
+        "tscore": 3.68,
+        "palavra1_freq": 52,
+        "palavra2_freq": 18
+      },
+      {
+        "bigrama": "público municipal",
+        "freq": 14,
+        "tscore": 3.66,
+        "palavra1_freq": 33,
+        "palavra2_freq": 37
+      },
+      {
+        "bigrama": "imóvel urbano",
+        "freq": 14,
+        "tscore": 3.65,
+        "palavra1_freq": 41,
+        "palavra2_freq": 33
+      },
+      {
+        "bigrama": "expansão urbana",
+        "freq": 13,
+        "tscore": 3.56,
+        "palavra1_freq": 13,
+        "palavra2_freq": 50
+      },
+      {
+        "bigrama": "direito construir",
+        "freq": 13,
+        "tscore": 3.56,
+        "palavra1_freq": 52,
+        "palavra2_freq": 14
+      },
+      {
+        "bigrama": "cinco anos",
+        "freq": 11,
+        "tscore": 3.31,
+        "palavra1_freq": 11,
+        "palavra2_freq": 14
+      },
+      {
+        "bigrama": "redação dada",
+        "freq": 11,
+        "tscore": 3.31,
+        "palavra1_freq": 13,
+        "palavra2_freq": 12
+      },
+      {
+        "bigrama": "regularização fundiária",
+        "freq": 10,
+        "tscore": 3.15,
+        "palavra1_freq": 11,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "política urbana",
+        "freq": 10,
+        "tscore": 3.12,
+        "palavra1_freq": 12,
+        "palavra2_freq": 50
+      },
+      {
+        "bigrama": "ocupação solo",
+        "freq": 9,
+        "tscore": 2.98,
+        "palavra1_freq": 12,
+        "palavra2_freq": 19
+      },
+      {
+        "bigrama": "parcelamento edificação",
+        "freq": 9,
+        "tscore": 2.97,
+        "palavra1_freq": 20,
+        "palavra2_freq": 16
+      },
+      {
+        "bigrama": "uso ocupação",
+        "freq": 9,
+        "tscore": 2.97,
+        "palavra1_freq": 32,
+        "palavra2_freq": 12
+      },
+      {
+        "bigrama": "direito preempção",
+        "freq": 9,
+        "tscore": 2.96,
+        "palavra1_freq": 52,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "usucapião especial",
+        "freq": 8,
+        "tscore": 2.81,
+        "palavra1_freq": 9,
+        "palavra2_freq": 18
+      },
+      {
+        "bigrama": "edificação utilização",
+        "freq": 8,
+        "tscore": 2.81,
+        "palavra1_freq": 16,
+        "palavra2_freq": 16
+      },
+      {
+        "bigrama": "urbana consorciada",
+        "freq": 7,
+        "tscore": 2.61,
+        "palavra1_freq": 50,
+        "palavra2_freq": 7
+      },
+      {
+        "bigrama": "direito real",
+        "freq": 7,
+        "tscore": 2.6,
+        "palavra1_freq": 52,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "operação urbana",
+        "freq": 7,
+        "tscore": 2.59,
+        "palavra1_freq": 12,
+        "palavra2_freq": 50
+      },
+      {
+        "bigrama": "cartório registro",
+        "freq": 6,
+        "tscore": 2.44,
+        "palavra1_freq": 6,
+        "palavra2_freq": 8
+      },
+      {
+        "bigrama": "empreendimentos atividades",
+        "freq": 6,
+        "tscore": 2.44,
+        "palavra1_freq": 8,
+        "palavra2_freq": 10
+      },
+      {
+        "bigrama": "programas projetos",
+        "freq": 6,
+        "tscore": 2.44,
+        "palavra1_freq": 9,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "registro imóveis",
+        "freq": 6,
+        "tscore": 2.44,
+        "palavra1_freq": 8,
+        "palavra2_freq": 12
+      },
+      {
+        "bigrama": "operações urbanas",
+        "freq": 6,
+        "tscore": 2.44,
+        "palavra1_freq": 8,
+        "palavra2_freq": 18
+      },
+      {
+        "bigrama": "incisos desta",
+        "freq": 6,
+        "tscore": 2.42,
+        "palavra1_freq": 7,
+        "palavra2_freq": 38
+      },
+      {
+        "bigrama": "incluído definição",
+        "freq": 6,
+        "tscore": 2.4,
+        "palavra1_freq": 53,
+        "palavra2_freq": 9
+      },
+      {
+        "bigrama": "desenvolvimento urbano",
+        "freq": 6,
+        "tscore": 2.4,
+        "palavra1_freq": 15,
+        "palavra2_freq": 33
+      },
+      {
+        "bigrama": "parcelamento uso",
+        "freq": 6,
+        "tscore": 2.39,
+        "palavra1_freq": 20,
+        "palavra2_freq": 32
+      },
+      {
+        "bigrama": "incluído vigência",
+        "freq": 6,
+        "tscore": 2.37,
+        "palavra1_freq": 53,
+        "palavra2_freq": 14
+      }
+    ]
+  }
+}

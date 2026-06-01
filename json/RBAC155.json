@@ -1,0 +1,370 @@
+{
+  "nome": "RBAC 155 - Helipontos",
+  "url": "https://www.anac.gov.br/assuntos/legislacao/legislacao-1/rbha-e-rbac/rbac/rbce-155",
+  "disponivel": true,
+  "data_processamento": "2026-04-07 15:39:12",
+  "resumo": ["Estabelece requisitos de segurança para projeto, construção e operação de helipontos", "Aplica-se a helipontos civis públicos e parcialmente a privados elevados", "Define heliponto como área para pouso, decolagem e movimentação de helicópteros", "Especifica características físicas incluindo FATO, TLOF e áreas de segurança", "Estabelece dimensões baseadas na maior dimensão do helicóptero (D)", "Prescreve auxílios visuais obrigatórios como biruta e sinalização horizontal", "Define requisitos para iluminação em operações noturnas", "Fornece base técnica para infraestrutura de Mobilidade Aérea Urbana (UAM)", "Especifica requisitos para helipontos elevados em ambiente urbano", "Estabelece sistemas de referência WGS-84 e MSL para coordenadas"],
+  "pestel": {
+    "fatores": ["Político", "Econômico", "Social", "Tecnológico", "Ambiental"],
+    "pontuacoes": [3, 3, 4, 5, 2],
+    "justificativas": ["Impacto moderado ao estabelecer regulamento técnico através da ANAC, demonstrando atuação estatal na regulação de infraestrutura aérea, mas sem políticas de fomento ou incentivos específicos para UAM.", "Impacto moderado ao definir padrões técnicos que influenciam custos de implantação e operação de infraestruturas, criando parâmetros para investimentos em helipontos/vertiportos, mas sem mencionar incentivos fiscais ou modelos de financiamento.", "Impacto relevante ao estabelecer requisitos de segurança física (grades, áreas de proteção) que contribuem para aceitação pública e gestão de riscos em ambientes urbanos, criando base técnica para licença social de operações.", "Impacto direto e abrangente ao especificar parâmetros técnicos detalhados para infraestrutura terrestre (dimensões FATO/TLOF, sistemas de referência WGS-84/MSL, iluminação, sinalização), convertendo requisitos operacionais em critérios vinculantes para uso do solo urbano.", "Impacto pontual ao mencionar aspectos de segurança que podem ter implicações ambientais indiretas, mas sem referência específica a impactos ecológicos, poluição sonora, pegada de carbono ou requisitos ambientais para operações."]
+  },
+  "estatisticas": {
+    "total_palavras": 10892,
+    "palavras_unicas": 1833,
+    "num_sentencas": 952,
+    "top_50_palavras": {
+      "deve": 242,
+      "fato": 213,
+      "heliponto": 195,
+      "helicóptero": 180,
+      "táxi": 154,
+      "sinalização": 145,
+      "devem": 136,
+      "horizontal": 134,
+      "área": 132,
+      "helicópteros": 127,
+      "pista": 125,
+      "tlof": 90,
+      "significa": 89,
+      "decolagem": 85,
+      "helipontos": 83,
+      "sistema": 83,
+      "pouso": 82,
+      "aproximação": 79,
+      "luzes": 75,
+      "estacionamento": 71,
+      "superfície": 71,
+      "terrestre": 71,
+      "aéreo": 67,
+      "figura": 66,
+      "segurança": 62,
+      "operações": 61,
+      "solo": 58,
+      "posição": 56,
+      "tipo": 54,
+      "ponto": 50,
+      "distância": 49,
+      "nível": 49,
+      "maior": 47,
+      "largura": 46,
+      "forma": 43,
+      "perímetro": 43,
+      "possuir": 42,
+      "cada": 41,
+      "dimensões": 41,
+      "dados": 40,
+      "inferior": 39,
+      "operador": 38,
+      "conforme": 37,
+      "direção": 37,
+      "trajetória": 37,
+      "voo": 37,
+      "elevação": 35,
+      "emergência": 35,
+      "mínimo": 35,
+      "borda": 34
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 5,
+      "urbana": 0,
+      "evtol": 0,
+      "aeronave": 12,
+      "vertiporto": 0,
+      "heliponto": 278,
+      " uam ": 0,
+      "tráfego aéreo": 1,
+      "decolagem": 85,
+      "pouso": 84,
+      " voo ": 23,
+      "aviação": 3
+    },
+    "top_20_bigramas": {
+      "sinalização horizontal": 127,
+      "pista táxi": 77,
+      "táxi terrestre": 67,
+      "táxi aéreo": 60,
+      "posição estacionamento": 43,
+      "pouso decolagem": 42,
+      "pista pouso": 39,
+      "tipo pista": 38,
+      "fato tipo": 37,
+      "terrestre helicóptero": 37,
+      "nível solo": 36,
+      "área segurança": 31,
+      "estacionamento helicóptero": 31,
+      "operador heliponto": 31,
+      "heliponto deve": 30,
+      "rota táxi": 30,
+      "estacionamento helicópteros": 29,
+      "aéreo helicóptero": 28,
+      "maior helicóptero": 25,
+      "orientação alinhamento": 25
+    },
+    "palavras_chave": [
+      {
+        "palavra": "heliponto",
+        "frequencia": 195,
+        "relevancia": 4.253
+      },
+      {
+        "palavra": "helicóptero",
+        "frequencia": 180,
+        "relevancia": 3.867
+      },
+      {
+        "palavra": "deve",
+        "frequencia": 242,
+        "relevancia": 3.296
+      },
+      {
+        "palavra": "sinalização",
+        "frequencia": 145,
+        "relevancia": 2.986
+      },
+      {
+        "palavra": "fato",
+        "frequencia": 213,
+        "relevancia": 2.834
+      },
+      {
+        "palavra": "horizontal",
+        "frequencia": 134,
+        "relevancia": 2.716
+      },
+      {
+        "palavra": "helicópteros",
+        "frequencia": 127,
+        "relevancia": 2.546
+      },
+      {
+        "palavra": "táxi",
+        "frequencia": 154,
+        "relevancia": 1.926
+      },
+      {
+        "palavra": "devem",
+        "frequencia": 136,
+        "relevancia": 1.659
+      },
+      {
+        "palavra": "significa",
+        "frequencia": 89,
+        "relevancia": 1.655
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "sinalização horizontal",
+        "freq": 127,
+        "tscore": 11.11,
+        "palavra1_freq": 145,
+        "palavra2_freq": 134
+      },
+      {
+        "bigrama": "pista táxi",
+        "freq": 77,
+        "tscore": 8.57,
+        "palavra1_freq": 125,
+        "palavra2_freq": 154
+      },
+      {
+        "bigrama": "táxi terrestre",
+        "freq": 67,
+        "tscore": 8.06,
+        "palavra1_freq": 154,
+        "palavra2_freq": 71
+      },
+      {
+        "bigrama": "táxi aéreo",
+        "freq": 60,
+        "tscore": 7.62,
+        "palavra1_freq": 154,
+        "palavra2_freq": 67
+      },
+      {
+        "bigrama": "posição estacionamento",
+        "freq": 43,
+        "tscore": 6.5,
+        "palavra1_freq": 56,
+        "palavra2_freq": 71
+      },
+      {
+        "bigrama": "pouso decolagem",
+        "freq": 42,
+        "tscore": 6.38,
+        "palavra1_freq": 82,
+        "palavra2_freq": 85
+      },
+      {
+        "bigrama": "pista pouso",
+        "freq": 39,
+        "tscore": 6.09,
+        "palavra1_freq": 125,
+        "palavra2_freq": 82
+      },
+      {
+        "bigrama": "tipo pista",
+        "freq": 38,
+        "tscore": 6.06,
+        "palavra1_freq": 54,
+        "palavra2_freq": 125
+      },
+      {
+        "bigrama": "fato tipo",
+        "freq": 37,
+        "tscore": 5.91,
+        "palavra1_freq": 213,
+        "palavra2_freq": 54
+      },
+      {
+        "bigrama": "terrestre helicóptero",
+        "freq": 37,
+        "tscore": 5.89,
+        "palavra1_freq": 71,
+        "palavra2_freq": 180
+      },
+      {
+        "bigrama": "nível solo",
+        "freq": 36,
+        "tscore": 5.96,
+        "palavra1_freq": 49,
+        "palavra2_freq": 58
+      },
+      {
+        "bigrama": "operador heliponto",
+        "freq": 31,
+        "tscore": 5.45,
+        "palavra1_freq": 38,
+        "palavra2_freq": 195
+      },
+      {
+        "bigrama": "área segurança",
+        "freq": 31,
+        "tscore": 5.43,
+        "palavra1_freq": 132,
+        "palavra2_freq": 62
+      },
+      {
+        "bigrama": "estacionamento helicóptero",
+        "freq": 31,
+        "tscore": 5.36,
+        "palavra1_freq": 71,
+        "palavra2_freq": 180
+      },
+      {
+        "bigrama": "rota táxi",
+        "freq": 30,
+        "tscore": 5.39,
+        "palavra1_freq": 32,
+        "palavra2_freq": 154
+      },
+      {
+        "bigrama": "heliponto deve",
+        "freq": 30,
+        "tscore": 4.69,
+        "palavra1_freq": 195,
+        "palavra2_freq": 242
+      },
+      {
+        "bigrama": "estacionamento helicópteros",
+        "freq": 29,
+        "tscore": 5.23,
+        "palavra1_freq": 71,
+        "palavra2_freq": 127
+      },
+      {
+        "bigrama": "aéreo helicóptero",
+        "freq": 28,
+        "tscore": 5.08,
+        "palavra1_freq": 67,
+        "palavra2_freq": 180
+      },
+      {
+        "bigrama": "orientação alinhamento",
+        "freq": 25,
+        "tscore": 4.98,
+        "palavra1_freq": 33,
+        "palavra2_freq": 30
+      },
+      {
+        "bigrama": "maior helicóptero",
+        "freq": 25,
+        "tscore": 4.84,
+        "palavra1_freq": 47,
+        "palavra2_freq": 180
+      },
+      {
+        "bigrama": "identificação heliponto",
+        "freq": 23,
+        "tscore": 4.7,
+        "palavra1_freq": 26,
+        "palavra2_freq": 195
+      },
+      {
+        "bigrama": "horizontal ponto",
+        "freq": 23,
+        "tscore": 4.67,
+        "palavra1_freq": 134,
+        "palavra2_freq": 50
+      },
+      {
+        "bigrama": "helipontos elevados",
+        "freq": 22,
+        "tscore": 4.65,
+        "palavra1_freq": 83,
+        "palavra2_freq": 22
+      },
+      {
+        "bigrama": "horizontal identificação",
+        "freq": 22,
+        "tscore": 4.62,
+        "palavra1_freq": 134,
+        "palavra2_freq": 26
+      },
+      {
+        "bigrama": "deve possuir",
+        "freq": 22,
+        "tscore": 4.49,
+        "palavra1_freq": 242,
+        "palavra2_freq": 42
+      },
+      {
+        "bigrama": "helicóptero deve",
+        "freq": 22,
+        "tscore": 3.84,
+        "palavra1_freq": 180,
+        "palavra2_freq": 242
+      },
+      {
+        "bigrama": "operações noturnas",
+        "freq": 21,
+        "tscore": 4.56,
+        "palavra1_freq": 61,
+        "palavra2_freq": 22
+      },
+      {
+        "bigrama": "aproximação final",
+        "freq": 20,
+        "tscore": 4.43,
+        "palavra1_freq": 79,
+        "palavra2_freq": 29
+      },
+      {
+        "bigrama": "capacidade suporte",
+        "freq": 18,
+        "tscore": 4.24,
+        "palavra1_freq": 18,
+        "palavra2_freq": 19
+      },
+      {
+        "bigrama": "ponto visada",
+        "freq": 18,
+        "tscore": 4.22,
+        "palavra1_freq": 50,
+        "palavra2_freq": 18
+      }
+    ]
+  }
+}

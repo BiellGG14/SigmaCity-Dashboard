@@ -1,0 +1,393 @@
+{
+  "nome": "RBAC 161 - Planos de Zoneamento de Ruído de Aeródromos",
+  "url": "https://pergamum.anac.gov.br/pergamum/vinculos/RBAC161EMD00.pdf",
+  "disponivel": true,
+  "data_processamento": "2026-04-07 15:39:12",
+  "resumo": [
+    "O RBAC Nº 161 institui o Plano de Zoneamento de Ruído (PZR) para aeródromos civis públicos.",
+    "O regulamento visa mapear o impacto do ruído aeronáutico e estabelecer critérios de compatibilidade para o uso do solo no entorno.",
+    "Detalha os usos compatíveis e incompatíveis com base em níveis de ruído.",
+    "Estipula as obrigações do operador do aeródromo, incluindo a interação com municípios e a criação de uma Comissão de Gerenciamento de Ruído (CGRA)."
+  ],
+  "pestel": {
+    "fatores": [
+      "Político",
+      "Econômico",
+      "Social",
+      "Tecnológico",
+      "Ambiental"
+    ],
+    "pontuacoes": [
+      3,
+      1,
+      2,
+      2,
+      1
+    ],
+    "justificativas": [
+      "Estabelece estrutura de governança com articulação obrigatória entre operadores de aeródromos, municípios e ANAC, criando comissões de gestão de ruído (CGRA) com impacto relevante na coordenação federativa para UAM.",
+      "Implica custos adicionais para elaboração de PZR e medidas de mitigação que impactam a viabilidade econômica de vertiportos, mas sem tratar especificamente de incentivos ou financiamento.",
+      "Impacto direto e abrangente na aceitação social da UAM ao estabelecer critérios obrigatórios de compatibilidade de uso do solo, gestão de ruído e proteção de comunidades do entorno, elementos críticos para a licença social para operar.",
+      "Define metodologias técnicas para modelagem acústica e monitoramento de ruído, com impacto direto na infraestrutura tecnológica, mas não aborda especificamente comunicações ou navegação avançada para UAM.",
+      "Impacto relevante ao instituir regime obrigatório de zoneamento de ruído aeronáutico com critérios ambientais específicos para aeródromos, aplicável a vertiportos UAM e integrado ao planejamento territorial urbano."
+    ]
+  },
+  "estatisticas": {
+    "total_palavras": 3811,
+    "palavras_unicas": 1197,
+    "num_sentencas": 507,
+    "top_50_palavras": {
+      "ruído": 137,
+      "aeródromo": 85,
+      "anac": 56,
+      "operador": 52,
+      "resolução": 50,
+      "rbac": 49,
+      "plano": 42,
+      "curvas": 36,
+      "deve": 36,
+      "aeronáutico": 34,
+      "civil": 34,
+      "aviação": 33,
+      "redação": 33,
+      "dada": 32,
+      "solo": 30,
+      "pzr": 28,
+      "zoneamento": 27,
+      "agência": 26,
+      "emd": 26,
+      "nacional": 26,
+      "httpswwwanacgovbrassuntoslegislacaolegislacaorbhaerbacrbacrbac": 25,
+      "pezr": 25,
+      "empreendimentos": 24,
+      "equivalentes": 24,
+      "uso": 22,
+      "subparte": 21,
+      "disposições": 20,
+      "exemplos": 20,
+      "usos": 20,
+      "constatação": 19,
+      "entorno": 19,
+      "órgãos": 19,
+      "locais": 18,
+      "conforme": 17,
+      "pbzr": 16,
+      "elaboração": 15,
+      "informações": 15,
+      "nível": 15,
+      "aeronaves": 14,
+      "comunidade": 14,
+      "decolagem": 14,
+      "gerenciamento": 14,
+      "relacionamento": 14,
+      "aeródromos": 13,
+      "caso": 13,
+      "deste": 13,
+      "médio": 13,
+      "áreas": 12,
+      "compatíveis": 12,
+      "gerais": 12
+    },
+    "frequencia_termos_uam": {
+      "mobilidade": 0,
+      "aérea": 4,
+      "urbana": 1,
+      "evtol": 0,
+      "aeronave": 22,
+      "vertiporto": 0,
+      "heliponto": 6,
+      " uam ": 0,
+      "tráfego aéreo": 0,
+      "decolagem": 14,
+      "pouso": 11,
+      " voo ": 1,
+      "aviação": 33
+    },
+    "top_20_bigramas": {
+      "operador aeródromo": 50,
+      "ruído aeronáutico": 34,
+      "aviação civil": 32,
+      "dada resolução": 32,
+      "redação dada": 32,
+      "curvas ruído": 31,
+      "zoneamento ruído": 27,
+      "agência nacional": 26,
+      "nacional aviação": 26,
+      "rbac emd": 26,
+      "civil anac": 25,
+      "emd agência": 25,
+      "empreendimentos equivalentes": 24,
+      "httpswwwanacgovbrassuntoslegislacaolegislacaorbhaerbacrbacrbac rbac": 24,
+      "aeródromo deve": 20,
+      "uso solo": 20,
+      "nível ruído": 15,
+      "gerenciamento ruído": 14,
+      "órgãos locais": 14,
+      "aeródromo órgãos": 13
+    },
+    "palavras_chave": [
+      {
+        "palavra": "ruído",
+        "frequencia": 137,
+        "relevancia": 2.956
+      },
+      {
+        "palavra": "aeródromo",
+        "frequencia": 85,
+        "relevancia": 2.764
+      },
+      {
+        "palavra": "operador",
+        "frequencia": 52,
+        "relevancia": 1.507
+      },
+      {
+        "palavra": "resolução",
+        "frequencia": 50,
+        "relevancia": 1.435
+      },
+      {
+        "palavra": "anac",
+        "frequencia": 56,
+        "relevancia": 0.992
+      },
+      {
+        "palavra": "aeronáutico",
+        "frequencia": 34,
+        "relevancia": 0.882
+      },
+      {
+        "palavra": "rbac",
+        "frequencia": 49,
+        "relevancia": 0.84
+      },
+      {
+        "palavra": "plano",
+        "frequencia": 42,
+        "relevancia": 0.692
+      },
+      {
+        "palavra": "zoneamento",
+        "frequencia": 27,
+        "relevancia": 0.657
+      },
+      {
+        "palavra": "nacional",
+        "frequencia": 26,
+        "relevancia": 0.625
+      }
+    ],
+    "tscore_bigramas": [
+      {
+        "bigrama": "operador aeródromo",
+        "freq": 50,
+        "tscore": 6.91,
+        "palavra1_freq": 52,
+        "palavra2_freq": 85
+      },
+      {
+        "bigrama": "ruído aeronáutico",
+        "freq": 34,
+        "tscore": 5.62,
+        "palavra1_freq": 137,
+        "palavra2_freq": 34
+      },
+      {
+        "bigrama": "redação dada",
+        "freq": 32,
+        "tscore": 5.61,
+        "palavra1_freq": 33,
+        "palavra2_freq": 32
+      },
+      {
+        "bigrama": "aviação civil",
+        "freq": 32,
+        "tscore": 5.6,
+        "palavra1_freq": 33,
+        "palavra2_freq": 34
+      },
+      {
+        "bigrama": "dada resolução",
+        "freq": 32,
+        "tscore": 5.58,
+        "palavra1_freq": 32,
+        "palavra2_freq": 50
+      },
+      {
+        "bigrama": "curvas ruído",
+        "freq": 31,
+        "tscore": 5.34,
+        "palavra1_freq": 36,
+        "palavra2_freq": 137
+      },
+      {
+        "bigrama": "zoneamento ruído",
+        "freq": 27,
+        "tscore": 5.01,
+        "palavra1_freq": 27,
+        "palavra2_freq": 137
+      },
+      {
+        "bigrama": "agência nacional",
+        "freq": 26,
+        "tscore": 5.06,
+        "palavra1_freq": 26,
+        "palavra2_freq": 26
+      },
+      {
+        "bigrama": "nacional aviação",
+        "freq": 26,
+        "tscore": 5.05,
+        "palavra1_freq": 26,
+        "palavra2_freq": 33
+      },
+      {
+        "bigrama": "rbac emd",
+        "freq": 26,
+        "tscore": 5.03,
+        "palavra1_freq": 49,
+        "palavra2_freq": 26
+      },
+      {
+        "bigrama": "emd agência",
+        "freq": 25,
+        "tscore": 4.96,
+        "palavra1_freq": 26,
+        "palavra2_freq": 26
+      },
+      {
+        "bigrama": "civil anac",
+        "freq": 25,
+        "tscore": 4.9,
+        "palavra1_freq": 34,
+        "palavra2_freq": 56
+      },
+      {
+        "bigrama": "empreendimentos equivalentes",
+        "freq": 24,
+        "tscore": 4.87,
+        "palavra1_freq": 24,
+        "palavra2_freq": 24
+      },
+      {
+        "bigrama": "httpswwwanacgovbrassuntoslegislacaolegislacaorbhaerbacrbacrbac rbac",
+        "freq": 24,
+        "tscore": 4.83,
+        "palavra1_freq": 25,
+        "palavra2_freq": 49
+      },
+      {
+        "bigrama": "uso solo",
+        "freq": 20,
+        "tscore": 4.43,
+        "palavra1_freq": 22,
+        "palavra2_freq": 30
+      },
+      {
+        "bigrama": "aeródromo deve",
+        "freq": 20,
+        "tscore": 4.29,
+        "palavra1_freq": 85,
+        "palavra2_freq": 36
+      },
+      {
+        "bigrama": "nível ruído",
+        "freq": 15,
+        "tscore": 3.73,
+        "palavra1_freq": 15,
+        "palavra2_freq": 137
+      },
+      {
+        "bigrama": "órgãos locais",
+        "freq": 14,
+        "tscore": 3.72,
+        "palavra1_freq": 19,
+        "palavra2_freq": 18
+      },
+      {
+        "bigrama": "gerenciamento ruído",
+        "freq": 14,
+        "tscore": 3.61,
+        "palavra1_freq": 14,
+        "palavra2_freq": 137
+      },
+      {
+        "bigrama": "comunidade entorno",
+        "freq": 13,
+        "tscore": 3.59,
+        "palavra1_freq": 14,
+        "palavra2_freq": 19
+      },
+      {
+        "bigrama": "relacionamento operador",
+        "freq": 13,
+        "tscore": 3.55,
+        "palavra1_freq": 14,
+        "palavra2_freq": 52
+      },
+      {
+        "bigrama": "aeródromo órgãos",
+        "freq": 13,
+        "tscore": 3.49,
+        "palavra1_freq": 85,
+        "palavra2_freq": 19
+      },
+      {
+        "bigrama": "disposições gerais",
+        "freq": 12,
+        "tscore": 3.45,
+        "palavra1_freq": 20,
+        "palavra2_freq": 12
+      },
+      {
+        "bigrama": "plano básico",
+        "freq": 11,
+        "tscore": 3.28,
+        "palavra1_freq": 42,
+        "palavra2_freq": 11
+      },
+      {
+        "bigrama": "monitoramento ruído",
+        "freq": 11,
+        "tscore": 3.19,
+        "palavra1_freq": 12,
+        "palavra2_freq": 137
+      },
+      {
+        "bigrama": "pouso decolagem",
+        "freq": 10,
+        "tscore": 3.15,
+        "palavra1_freq": 11,
+        "palavra2_freq": 14
+      },
+      {
+        "bigrama": "locais comunidade",
+        "freq": 10,
+        "tscore": 3.14,
+        "palavra1_freq": 18,
+        "palavra2_freq": 14
+      },
+      {
+        "bigrama": "básico zoneamento",
+        "freq": 10,
+        "tscore": 3.14,
+        "palavra1_freq": 11,
+        "palavra2_freq": 27
+      },
+      {
+        "bigrama": "plano zoneamento",
+        "freq": 10,
+        "tscore": 3.07,
+        "palavra1_freq": 42,
+        "palavra2_freq": 27
+      },
+      {
+        "bigrama": "ruído médio",
+        "freq": 10,
+        "tscore": 3.01,
+        "palavra1_freq": 137,
+        "palavra2_freq": 13
+      }
+    ]
+  }
+}
